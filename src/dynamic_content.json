@@ -1,0 +1,123 @@
+{
+  "zh_HK":{
+    "general":{
+      "image":{
+        "position":"right",
+        "desktop":"desktop_image",
+        "mobile":"mobile_image"
+      },
+      "title":"Protecting our planet everyday.",
+      "lead":"Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+      "explainer":{
+        "monthly":"Your monthly donation will help Greenpeace research solutions and to work globally to protect our planet. Thank you!",
+        "onetime":"Your donation will immediately help Greenpeace's work to protect our planet. Thank you!"
+      }
+    }
+  },
+  "en_HK":{
+    "general":{
+      "image":{
+        "position":"right",
+        "desktop":"desktop_image",
+        "mobile":"mobile_image"
+      },
+      "title":"Protecting our planet everyday.",
+      "lead":"Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+      "explainer":{
+        "monthly":"Your monthly donation will help Greenpeace research solutions and to work globally to protect our planet. Thank you!",
+        "onetime":"Your donation will immediately help Greenpeace's work to protect our planet. Thank you!"
+      }
+    },
+    "greenpeace":{
+      "image":{
+        "position":"right",
+        "desktop":"desktop_image",
+        "mobile":"mobile_image"
+      },
+      "title":"Protecting our planet starts with you...",
+      "lead":"We only have one planet, please help Greenpeace take care of it.",
+      "explainer":{
+        "monthly":"Your monthly donation will sustain Greenpeace's work to care for and protect nature. Thank you!",
+        "onetime":"Your donation will immediately help Greenpeace care for nature. Thank you!"
+      }
+    },
+    "arctic":{
+      "image":{
+        "position":"right",
+        "desktop":"desktop_image",
+        "mobile":"mobile_image"
+      },
+      "title":"Protecting our planet everyday.",
+      "lead":"Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+      "explainer":{
+        "monthly":"Your monthly donation will help Greenpeace research solutions and to protect the Arctic. Thank you!",
+        "onetime":"Your donation will immediately help Greenpeace care for nature. Thank you!"
+      }
+    },
+    "health":{
+      "image":{
+        "position":"right",
+        "desktop":"desktop_image",
+        "mobile":"mobile_image"
+      },
+      "title":"Protecting our planet everyday.",
+      "lead":"Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+      "explainer":{
+        "monthly":"Your monthly donation will help Greenpeace research solutions and to improve air quality. Thank you!",
+        "onetime":"Your donation will immediately help Greenpeace find solutions to pollution. Thank you!"
+      }
+    },
+    "plastics":{
+      "image":{
+        "position":"right",
+        "desktop":"desktop_image",
+        "mobile":"mobile_image"
+      },
+      "title":"Protecting our planet everyday.",
+      "lead":"Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+      "explainer":{
+        "monthly":"Your monthly donation will help Greenpeace research solutions and to reduce plastic waste. Thank you!",
+        "onetime":"Your donation will immediately help Greenpeace find solutions to plastic waste. Thank you!"
+      }
+    },
+    "climate":{
+      "image":{
+        "position":"right",
+        "desktop":"desktop_image",
+        "mobile":"mobile_image"
+      },
+      "title":"Protecting our planet starts with you...",
+      "lead":"We only have one planet, please help Greenpeace take care of it.",
+      "explainer":{
+        "monthly":"Your monthly donation will help Greenpeace encourage more renewable energy. Thank you!",
+        "onetime":"Your donation will immediately help Greenpeace encourage more renewable energy. Thank you!"
+      }
+    },
+    "forests":{
+      "image":{
+        "position":"right",
+        "desktop":"desktop_image",
+        "mobile":"mobile_image"
+      },
+      "title":"Protecting our planet starts with you...",
+      "lead":"We only have one planet, please help Greenpeace take care of it.",
+      "explainer":{
+        "monthly":"Your monthly donation will help Greenpeace protect our planets forests. Thank you!",
+        "onetime":"Your donation will immediately help Greenpeace protect our forests. Thank you!"
+      }
+    },
+    "oceans":{
+      "image":{
+        "position":"right",
+        "desktop":"desktop_image",
+        "mobile":"mobile_image"
+      },
+      "title":"Protecting our planet starts with you...",
+      "lead":"We only have one planet, please help Greenpeace take care of it.",
+      "explainer":{
+        "monthly":"Your monthly donation will help Greenpeace protect our planets oceans. Thank you!",
+        "onetime":"Your donation will immediately help Greenpeace protect our oceans. Thank you!"
+      }
+    }
+  }
+}
