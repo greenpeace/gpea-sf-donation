@@ -12,7 +12,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color: rgba(0, 0, 0, 0.85);
+    color: $black;
     margin-bottom: 10px;
     .form__headline {
       font-size: 28px;
@@ -21,20 +21,24 @@
     .form__leading {
       margin-top: 8px;
       font-size: 16px;
-      color: rgba(0, 0, 0, 0.65);
+      color: $gray1;
+    }
+    .slds-icon-action-approval {
+      background: $gp-green;
+      margin-bottom: 8px;
     }
     .one-more-step {
-      margin: 10px auto;
+      margin: 20px auto;
       text-align: center;
       font-size: 16px;
     }
     .edit-amount {
-      margin: 8px auto;
+      margin: 10px auto;
       flex: 1;
       span {
         font-size: 14px;
         text-decoration: underline;
-        color: rgba(0, 0, 0, 0.65);
+        color: $gray2;
         vertical-align: middle;
         cursor: pointer;
       }
@@ -44,7 +48,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
-    color: #6c0;
+    color: $gp-green;
     font-weight: bold;
   }
 }
@@ -99,11 +103,11 @@
 .THIS {
   .form__contents {
     padding: 20px 12px;
-    background: #fff;
+    background: $white;
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
-    border: 1px solid #eee;
+    border: 1px solid $gray4;
     transition: all 0.1s ease-in;
     &:hover {
       box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
@@ -127,8 +131,8 @@
       li {
         flex: 1;
         overflow: hidden;
-        border: 1px solid #6c0;
-        background: rgba(255, 255, 255, 0.85);
+        border: 1px solid $gp-green;
+        background: $white;
         transition: all 0.1s ease-in;
         &:first-child {
           border-radius: 4px 0 0 4px;
@@ -139,7 +143,7 @@
         a {
           height: 40px;
           width: 100%;
-          color: #6c0;
+          color: $gp-green;
           font-size: 16px;
           text-decoration: none;
           display: flex;
@@ -147,12 +151,12 @@
           align-items: center;
         }
         .selected {
-          background-color: #6c0;
-          color: rgba(255, 255, 255, 0.85);
+          background-color: $gp-green;
+          color: $white;
           font-weight: bold;
           &:hover {
-            color: rgba(255, 255, 255, 0.85);
-            background-color: lighten(#6c0, 2%);
+            color: $white;
+            background-color: lighten($gp-green, 2%);
           }
         }
       }
@@ -175,27 +179,27 @@
       width: calc((100% - 20px) / 3);
       height: 48px;
       border-radius: 4px;
-      border: 1px solid #eee;
-      background: #eee;
+      border: 1px solid $gray4;
+      background: $gray4;
       margin-bottom: 10px;
-      color: #999;
+      color: $gray3;
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
       &:hover {
         text-decoration: none;
-        background-color: lighten(#eee, 2%);
+        background-color: lighten($gray4, 2%);
       }
       .currency {
         margin-right: 2px;
       }
       &.selected {
-        background-color: #6c0;
-        color: rgba(255, 255, 255, 0.85);
+        background-color: $gp-green;
+        color: $white;
         font-weight: bold;
         &:hover {
-          background-color: lighten(#6c0, 2%);
+          background-color: lighten($gp-green, 2%);
         }
       }
     }
@@ -219,7 +223,7 @@
           line-height: 48px;
           left: 16px;
           font-size: 16px;
-          color: #999;
+          color: $gray3;
           vertical-align: center;
         }
       }
@@ -247,20 +251,20 @@
 
   .form__donate {
     button {
-      color: #fff;
+      color: $white;
       font-weight: bold;
       font-size: 16px;
       height: 48px;
       line-height: 48px;
       width: 100%;
-      background-color: #6c0;
+      background-color: $gp-green;
       border: none;
       border-radius: 4px;
       text-align: center;
       letter-spacing: 1px;
       transition: all 0.1s ease-in;
       &:hover {
-        background-color: lighten(#6c0, 2%);
+        background-color: lighten($gp-green, 2%);
       }
     }
   }

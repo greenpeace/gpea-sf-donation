@@ -10,7 +10,7 @@ html {
 body {
   font-size: 1rem; // 16px
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.85);
+  color: $black;
   &.zh-hk {
     font-family: "Noto Sans HK", Microsoft JhengHei, "PingFang HK",
       "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
