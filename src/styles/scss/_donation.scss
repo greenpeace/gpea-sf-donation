@@ -15,20 +15,20 @@
     color: $black;
     margin-bottom: 10px;
     .form__headline {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: bold;
     }
     .form__leading {
-      margin-top: 8px;
-      font-size: 14px;
+      margin-top: 10px;
+      font-size: 1rem;
       color: $gray1;
     }
     .slds-icon-action-approval {
       background: $gp-green;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
     .one-more-step {
-      margin: 20px auto;
+      margin: 16px auto;
       text-align: center;
       font-size: 16px;
     }
@@ -77,7 +77,7 @@
     }
     .main__form-wrapper {
       width: 100%;
-      max-width: 420px;
+      max-width: 400px;
       margin: 0 auto;
     }
     .row {
@@ -101,7 +101,7 @@
 
 .THIS {
   .form__contents {
-    padding: 20px 12px;
+    padding: 20px 16px;
     background: $white;
     border-radius: 4px;
     overflow: hidden;
@@ -125,7 +125,7 @@
   .form__handle {
     margin: 20px auto;
     .tab-menu {
-      padding: 0 8px;
+      padding: 0 10px;
       display: flex;
       li {
         flex: 1;
@@ -175,13 +175,12 @@
     }
     .form__amount-button {
       font-size: 16px;
-      width: calc((100% - 20px) / 3);
+      width: calc((100% - 24px) / 3);
       height: 48px;
       border-radius: 4px;
-      border: 1px solid $gray4;
       background: $gray4;
       margin-bottom: 10px;
-      color: $gray3;
+      color: $gray2;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -229,10 +228,13 @@
     }
     .amount-text {
       padding: 20px 0px;
+      color: $gray1;
+      font-size: 0.8rem;
     }
   }
 
   .consent {
+    margin-top: 10px;
     .checkbox-input {
       margin-right: 4px;
     }
@@ -243,6 +245,11 @@
     }
     .slds-form-element__label {
       font-size: 12px;
+      font-weight: 300;
+      p {
+        font-size: 12px;
+        font-weight: 300;
+      }
     }
   }
 
@@ -267,6 +274,10 @@
       }
     }
   }
-}
 
-// Submit Button
+  .id-statement {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: $gray2;
+  }
+}
