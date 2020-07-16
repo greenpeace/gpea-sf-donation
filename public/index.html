@@ -4,10 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>GPEA SF Donation</title>
-    <!-- meta -->
-    <meta name="author" content="Greenpeace 綠色和平" />
-    <meta property="og:site_name" content="Greenpeace 綠色和平" />
-    <!-- close custom meta -->
+    <!-- markup -->
     <link
       rel="shortcut icon"
       type="image/png"
@@ -19,14 +16,36 @@
       sizes="96x96"
       href="https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1853/gp-favicon.png?v=1550651064000"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,700&subset=chinese-traditional"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <!-- end of markup -->
+    <!-- meta -->
+    <meta name="author" content="Greenpeace 綠色和平" />
+    <meta property="og:site_name" content="Greenpeace 綠色和平" />
+    <!-- end of custom meta -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&display=swap");
+      @import url("https://fonts.googleapis.com/css?family=Roboto");
+      html {
+        box-sizing: border-box;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        text-rendering: optimizeLegibility;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      html.zh-Hant-HK body {
+        font-family: "Noto Sans TC", sans-serif;
+      }
+
+      html.en-HK body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
     <link
       href="https://cdn.jsdelivr.net/npm/@salesforce-ux/design-system@2.12.1/assets/styles/salesforce-lightning-design-system.min.css"
       rel="stylesheet"

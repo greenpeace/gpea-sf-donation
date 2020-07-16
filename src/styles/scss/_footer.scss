@@ -3,12 +3,12 @@
     font-size: 13px;
     line-height: 1.5;
     background: #292f47;
-    color: $white;
+    color: $gray4;
     a {
       color: $white;
       text-decoration: underline;
       &:hover {
-        color: #fff;
+        color: $gp-green;
       }
     }
     .footer-wrapper {
@@ -21,12 +21,12 @@
   }
   .footer {
     .footer-row {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      // margin-top: 20px;
+      // margin-bottom: 20px;
     }
     .footer-upper {
       display: grid;
-      grid-gap: 20px;
+      grid-gap: 40px;
     }
 
     .footer__remarks {
@@ -52,18 +52,17 @@
       background: none;
       position: relative;
       margin: 0;
-      padding: 10px 0;
+      padding: 20px 0;
       border: none;
       &:after {
-        display: none;
         content: "";
         position: absolute;
         top: 50%;
         left: 0;
-        transform: translateY(-25%);
-        width: 20px;
-        height: 1px;
-        background-color: $gray3;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 2px;
+        background-color: $gray4;
       }
     }
     .notice {
@@ -75,28 +74,38 @@
   }
 
   .footer {
-    a {
-      text-decoration: none;
-      transition: color 0.2s ease-in;
-      :hover {
-        color: $gp-green;
-      }
-    }
     .footer__logo {
       margin-bottom: 20px;
-      max-width: 280px;
+      max-width: 240px;
       img {
         width: 100%;
       }
     }
     .footer__language {
+      padding-top: 4px;
+      padding-bottom: 4px;
       margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      a {
+        color: $gray2;
+        &:first-child {
+          margin-right: 20px;
+        }
+        &:last-child {
+          margin-left: 20px;
+        }
+      }
+      .slds-border_bottom {
+        color: $white;
+        border: none;
+      }
     }
     .footer__note {
       max-width: 480px;
     }
     .footer__link {
-      margin: 20px 0;
+      margin: 40px 0;
       li {
         margin-bottom: 8px;
         margin-left: 0;

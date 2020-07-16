@@ -7,17 +7,18 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       justify-content: space-around;
+      margin: 8px auto;
       > div {
-        margin: 8px 4px;
+        margin: 4px;
         color: #ccc;
-        border: 1px solid #ccc;
+        border: 1px solid $gray4;
         border-radius: 30px;
         height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        transition: all 0.1s ease-in;
+        transition: all 0.2s ease-in;
         .title {
           font-size: 14px;
           text-align: center;
