@@ -50,7 +50,7 @@
     bottom: 50%;
     transform: translateY(50%);
   }
-
+  // slds select
   .slds-form-element__label {
     padding-left: 4px;
     font-size: 12px;
@@ -65,6 +65,14 @@
       text-decoration: none;
     }
   }
+  // slds label
+  .slds-form-element__help {
+    font-size: 10px;
+    color: $gp-warning;
+    text-align: left;
+    padding-left: 4px;
+  }
+  // message
   .slds-checkbox .slds-checkbox__label {
     display: flex;
     align-items: flex-start;
@@ -73,33 +81,33 @@
     border: 1px solid $gray4;
     border-radius: 4px;
     position: relative;
+    transition: border-color ease-in-out 0.15s;
+    display: flex;
   }
-  .consent .slds-form-element__control {
-    border: none;
-  }
-  .slds-has-error .slds-input,
-  .slds-select {
-    border: 1px solid $gp-warning;
+  .slds-has-error .slds-select:focus,
+  .slds-has-error .slds-select:active {
     box-shadow: none;
   }
-  .slds-form-element__help {
-    font-size: 10px;
-    color: $gp-warning;
-    text-align: left;
-    padding-left: 4px;
+  .slds-has-error .slds-form-element__control {
+    border: 1px solid $gp-warning;
+  }
+  .slds-select_container {
+    width: 100%;
+    display: flex;
   }
   .slds-input,
   .slds-select {
-    font-size: 16px;
     height: auto;
     display: block;
     width: 100%;
     height: 40px;
-    padding: 4px 16px;
     border: none;
-    background-color: transparent;
-    background-image: none;
-    transition: border-color ease-in-out 0.15s;
+    box-shadow: none;
+    padding-left: 16px;
+    font-size: 16px;
+  }
+  .consent .slds-form-element__control {
+    border: none;
   }
 }
 
@@ -110,33 +118,18 @@
     }
   }
 }
-/*
+
 .THIS {
-  .cGPEAPhoneInput {
-    border: 1px solid $gray4;
-    border-radius: 4px;
+  .cSignaturePad {
     position: relative;
-
-    &:before {
-      content: "";
+    margin-bottom: 10px;
+    .slds-button {
       position: absolute;
-      left: 70px;
-      top: 50%;
-      width: 8px;
-      height: 2px;
-      background-color: #ccc;
-      transform: translateY(-50%);
+      right: 24px;
+      top: 8px;
     }
-    input[name="phone"] {
-      padding-left: 0px;
-    }
-    .slds-form-element__control {
-      border: none;
-    }
-
   }
 }
-*/
 
 .THIS {
   .cDonationCreditCardInput {

@@ -1,0 +1,18 @@
+.THIS {
+  .impact {
+    position: relative;
+    max-width: 320px;
+    margin: 20px 20px 40px;
+    .impact__tag {
+      margin-top: 4px;
+      font-size: 0.8rem;
+      color: $gray4;
+      font-weight: bold;
+    }
+    .impact__title {
+      margin-top: 4px;
+      font-size: 1.2rem;
+      color: $gray1;
+    }
+  }
+}

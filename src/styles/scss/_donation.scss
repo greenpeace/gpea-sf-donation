@@ -15,12 +15,12 @@
     color: $black;
     margin-bottom: 10px;
     .form__headline {
-      font-size: 1.5rem;
+      font-size: 24px;
       font-weight: bold;
     }
     .form__leading {
       margin-top: 10px;
-      font-size: 1rem;
+      font-size: 14px;
       color: $gray1;
     }
     .slds-icon-action-approval {
@@ -64,15 +64,15 @@
     > div {
       width: 100%;
     }
-    @media (min-width: 374px) {
+    @media (min-width: 576px) {
       padding: 20px 0;
     }
-    @media (min-width: 1200px) {
-      min-height: 90vh;
+    @media (min-width: 992px) {
+      min-height: 40vw;
       max-width: 50vw;
       padding: 40px 0;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
       padding: 4vw 0;
     }
     .main__form-wrapper {
@@ -112,7 +112,7 @@
       box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
       border-color: #ddd;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       padding: 20px;
     }
   }
@@ -120,12 +120,11 @@
     margin-top: 10px;
   }
   .form__details-consent {
-    margin: 20px auto;
+    margin: 32px auto 16px;
   }
   .form__handle {
     margin: 20px auto;
     .tab-menu {
-      padding: 0 10px;
       display: flex;
       li {
         flex: 1;
@@ -133,6 +132,9 @@
         border: 1px solid $gp-green;
         background: $white;
         transition: all 0.2s ease-in;
+        &:only-child {
+          border-radius: 4px !important;
+        }
         &:first-child {
           border-radius: 4px 0 0 4px;
         }
@@ -234,9 +236,11 @@
   }
 
   .consent {
-    margin-top: 10px;
     .checkbox-input {
-      margin-right: 4px;
+      margin-right: 0px;
+    }
+    .slds-checkbox {
+      width: 100%;
     }
     .slds-checkbox_faux {
       width: 40px;
@@ -244,9 +248,7 @@
       margin-top: 4px;
     }
     .checkbox-label {
-      p {
-        font-size: 10px;
-      }
+      font-size: 10px !important;
     }
   }
 
@@ -271,11 +273,14 @@
       }
     }
   }
-  .id-statement {
-    p {
-      font-size: 12px;
-      margin-bottom: 10px;
-      color: $gray2;
-    }
+  .statement {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: $gray2;
+  }
+  .signature-consent {
+    max-height: 150px;
+    padding: 8px;
+    border-left: 1px $gray3;
   }
 }

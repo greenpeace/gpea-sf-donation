@@ -1,0 +1,46 @@
+.THIS {
+  .section_mixed-content {
+    min-height: 30vw;
+    display: flex;
+    align-items: stretch;
+    &.section_mixed-content_darkblue {
+      background-color: $gp-darkblue;
+      color: #fff;
+    }
+    .boxes {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: stretch;
+      @media (min-width: 992px) {
+        flex-direction: row;
+      }
+    }
+    .box {
+      min-height: 400px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .box-content {
+      padding: 40px 20px;
+      .box-header {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .box-text {
+        font-size: 1rem;
+      }
+    }
+    .box-visual {
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("https://storage.googleapis.com/planet4-hongkong-stateless/2019/07/421e9fb5-gp0stqei4_medium_res.jpg");
+    }
+  }
+}

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html style="background: none;">
+<html lang="zh-Hant-HK" style="background: none;">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GPEA SF Donation</title>
+    <title>捐助支持綠色和平 - Greenpeace 綠色和平</title>
     <!-- markup -->
     <link
       rel="shortcut icon"
       type="image/png"
-      href="https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1853/gp-favicon.png?v=1550651064000"
+      href="https://change.greenpeace.org.hk/static/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1853/gp-favicon.png?v=1550651064000"
+      href="https://change.greenpeace.org.hk/static/favicon/favicon-96x96.png"
     />
     <!-- end of markup -->
     <!-- meta -->
@@ -22,7 +22,7 @@
     <meta property="og:site_name" content="Greenpeace 綠色和平" />
     <!-- end of custom meta -->
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&display=swap");
+      @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&subset=chinese-traditional");
       @import url("https://fonts.googleapis.com/css?family=Roboto");
       * {
         border-radius: 0;
@@ -46,32 +46,70 @@
         box-sizing: inherit;
       }
       html {
-        overflow-x: hidden;
-        overflow-y: scroll;
         font-size: 100%;
       }
       body {
         padding: 0;
         margin: 0;
         -webkit-font-smoothing: antialiased;
-        -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-rendering: optimizeLegibility;
+      }
+      body {
+        line-height: 1.5;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
           "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
           "Helvetica Neue", sans-serif;
-        scroll-behavior: smooth;
       }
-
-      html.zh-Hant-HK body {
-        font-family: "Noto Sans TC", sans-serif;
-      }
-
-      html.en-HK body {
+      html:lang(en-HK),
+      html:lang(en-HK) body {
         font-family: "Roboto", sans-serif;
       }
-      html.zh-Hant-TW body {
-        font-family: "Noto Sans TC", sans-serif;
+      html:lang(en-HK) h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Roboto", sans-serif;
+      }
+      html:lang(zh-Hant-HK),
+      html:lang(zh-Hant-HK) body {
+        font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+          "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+      }
+      html:lang(zh-Hant-HK) h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+          "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+      }
+      html:lang(zh-Hant-TW),
+      html:lang(zh-Hant-TW) body {
+        font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+          "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+      }
+      html:lang(zh-Hant-TW) h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+          "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+      }
+      /* zh-Hant-TW */
+      html:lang(zh-Hant-TW) .footer__language {
+        display: none !important;
+      }
+      html:lang(zh-Hant-TW)
+        .form__amounts
+        .other-amount
+        .slds-form-element__control:before {
+        content: "新臺幣" !important;
       }
     </style>
     <!-- end of custom meta -->
@@ -113,7 +151,141 @@
     </div>
     <!-- end of Header -->
     <div class="main" data-aura-rendered-by="278:0">
-      <section class="section section_landing" data-aura-rendered-by="279:0">
+      <section class="section_issues">
+        <div class="section__header">
+          <h2>How your gift is making impacts</h2>
+          <p>
+            Every penny counts in the fight for our world. Learn more about the
+            issues we work on.
+          </p>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card issue">
+                <div class="issue__header">
+                  <h2>海洋 Oceans</h2>
+                  <p>
+                    每年有逾萬噸塑膠垃圾流入海洋，塑膠不能自然降解，在水中分解成體積比沙粒、塵埃更細的「微塑膠」，被海洋生物吸收後進入食物鏈，均直接影響人體健康。
+                  </p>
+                </div>
+                <div class="issue__image">
+                  <img
+                    class="img_fit"
+                    src="https://d33wubrfki0l68.cloudfront.net/a9c7e461090fc25097e6391a5bb823b0f28ba008/1672b/images/css/object-fit/example-object-fit.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section class="section_impacts">
+        <div class="section__header">
+          <h2>Our impact is global</h2>
+          <p>
+            Greenpeace is comprised of 27 independent regional organisations in
+            over 55 countries and regions across Europe, the Americas, Africa,
+            Asia and the Pacific.
+          </p>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="impact">
+                <img
+                  class="img_fit"
+                  src="https://d33wubrfki0l68.cloudfront.net/a9c7e461090fc25097e6391a5bb823b0f28ba008/1672b/images/css/object-fit/example-object-fit.jpg"
+                  alt=""
+                />
+                <span class="impact__tag">Arctic</span>
+                <p class="impact__title">
+                  俄羅斯漏油緊急狀態，不要讓北極孤獨哀鳴！
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+
+      <section class="section_testimonials">
+        <div class="section__header">
+          <h2>Our impact is global</h2>
+          <p>
+            Greenpeace is comprised of 27 independent regional organisations in
+            over 55 countries and regions across Europe, the Americas, Africa,
+            Asia and the Pacific.
+          </p>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card testimonial">
+                <div class="avatar testimonial__avatar">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/a9c7e461090fc25097e6391a5bb823b0f28ba008/1672b/images/css/object-fit/example-object-fit.jpg"
+                    alt=""
+                  />
+                  <div class="testimonial__quote">
+                    <p class="quote-text">
+                      We are living in a time of great environmental challenges
+                      and what happens here in East Asia will have an immense
+                      impact on the future of our planet. We feel so honoured to
+                      have your support and trust.
+                    </p>
+                  </div>
+                  <div>
+                    <p>Pang Cheung Sze</p>
+                    <p>Executive Director of Greenpeace East Asia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section class="section_center-text">
+        <div class="section-wrapper">
+          <div class="center-text__content">
+            <h2 class="content-header">
+              We are 100% funded by people like you
+            </h2>
+            <p class="content-text">
+              To stay independent, Greenpeace does not accept money from
+              corporations or governments. We rely entirely on people like you.
+              Here's what you can expect when you join.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section_mixed-content section_mixed-content_darkblue">
+        <div class="section-grid boxes">
+          <div class="box">
+            <div class="box-content">
+              <h2 class="box-header">因為您，地球迎來更美好的明天。</h2>
+              <p class="box-text">
+                珍貴海洋正處於前所未有的危機：破壞性捕撈、污染及氣候變化，對獨特海洋生態構成嚴重威脅。慶幸只要同心協力，你我就能守護賴以為生的海洋生物，保障人類健康。
+              </p>
+            </div>
+          </div>
+          <div class="box fit">
+            <div class="box-visual"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- landing -->
+      <section class="section section_landing" data-aura-rendered-by="275:0">
         <!--render facet: 3:2;a-->
         <div
           data-aura-rendered-by="73:2;a"
@@ -155,81 +327,81 @@
                     <div data-aura-rendered-by="46:2;a">
                       <!--render facet: 47:2;a-->
                     </div>
-                    <!--unrender facet: 48:2;a--><!--render facet: 1:121;a-->
+                    <!--unrender facet: 48:2;a--><!--render facet: 1:98;a-->
                   </div>
-                  <!--render facet: 9:130;a-->
-                  <div class="" data-aura-rendered-by="11:130;a">
-                    <div data-aura-rendered-by="14:130;a">
-                      <!--render facet: 15:130;a-->
+                  <!--render facet: 9:107;a-->
+                  <div class="" data-aura-rendered-by="11:107;a">
+                    <div data-aura-rendered-by="14:107;a">
+                      <!--render facet: 15:107;a-->
                     </div>
-                    <!--render facet: 16:130;a--><!--render facet: 18:130;a-->
+                    <!--render facet: 16:107;a--><!--render facet: 18:107;a-->
                   </div>
                   <div
                     class="main-wrapper main-wrapper_right"
-                    data-aura-rendered-by="19:130;a"
+                    data-aura-rendered-by="19:107;a"
                   >
-                    <div class="form-wrapper" data-aura-rendered-by="20:130;a">
-                      <!--render facet: 21:130;a-->
+                    <div class="form-wrapper" data-aura-rendered-by="20:107;a">
+                      <!--render facet: 21:107;a-->
                       <div
                         class="main__form-wrapper"
-                        data-aura-rendered-by="23:130;a"
+                        data-aura-rendered-by="23:107;a"
                       >
                         <div
                           class="form__title title_step-1"
-                          data-aura-rendered-by="26:130;a"
+                          data-aura-rendered-by="26:107;a"
                         >
                           <h1
                             class="page__headline slds-assistive-text"
-                            data-aura-rendered-by="27:130;a"
+                            data-aura-rendered-by="27:107;a"
                           >
                             守護地球，分秒必爭 -
                             綠色和平進行實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。
                           </h1>
                           <h2
                             class="form__headline"
-                            data-aura-rendered-by="31:130;a"
+                            data-aura-rendered-by="31:107;a"
                           >
                             守護地球，分秒必爭
                           </h2>
                           <p
                             class="form__leading"
-                            data-aura-rendered-by="33:130;a"
+                            data-aura-rendered-by="33:107;a"
                           >
                             綠色和平進行實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。
                           </p>
                         </div>
                         <div
                           class="form-container"
-                          data-aura-rendered-by="35:130;a"
+                          data-aura-rendered-by="35:107;a"
                         >
                           <div
                             class="form__handle form__menu"
-                            data-aura-rendered-by="36:130;a"
+                            data-aura-rendered-by="36:107;a"
                           >
                             <ul
                               class="tab-menu"
-                              data-aura-rendered-by="37:130;a"
+                              data-aura-rendered-by="37:107;a"
                             >
                               <li
                                 class="tab-menu_monthly"
-                                data-aura-rendered-by="39:130;a"
+                                data-aura-rendered-by="39:107;a"
                               >
                                 <a
                                   class="form__full selected"
                                   name="Monthly"
-                                  data-aura-rendered-by="40:130;a"
+                                  data-aura-rendered-by="40:107;a"
                                   href="javascript:void(0);"
                                   >每月捐款</a
                                 >
                               </li>
                               <li
                                 class="tab-menu_oneoff"
-                                data-aura-rendered-by="43:130;a"
+                                data-aura-rendered-by="43:107;a"
                               >
                                 <a
                                   class="form__full"
                                   name="One-Off"
-                                  data-aura-rendered-by="44:130;a"
+                                  data-aura-rendered-by="44:107;a"
                                   href="javascript:void(0);"
                                   >單次捐款</a
                                 >
@@ -238,86 +410,86 @@
                           </div>
                           <div
                             class="form__contents"
-                            data-aura-rendered-by="46:130;a"
+                            data-aura-rendered-by="46:107;a"
                           >
                             <div
                               class="form__amounts"
-                              data-aura-rendered-by="47:130;a"
+                              data-aura-rendered-by="47:107;a"
                             >
                               <a
                                 class="form__amount-button"
                                 name="200"
-                                data-aura-rendered-by="61:130;a"
+                                data-aura-rendered-by="61:107;a"
                                 href="javascript:void(0);"
                                 ><span
                                   class="currency"
-                                  data-aura-rendered-by="62:130;a"
+                                  data-aura-rendered-by="62:107;a"
                                   >HKD</span
                                 ><span
                                   class="amount"
-                                  data-aura-rendered-by="64:130;a"
+                                  data-aura-rendered-by="64:107;a"
                                   >200</span
                                 ></a
                               ><a
                                 class="form__amount-button selected"
                                 name="300"
-                                data-aura-rendered-by="66:130;a"
+                                data-aura-rendered-by="66:107;a"
                                 href="javascript:void(0);"
                                 ><span
                                   class="currency"
-                                  data-aura-rendered-by="67:130;a"
+                                  data-aura-rendered-by="67:107;a"
                                   >HKD</span
                                 ><span
                                   class="amount"
-                                  data-aura-rendered-by="69:130;a"
+                                  data-aura-rendered-by="69:107;a"
                                   >300</span
                                 ></a
                               ><a
                                 class="form__amount-button"
                                 name="400"
-                                data-aura-rendered-by="71:130;a"
+                                data-aura-rendered-by="71:107;a"
                                 href="javascript:void(0);"
                                 ><span
                                   class="currency"
-                                  data-aura-rendered-by="72:130;a"
+                                  data-aura-rendered-by="72:107;a"
                                   >HKD</span
                                 ><span
                                   class="amount"
-                                  data-aura-rendered-by="74:130;a"
+                                  data-aura-rendered-by="74:107;a"
                                   >400</span
                                 ></a
                               ><a
                                 class="form__amount-button form__amount-other-button"
-                                data-aura-rendered-by="50:130;a"
+                                data-aura-rendered-by="50:107;a"
                                 href="javascript:void(0);"
                                 ><span
                                   class="amount"
-                                  data-aura-rendered-by="51:130;a"
+                                  data-aura-rendered-by="51:107;a"
                                   >其他金額</span
                                 ></a
                               >
                               <div
                                 class="amount-text"
-                                data-aura-rendered-by="54:130;a"
+                                data-aura-rendered-by="54:107;a"
                               >
                                 你的每月捐款，能幫助綠色和平為環境問題找到出路，並在全球各地落實環保工作。謝謝！
                               </div>
                             </div>
                             <div
                               class="form__donate"
-                              data-aura-rendered-by="57:130;a"
+                              data-aura-rendered-by="57:107;a"
                             >
                               <button
                                 class="form__donate-btn"
                                 type="button"
-                                data-aura-rendered-by="58:130;a"
+                                data-aura-rendered-by="58:107;a"
                               >
                                 立即捐助
                               </button>
                             </div>
                           </div>
                         </div>
-                        <!--render facet: 60:130;a-->
+                        <!--render facet: 60:107;a-->
                       </div>
                     </div>
                   </div>
@@ -333,26 +505,27 @@
           </div>
         </div>
         <div
-          class="main-bg main-bg_center slds-show_small"
+          class="main-visual_desktop main-visual main-bg main-bg_center"
           style="
-            background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/06/d10747c4-gp0strmfo_pressmedia_white.jpg);
+            background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg);
           "
-          data-aura-rendered-by="281:0"
+          data-aura-rendered-by="277:0"
         ></div>
         <div
-          class="main-visual main-bg main-bg_center slds-hide_small"
+          class="main-visual_mobile main-visual main-bg main-bg_center"
           style="
-            background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/06/d10747c4-gp0strmfo_pressmedia_white.jpg);
+            background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg);
           "
-          data-aura-rendered-by="282:0"
+          data-aura-rendered-by="278:0"
         >
           <img
             alt=""
-            src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/06/d10747c4-gp0strmfo_pressmedia_white.jpg"
-            data-aura-rendered-by="283:0"
+            src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg"
+            data-aura-rendered-by="279:0"
           />
         </div>
       </section>
+      <!-- end of landing -->
     </div>
     <!-- Footer -->
     <div
@@ -550,9 +723,7 @@
     </div>
     <!-- end of Footer -->
     <!-- custom scripts -->
-    <script src="https://change.greenpeace.org.hk/vendor/creditcard.js-master/dist/creditcard.min.js"></script>
     <script>
-      const creditcard = new CreditCard();
       const queryString = window.location.search;
       const getUrlParams = () => {
         const { searchParams } = new URL(window.location.href);
@@ -578,11 +749,8 @@
           const donateTYComponent = document.querySelector(
             ".cDonateThankYouCopy"
           );
-          const cardNumber = document.querySelector(
-            ".cDonationCreditCardInput input[name='cardnumber']"
-          );
-          donorInfoComponent.style.display = "none";
-          donateTYComponent.style.display = "none";
+          // donorInfoComponent.style.display = "none";
+          // donateTYComponent.style.display = "none";
           if (params.step) {
             webDonateComponent.classList.add(`step-${params.step}`);
             if (params.step == 3) {
@@ -595,26 +763,6 @@
               donateTYComponent.style.display = "block";
             }
           }
-          cardNumber.addEventListener("focus", function () {
-            this.parentElement.classList.add("cardNumber--active");
-          });
-          cardNumber.addEventListener("blur", function () {
-            this.parentElement.classList.remove("cardNumber--active");
-            let cardName = creditcard.getCreditCardNameByNumber(this.value);
-            switch (cardName) {
-              case "Visa":
-                this.parentElement.classList.add(`card--${cardName}`);
-                break;
-              case "Mastercard":
-                this.parentElement.classList.add(`card--${cardName}`);
-                break;
-              case "Amex":
-                this.parentElement.classList.add(`card--${cardName}`);
-                break;
-              default:
-                this.parentElement.classList.add("card--other");
-            }
-          });
         },
         false
       );
