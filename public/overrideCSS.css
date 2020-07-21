@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&subset=chinese-traditional");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  border-radius: 0;
+  border: none;
+  outline: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-before: 0;
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+  -webkit-padding-after: 0;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+body {
+  line-height: 1.5;
+}
+html:lang(en-HK),
+html:lang(en-HK) body {
+  font-family: "Roboto", sans-serif;
+}
+html:lang(en-HK) h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+html:lang(zh-Hant-HK),
+html:lang(zh-Hant-HK) body {
+  font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+    "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+}
+html:lang(zh-Hant-HK) h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+    "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+}
+html:lang(zh-Hant-TW),
+html:lang(zh-Hant-TW) body {
+  font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+    "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+}
+html:lang(zh-Hant-TW) h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+    "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+}
+/* zh-Hant-TW */
+html:lang(zh-Hant-TW) .footer__language {
+  display: none !important;
+}
+html:lang(zh-Hant-TW)
+  .form__amounts
+  .other-amount
+  .slds-form-element__control:before {
+  content: "新臺幣" !important;
+}
