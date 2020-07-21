@@ -58,7 +58,7 @@
     position: relative;
     abbr.slds-required {
       display: none;
-      color: $gp-warning;
+      color: $gp-red;
       position: absolute;
       right: -2px;
       top: 2px;
@@ -68,7 +68,7 @@
   // slds label
   .slds-form-element__help {
     font-size: 10px;
-    color: $gp-warning;
+    color: $gp-red;
     text-align: left;
     padding-left: 4px;
   }
@@ -89,7 +89,7 @@
     box-shadow: none;
   }
   .slds-has-error .slds-form-element__control {
-    border: 1px solid $gp-warning;
+    border: 1px solid $gp-red;
   }
   .slds-select_container {
     width: 100%;
@@ -153,23 +153,4 @@
 }
 
 .THIS {
-  .main__form-wrapper.step-1 {
-    .form__details {
-      display: none;
-    }
-    .title_step-2 {
-      display: none;
-    }
-  }
-  .main__form-wrapper.step-2 {
-    .form__handle {
-      display: none;
-    }
-    .form__amounts {
-      display: none;
-    }
-    .title_step-1 {
-      display: none;
-    }
-  }
 }

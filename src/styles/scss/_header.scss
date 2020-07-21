@@ -2,7 +2,7 @@
   .header {
     height: 50px;
     background-color: $white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 0 1px rgba(1, 0, 0, 0.1);
+    box-shadow: $shadow-button1;
     border-bottom: 2px solid $gp-green;
     &.header--green {
       background-color: $gp-green;

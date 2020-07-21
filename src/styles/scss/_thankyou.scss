@@ -1,8 +1,6 @@
 .THIS {
   .cDonateThankYouCopy {
     .form__share {
-      .subtext {
-      }
       .share-button {
         display: block;
         color: $white;
@@ -15,15 +13,32 @@
         border-radius: 4px;
         text-align: center;
         letter-spacing: 1px;
+        margin-bottom: 8px;
+        box-shadow: $shadow-button1;
+        transition: all 0.2s ease-in;
         &:hover {
+          text-decoration: none;
           color: $white;
+          box-shadow: $shadow-button2;
         }
       }
       .share-button_whatsapp {
         background: #25d366;
+        &:hover {
+          background: lighten(#25d366, 2%);
+        }
       }
       .share-button_fb {
         background: #3b5998;
+        &:hover {
+          background: lighten(#3b5998, 2%);
+        }
+      }
+      .share-button_line {
+        background: #00b900;
+        &:hover {
+          background: lighten(#00b900, 2%);
+        }
       }
       .social {
       }

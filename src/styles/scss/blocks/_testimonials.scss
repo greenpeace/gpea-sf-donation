@@ -1,2 +1,35 @@
 .THIS {
+  .testimonial {
+    margin: 20px;
+    max-width: 780px;
+    .testimonial__quote {
+      position: relative;
+      padding: 40px 60px;
+      .quote-text {
+        font-size: 1rem;
+        text-align: justify;
+      }
+    }
+    .testimonial__avatar {
+      text-align: center;
+      img {
+        height: 110px;
+        width: 110px;
+        margin: 0 auto 8px;
+        object-fit: cover;
+        border-radius: 99px;
+      }
+    }
+    .testimonial__person {
+      padding-bottom: 30px;
+      .person-name {
+        color: $gray1;
+        font-size: 1rem;
+      }
+      .person-description {
+        color: $gray2;
+        font-size: 0.8rem;
+      }
+    }
+  }
 }
