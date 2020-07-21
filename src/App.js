@@ -1,13 +1,11 @@
 import React from "react";
+// vendor
 // import { Button } from "@salesforce/design-system-react";
-//
 import "@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css";
 import "animate.css";
-import "swiper/swiper-bundle.css";
-import "aos/dist/aos.css";
+// import Swiper JS
 import Swiper from "swiper";
-import AOS from "aos/";
-import Layzr from "layzr.js";
+import "swiper/swiper-bundle.css";
 //
 import "./styles/App.scss";
 //
@@ -25,10 +23,7 @@ const swiperParams = {
     prevEl: ".swiper-button-prev",
   },
 };
-const aosParams = {};
 const swiper = new Swiper(".swiper-container", swiperParams);
-AOS.init(aosParams);
-const instance = Layzr();
 
 function App() {
   return <div className="app" style={{ display: "none" }}></div>;

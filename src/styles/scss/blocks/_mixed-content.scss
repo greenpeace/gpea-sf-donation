@@ -1,36 +1,37 @@
 .THIS {
-  .section-mixed-content {
+  .section_mixed-content {
+    min-height: 30vw;
     display: flex;
     align-items: stretch;
-    background-color: $gp-darkblue;
-    color: #fff;
+    &.section_mixed-content_darkblue {
+      background-color: $gp-darkblue;
+      color: #fff;
+    }
     .boxes {
       width: 100%;
       display: flex;
-      flex-direction: column;
-      width: 100%;
+      flex-direction: column-reverse;
+      align-items: stretch;
       @media (min-width: 992px) {
         flex-direction: row;
       }
     }
     .box {
-      min-height: 30vw;
+      min-height: 400px;
       flex: 1;
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
-      min-width: 0;
-      min-height: 300px;
     }
     .box-content {
       padding: 40px 20px;
       .box-header {
         font-size: 1.8rem;
+        margin-bottom: 10px;
         font-weight: bold;
       }
       .box-text {
         font-size: 1rem;
-        margin: 20px auto;
       }
     }
     .box-visual {

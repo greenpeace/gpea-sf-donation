@@ -1,12 +1,12 @@
-@import "./swiper", "./center-text", "./impacts", "./issues", "./mixed-content",
+@import "./center-text", "./impacts", "./issues", "./mixed-content",
   "./testimonials";
 //
 .THIS {
   .card {
     border-radius: 8px;
     box-shadow: $shadow-card1;
-    transition: box-shadow 0.2s ease-in;
     overflow: hidden;
+    transition: box-shadow 0.2s ease-in;
     &:hover {
       box-shadow: $shadow-card2;
     }
@@ -17,12 +17,50 @@
     object-fit: cover;
   }
 }
-
 .THIS {
-  .section {
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    width: auto;
+  }
+
+  .swiper-pagination {
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-image: none;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    height: 24px;
+    width: 24px;
+    border: 3px solid $gp-green;
+    transform: rotate(45deg);
+    &:after {
+      display: none;
+    }
+  }
+  .swiper-button-prev {
+    border-top: none;
+    border-right: none;
+  }
+  .swiper-button-next {
+    border-bottom: none;
+    border-left: none;
+  }
+  .swiper-container .swiper-slide,
+  .swiper-container .swiper-pagination,
+  .swiper-container [class^="swiper-button-"] {
+    transition: box-shadow 140ms linear, opacity 140ms linear,
+      filter 140ms linear, transform 140ms linear,
+      -webkit-box-shadow 140ms linear, -webkit-filter 140ms linear,
+      -webkit-transform 140ms linear;
+  }
+}
+.THIS {
+  section {
     .section-wrapper {
       max-width: 1440px;
       margin-left: auto;
@@ -33,35 +71,19 @@
         padding-right: 20px;
       }
     }
-    &.section_bg-white {
-      background-color: $white;
-    }
-    &.section_bg-gray {
-      background-color: $gray4;
-    }
-    &.section_bg-darkblue {
-      background-color: $gp-darkblue;
-    }
-    &.section_bg-lightblue {
-      background-color: $gp-lightblue;
-    }
-  }
-  .section__header {
-    width: 90%;
-    max-width: 780px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 40px;
-    h2 {
-      color: $gp-green;
-      font-size: 2rem;
-      font-weight: bold;
-      line-height: 1.2;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1rem;
-      margin: 20px auto;
+    .section__header {
+      max-width: 780px;
+      margin: 0 auto;
+      text-align: center;
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 1rem;
+      }
     }
   }
 }

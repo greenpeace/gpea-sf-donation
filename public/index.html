@@ -21,7 +21,98 @@
     <meta name="author" content="Greenpeace 綠色和平" />
     <meta property="og:site_name" content="Greenpeace 綠色和平" />
     <!-- end of custom meta -->
-    <link rel="stylesheet" type="text/css" href="./overrideCSS.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&subset=chinese-traditional");
+      @import url("https://fonts.googleapis.com/css?family=Roboto");
+      * {
+        border-radius: 0;
+        border: none;
+        outline: none;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        -webkit-margin-start: 0;
+        -webkit-margin-end: 0;
+        -webkit-padding-before: 0;
+        -webkit-padding-start: 0;
+        -webkit-padding-end: 0;
+        -webkit-padding-after: 0;
+      }
+
+      *,
+      *:before,
+      *:after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+      html {
+        font-size: 100%;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+      body {
+        line-height: 1.5;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
+      }
+      html:lang(en-HK),
+      html:lang(en-HK) body {
+        font-family: "Roboto", sans-serif;
+      }
+      html:lang(en-HK) h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Roboto", sans-serif;
+      }
+      html:lang(zh-Hant-HK),
+      html:lang(zh-Hant-HK) body {
+        font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+          "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+      }
+      html:lang(zh-Hant-HK) h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+          "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+      }
+      html:lang(zh-Hant-TW),
+      html:lang(zh-Hant-TW) body {
+        font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+          "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+      }
+      html:lang(zh-Hant-TW) h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+          "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+      }
+      /* zh-Hant-TW */
+      html:lang(zh-Hant-TW) .footer__language {
+        display: none !important;
+      }
+      html:lang(zh-Hant-TW)
+        .form__amounts
+        .other-amount
+        .slds-form-element__control:before {
+        content: "新臺幣" !important;
+      }
+    </style>
+    <!-- end of custom meta -->
   </head>
   <body class="THIS">
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -59,2265 +150,382 @@
       </div>
     </div>
     <!-- end of Header -->
-    <div class="s1">
-      <div class="main" data-aura-rendered-by="274:0">
-        <section class="section section_landing" data-aura-rendered-by="275:0">
-          <!--render facet: 3:2;a-->
+    <div class="main" data-aura-rendered-by="278:0">
+      <section class="section_issues">
+        <div class="section__header">
+          <h2>How your gift is making impacts</h2>
+          <p>
+            Every penny counts in the fight for our world. Learn more about the
+            issues we work on.
+          </p>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card issue">
+                <div class="issue__header">
+                  <h2>海洋 Oceans</h2>
+                  <p>
+                    每年有逾萬噸塑膠垃圾流入海洋，塑膠不能自然降解，在水中分解成體積比沙粒、塵埃更細的「微塑膠」，被海洋生物吸收後進入食物鏈，均直接影響人體健康。
+                  </p>
+                </div>
+                <div class="issue__image">
+                  <img
+                    class="img_fit"
+                    src="https://d33wubrfki0l68.cloudfront.net/a9c7e461090fc25097e6391a5bb823b0f28ba008/1672b/images/css/object-fit/example-object-fit.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section class="section_impacts">
+        <div class="section__header">
+          <h2>Our impact is global</h2>
+          <p>
+            Greenpeace is comprised of 27 independent regional organisations in
+            over 55 countries and regions across Europe, the Americas, Africa,
+            Asia and the Pacific.
+          </p>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="impact">
+                <img
+                  class="img_fit"
+                  src="https://d33wubrfki0l68.cloudfront.net/a9c7e461090fc25097e6391a5bb823b0f28ba008/1672b/images/css/object-fit/example-object-fit.jpg"
+                  alt=""
+                />
+                <span class="impact__tag">Arctic</span>
+                <p class="impact__title">
+                  俄羅斯漏油緊急狀態，不要讓北極孤獨哀鳴！
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+
+      <section class="section_testimonials">
+        <div class="section__header">
+          <h2>Our impact is global</h2>
+          <p>
+            Greenpeace is comprised of 27 independent regional organisations in
+            over 55 countries and regions across Europe, the Americas, Africa,
+            Asia and the Pacific.
+          </p>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card testimonial">
+                <div class="avatar testimonial__avatar">
+                  <img
+                    src="https://d33wubrfki0l68.cloudfront.net/a9c7e461090fc25097e6391a5bb823b0f28ba008/1672b/images/css/object-fit/example-object-fit.jpg"
+                    alt=""
+                  />
+                  <div class="testimonial__quote">
+                    <p class="quote-text">
+                      We are living in a time of great environmental challenges
+                      and what happens here in East Asia will have an immense
+                      impact on the future of our planet. We feel so honoured to
+                      have your support and trust.
+                    </p>
+                  </div>
+                  <div>
+                    <p>Pang Cheung Sze</p>
+                    <p>Executive Director of Greenpeace East Asia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section class="section_center-text">
+        <div class="section-wrapper">
+          <div class="center-text__content">
+            <h2 class="content-header">
+              We are 100% funded by people like you
+            </h2>
+            <p class="content-text">
+              To stay independent, Greenpeace does not accept money from
+              corporations or governments. We rely entirely on people like you.
+              Here's what you can expect when you join.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section_mixed-content section_mixed-content_darkblue">
+        <div class="section-grid boxes">
+          <div class="box">
+            <div class="box-content">
+              <h2 class="box-header">因為您，地球迎來更美好的明天。</h2>
+              <p class="box-text">
+                珍貴海洋正處於前所未有的危機：破壞性捕撈、污染及氣候變化，對獨特海洋生態構成嚴重威脅。慶幸只要同心協力，你我就能守護賴以為生的海洋生物，保障人類健康。
+              </p>
+            </div>
+          </div>
+          <div class="box fit">
+            <div class="box-visual"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- landing -->
+      <section class="section section_landing" data-aura-rendered-by="275:0">
+        <!--render facet: 3:2;a-->
+        <div
+          data-aura-rendered-by="73:2;a"
+          class="siteforceSldsOneColLayout siteforceContentArea"
+          data-aura-class="siteforceSldsOneColLayout siteforceContentArea"
+        >
           <div
-            data-aura-rendered-by="73:2;a"
-            class="siteforceSldsOneColLayout siteforceContentArea"
-            data-aura-class="siteforceSldsOneColLayout siteforceContentArea"
+            class="slds-col--padded comm-content-header comm-layout-column"
+            data-aura-rendered-by="74:2;a"
+          >
+            <!--render facet: 75:2;a-->
+          </div>
+          <div
+            class="slds-col--padded contentRegion comm-layout-column"
+            data-aura-rendered-by="76:2;a"
           >
             <div
-              class="slds-col--padded comm-content-header comm-layout-column"
-              data-aura-rendered-by="74:2;a"
-            >
-              <!--render facet: 75:2;a-->
-            </div>
-            <div
-              class="slds-col--padded contentRegion comm-layout-column"
-              data-aura-rendered-by="76:2;a"
+              data-region-name="content"
+              data-item-id="a30b76b8-cac7-4a8e-a347-5ea1ec518ebb"
+              data-aura-rendered-by="70:2;a"
             >
               <div
-                data-region-name="content"
-                data-item-id="a30b76b8-cac7-4a8e-a347-5ea1ec518ebb"
-                data-aura-rendered-by="70:2;a"
+                class="ui-widget"
+                data-item-id="b4c6fcd5-9ed8-402a-9aa9-6aa695f6308a"
+                data-priority=""
+                data-aura-rendered-by="67:2;a"
               >
+                <!--render facet: 54:2;a-->
                 <div
-                  class="ui-widget"
-                  data-item-id="b4c6fcd5-9ed8-402a-9aa9-6aa695f6308a"
-                  data-priority=""
-                  data-aura-rendered-by="67:2;a"
+                  class="cWebDonationCOPY"
+                  data-aura-rendered-by="56:2;a"
+                  data-aura-class="cWebDonationCOPY"
                 >
-                  <!--render facet: 54:2;a-->
+                  <div data-aura-rendered-by="59:2;a">
+                    <!--render facet: 60:2;a-->
+                  </div>
+                  <!--unrender facet: 61:2;a--><!--render facet: 41:2;a-->
+                  <div class="" data-aura-rendered-by="43:2;a">
+                    <div data-aura-rendered-by="46:2;a">
+                      <!--render facet: 47:2;a-->
+                    </div>
+                    <!--unrender facet: 48:2;a--><!--render facet: 1:98;a-->
+                  </div>
+                  <!--render facet: 9:107;a-->
+                  <div class="" data-aura-rendered-by="11:107;a">
+                    <div data-aura-rendered-by="14:107;a">
+                      <!--render facet: 15:107;a-->
+                    </div>
+                    <!--render facet: 16:107;a--><!--render facet: 18:107;a-->
+                  </div>
                   <div
-                    class="cWebDonationCOPY"
-                    data-aura-rendered-by="56:2;a"
-                    data-aura-class="cWebDonationCOPY"
+                    class="main-wrapper main-wrapper_right"
+                    data-aura-rendered-by="19:107;a"
                   >
-                    <div data-aura-rendered-by="59:2;a">
-                      <!--render facet: 60:2;a-->
-                    </div>
-                    <!--unrender facet: 61:2;a--><!--render facet: 41:2;a-->
-                    <div class="" data-aura-rendered-by="43:2;a">
-                      <div data-aura-rendered-by="46:2;a">
-                        <!--render facet: 47:2;a-->
-                      </div>
-                      <!--unrender facet: 48:2;a--><!--render facet: 1:122;a-->
-                    </div>
-                    <!--render facet: 9:131;a-->
-                    <div class="" data-aura-rendered-by="11:131;a">
-                      <div data-aura-rendered-by="14:131;a">
-                        <!--render facet: 15:131;a-->
-                      </div>
-                      <!--render facet: 16:131;a--><!--render facet: 18:131;a-->
-                    </div>
-                    <div
-                      class="main-wrapper main-wrapper_right"
-                      data-aura-rendered-by="19:131;a"
-                    >
+                    <div class="form-wrapper" data-aura-rendered-by="20:107;a">
+                      <!--render facet: 21:107;a-->
                       <div
-                        class="form-wrapper"
-                        data-aura-rendered-by="20:131;a"
+                        class="main__form-wrapper"
+                        data-aura-rendered-by="23:107;a"
                       >
-                        <!--render facet: 21:131;a-->
                         <div
-                          class="main__form-wrapper"
-                          data-aura-rendered-by="23:131;a"
+                          class="form__title title_step-1"
+                          data-aura-rendered-by="26:107;a"
+                        >
+                          <h1
+                            class="page__headline slds-assistive-text"
+                            data-aura-rendered-by="27:107;a"
+                          >
+                            守護地球，分秒必爭 -
+                            綠色和平進行實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。
+                          </h1>
+                          <h2
+                            class="form__headline"
+                            data-aura-rendered-by="31:107;a"
+                          >
+                            守護地球，分秒必爭
+                          </h2>
+                          <p
+                            class="form__leading"
+                            data-aura-rendered-by="33:107;a"
+                          >
+                            綠色和平進行實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。
+                          </p>
+                        </div>
+                        <div
+                          class="form-container"
+                          data-aura-rendered-by="35:107;a"
                         >
                           <div
-                            class="form__title title_step-1"
-                            data-aura-rendered-by="26:131;a"
+                            class="form__handle form__menu"
+                            data-aura-rendered-by="36:107;a"
                           >
-                            <h1
-                              class="page__headline slds-assistive-text"
-                              data-aura-rendered-by="27:131;a"
+                            <ul
+                              class="tab-menu"
+                              data-aura-rendered-by="37:107;a"
                             >
-                              守護地球，分秒必爭 -
-                              綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。
-                            </h1>
-                            <h2
-                              class="form__headline"
-                              data-aura-rendered-by="31:131;a"
-                            >
-                              守護地球，分秒必爭
-                            </h2>
-                            <p
-                              class="form__leading"
-                              data-aura-rendered-by="33:131;a"
-                            >
-                              綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。
-                            </p>
-                          </div>
-                          <div
-                            class="form-container"
-                            data-aura-rendered-by="35:131;a"
-                          >
-                            <div
-                              class="form__handle form__menu"
-                              data-aura-rendered-by="36:131;a"
-                            >
-                              <ul
-                                class="tab-menu"
-                                data-aura-rendered-by="37:131;a"
-                              >
-                                <li
-                                  class="tab-menu_monthly"
-                                  data-aura-rendered-by="39:131;a"
-                                >
-                                  <a
-                                    class="form__full selected"
-                                    name="Monthly"
-                                    data-aura-rendered-by="40:131;a"
-                                    href="javascript:void(0);"
-                                    >每月捐款</a
-                                  >
-                                </li>
-                                <li
-                                  class="tab-menu_oneoff"
-                                  data-aura-rendered-by="43:131;a"
-                                >
-                                  <a
-                                    class="form__full"
-                                    name="One-Off"
-                                    data-aura-rendered-by="44:131;a"
-                                    href="javascript:void(0);"
-                                    >單次捐款</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                            <div
-                              class="form__contents"
-                              data-aura-rendered-by="46:131;a"
-                            >
-                              <div
-                                class="form__amounts"
-                                data-aura-rendered-by="47:131;a"
+                              <li
+                                class="tab-menu_monthly"
+                                data-aura-rendered-by="39:107;a"
                               >
                                 <a
-                                  class="form__amount-button"
-                                  name="200"
-                                  data-aura-rendered-by="61:131;a"
+                                  class="form__full selected"
+                                  name="Monthly"
+                                  data-aura-rendered-by="40:107;a"
                                   href="javascript:void(0);"
-                                  ><span
-                                    class="currency"
-                                    data-aura-rendered-by="62:131;a"
-                                    >HKD</span
-                                  ><span
-                                    class="amount"
-                                    data-aura-rendered-by="64:131;a"
-                                    >200</span
-                                  ></a
-                                ><a
-                                  class="form__amount-button selected"
-                                  name="300"
-                                  data-aura-rendered-by="66:131;a"
-                                  href="javascript:void(0);"
-                                  ><span
-                                    class="currency"
-                                    data-aura-rendered-by="67:131;a"
-                                    >HKD</span
-                                  ><span
-                                    class="amount"
-                                    data-aura-rendered-by="69:131;a"
-                                    >300</span
-                                  ></a
-                                ><a
-                                  class="form__amount-button"
-                                  name="400"
-                                  data-aura-rendered-by="71:131;a"
-                                  href="javascript:void(0);"
-                                  ><span
-                                    class="currency"
-                                    data-aura-rendered-by="72:131;a"
-                                    >HKD</span
-                                  ><span
-                                    class="amount"
-                                    data-aura-rendered-by="74:131;a"
-                                    >400</span
-                                  ></a
-                                ><a
-                                  class="form__amount-button form__amount-other-button"
-                                  data-aura-rendered-by="50:131;a"
-                                  href="javascript:void(0);"
-                                  ><span
-                                    class="amount"
-                                    data-aura-rendered-by="51:131;a"
-                                    >其他金額</span
-                                  ></a
+                                  >每月捐款</a
                                 >
-                                <div
-                                  class="amount-text"
-                                  data-aura-rendered-by="54:131;a"
-                                >
-                                  您的每月捐款，將幫助綠色和平為環境問題找到出路，並在全球各地落實環保工作。謝謝！
-                                </div>
-                              </div>
-                              <div
-                                class="form__donate"
-                                data-aura-rendered-by="57:131;a"
+                              </li>
+                              <li
+                                class="tab-menu_oneoff"
+                                data-aura-rendered-by="43:107;a"
                               >
-                                <button
-                                  class="form__donate-btn"
-                                  type="button"
-                                  data-aura-rendered-by="58:131;a"
+                                <a
+                                  class="form__full"
+                                  name="One-Off"
+                                  data-aura-rendered-by="44:107;a"
+                                  href="javascript:void(0);"
+                                  >單次捐款</a
                                 >
-                                  立即捐助
-                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                          <div
+                            class="form__contents"
+                            data-aura-rendered-by="46:107;a"
+                          >
+                            <div
+                              class="form__amounts"
+                              data-aura-rendered-by="47:107;a"
+                            >
+                              <a
+                                class="form__amount-button"
+                                name="200"
+                                data-aura-rendered-by="61:107;a"
+                                href="javascript:void(0);"
+                                ><span
+                                  class="currency"
+                                  data-aura-rendered-by="62:107;a"
+                                  >HKD</span
+                                ><span
+                                  class="amount"
+                                  data-aura-rendered-by="64:107;a"
+                                  >200</span
+                                ></a
+                              ><a
+                                class="form__amount-button selected"
+                                name="300"
+                                data-aura-rendered-by="66:107;a"
+                                href="javascript:void(0);"
+                                ><span
+                                  class="currency"
+                                  data-aura-rendered-by="67:107;a"
+                                  >HKD</span
+                                ><span
+                                  class="amount"
+                                  data-aura-rendered-by="69:107;a"
+                                  >300</span
+                                ></a
+                              ><a
+                                class="form__amount-button"
+                                name="400"
+                                data-aura-rendered-by="71:107;a"
+                                href="javascript:void(0);"
+                                ><span
+                                  class="currency"
+                                  data-aura-rendered-by="72:107;a"
+                                  >HKD</span
+                                ><span
+                                  class="amount"
+                                  data-aura-rendered-by="74:107;a"
+                                  >400</span
+                                ></a
+                              ><a
+                                class="form__amount-button form__amount-other-button"
+                                data-aura-rendered-by="50:107;a"
+                                href="javascript:void(0);"
+                                ><span
+                                  class="amount"
+                                  data-aura-rendered-by="51:107;a"
+                                  >其他金額</span
+                                ></a
+                              >
+                              <div
+                                class="amount-text"
+                                data-aura-rendered-by="54:107;a"
+                              >
+                                你的每月捐款，能幫助綠色和平為環境問題找到出路，並在全球各地落實環保工作。謝謝！
                               </div>
                             </div>
+                            <div
+                              class="form__donate"
+                              data-aura-rendered-by="57:107;a"
+                            >
+                              <button
+                                class="form__donate-btn"
+                                type="button"
+                                data-aura-rendered-by="58:107;a"
+                              >
+                                立即捐助
+                              </button>
+                            </div>
                           </div>
-                          <!--render facet: 60:131;a-->
                         </div>
+                        <!--render facet: 60:107;a-->
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              class="slds-col--padded comm-content-footer comm-layout-column"
-              data-aura-rendered-by="78:2;a"
-            >
-              <!--render facet: 79:2;a-->
-            </div>
           </div>
           <div
-            class="main-visual_desktop main-visual main-bg main-bg_center"
-            style="
-              background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg);
-            "
-            data-aura-rendered-by="277:0"
-          ></div>
-          <div
-            class="main-visual_mobile main-visual main-bg main-bg_center"
-            style="
-              background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg);
-            "
-            data-aura-rendered-by="278:0"
+            class="slds-col--padded comm-content-footer comm-layout-column"
+            data-aura-rendered-by="78:2;a"
           >
-            <img
-              alt=""
-              src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg"
-              data-aura-rendered-by="279:0"
-            />
+            <!--render facet: 79:2;a-->
           </div>
-        </section>
-      </div>
-    </div>
-    <div class="s2">
-      <div class="main" data-aura-rendered-by="274:0">
-        <section class="section section_landing" data-aura-rendered-by="275:0">
-          <!--render facet: 3:2;a-->
-          <div
-            data-aura-rendered-by="73:2;a"
-            class="siteforceSldsOneColLayout siteforceContentArea"
-            data-aura-class="siteforceSldsOneColLayout siteforceContentArea"
-          >
-            <div
-              class="slds-col--padded comm-content-header comm-layout-column"
-              data-aura-rendered-by="74:2;a"
-            >
-              <!--render facet: 75:2;a-->
-            </div>
-            <div
-              class="slds-col--padded contentRegion comm-layout-column"
-              data-aura-rendered-by="76:2;a"
-            >
-              <div
-                data-region-name="content"
-                data-item-id="a30b76b8-cac7-4a8e-a347-5ea1ec518ebb"
-                data-aura-rendered-by="70:2;a"
-              >
-                <div
-                  class="ui-widget"
-                  data-item-id="b4c6fcd5-9ed8-402a-9aa9-6aa695f6308a"
-                  data-priority=""
-                  data-aura-rendered-by="67:2;a"
-                >
-                  <!--render facet: 54:2;a-->
-                  <div
-                    class="cWebDonationCOPY"
-                    data-aura-rendered-by="56:2;a"
-                    data-aura-class="cWebDonationCOPY"
-                  >
-                    <div data-aura-rendered-by="59:2;a">
-                      <!--render facet: 60:2;a-->
-                    </div>
-                    <!--unrender facet: 61:2;a--><!--render facet: 41:2;a-->
-                    <div class="" data-aura-rendered-by="43:2;a">
-                      <div data-aura-rendered-by="46:2;a">
-                        <!--render facet: 47:2;a-->
-                      </div>
-                      <!--unrender facet: 48:2;a--><!--render facet: 1:122;a-->
-                    </div>
-                    <!--render facet: 9:131;a-->
-                    <div class="" data-aura-rendered-by="11:131;a">
-                      <div data-aura-rendered-by="14:131;a">
-                        <!--render facet: 15:131;a-->
-                      </div>
-                      <!--render facet: 16:131;a--><!--render facet: 18:131;a-->
-                    </div>
-                    <div
-                      class="main-wrapper main-wrapper_right"
-                      data-aura-rendered-by="19:131;a"
-                    >
-                      <div
-                        class="form-wrapper"
-                        data-aura-rendered-by="20:131;a"
-                      >
-                        <!--render facet: 21:131;a-->
-                        <div
-                          class="main__form-wrapper"
-                          data-aura-rendered-by="23:131;a"
-                        >
-                          <!--unrender facet: 24:131;a-->
-                          <div
-                            class="form__title title_step-2"
-                            data-aura-rendered-by="324:0"
-                          >
-                            <h2
-                              class="form__headline"
-                              data-aura-rendered-by="325:0"
-                            >
-                              您的每月捐款為&nbsp;<strong
-                                data-aura-rendered-by="329:0"
-                                >HKD&nbsp;300</strong
-                              >&nbsp;
-                            </h2>
-                            <div
-                              class="edit-amount"
-                              data-aura-rendered-by="334:0"
-                            >
-                              <span data-aura-rendered-by="335:0"
-                                >其他金額</span
-                              >
-                            </div>
-                          </div>
-                          <div
-                            class="form-container"
-                            data-aura-rendered-by="337:0"
-                          >
-                            <div
-                              class="form__contents"
-                              data-aura-rendered-by="338:0"
-                            >
-                              <div
-                                class="form__details"
-                                data-aura-rendered-by="339:0"
-                              >
-                                <div
-                                  class="form__details-personal"
-                                  data-aura-rendered-by="340:0"
-                                >
-                                  <div
-                                    class="subtext"
-                                    data-aura-rendered-by="341:0"
-                                  >
-                                    <p data-aura-rendered-by="342:0">
-                                      請輸入捐款人資料
-                                    </p>
-                                  </div>
-                                  <div
-                                    class="row"
-                                    data-aura-rendered-by="344:0"
-                                  >
-                                    <div
-                                      class="col"
-                                      data-aura-rendered-by="345:0"
-                                    >
-                                      <lightning-input
-                                        class="slds-size_1-of-1 slds-form-element"
-                                        data-aura-rendered-by="346:0"
-                                        lightning-input_input-host=""
-                                        ><span
-                                          lightning-input_input=""
-                                          data-aria="true"
-                                          class="slds-assistive-text"
-                                        ></span
-                                        ><label
-                                          lightning-input_input=""
-                                          for="input-1"
-                                          class="slds-form-element__label slds-no-flex"
-                                          ><abbr
-                                            lightning-input_input=""
-                                            title="必要"
-                                            class="slds-required"
-                                            >*</abbr
-                                          >姓氏</label
-                                        >
-                                        <div
-                                          lightning-input_input=""
-                                          class="slds-form-element__control slds-grow"
-                                        >
-                                          <input
-                                            lightning-input_input=""
-                                            type="text"
-                                            id="input-1"
-                                            autocomplete="family-name"
-                                            maxlength="80"
-                                            placeholder="姓氏"
-                                            name="lname"
-                                            required=""
-                                            class="slds-input"
-                                          /></div
-                                      ></lightning-input>
-                                    </div>
-                                    <div
-                                      class="col"
-                                      data-aura-rendered-by="347:0"
-                                    >
-                                      <lightning-input
-                                        class="slds-size_1-of-1 slds-form-element"
-                                        data-aura-rendered-by="348:0"
-                                        lightning-input_input-host=""
-                                        ><span
-                                          lightning-input_input=""
-                                          data-aria="true"
-                                          class="slds-assistive-text"
-                                        ></span
-                                        ><label
-                                          lightning-input_input=""
-                                          for="input-2"
-                                          class="slds-form-element__label slds-no-flex"
-                                          ><abbr
-                                            lightning-input_input=""
-                                            title="必要"
-                                            class="slds-required"
-                                            >*</abbr
-                                          >名字</label
-                                        >
-                                        <div
-                                          lightning-input_input=""
-                                          class="slds-form-element__control slds-grow"
-                                        >
-                                          <input
-                                            lightning-input_input=""
-                                            type="text"
-                                            id="input-2"
-                                            autocomplete="given-name"
-                                            maxlength="40"
-                                            placeholder="名字"
-                                            name="fnamae"
-                                            required=""
-                                            class="slds-input"
-                                          /></div
-                                      ></lightning-input>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="row"
-                                    data-aura-rendered-by="349:0"
-                                  >
-                                    <div
-                                      class="col"
-                                      data-aura-rendered-by="350:0"
-                                    >
-                                      <lightning-input
-                                        class="slds-size_1-of-1 slds-form-element"
-                                        data-aura-rendered-by="351:0"
-                                        lightning-input_input-host=""
-                                        ><span
-                                          lightning-input_input=""
-                                          data-aria="true"
-                                          class="slds-assistive-text"
-                                        ></span
-                                        ><label
-                                          lightning-input_input=""
-                                          for="input-3"
-                                          class="slds-form-element__label slds-no-flex"
-                                          ><abbr
-                                            lightning-input_input=""
-                                            title="必要"
-                                            class="slds-required"
-                                            >*</abbr
-                                          >電郵地址</label
-                                        >
-                                        <div
-                                          lightning-input_input=""
-                                          class="slds-form-element__control slds-grow"
-                                        >
-                                          <input
-                                            lightning-input_input=""
-                                            type="text"
-                                            id="input-3"
-                                            autocomplete="email"
-                                            maxlength="255"
-                                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
-                                            placeholder="電郵地址"
-                                            name="email"
-                                            required=""
-                                            class="slds-input"
-                                          /></div
-                                      ></lightning-input>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="row"
-                                    data-aura-rendered-by="352:0"
-                                  >
-                                    <div
-                                      class="col"
-                                      data-aura-rendered-by="353:0"
-                                    >
-                                      <label
-                                        class="slds-form-element__label slds-no-flex"
-                                        for="input-3"
-                                        data-aura-rendered-by="354:0"
-                                        ><abbr
-                                          class="slds-required"
-                                          title="required"
-                                          data-aura-rendered-by="355:0"
-                                          >*</abbr
-                                        >手提號碼</label
-                                      ><!--render facet: 383:0-->
-                                      <div
-                                        class="cGPEAPhoneInput"
-                                        data-aura-rendered-by="385:0"
-                                        data-aura-class="cGPEAPhoneInput"
-                                      >
-                                        <div data-aura-rendered-by="388:0">
-                                          <!--render facet: 389:0-->
-                                        </div>
-                                        <!--render facet: 390:0-->
-                                        <div
-                                          class="slds-grid slds-grid_vertical-align-start"
-                                          data-aura-rendered-by="365:0"
-                                        >
-                                          <div
-                                            class="slds-col slds-size_3-of-12"
-                                            data-aura-rendered-by="366:0"
-                                          >
-                                            <div
-                                              class="slds-form-element label-hidden"
-                                              data-aura-rendered-by="370:0"
-                                            >
-                                              <label
-                                                class="slds-form-element__label slds-m-right_xxx-small"
-                                                for="367:0"
-                                                data-aura-rendered-by="371:0"
-                                                ><!--render facet: 372:0--><span
-                                                  class="slds-assistive-text"
-                                                  data-aura-rendered-by="373:0"
-                                                  >國家/地區代碼 Country/Region
-                                                  Code</span
-                                                ></label
-                                              >
-                                              <div
-                                                class="slds-form-element__control slds-grow"
-                                                data-aura-rendered-by="375:0"
-                                              >
-                                                <div
-                                                  class="slds-select_container"
-                                                  data-aura-rendered-by="376:0"
-                                                >
-                                                  <select
-                                                    class="slds-select"
-                                                    id="367:0"
-                                                    data-aura-rendered-by="377:0"
-                                                    name="country-code"
-                                                    ><option
-                                                      value="+852"
-                                                      label="+852"
-                                                      data-aura-rendered-by="393:0"
-                                                      >+852</option
-                                                    ><option
-                                                      value="+853"
-                                                      label="+853"
-                                                      data-aura-rendered-by="395:0"
-                                                      >+853</option
-                                                    ><option
-                                                      value="+886"
-                                                      label="+886"
-                                                      data-aura-rendered-by="397:0"
-                                                      >+886</option
-                                                    ><option
-                                                      value="+86"
-                                                      label="+86"
-                                                      data-aura-rendered-by="399:0"
-                                                      >+86</option
-                                                    ></select
-                                                  >
-                                                </div>
-                                              </div>
-                                              <!--render facet: 379:0-->
-                                            </div>
-                                          </div>
-                                          <div
-                                            class="slds-col slds-size_9-of-12"
-                                            data-aura-rendered-by="380:0"
-                                          >
-                                            <lightning-input
-                                              class="slds-show_inline slds-m-left_small slds-form-element"
-                                              data-aura-rendered-by="381:0"
-                                              lightning-input_input-host=""
-                                              ><span
-                                                lightning-input_input=""
-                                                data-aria="true"
-                                                class="slds-assistive-text"
-                                              ></span
-                                              ><label
-                                                lightning-input_input=""
-                                                for="input-4"
-                                                class="slds-form-element__label slds-no-flex slds-assistive-text"
-                                                ><abbr
-                                                  lightning-input_input=""
-                                                  title="必要"
-                                                  class="slds-required"
-                                                  >*</abbr
-                                                >手提號碼</label
-                                              >
-                                              <div
-                                                lightning-input_input=""
-                                                class="slds-form-element__control slds-grow"
-                                              >
-                                                <input
-                                                  lightning-input_input=""
-                                                  type="tel"
-                                                  id="input-4"
-                                                  autocomplete="tel"
-                                                  maxlength="8"
-                                                  pattern="[5,6,8,9]{1}[0-9]{7}"
-                                                  placeholder="手提號碼"
-                                                  name="phone"
-                                                  required=""
-                                                  class="slds-input"
-                                                /></div
-                                            ></lightning-input>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="row"
-                                    data-aura-rendered-by="401:0"
-                                  >
-                                    <div
-                                      class="col"
-                                      data-aura-rendered-by="402:0"
-                                    >
-                                      <div
-                                        class="slds-form-element slds-size_1-of-1 is-required"
-                                        data-aura-rendered-by="592:0"
-                                      >
-                                        <label
-                                          class="slds-form-element__label"
-                                          for="405:0"
-                                          data-aura-rendered-by="593:0"
-                                          ><abbr
-                                            class="slds-required"
-                                            title="必要"
-                                            data-aura-rendered-by="595:0"
-                                            >*</abbr
-                                          ><span
-                                            class=""
-                                            data-aura-rendered-by="597:0"
-                                            >出生年份</span
-                                          ></label
-                                        >
-                                        <div
-                                          class="slds-form-element__control slds-grow"
-                                          data-aura-rendered-by="599:0"
-                                        >
-                                          <div
-                                            class="slds-select_container"
-                                            data-aura-rendered-by="600:0"
-                                          >
-                                            <select
-                                              class="slds-select"
-                                              id="405:0"
-                                              data-aura-rendered-by="601:0"
-                                              required=""
-                                              ><option
-                                                value=""
-                                                label="出生年份"
-                                                data-aura-rendered-by="406:0"
-                                                >出生年份</option
-                                              ><option
-                                                value="2000"
-                                                label="2000"
-                                                data-aura-rendered-by="409:0"
-                                                >2000</option
-                                              ><option
-                                                value="1999"
-                                                label="1999"
-                                                data-aura-rendered-by="411:0"
-                                                >1999</option
-                                              ><option
-                                                value="1998"
-                                                label="1998"
-                                                data-aura-rendered-by="413:0"
-                                                >1998</option
-                                              ><option
-                                                value="1997"
-                                                label="1997"
-                                                data-aura-rendered-by="415:0"
-                                                >1997</option
-                                              ><option
-                                                value="1996"
-                                                label="1996"
-                                                data-aura-rendered-by="417:0"
-                                                >1996</option
-                                              ><option
-                                                value="1995"
-                                                label="1995"
-                                                data-aura-rendered-by="419:0"
-                                                >1995</option
-                                              ><option
-                                                value="1994"
-                                                label="1994"
-                                                data-aura-rendered-by="421:0"
-                                                >1994</option
-                                              ><option
-                                                value="1993"
-                                                label="1993"
-                                                data-aura-rendered-by="423:0"
-                                                >1993</option
-                                              ><option
-                                                value="1992"
-                                                label="1992"
-                                                data-aura-rendered-by="425:0"
-                                                >1992</option
-                                              ><option
-                                                value="1991"
-                                                label="1991"
-                                                data-aura-rendered-by="427:0"
-                                                >1991</option
-                                              ><option
-                                                value="1990"
-                                                label="1990"
-                                                data-aura-rendered-by="429:0"
-                                                >1990</option
-                                              ><option
-                                                value="1989"
-                                                label="1989"
-                                                data-aura-rendered-by="431:0"
-                                                >1989</option
-                                              ><option
-                                                value="1988"
-                                                label="1988"
-                                                data-aura-rendered-by="433:0"
-                                                >1988</option
-                                              ><option
-                                                value="1987"
-                                                label="1987"
-                                                data-aura-rendered-by="435:0"
-                                                >1987</option
-                                              ><option
-                                                value="1986"
-                                                label="1986"
-                                                data-aura-rendered-by="437:0"
-                                                >1986</option
-                                              ><option
-                                                value="1985"
-                                                label="1985"
-                                                data-aura-rendered-by="439:0"
-                                                >1985</option
-                                              ><option
-                                                value="1984"
-                                                label="1984"
-                                                data-aura-rendered-by="441:0"
-                                                >1984</option
-                                              ><option
-                                                value="1983"
-                                                label="1983"
-                                                data-aura-rendered-by="443:0"
-                                                >1983</option
-                                              ><option
-                                                value="1982"
-                                                label="1982"
-                                                data-aura-rendered-by="445:0"
-                                                >1982</option
-                                              ><option
-                                                value="1981"
-                                                label="1981"
-                                                data-aura-rendered-by="447:0"
-                                                >1981</option
-                                              ><option
-                                                value="1980"
-                                                label="1980"
-                                                data-aura-rendered-by="449:0"
-                                                >1980</option
-                                              ><option
-                                                value="1979"
-                                                label="1979"
-                                                data-aura-rendered-by="451:0"
-                                                >1979</option
-                                              ><option
-                                                value="1978"
-                                                label="1978"
-                                                data-aura-rendered-by="453:0"
-                                                >1978</option
-                                              ><option
-                                                value="1977"
-                                                label="1977"
-                                                data-aura-rendered-by="455:0"
-                                                >1977</option
-                                              ><option
-                                                value="1976"
-                                                label="1976"
-                                                data-aura-rendered-by="457:0"
-                                                >1976</option
-                                              ><option
-                                                value="1975"
-                                                label="1975"
-                                                data-aura-rendered-by="459:0"
-                                                >1975</option
-                                              ><option
-                                                value="1974"
-                                                label="1974"
-                                                data-aura-rendered-by="461:0"
-                                                >1974</option
-                                              ><option
-                                                value="1973"
-                                                label="1973"
-                                                data-aura-rendered-by="463:0"
-                                                >1973</option
-                                              ><option
-                                                value="1972"
-                                                label="1972"
-                                                data-aura-rendered-by="465:0"
-                                                >1972</option
-                                              ><option
-                                                value="1971"
-                                                label="1971"
-                                                data-aura-rendered-by="467:0"
-                                                >1971</option
-                                              ><option
-                                                value="1970"
-                                                label="1970"
-                                                data-aura-rendered-by="469:0"
-                                                >1970</option
-                                              ><option
-                                                value="1969"
-                                                label="1969"
-                                                data-aura-rendered-by="471:0"
-                                                >1969</option
-                                              ><option
-                                                value="1968"
-                                                label="1968"
-                                                data-aura-rendered-by="473:0"
-                                                >1968</option
-                                              ><option
-                                                value="1967"
-                                                label="1967"
-                                                data-aura-rendered-by="475:0"
-                                                >1967</option
-                                              ><option
-                                                value="1966"
-                                                label="1966"
-                                                data-aura-rendered-by="477:0"
-                                                >1966</option
-                                              ><option
-                                                value="1965"
-                                                label="1965"
-                                                data-aura-rendered-by="479:0"
-                                                >1965</option
-                                              ><option
-                                                value="1964"
-                                                label="1964"
-                                                data-aura-rendered-by="481:0"
-                                                >1964</option
-                                              ><option
-                                                value="1963"
-                                                label="1963"
-                                                data-aura-rendered-by="483:0"
-                                                >1963</option
-                                              ><option
-                                                value="1962"
-                                                label="1962"
-                                                data-aura-rendered-by="485:0"
-                                                >1962</option
-                                              ><option
-                                                value="1961"
-                                                label="1961"
-                                                data-aura-rendered-by="487:0"
-                                                >1961</option
-                                              ><option
-                                                value="1960"
-                                                label="1960"
-                                                data-aura-rendered-by="489:0"
-                                                >1960</option
-                                              ><option
-                                                value="1959"
-                                                label="1959"
-                                                data-aura-rendered-by="491:0"
-                                                >1959</option
-                                              ><option
-                                                value="1958"
-                                                label="1958"
-                                                data-aura-rendered-by="493:0"
-                                                >1958</option
-                                              ><option
-                                                value="1957"
-                                                label="1957"
-                                                data-aura-rendered-by="495:0"
-                                                >1957</option
-                                              ><option
-                                                value="1956"
-                                                label="1956"
-                                                data-aura-rendered-by="497:0"
-                                                >1956</option
-                                              ><option
-                                                value="1955"
-                                                label="1955"
-                                                data-aura-rendered-by="499:0"
-                                                >1955</option
-                                              ><option
-                                                value="1954"
-                                                label="1954"
-                                                data-aura-rendered-by="501:0"
-                                                >1954</option
-                                              ><option
-                                                value="1953"
-                                                label="1953"
-                                                data-aura-rendered-by="503:0"
-                                                >1953</option
-                                              ><option
-                                                value="1952"
-                                                label="1952"
-                                                data-aura-rendered-by="505:0"
-                                                >1952</option
-                                              ><option
-                                                value="1951"
-                                                label="1951"
-                                                data-aura-rendered-by="507:0"
-                                                >1951</option
-                                              ><option
-                                                value="1950"
-                                                label="1950"
-                                                data-aura-rendered-by="509:0"
-                                                >1950</option
-                                              ><option
-                                                value="1949"
-                                                label="1949"
-                                                data-aura-rendered-by="511:0"
-                                                >1949</option
-                                              ><option
-                                                value="1948"
-                                                label="1948"
-                                                data-aura-rendered-by="513:0"
-                                                >1948</option
-                                              ><option
-                                                value="1947"
-                                                label="1947"
-                                                data-aura-rendered-by="515:0"
-                                                >1947</option
-                                              ><option
-                                                value="1946"
-                                                label="1946"
-                                                data-aura-rendered-by="517:0"
-                                                >1946</option
-                                              ><option
-                                                value="1945"
-                                                label="1945"
-                                                data-aura-rendered-by="519:0"
-                                                >1945</option
-                                              ><option
-                                                value="1944"
-                                                label="1944"
-                                                data-aura-rendered-by="521:0"
-                                                >1944</option
-                                              ><option
-                                                value="1943"
-                                                label="1943"
-                                                data-aura-rendered-by="523:0"
-                                                >1943</option
-                                              ><option
-                                                value="1942"
-                                                label="1942"
-                                                data-aura-rendered-by="525:0"
-                                                >1942</option
-                                              ><option
-                                                value="1941"
-                                                label="1941"
-                                                data-aura-rendered-by="527:0"
-                                                >1941</option
-                                              ><option
-                                                value="1940"
-                                                label="1940"
-                                                data-aura-rendered-by="529:0"
-                                                >1940</option
-                                              ><option
-                                                value="1939"
-                                                label="1939"
-                                                data-aura-rendered-by="531:0"
-                                                >1939</option
-                                              ><option
-                                                value="1938"
-                                                label="1938"
-                                                data-aura-rendered-by="533:0"
-                                                >1938</option
-                                              ><option
-                                                value="1937"
-                                                label="1937"
-                                                data-aura-rendered-by="535:0"
-                                                >1937</option
-                                              ><option
-                                                value="1936"
-                                                label="1936"
-                                                data-aura-rendered-by="537:0"
-                                                >1936</option
-                                              ><option
-                                                value="1935"
-                                                label="1935"
-                                                data-aura-rendered-by="539:0"
-                                                >1935</option
-                                              ><option
-                                                value="1934"
-                                                label="1934"
-                                                data-aura-rendered-by="541:0"
-                                                >1934</option
-                                              ><option
-                                                value="1933"
-                                                label="1933"
-                                                data-aura-rendered-by="543:0"
-                                                >1933</option
-                                              ><option
-                                                value="1932"
-                                                label="1932"
-                                                data-aura-rendered-by="545:0"
-                                                >1932</option
-                                              ><option
-                                                value="1931"
-                                                label="1931"
-                                                data-aura-rendered-by="547:0"
-                                                >1931</option
-                                              ><option
-                                                value="1930"
-                                                label="1930"
-                                                data-aura-rendered-by="549:0"
-                                                >1930</option
-                                              ><option
-                                                value="1929"
-                                                label="1929"
-                                                data-aura-rendered-by="551:0"
-                                                >1929</option
-                                              ><option
-                                                value="1928"
-                                                label="1928"
-                                                data-aura-rendered-by="553:0"
-                                                >1928</option
-                                              ><option
-                                                value="1927"
-                                                label="1927"
-                                                data-aura-rendered-by="555:0"
-                                                >1927</option
-                                              ><option
-                                                value="1926"
-                                                label="1926"
-                                                data-aura-rendered-by="557:0"
-                                                >1926</option
-                                              ><option
-                                                value="1925"
-                                                label="1925"
-                                                data-aura-rendered-by="559:0"
-                                                >1925</option
-                                              ><option
-                                                value="1924"
-                                                label="1924"
-                                                data-aura-rendered-by="561:0"
-                                                >1924</option
-                                              ><option
-                                                value="1923"
-                                                label="1923"
-                                                data-aura-rendered-by="563:0"
-                                                >1923</option
-                                              ><option
-                                                value="1922"
-                                                label="1922"
-                                                data-aura-rendered-by="565:0"
-                                                >1922</option
-                                              ><option
-                                                value="1921"
-                                                label="1921"
-                                                data-aura-rendered-by="567:0"
-                                                >1921</option
-                                              ><option
-                                                value="1920"
-                                                label="1920"
-                                                data-aura-rendered-by="569:0"
-                                                >1920</option
-                                              ><option
-                                                value="1919"
-                                                label="1919"
-                                                data-aura-rendered-by="571:0"
-                                                >1919</option
-                                              ><option
-                                                value="1918"
-                                                label="1918"
-                                                data-aura-rendered-by="573:0"
-                                                >1918</option
-                                              ><option
-                                                value="1917"
-                                                label="1917"
-                                                data-aura-rendered-by="575:0"
-                                                >1917</option
-                                              ><option
-                                                value="1916"
-                                                label="1916"
-                                                data-aura-rendered-by="577:0"
-                                                >1916</option
-                                              ><option
-                                                value="1915"
-                                                label="1915"
-                                                data-aura-rendered-by="579:0"
-                                                >1915</option
-                                              ><option
-                                                value="1914"
-                                                label="1914"
-                                                data-aura-rendered-by="581:0"
-                                                >1914</option
-                                              ><option
-                                                value="1913"
-                                                label="1913"
-                                                data-aura-rendered-by="583:0"
-                                                >1913</option
-                                              ><option
-                                                value="1912"
-                                                label="1912"
-                                                data-aura-rendered-by="585:0"
-                                                >1912</option
-                                              ><option
-                                                value="1911"
-                                                label="1911"
-                                                data-aura-rendered-by="587:0"
-                                                >1911</option
-                                              ><option
-                                                value="1910"
-                                                label="1910"
-                                                data-aura-rendered-by="589:0"
-                                                >1910</option
-                                              ></select
-                                            >
-                                          </div>
-                                        </div>
-                                        <!--render facet: 603:0-->
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!--render facet: 604:0--><!--render facet: 605:0-->
-                                </div>
-                                <div
-                                  class="form__details-payment"
-                                  data-aura-rendered-by="606:0"
-                                >
-                                  <!--render facet: 607:0--><!--render facet: 611:0-->
-                                  <div
-                                    class="slds-grid slds-m-bottom_small cDonationCreditCardInput"
-                                    data-aura-rendered-by="613:0"
-                                    data-aura-class="cDonationCreditCardInput"
-                                  >
-                                    <div
-                                      class="slds-col"
-                                      data-aura-rendered-by="614:0"
-                                    >
-                                      <lightning-input
-                                        class="inputmode-numeric card-number slds-size_1-of-1 slds-form-element"
-                                        data-aura-rendered-by="615:0"
-                                        lightning-input_input-host=""
-                                        ><span
-                                          lightning-input_input=""
-                                          data-aria="true"
-                                          class="slds-assistive-text"
-                                        ></span
-                                        ><label
-                                          lightning-input_input=""
-                                          for="input-5"
-                                          class="slds-form-element__label slds-no-flex"
-                                          ><abbr
-                                            lightning-input_input=""
-                                            title="必要"
-                                            class="slds-required"
-                                            >*</abbr
-                                          >信用卡號碼</label
-                                        >
-                                        <div
-                                          lightning-input_input=""
-                                          class="slds-form-element__control slds-grow"
-                                        >
-                                          <input
-                                            lightning-input_input=""
-                                            type="text"
-                                            id="input-5"
-                                            autocomplete="cc-number"
-                                            maxlength="20"
-                                            pattern="[0-9]{4}-{1}[0-9]{4}-{1}[0-9]{4}-{1}[0-9]{1,4}\s*"
-                                            placeholder="信用卡號碼"
-                                            name="cardnumber"
-                                            required=""
-                                            class="slds-input"
-                                            inputmode="numeric"
-                                          /></div></lightning-input
-                                      ><span
-                                        class="card-icon"
-                                        data-aura-rendered-by="616:0"
-                                        ><!--render facet: 617:0--><!--render facet: 618:0--><!--render facet: 619:0--></span
-                                      >
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="slds-grid cDonationCreditCardInput"
-                                    data-aura-rendered-by="620:0"
-                                    data-aura-class="cDonationCreditCardInput"
-                                  >
-                                    <div
-                                      class="slds-col"
-                                      data-aura-rendered-by="621:0"
-                                    >
-                                      <lightning-input
-                                        class="inputmode-numeric inputgroup__app slds-show_inline expiry-date slds-form-element"
-                                        data-aura-rendered-by="622:0"
-                                        lightning-input_input-host=""
-                                        ><span
-                                          lightning-input_input=""
-                                          data-aria="true"
-                                          class="slds-assistive-text"
-                                        ></span
-                                        ><label
-                                          lightning-input_input=""
-                                          for="input-6"
-                                          class="slds-form-element__label slds-no-flex slds-assistive-text"
-                                          ><abbr
-                                            lightning-input_input=""
-                                            title="必要"
-                                            class="slds-required"
-                                            >*</abbr
-                                          >有效日期</label
-                                        >
-                                        <div
-                                          lightning-input_input=""
-                                          class="slds-form-element__control slds-grow"
-                                        >
-                                          <input
-                                            lightning-input_input=""
-                                            type="text"
-                                            id="input-6"
-                                            autocomplete="cc-exp"
-                                            maxlength="5"
-                                            pattern="[0-9]{2}\/{1}[0-9]{2}\s*"
-                                            placeholder="有效日期 MM/YY"
-                                            name="exp-date"
-                                            required=""
-                                            class="slds-input"
-                                            inputmode="numeric"
-                                          /></div
-                                      ></lightning-input>
-                                    </div>
-                                    <div
-                                      class="slds-col"
-                                      data-aura-rendered-by="623:0"
-                                    >
-                                      <lightning-input
-                                        class="inputmode-numeric inputgroup__app slds-show_inline slds-m-left_small slds-form-element"
-                                        data-aura-rendered-by="624:0"
-                                        lightning-input_input-host=""
-                                        ><span
-                                          lightning-input_input=""
-                                          data-aria="true"
-                                          class="slds-assistive-text"
-                                        ></span
-                                        ><label
-                                          lightning-input_input=""
-                                          for="input-7"
-                                          class="slds-form-element__label slds-no-flex slds-assistive-text"
-                                          ><abbr
-                                            lightning-input_input=""
-                                            title="必要"
-                                            class="slds-required"
-                                            >*</abbr
-                                          >安全碼</label
-                                        >
-                                        <div
-                                          lightning-input_input=""
-                                          class="slds-form-element__control slds-grow"
-                                        >
-                                          <input
-                                            lightning-input_input=""
-                                            type="text"
-                                            id="input-7"
-                                            autocomplete="cc-csc"
-                                            maxlength="4"
-                                            minlength="2"
-                                            pattern="[0-9]+"
-                                            placeholder="安全碼 CVV"
-                                            name="cvc"
-                                            required=""
-                                            class="slds-input"
-                                            inputmode="numeric"
-                                          /></div
-                                      ></lightning-input>
-                                    </div>
-                                  </div>
-                                  <!--render facet: 625:0-->
-                                </div>
-                                <div
-                                  class="form__details-consent"
-                                  data-aura-rendered-by="626:0"
-                                >
-                                  <div
-                                    class="row consent inputcheck"
-                                    data-aura-rendered-by="627:0"
-                                  >
-                                    <lightning-input
-                                      class="slds-m-horizontal_medium checkbox-input slds-form-element"
-                                      data-aura-rendered-by="628:0"
-                                      lightning-input_input-host=""
-                                      ><span
-                                        lightning-input_input=""
-                                        data-aria="true"
-                                        class="slds-assistive-text"
-                                      ></span>
-                                      <div
-                                        lightning-input_input=""
-                                        class="slds-form-element__control slds-grow"
-                                      >
-                                        <span
-                                          lightning-input_input=""
-                                          class="slds-checkbox"
-                                          ><input
-                                            lightning-input_input=""
-                                            type="checkbox"
-                                            id="checkbox-8"
-                                            value=""
-                                          /><label
-                                            lightning-input_input=""
-                                            for="checkbox-8"
-                                            class="slds-checkbox__label"
-                                            ><span
-                                              lightning-input_input=""
-                                              class="slds-checkbox_faux"
-                                            ></span
-                                            ><span
-                                              lightning-input_input=""
-                                              class="slds-form-element__label slds-assistive-text"
-                                              >&lt;p&gt;我願意收到綠色和平發送的通訊，讓我能掌握環保工作的最新脈動！我同意綠色和平按照&lt;a
-                                              href="https://www.greenpeace.org/hongkong/policies/privacy-and-cookies/"
-                                              target="_blank"&gt;私隱政策與個人資料收集政策&lt;/a&gt;
-                                              與我聯絡，包括
-                                              提供環保工作資訊及捐款呼籲等。&lt;/p&gt;</span
-                                            ></label
-                                          ></span
-                                        >
-                                      </div></lightning-input
-                                    >
-                                    <div
-                                      class="checkbox-label"
-                                      data-aura-rendered-by="629:0"
-                                    >
-                                      <p data-aura-rendered-by="630:0">
-                                        我願意收到綠色和平發送的通訊，讓我能掌握環保工作的最新脈動！我同意綠色和平按照<a
-                                          href="https://www.greenpeace.org/hongkong/policies/privacy-and-cookies/"
-                                          target="_blank"
-                                          >私隱政策與個人資料收集政策</a
-                                        >
-                                        與我聯絡，包括
-                                        提供環保工作資訊及捐款呼籲等。
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div
-                                class="form__donate"
-                                data-aura-rendered-by="631:0"
-                              >
-                                <button
-                                  class="form__donate-btn"
-                                  type="button"
-                                  data-aura-rendered-by="632:0"
-                                >
-                                  立即捐助
-                                </button>
-                              </div>
-                              <!--render facet: 634:0-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="slds-col--padded comm-content-footer comm-layout-column"
-              data-aura-rendered-by="78:2;a"
-            >
-              <!--render facet: 79:2;a-->
-            </div>
-          </div>
-          <div
-            class="main-visual_desktop main-visual main-bg main-bg_center"
-            style="
-              background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg);
-            "
-            data-aura-rendered-by="277:0"
-          ></div>
-          <div
-            class="main-visual_mobile main-visual main-bg main-bg_center"
-            style="
-              background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg);
-            "
-            data-aura-rendered-by="278:0"
-          >
-            <img
-              alt=""
-              src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg"
-              data-aura-rendered-by="279:0"
-            />
-          </div>
-        </section>
-      </div>
-    </div>
-    <div class="s3">
-      <div class="main" data-aura-rendered-by="274:0">
-        <section class="section section_landing" data-aura-rendered-by="275:0">
-          <!--render facet: 3:2;a-->
-          <div
-            data-aura-rendered-by="73:2;a"
-            class="siteforceSldsOneColLayout siteforceContentArea"
-            data-aura-class="siteforceSldsOneColLayout siteforceContentArea"
-          >
-            <div
-              class="slds-col--padded comm-content-header comm-layout-column"
-              data-aura-rendered-by="74:2;a"
-            >
-              <!--render facet: 75:2;a-->
-            </div>
-            <div
-              class="slds-col--padded contentRegion comm-layout-column"
-              data-aura-rendered-by="76:2;a"
-            >
-              <div
-                data-region-name="content"
-                data-item-id="a30b76b8-cac7-4a8e-a347-5ea1ec518ebb"
-                data-aura-rendered-by="70:2;a"
-              >
-                <div
-                  class="ui-widget"
-                  data-item-id="b4c6fcd5-9ed8-402a-9aa9-6aa695f6308a"
-                  data-priority=""
-                  data-aura-rendered-by="67:2;a"
-                >
-                  <!--render facet: 54:2;a-->
-                  <div
-                    class="cWebDonationCOPY"
-                    data-aura-rendered-by="56:2;a"
-                    data-aura-class="cWebDonationCOPY"
-                  >
-                    <div data-aura-rendered-by="59:2;a">
-                      <!--render facet: 60:2;a-->
-                    </div>
-                    <!--unrender facet: 61:2;a--><!--render facet: 41:2;a-->
-                    <div class="" data-aura-rendered-by="43:2;a">
-                      <div data-aura-rendered-by="46:2;a">
-                        <!--render facet: 47:2;a-->
-                      </div>
-                      <!--unrender facet: 48:2;a--><!--render facet: 1:122;a-->
-                    </div>
-                    <!--render facet: 9:131;a-->
-                    <div class="" data-aura-rendered-by="11:131;a">
-                      <div data-aura-rendered-by="14:131;a">
-                        <!--render facet: 15:131;a-->
-                      </div>
-                      <!--render facet: 16:131;a--><!--render facet: 18:131;a-->
-                    </div>
-                    <div
-                      class="main-wrapper main-wrapper_right"
-                      data-aura-rendered-by="19:131;a"
-                    >
-                      <div
-                        class="form-wrapper"
-                        data-aura-rendered-by="20:131;a"
-                      >
-                        <!--render facet: 861:0-->
-                        <div
-                          class="cDonateDonorInfoCopy"
-                          data-aura-rendered-by="863:0"
-                          data-aura-class="cDonateDonorInfoCopy"
-                        >
-                          <div data-aura-rendered-by="866:0">
-                            <!--render facet: 867:0-->
-                          </div>
-                          <!--render facet: 868:0--><!--render facet: 755:0-->
-                          <div
-                            class="main__form-wrapper"
-                            data-aura-rendered-by="757:0"
-                          >
-                            <div
-                              class="form__title title_step-3"
-                              data-aura-rendered-by="758:0"
-                            >
-                              <lightning-icon
-                                class="headline-tick slds-icon_container_circle slds-icon-action-approval slds-icon_container"
-                                title="Success"
-                                data-aura-rendered-by="759:0"
-                                ><lightning-primitive-icon
-                                  lightning-primitiveicon_primitiveicon-host=""
-                                  ><svg
-                                    lightning-primitiveIcon_primitiveIcon=""
-                                    focusable="false"
-                                    data-key="approval"
-                                    aria-hidden="true"
-                                    class="slds-icon"
-                                  >
-                                    <use
-                                      lightning-primitiveIcon_primitiveIcon=""
-                                      xlink:href="/hk/_slds/icons/action-sprite/svg/symbols.svg?cache=9.36.1#approval"
-                                    ></use></svg></lightning-primitive-icon
-                                ><span class="slds-assistive-text"
-                                  >Success</span
-                                ></lightning-icon
-                              >
-                              <h2
-                                class="form__headline"
-                                data-aura-rendered-by="760:0"
-                              >
-                                感謝您，Chris！
-                                <br
-                                  data-aura-rendered-by="765:0"
-                                />您的每月捐款已成功過帳。
-                              </h2>
-                              <div
-                                class="one-more-step"
-                                data-aura-rendered-by="769:0"
-                              >
-                                <p data-aura-rendered-by="770:0">
-                                  只差一點點....即可讓我們為您提供更合您心意的資訊：
-                                </p>
-                              </div>
-                            </div>
-                            <div
-                              class="form__contents"
-                              data-aura-rendered-by="772:0"
-                            >
-                              <div
-                                class="form__details"
-                                data-aura-rendered-by="773:0"
-                              >
-                                <div
-                                  class="form__details-address"
-                                  data-aura-rendered-by="774:0"
-                                >
-                                  <div
-                                    class="subtext"
-                                    data-aura-rendered-by="775:0"
-                                  >
-                                    <p data-aura-rendered-by="776:0">
-                                      請填上捐款人地址
-                                    </p>
-                                  </div>
-                                  <div
-                                    class="row"
-                                    data-aura-rendered-by="778:0"
-                                  >
-                                    <div
-                                      class="col"
-                                      data-aura-rendered-by="779:0"
-                                    >
-                                      <!--render facet: 790:0-->
-                                      <div
-                                        class="cGPEAHKInputAddress"
-                                        data-aura-rendered-by="792:0"
-                                        data-aura-class="cGPEAHKInputAddress"
-                                      >
-                                        <div data-aura-rendered-by="795:0">
-                                          <!--render facet: 796:0-->
-                                        </div>
-                                        <!--unrender facet: 797:0-->
-                                        <div
-                                          class="row slds-grid slds-gutters_x-small"
-                                          data-aura-rendered-by="1:264;a"
-                                        >
-                                          <div
-                                            class="slds-col slds-has-flexi-truncate"
-                                            role="listitem"
-                                            data-aura-rendered-by="2:264;a"
-                                          >
-                                            <div
-                                              class="slds-form-element"
-                                              data-aura-rendered-by="10:264;a"
-                                            >
-                                              <label
-                                                class="slds-form-element__label"
-                                                for="5:264;a"
-                                                data-aura-rendered-by="11:264;a"
-                                                ><!--render facet: 12:264;a--><span
-                                                  class=""
-                                                  data-aura-rendered-by="13:264;a"
-                                                  >區域</span
-                                                ></label
-                                              >
-                                              <div
-                                                class="slds-form-element__control slds-grow"
-                                                data-aura-rendered-by="15:264;a"
-                                              >
-                                                <div
-                                                  class="slds-select_container"
-                                                  data-aura-rendered-by="16:264;a"
-                                                >
-                                                  <select
-                                                    class="slds-select"
-                                                    id="5:264;a"
-                                                    data-aura-rendered-by="17:264;a"
-                                                    ><option
-                                                      value=""
-                                                      label="區域"
-                                                      data-aura-rendered-by="6:264;a"
-                                                      >區域</option
-                                                    ><option
-                                                      value="Hong Kong Island"
-                                                      label="香港島"
-                                                      data-aura-rendered-by="902:0"
-                                                      >香港島</option
-                                                    ><option
-                                                      value="Kowloon"
-                                                      label="九龍"
-                                                      data-aura-rendered-by="904:0"
-                                                      >九龍</option
-                                                    ><option
-                                                      value="New Territories"
-                                                      label="新界"
-                                                      data-aura-rendered-by="906:0"
-                                                      >新界</option
-                                                    ></select
-                                                  >
-                                                </div>
-                                              </div>
-                                              <!--render facet: 19:264;a-->
-                                            </div>
-                                          </div>
-                                          <div
-                                            class="slds-col slds-has-flexi-truncate"
-                                            role="listitem"
-                                            data-aura-rendered-by="20:264;a"
-                                          >
-                                            <div
-                                              class="slds-form-element"
-                                              data-aura-rendered-by="28:264;a"
-                                            >
-                                              <label
-                                                class="slds-form-element__label"
-                                                for="23:264;a"
-                                                data-aura-rendered-by="29:264;a"
-                                                ><!--render facet: 30:264;a--><span
-                                                  class=""
-                                                  data-aura-rendered-by="31:264;a"
-                                                  >地區</span
-                                                ></label
-                                              >
-                                              <div
-                                                class="slds-form-element__control slds-grow"
-                                                data-aura-rendered-by="33:264;a"
-                                              >
-                                                <div
-                                                  class="slds-select_container"
-                                                  data-aura-rendered-by="34:264;a"
-                                                >
-                                                  <select
-                                                    class="slds-select"
-                                                    id="23:264;a"
-                                                    data-aura-rendered-by="35:264;a"
-                                                    ><option
-                                                      value=""
-                                                      label="地區"
-                                                      data-aura-rendered-by="24:264;a"
-                                                      >地區</option
-                                                    ><!--render facet: 26:264;a--></select
-                                                  >
-                                                </div>
-                                              </div>
-                                              <!--render facet: 37:264;a-->
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="row slds-grid slds-gutters_small"
-                                          data-aura-rendered-by="38:264;a"
-                                        >
-                                          <div
-                                            class="slds-col slds-has-flexi-truncate"
-                                            role="listitem"
-                                            data-aura-rendered-by="39:264;a"
-                                          >
-                                            <div
-                                              class="slds-form-element"
-                                              data-aura-rendered-by="47:264;a"
-                                            >
-                                              <label
-                                                class="slds-form-element__label"
-                                                for="42:264;a"
-                                                data-aura-rendered-by="48:264;a"
-                                                ><!--render facet: 49:264;a--><span
-                                                  class=""
-                                                  data-aura-rendered-by="50:264;a"
-                                                  >分區</span
-                                                ></label
-                                              >
-                                              <div
-                                                class="slds-form-element__control slds-grow"
-                                                data-aura-rendered-by="52:264;a"
-                                              >
-                                                <div
-                                                  class="slds-select_container"
-                                                  data-aura-rendered-by="53:264;a"
-                                                >
-                                                  <select
-                                                    class="slds-select"
-                                                    id="42:264;a"
-                                                    data-aura-rendered-by="54:264;a"
-                                                    ><option
-                                                      value=""
-                                                      label="分區"
-                                                      data-aura-rendered-by="43:264;a"
-                                                      >分區</option
-                                                    ><!--render facet: 45:264;a--></select
-                                                  >
-                                                </div>
-                                              </div>
-                                              <!--render facet: 56:264;a-->
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="row slds-grid slds-gutters_small"
-                                          data-aura-rendered-by="57:264;a"
-                                        >
-                                          <div
-                                            class="slds-col slds-has-flexi-truncate"
-                                            role="listitem"
-                                            data-aura-rendered-by="58:264;a"
-                                          >
-                                            <lightning-input
-                                              data-aura-rendered-by="59:264;a"
-                                              class="slds-form-element"
-                                              lightning-input_input-host=""
-                                              ><span
-                                                lightning-input_input=""
-                                                data-aria="true"
-                                                class="slds-assistive-text"
-                                              ></span
-                                              ><label
-                                                lightning-input_input=""
-                                                for="input-11"
-                                                class="slds-form-element__label slds-no-flex"
-                                                >大廈 / 屋苑 /
-                                                街道名稱及號碼</label
-                                              >
-                                              <div
-                                                lightning-input_input=""
-                                                class="slds-form-element__control slds-grow"
-                                              >
-                                                <input
-                                                  lightning-input_input=""
-                                                  type="text"
-                                                  id="input-11"
-                                                  maxlength="255"
-                                                  placeholder="大廈 / 屋苑 / 街道名稱及號碼"
-                                                  class="slds-input"
-                                                /></div
-                                            ></lightning-input>
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="row slds-grid slds-gutters_small"
-                                          data-aura-rendered-by="60:264;a"
-                                        >
-                                          <div
-                                            class="slds-col slds-has-flexi-truncate"
-                                            role="listitem"
-                                            data-aura-rendered-by="61:264;a"
-                                          >
-                                            <lightning-input
-                                              data-aura-rendered-by="62:264;a"
-                                              class="slds-form-element"
-                                              lightning-input_input-host=""
-                                              ><span
-                                                lightning-input_input=""
-                                                data-aria="true"
-                                                class="slds-assistive-text"
-                                              ></span
-                                              ><label
-                                                lightning-input_input=""
-                                                for="input-12"
-                                                class="slds-form-element__label slds-no-flex"
-                                                >樓層及單位</label
-                                              >
-                                              <div
-                                                lightning-input_input=""
-                                                class="slds-form-element__control slds-grow"
-                                              >
-                                                <input
-                                                  lightning-input_input=""
-                                                  type="text"
-                                                  id="input-12"
-                                                  maxlength="255"
-                                                  placeholder="樓層及單位"
-                                                  class="slds-input"
-                                                /></div
-                                            ></lightning-input>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="row"
-                                    data-aura-rendered-by="801:0"
-                                  >
-                                    <div
-                                      class="col"
-                                      data-aura-rendered-by="802:0"
-                                    >
-                                      <div
-                                        class="slds-form-element"
-                                        data-aura-rendered-by="816:0"
-                                      >
-                                        <label
-                                          class="slds-form-element__label"
-                                          for="805:0"
-                                          data-aura-rendered-by="817:0"
-                                          ><!--render facet: 818:0--><span
-                                            class=""
-                                            data-aura-rendered-by="819:0"
-                                            >性別</span
-                                          ></label
-                                        >
-                                        <div
-                                          class="slds-form-element__control slds-grow"
-                                          data-aura-rendered-by="821:0"
-                                        >
-                                          <div
-                                            class="slds-select_container"
-                                            data-aura-rendered-by="822:0"
-                                          >
-                                            <select
-                                              class="slds-select"
-                                              id="805:0"
-                                              data-aura-rendered-by="823:0"
-                                              ><option
-                                                value=""
-                                                label="性別"
-                                                data-aura-rendered-by="806:0"
-                                                >性別</option
-                                              ><option
-                                                value="Male"
-                                                label="男"
-                                                data-aura-rendered-by="809:0"
-                                                >男</option
-                                              ><option
-                                                value="Female"
-                                                label="女"
-                                                data-aura-rendered-by="811:0"
-                                                >女</option
-                                              ><option
-                                                value="Not Stated"
-                                                label="其他"
-                                                data-aura-rendered-by="813:0"
-                                                >其他</option
-                                              ></select
-                                            >
-                                          </div>
-                                        </div>
-                                        <!--render facet: 825:0-->
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  class="form__details-issues"
-                                  data-aura-rendered-by="826:0"
-                                >
-                                  <div
-                                    class="subtext"
-                                    data-aura-rendered-by="827:0"
-                                  >
-                                    <p data-aura-rendered-by="828:0">
-                                      請選擇您喜歡的議題（可選多項）
-                                    </p>
-                                  </div>
-                                  <div
-                                    class="row"
-                                    data-aura-rendered-by="830:0"
-                                  >
-                                    <div
-                                      class="col"
-                                      data-aura-rendered-by="831:0"
-                                    >
-                                      <div
-                                        class="issues"
-                                        data-aura-rendered-by="832:0"
-                                      >
-                                        <div
-                                          class="issue1"
-                                          data-name="Interested_In_Oceans__c"
-                                          data-aura-rendered-by="833:0"
-                                        >
-                                          <div
-                                            class="tick"
-                                            data-aura-rendered-by="834:0"
-                                          ></div>
-                                          <div
-                                            class="title oceans"
-                                            data-aura-rendered-by="835:0"
-                                          >
-                                            海洋
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="issue2"
-                                          data-name="Interested_In_Health__c"
-                                          data-aura-rendered-by="837:0"
-                                        >
-                                          <div
-                                            class="tick"
-                                            data-aura-rendered-by="838:0"
-                                          ></div>
-                                          <div
-                                            class="title health"
-                                            data-aura-rendered-by="839:0"
-                                          >
-                                            生活
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="issue3"
-                                          data-name="Interested_In_Climate__c"
-                                          data-aura-rendered-by="841:0"
-                                        >
-                                          <div
-                                            class="tick"
-                                            data-aura-rendered-by="842:0"
-                                          ></div>
-                                          <div
-                                            class="title climate"
-                                            data-aura-rendered-by="843:0"
-                                          >
-                                            氣候
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="issue4"
-                                          data-name="Interested_In_Forest__c"
-                                          data-aura-rendered-by="845:0"
-                                        >
-                                          <div
-                                            class="tick"
-                                            data-aura-rendered-by="846:0"
-                                          ></div>
-                                          <div
-                                            class="title forest"
-                                            data-aura-rendered-by="847:0"
-                                          >
-                                            森林
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="issue5"
-                                          data-name="Interested_In_Plastics__c"
-                                          data-aura-rendered-by="849:0"
-                                        >
-                                          <div
-                                            class="tick"
-                                            data-aura-rendered-by="850:0"
-                                          ></div>
-                                          <div
-                                            class="title plastics"
-                                            data-aura-rendered-by="851:0"
-                                          >
-                                            塑膠
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="issue6"
-                                          data-name="Interested_In_Arctic__c"
-                                          data-aura-rendered-by="853:0"
-                                        >
-                                          <div
-                                            class="tick"
-                                            data-aura-rendered-by="854:0"
-                                          ></div>
-                                          <div
-                                            class="title arctic"
-                                            data-aura-rendered-by="855:0"
-                                          >
-                                            北極
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div
-                                class="form__donate form__submit"
-                                data-aura-rendered-by="857:0"
-                              >
-                                <button
-                                  class="form__donate-btn"
-                                  type="button"
-                                  data-aura-rendered-by="858:0"
-                                >
-                                  提交以上資料
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--unrender facet: 22:131;a-->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="slds-col--padded comm-content-footer comm-layout-column"
-              data-aura-rendered-by="78:2;a"
-            >
-              <!--render facet: 79:2;a-->
-            </div>
-          </div>
-          <div
-            class="main-visual_desktop main-visual main-bg main-bg_center"
-            style="
-              background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg);
-            "
-            data-aura-rendered-by="277:0"
-          ></div>
-          <div
-            class="main-visual_mobile main-visual main-bg main-bg_center"
-            style="
-              background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg);
-            "
-            data-aura-rendered-by="278:0"
-          >
-            <img
-              alt=""
-              src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg"
-              data-aura-rendered-by="279:0"
-            />
-          </div>
-        </section>
-      </div>
-    </div>
-    <div class="s4">
-      <div class="main" data-aura-rendered-by="274:0">
-        <section class="section section_landing" data-aura-rendered-by="275:0">
-          <!--render facet: 3:2;a-->
-          <div
-            data-aura-rendered-by="73:2;a"
-            class="siteforceSldsOneColLayout siteforceContentArea"
-            data-aura-class="siteforceSldsOneColLayout siteforceContentArea"
-          >
-            <div
-              class="slds-col--padded comm-content-header comm-layout-column"
-              data-aura-rendered-by="74:2;a"
-            >
-              <!--render facet: 75:2;a-->
-            </div>
-            <div
-              class="slds-col--padded contentRegion comm-layout-column"
-              data-aura-rendered-by="76:2;a"
-            >
-              <div
-                data-region-name="content"
-                data-item-id="a30b76b8-cac7-4a8e-a347-5ea1ec518ebb"
-                data-aura-rendered-by="70:2;a"
-              >
-                <div
-                  class="ui-widget"
-                  data-item-id="b4c6fcd5-9ed8-402a-9aa9-6aa695f6308a"
-                  data-priority=""
-                  data-aura-rendered-by="67:2;a"
-                >
-                  <!--render facet: 54:2;a-->
-                  <div
-                    class="cWebDonationCOPY"
-                    data-aura-rendered-by="56:2;a"
-                    data-aura-class="cWebDonationCOPY"
-                  >
-                    <div data-aura-rendered-by="59:2;a">
-                      <!--render facet: 60:2;a-->
-                    </div>
-                    <!--unrender facet: 61:2;a--><!--render facet: 41:2;a-->
-                    <div class="" data-aura-rendered-by="43:2;a">
-                      <div data-aura-rendered-by="46:2;a">
-                        <!--render facet: 47:2;a-->
-                      </div>
-                      <!--unrender facet: 48:2;a--><!--render facet: 1:122;a-->
-                    </div>
-                    <!--render facet: 9:131;a-->
-                    <div class="" data-aura-rendered-by="11:131;a">
-                      <div data-aura-rendered-by="14:131;a">
-                        <!--render facet: 15:131;a-->
-                      </div>
-                      <!--render facet: 16:131;a--><!--render facet: 18:131;a-->
-                    </div>
-                    <div
-                      class="main-wrapper main-wrapper_right"
-                      data-aura-rendered-by="19:131;a"
-                    >
-                      <div
-                        class="form-wrapper"
-                        data-aura-rendered-by="20:131;a"
-                      >
-                        <!--render facet: 861:0-->
-                        <div
-                          class="cDonateDonorInfoCopy"
-                          data-aura-rendered-by="863:0"
-                          data-aura-class="cDonateDonorInfoCopy"
-                        >
-                          <div data-aura-rendered-by="866:0">
-                            <!--render facet: 867:0-->
-                          </div>
-                          <!--unrender facet: 868:0--><!--render facet: 1003:0-->
-                          <div
-                            class="cDonateThankYouCopy"
-                            data-aura-rendered-by="1005:0"
-                            data-aura-class="cDonateThankYouCopy"
-                          >
-                            <div data-aura-rendered-by="1008:0">
-                              <!--render facet: 1009:0-->
-                            </div>
-                            <!--render facet: 1010:0-->
-                            <div
-                              class="main__form-wrapper"
-                              data-aura-rendered-by="979:0"
-                            >
-                              <div
-                                class="form__title title_step-4"
-                                data-aura-rendered-by="980:0"
-                              >
-                                <h2
-                                  class="form__headline"
-                                  data-aura-rendered-by="981:0"
-                                >
-                                  擴大改變的力量！
-                                </h2>
-                                <p
-                                  class="form__leading"
-                                  data-aura-rendered-by="983:0"
-                                >
-                                  您願意與親友分享捐助綠色和平的資訊嗎？
-                                </p>
-                              </div>
-                              <div
-                                class="form__contents"
-                                data-aura-rendered-by="985:0"
-                              >
-                                <div class="form__share">
-                                  <div class="subtext">
-                                    <p data-aura-rendered-by="988:0">
-                                      分享出去
-                                    </p>
-                                  </div>
-                                  <div
-                                    class="row"
-                                    data-aura-rendered-by="990:0"
-                                  >
-                                    <div
-                                      class="col"
-                                      data-aura-rendered-by="991:0"
-                                    >
-                                      <a
-                                        class="share-button share-button_whatsapp"
-                                        href="whatsapp://send?text=https%3A%2F%2Fdev-gpea.cs57.force.com%2Fhk%2Fs%2Fdonate%3Flanguage%3Dzh_HK"
-                                        target="_blank"
-                                        ><span class="icon"></span
-                                        ><span class="text"
-                                          >Whatsapp 分享</span
-                                        ></a
-                                      >
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="row"
-                                    data-aura-rendered-by="996:0"
-                                  >
-                                    <div
-                                      class="col"
-                                      data-aura-rendered-by="997:0"
-                                    >
-                                      <a
-                                        class="share-button share-button_fb"
-                                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdev-gpea.cs57.force.com%2Fhk%2Fs%2Fdonate%3Flanguage%3Dzh_HK"
-                                        target="_blank"
-                                        data-aura-rendered-by="998:0"
-                                        ><span
-                                          class="icon"
-                                          data-aura-rendered-by="999:0"
-                                        ></span
-                                        ><span
-                                          class="text"
-                                          data-aura-rendered-by="1000:0"
-                                          >Facebook 分享</span
-                                        ></a
-                                      >
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="row"
-                                    data-aura-rendered-by="996:0"
-                                  >
-                                    <div
-                                      class="col"
-                                      data-aura-rendered-by="997:0"
-                                    >
-                                      <a
-                                        class="share-button share-button_line"
-                                        href=""
-                                        target="_blank"
-                                        ><span class="icon"></span
-                                        ><span class="text">Line 分享</span></a
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!--unrender facet: 756:0-->
-                        </div>
-                        <!--unrender facet: 22:131;a-->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="slds-col--padded comm-content-footer comm-layout-column"
-              data-aura-rendered-by="78:2;a"
-            >
-              <!--render facet: 79:2;a-->
-            </div>
-          </div>
-          <div
-            class="main-visual_desktop main-visual main-bg main-bg_center"
-            style="
-              background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg);
-            "
-            data-aura-rendered-by="277:0"
-          ></div>
-          <div
-            class="main-visual_mobile main-visual main-bg main-bg_center"
-            style="
-              background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg);
-            "
-            data-aura-rendered-by="278:0"
-          >
-            <img
-              alt=""
-              src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg"
-              data-aura-rendered-by="279:0"
-            />
-          </div>
-        </section>
-      </div>
+        </div>
+        <div
+          class="main-visual_desktop main-visual main-bg main-bg_center"
+          style="
+            background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg);
+          "
+          data-aura-rendered-by="277:0"
+        ></div>
+        <div
+          class="main-visual_mobile main-visual main-bg main-bg_center"
+          style="
+            background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg);
+          "
+          data-aura-rendered-by="278:0"
+        >
+          <img
+            alt=""
+            src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg"
+            data-aura-rendered-by="279:0"
+          />
+        </div>
+      </section>
+      <!-- end of landing -->
     </div>
     <!-- Footer -->
     <div
@@ -2532,7 +740,6 @@
           console.log(params.step);
           console.log(queryString);
           const THIS = document.querySelector(".THIS");
-          const main = document.querySelector(".main");
           const webDonateComponent = document.querySelector(
             ".main__form-wrapper"
           );
@@ -2545,10 +752,16 @@
           // donorInfoComponent.style.display = "none";
           // donateTYComponent.style.display = "none";
           if (params.step) {
-            for (var i = 1; i <= 4; i++) {
-              document.querySelector(`.s${i}`).style.display = "none";
+            webDonateComponent.classList.add(`step-${params.step}`);
+            if (params.step == 3) {
+              webDonateComponent.style.display = "none";
+              donorInfoComponent.style.display = "block";
             }
-            document.querySelector(`.s${params.step}`).style.display = "block";
+            if (params.step == 4) {
+              webDonateComponent.style.display = "none";
+              donorInfoComponent.style.display = "none";
+              donateTYComponent.style.display = "block";
+            }
           }
         },
         false

@@ -13,21 +13,19 @@
     margin-right: auto;
     text-align: center;
     color: $black;
+    margin-bottom: 10px;
     .form__headline {
       font-size: 24px;
       font-weight: bold;
-      @media (min-width: 992px) {
-        font-size: 28px;
-      }
     }
     .form__leading {
+      margin-top: 10px;
       font-size: 14px;
       color: $gray1;
-      margin: 20px auto;
     }
     .slds-icon-action-approval {
       background: $gp-green;
-      margin-bottom: 4px;
+      margin-bottom: 10px;
     }
     .one-more-step {
       margin: 16px auto;
@@ -60,21 +58,22 @@
 .THIS {
   .form-wrapper {
     width: 100%;
-    padding: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     > div {
       width: 100%;
     }
+    @media (min-width: 576px) {
+      padding: 20px 0;
+    }
     @media (min-width: 992px) {
-      min-height: 50vw;
+      min-height: 40vw;
       max-width: 50vw;
-      padding: 60px 0;
+      padding: 40px 0;
     }
     @media (min-width: 1200px) {
       padding: 4vw 0;
-      min-height: 75vh;
     }
     .main__form-wrapper {
       width: 100%;
@@ -106,11 +105,12 @@
     background: $white;
     border-radius: 4px;
     overflow: hidden;
-    box-shadow: $shadow-card1;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
     border: 1px solid $gray4;
     transition: all 0.2s ease-in;
     &:hover {
-      box-shadow: $shadow-card2;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+      border-color: #ddd;
     }
     @media (min-width: 992px) {
       padding: 20px;
