@@ -59,7 +59,37 @@
       </div>
     </div>
     <!-- end of Header -->
+    <!-- extra blocks -->
     <div class="extra">
+      <section class="section section-center-text">
+        <div class="section-wrapper">
+          <div class="center-text__content">
+            <h2 class="content-header">
+              We are 100% funded by people like you
+            </h2>
+            <p class="content-text">
+              To stay independent, Greenpeace does not accept money from
+              corporations or governments. We rely entirely on people like you.
+              Here's what you can expect when you join.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section section-mixed-content">
+        <div class="section-grid boxes">
+          <div class="box">
+            <div class="box-content">
+              <h2 class="box-header">因為您，地球迎來更美好的明天。</h2>
+              <p class="box-text">
+                珍貴海洋正處於前所未有的危機：破壞性捕撈、污染及氣候變化，對獨特海洋生態構成嚴重威脅。慶幸只要同心協力，你我就能守護賴以為生的海洋生物，保障人類健康。
+              </p>
+            </div>
+          </div>
+          <div class="box fit">
+            <div class="box-visual"></div>
+          </div>
+        </div>
+      </section>
       <section class="section section-issues">
         <div class="section__header">
           <h2>How your gift is making impacts</h2>
@@ -136,23 +166,25 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="card testimonial">
-                <div class="avatar testimonial__avatar">
+                <div class="testimonial__quote">
+                  <p class="quote-text">
+                    We are living in a time of great environmental challenges
+                    and what happens here in East Asia will have an immense
+                    impact on the future of our planet. We feel so honoured to
+                    have your support and trust.
+                  </p>
+                </div>
+                <div class="testimonial__avatar">
                   <img
                     src="https://d33wubrfki0l68.cloudfront.net/a9c7e461090fc25097e6391a5bb823b0f28ba008/1672b/images/css/object-fit/example-object-fit.jpg"
                     alt=""
                   />
-                  <div class="testimonial__quote">
-                    <p class="quote-text">
-                      We are living in a time of great environmental challenges
-                      and what happens here in East Asia will have an immense
-                      impact on the future of our planet. We feel so honoured to
-                      have your support and trust.
-                    </p>
-                  </div>
-                  <div>
-                    <p>Pang Cheung Sze</p>
-                    <p>Executive Director of Greenpeace East Asia</p>
-                  </div>
+                </div>
+                <div class="testimonial__person">
+                  <p class="person-name">Pang Cheung Sze</p>
+                  <p class="person-description">
+                    Executive Director of Greenpeace East Asia
+                  </p>
                 </div>
               </div>
             </div>
@@ -162,36 +194,8 @@
           <div class="swiper-button-next"></div>
         </div>
       </section>
-      <section class="section section-center-text">
-        <div class="section-wrapper">
-          <div class="center-text__content">
-            <h2 class="content-header">
-              We are 100% funded by people like you
-            </h2>
-            <p class="content-text">
-              To stay independent, Greenpeace does not accept money from
-              corporations or governments. We rely entirely on people like you.
-              Here's what you can expect when you join.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="section section-mixed-content">
-        <div class="section-grid boxes">
-          <div class="box">
-            <div class="box-content">
-              <h2 class="box-header">因為您，地球迎來更美好的明天。</h2>
-              <p class="box-text">
-                珍貴海洋正處於前所未有的危機：破壞性捕撈、污染及氣候變化，對獨特海洋生態構成嚴重威脅。慶幸只要同心協力，你我就能守護賴以為生的海洋生物，保障人類健康。
-              </p>
-            </div>
-          </div>
-          <div class="box fit">
-            <div class="box-visual"></div>
-          </div>
-        </div>
-      </section>
     </div>
+    <!-- end of blocks -->
     <div class="s1">
       <div class="main" data-aura-rendered-by="274:0">
         <section class="section section_landing" data-aura-rendered-by="275:0">
@@ -2664,19 +2668,7 @@
           const params = getUrlParams();
           console.log(params.step);
           console.log(queryString);
-          const THIS = document.querySelector(".THIS");
           const main = document.querySelector(".main");
-          const webDonateComponent = document.querySelector(
-            ".main__form-wrapper"
-          );
-          const donorInfoComponent = document.querySelector(
-            ".cDonateDonorInfoCopy"
-          );
-          const donateTYComponent = document.querySelector(
-            ".cDonateThankYouCopy"
-          );
-          // donorInfoComponent.style.display = "none";
-          // donateTYComponent.style.display = "none";
           if (params.step) {
             for (var i = 1; i <= 4; i++) {
               document.querySelector(`.s${i}`).style.display = "none";

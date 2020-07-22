@@ -1,7 +1,7 @@
 .THIS {
   .testimonial {
-    margin: 20px;
     max-width: 780px;
+    text-align: center;
     .testimonial__quote {
       position: relative;
       padding: 40px 60px;
@@ -11,7 +11,6 @@
       }
     }
     .testimonial__avatar {
-      text-align: center;
       img {
         height: 110px;
         width: 110px;
@@ -21,7 +20,7 @@
       }
     }
     .testimonial__person {
-      padding-bottom: 30px;
+      padding-bottom: 20px;
       .person-name {
         color: $gray1;
         font-size: 1rem;

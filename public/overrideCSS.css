@@ -30,9 +30,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-}
-body {
-  line-height: 1.5;
+  overflow-x: hidden;
+  line-height: 1.42857;
+  transition: opacity 250ms ease, transform 250ms ease;
 }
 html:lang(en-HK),
 html:lang(en-HK) body {

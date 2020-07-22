@@ -9,13 +9,10 @@
   }
   .swiper-slide {
     width: 90%;
-    margin: 20px;
+    margin: 20px 10px;
     @media (min-width: 992px) {
+      margin: 20px;
       width: calc(100% - 100px);
-      max-width: 780px;
-    }
-    @media (min-width: 1200px) {
-      width: calc(100% - 200px);
       max-width: 780px;
     }
   }
@@ -23,9 +20,6 @@
   }
   .swiper-button-prev,
   .swiper-button-next {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 40px;
     width: 40px;
     position: absolute;
@@ -37,7 +31,15 @@
     background-color: $white;
     border-radius: 99px;
     box-shadow: $shadow-button1;
-    &:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 140ms linear;
+    &:hover,
+    &:focus {
+      box-shadow: $shadow-button2;
+    }
+    &:active {
       box-shadow: $shadow-button2;
     }
     &:after {

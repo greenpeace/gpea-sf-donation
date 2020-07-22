@@ -25,7 +25,11 @@ const swiperParams = {
     prevEl: ".swiper-button-prev",
   },
 };
-const aosParams = {};
+const aosParams = {
+  easing: "ease-in-out-cubic",
+  once: true,
+  disable: "phone",
+};
 const swiper = new Swiper(".swiper-container", swiperParams);
 AOS.init(aosParams);
 const instance = Layzr();

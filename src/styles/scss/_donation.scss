@@ -14,25 +14,20 @@
     text-align: center;
     color: $black;
     .form__headline {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: bold;
       @media (min-width: 992px) {
-        font-size: 28px;
+        font-size: 24px;
       }
     }
     .form__leading {
-      font-size: 14px;
+      text-align: center;
       color: $gray1;
       margin: 20px auto;
     }
     .slds-icon-action-approval {
       background: $gp-green;
       margin-bottom: 4px;
-    }
-    .one-more-step {
-      margin: 16px auto;
-      text-align: center;
-      font-size: 16px;
     }
     .edit-amount {
       margin: 10px auto;
@@ -60,7 +55,7 @@
 .THIS {
   .form-wrapper {
     width: 100%;
-    padding: 40px 0;
+    padding: 4vw 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,10 +65,8 @@
     @media (min-width: 992px) {
       min-height: 50vw;
       max-width: 50vw;
-      padding: 60px 0;
     }
     @media (min-width: 1200px) {
-      padding: 4vw 0;
       min-height: 75vh;
     }
     .main__form-wrapper {
@@ -120,7 +113,7 @@
     margin-top: 10px;
   }
   .form__details-consent {
-    margin: 32px auto 16px;
+    margin: 20px auto;
   }
   .form__handle {
     margin: 20px auto;
@@ -274,9 +267,10 @@
     }
   }
   .statement {
-    font-size: 12px;
+    font-size: 10px;
+    margin-top: 4px;
     margin-bottom: 10px;
-    color: $gray2;
+    color: $gray3;
   }
   .signature-consent {
     max-height: 150px;
