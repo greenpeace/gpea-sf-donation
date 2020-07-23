@@ -134,11 +134,9 @@
 .THIS {
   .cDonationCreditCardInput:first-child {
     position: relative;
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
     .card-number {
-      &.slds-has-error {
-        margin-bottom: 16px;
-      }
+      margin-bottom: 16px;
     }
     .card-icon {
       position: absolute;

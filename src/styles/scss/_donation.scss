@@ -13,6 +13,9 @@
     margin-right: auto;
     text-align: center;
     color: $black;
+    .title_step-1.form__headline {
+      font-size: 1.5rem;
+    }
     .form__headline {
       font-size: 20px;
       font-weight: bold;
@@ -21,6 +24,7 @@
       }
     }
     .form__leading {
+      font-size: 0.8rem;
       text-align: center;
       color: $gray1;
       margin: 20px auto;
@@ -105,6 +109,9 @@
     &:hover {
       box-shadow: $shadow-card2;
     }
+    @media (max-width: 320px) {
+      padding: 20px 8px;
+    }
     @media (min-width: 992px) {
       padding: 20px;
     }
@@ -185,7 +192,14 @@
         background-color: lighten($gray4, 2%);
       }
       .currency {
-        margin-right: 2px;
+        font-size: 10px;
+      }
+      .amount {
+        margin-left: 4px;
+        margin-right: 4px;
+      }
+      .unit {
+        font-size: 10px;
       }
       &.selected {
         background-color: $gp-green;

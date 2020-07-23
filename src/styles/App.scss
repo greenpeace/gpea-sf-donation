@@ -24,8 +24,9 @@ $shadow-card1: 0px 8px 16px rgba(50, 50, 71, 0.06),
   0px 8px 8px rgba(50, 50, 71, 0.08);
 $shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
   0px 12px 12px rgba(50, 50, 71, 0.08);
-@import "./scss/header", "./scss/footer", "./scss/overrideSLDS",
-  "./scss/donation", "./scss/donor", "./scss/thankyou", "./scss/language";
+@import "./scss/spinner", "./scss/header", "./scss/footer",
+  "./scss/overrideSLDS", "./scss/donation", "./scss/donor", "./scss/thankyou",
+  "./scss/language";
 @import "./scss/blocks/index.scss";
 //
 .THIS {
@@ -51,7 +52,7 @@ $shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
     }
   }
   .main-wrapper {
-    margin-bottom: -20vw;
+    margin-bottom: -15vw;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -110,5 +111,43 @@ $shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
     @media (max-width: 991.98px) {
       display: block;
     }
+  }
+}
+
+.THIS {
+  .label-hidden.slds-form-element > label {
+    display: none;
+  }
+
+  .checkbox-input {
+    min-width: 25px;
+  }
+
+  .checkbox-label {
+    cursor: pointer;
+  }
+
+  .border-none,
+  .border-none .slds-form-element__control {
+    border: none;
+  }
+
+  .donate-in-honor .slds-checkbox_faux {
+    margin-top: 5px;
+  }
+
+  .slds-spinner--brand.slds-spinner:after,
+  .slds-spinner--brand.slds-spinner:before,
+  .slds-spinner--brand .slds-spinner__dot-a:after,
+  .slds-spinner--brand .slds-spinner__dot-a:before,
+  .slds-spinner--brand .slds-spinner__dot-b:after,
+  .slds-spinner--brand .slds-spinner__dot-b:before,
+  .slds-spinner_brand.slds-spinner:after,
+  .slds-spinner_brand.slds-spinner:before,
+  .slds-spinner_brand .slds-spinner__dot-a:after,
+  .slds-spinner_brand .slds-spinner__dot-a:before,
+  .slds-spinner_brand .slds-spinner__dot-b:after,
+  .slds-spinner_brand .slds-spinner__dot-b:before {
+    background-color: #65cd05 !important;
   }
 }
