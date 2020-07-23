@@ -2,6 +2,7 @@ import React from "react";
 // import { Button } from "@salesforce/design-system-react";
 //
 import "@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import "animate.css";
 import "swiper/swiper-bundle.css";
 import "aos/dist/aos.css";

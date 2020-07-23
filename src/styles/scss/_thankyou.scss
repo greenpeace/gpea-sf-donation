@@ -1,5 +1,10 @@
 .THIS {
-  .cDonateThankYouCopy {
+  .title_step-4 {
+    .subtext {
+      text-align: center;
+      margin-bottom: 20px;
+      color: $gray1;
+    }
     .form__share {
       .share-button {
         display: block;
@@ -40,7 +45,36 @@
           background: lighten(#00b900, 2%);
         }
       }
-      .social {
+    }
+    .form__social {
+      margin-top: 20px;
+      .social__wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 280px;
+        margin: 20px auto;
+      }
+      .social-block {
+        text-align: center;
+        padding: 4px 8px;
+        border-radius: 2px;
+        a {
+          cursor: pointer;
+        }
+        i.fab {
+          font-size: 28px;
+          color: #fff;
+        }
+      }
+      .social_fb {
+        background: linear-gradient(237.38deg, #4d70ba 0%, #3b5999 100%);
+      }
+      .social_twitter {
+        background: linear-gradient(237.38deg, #4db5f5 0%, #1da1f2 100%);
+      }
+      .social_ig {
+        background: linear-gradient(237.38deg, #ea6d84 0%, #e4405f 100%);
       }
     }
   }

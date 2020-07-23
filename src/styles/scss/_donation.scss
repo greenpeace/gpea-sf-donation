@@ -191,16 +191,7 @@
         text-decoration: none;
         background-color: lighten($gray4, 2%);
       }
-      .currency {
-        font-size: 10px;
-      }
-      .amount {
-        margin-left: 4px;
-        margin-right: 4px;
-      }
-      .unit {
-        font-size: 10px;
-      }
+
       &.selected {
         background-color: $gp-green;
         color: $white;

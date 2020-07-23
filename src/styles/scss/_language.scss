@@ -1,8 +1,20 @@
 .THIS {
-  .zh_HK {
+  &.zh_HK {
   }
-  .en_HK {
+  &.en_HK {
   }
-  .zh_TW {
+  &.zh_TW {
+    .form__amounts {
+      .currency {
+        font-size: 10px;
+      }
+      .amount {
+        margin-left: 4px;
+        margin-right: 4px;
+      }
+      .unit {
+        font-size: 10px;
+      }
+    }
   }
 }

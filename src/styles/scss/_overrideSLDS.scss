@@ -139,10 +139,14 @@
       margin-bottom: 16px;
     }
     .card-icon {
+      padding-top: 6px;
       position: absolute;
-      right: 16px;
+      right: 1.5rem;
       top: 50%;
       transform: translateY(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .slds-form-element__help {
       position: absolute;

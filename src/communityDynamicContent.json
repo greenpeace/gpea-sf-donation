@@ -60,9 +60,9 @@
       },
       "lead": "地球只有一個，請幫助綠色和平守護它。",
       "image": {
-        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/7f32a6fd-2020-sf-donation-oceans.jpg",
+        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d90c1fd2-2020-sf-donation-oceans2.jpg",
         "position": "right",
-        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/7f32a6fd-2020-sf-donation-oceans.jpg"
+        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d90c1fd2-2020-sf-donation-oceans2.jpg"
       }
     },
     "climate": {
@@ -73,9 +73,9 @@
       },
       "lead": "地球只有一個，請幫助綠色和平守護它。",
       "image": {
-        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/01526e55-2020-sf-donation-climate2.jpg",
+        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg",
         "position": "right",
-        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/01526e55-2020-sf-donation-climate2.jpg"
+        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg"
       }
     },
     "climate2": {
@@ -86,9 +86,9 @@
       },
       "lead": "地球只有一個，請幫助綠色和平守護它。",
       "image": {
-        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ba6227f8-2020-sf-donation-climate5.jpg",
+        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d1ae62bc-2020-sf-donation-climate3.jpg",
         "position": "right",
-        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ba6227f8-2020-sf-donation-climate5.jpg"
+        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d1ae62bc-2020-sf-donation-climate3.jpg"
       }
     },
     "forests": {
@@ -102,6 +102,32 @@
         "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/06fd2273-2020-sf-donation-forests4.jpg",
         "position": "right",
         "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/06fd2273-2020-sf-donation-forests4.jpg"
+      }
+    },
+    "health": {
+      "title": "守護地球，分秒必爭",
+      "explainer": {
+        "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，改善空氣質素。謝謝！",
+        "onetime": "您的捐款，將立即幫助綠色和平尋找解決環境污染的辦法。謝謝！"
+      },
+      "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
+      "image": {
+        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d0382708-2020-sf-donation-health3.jpg",
+        "position": "left",
+        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d0382708-2020-sf-donation-health3.jpg"
+      }
+    },
+    "plastics": {
+      "title": "守護地球，分秒必爭",
+      "explainer": {
+        "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，減少塑膠污染。謝謝！",
+        "onetime": "您的捐款，將立即幫助綠色和平尋找解決塑膠污染的辦法。謝謝！"
+      },
+      "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
+      "image": {
+        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/73991107-2020-sf-donation-plastics.jpg",
+        "position": "right",
+        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/73991107-2020-sf-donation-plastics.jpg"
       }
     }
   },
@@ -158,7 +184,6 @@
         "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/9cd63433-2020-sf-donation-antarctic4.jpg"
       }
     },
-
     "climate": {
       "title": "Protecting our planet starts with you...",
       "explainer": {
@@ -167,9 +192,9 @@
       },
       "lead": "We only have one planet, please help Greenpeace take care of it.",
       "image": {
-        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/01526e55-2020-sf-donation-climate2.jpg",
+        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg",
         "position": "right",
-        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/01526e55-2020-sf-donation-climate2.jpg"
+        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg"
       }
     },
     "oceans": {
@@ -180,9 +205,9 @@
       },
       "lead": "We only have one planet, please help Greenpeace take care of it.",
       "image": {
-        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/7f32a6fd-2020-sf-donation-oceans.jpg",
+        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d90c1fd2-2020-sf-donation-oceans2.jpg",
         "position": "right",
-        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/7f32a6fd-2020-sf-donation-oceans.jpg"
+        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d90c1fd2-2020-sf-donation-oceans2.jpg"
       }
     },
     "forests": {
@@ -196,6 +221,32 @@
         "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/06fd2273-2020-sf-donation-forests4.jpg",
         "position": "right",
         "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/06fd2273-2020-sf-donation-forests4.jpg"
+      }
+    },
+    "health": {
+      "title": "Protecting our planet everyday.",
+      "explainer": {
+        "monthly": "Your monthly donation will help Greenpeace research solutions and to improve air quality. Thank you!",
+        "onetime": "Your donation will immediately help Greenpeace find solutions to pollution. Thank you!"
+      },
+      "lead": "Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+      "image": {
+        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d0382708-2020-sf-donation-health3.jpg",
+        "position": "left",
+        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d0382708-2020-sf-donation-health3.jpg"
+      }
+    },
+    "plastics": {
+      "title": "Protecting our planet everyday.",
+      "explainer": {
+        "monthly": "Your monthly donation will help Greenpeace research solutions and to improve air quality. Thank you!",
+        "onetime": "Your donation will immediately help Greenpeace find solutions to pollution. Thank you!"
+      },
+      "lead": "Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+      "image": {
+        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d5e10c3d-2020-sf-donation-health2.jpg",
+        "position": "right",
+        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d5e10c3d-2020-sf-donation-health2.jpg"
       }
     }
   },
@@ -260,9 +311,9 @@
       },
       "lead": "我們只有一個地球，請幫助綠色和平守護它。",
       "image": {
-        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/7f32a6fd-2020-sf-donation-oceans.jpg",
+        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d90c1fd2-2020-sf-donation-oceans2.jpg",
         "position": "right",
-        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/7f32a6fd-2020-sf-donation-oceans.jpg"
+        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d90c1fd2-2020-sf-donation-oceans2.jpg"
       }
     },
     "climate": {
@@ -273,9 +324,9 @@
       },
       "lead": "地球只有一個，請幫助綠色和平守護它。",
       "image": {
-        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/01526e55-2020-sf-donation-climate2.jpg",
+        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg",
         "position": "right",
-        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/01526e55-2020-sf-donation-climate2.jpg"
+        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg"
       }
     },
     "climate2": {
@@ -286,9 +337,9 @@
       },
       "lead": "地球只有一個，請幫助綠色和平守護它。",
       "image": {
-        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ba6227f8-2020-sf-donation-climate5.jpg",
+        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d1ae62bc-2020-sf-donation-climate3.jpg",
         "position": "right",
-        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ba6227f8-2020-sf-donation-climate5.jpg"
+        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d1ae62bc-2020-sf-donation-climate3.jpg"
       }
     },
     "forests": {
@@ -302,6 +353,32 @@
         "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/06fd2273-2020-sf-donation-forests4.jpg",
         "position": "right",
         "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/06fd2273-2020-sf-donation-forests4.jpg"
+      }
+    },
+    "health": {
+      "title": "守護地球，分秒必爭",
+      "explainer": {
+        "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，改善空氣質素。謝謝！",
+        "onetime": "您的捐款，將立即幫助綠色和平尋找解決環境污染的辦法。謝謝！"
+      },
+      "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
+      "image": {
+        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d0382708-2020-sf-donation-health3.jpg",
+        "position": "left",
+        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d0382708-2020-sf-donation-health3.jpg"
+      }
+    },
+    "plastics": {
+      "title": "守護地球，分秒必爭",
+      "explainer": {
+        "monthly": "您的每月捐款，能幫助綠色和平推動環境永續方案，減少塑膠垃圾造成的污染。謝謝您！",
+        "onetime": "您的捐款，能即時幫助綠色和平推動減少塑膠垃圾污染的方案。謝謝您！"
+      },
+      "lead": "綠色和平進行實地研究調查，第一線見證記錄環境問題，請幫助我們繼續守護美好的自然環境。",
+      "image": {
+        "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/73991107-2020-sf-donation-plastics.jpg",
+        "position": "right",
+        "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/73991107-2020-sf-donation-plastics.jpg"
       }
     }
   }

@@ -1,0 +1,132 @@
+{
+  "general": {
+    "title": "Protecting our planet everyday.",
+    "explainer": {
+      "monthly": "Your monthly donation will help Greenpeace research solutions and to work globally to protect our planet. Thank you!",
+      "onetime": "Your donation will immediately help Greenpeace's work to protect our planet. Thank you!"
+    },
+    "lead": "Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/06/d10747c4-gp0strmfo_pressmedia_white.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/06/d10747c4-gp0strmfo_pressmedia_white.jpg"
+    }
+  },
+  "greenpeace": {
+    "title": "Protecting our planet starts with you...",
+    "explainer": {
+      "monthly": "Your monthly donation will sustain Greenpeace's work to care for and protect nature. Thank you!",
+      "onetime": "Your donation will immediately help Greenpeace care for nature. Thank you!"
+    },
+    "lead": "We only have one planet, please help Greenpeace take care of it.",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg"
+    }
+  },
+  "arctic": {
+    "title": "Protecting our planet everyday.",
+    "explainer": {
+      "monthly": "Your monthly donation will help Greenpeace research solutions and to protect the Arctic. Thank you!",
+      "onetime": "Your donation will immediately help Greenpeace care for nature. Thank you!"
+    },
+    "lead": "Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/c6d4eabb-2020-sf-donation-arctic1.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/c6d4eabb-2020-sf-donation-arctic1.jpg"
+    }
+  },
+  "antarctic": {
+    "title": "Protecting our planet everyday.",
+    "explainer": {
+      "monthly": "Your monthly donation will help Greenpeace research solutions and to protect the Antarctic. Thank you!",
+      "onetime": "Your donation will immediately help Greenpeace care for nature. Thank you!"
+    },
+    "lead": "Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/9cd63433-2020-sf-donation-antarctic4.jpg",
+      "position": "left",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/9cd63433-2020-sf-donation-antarctic4.jpg"
+    }
+  },
+  "climate": {
+    "title": "Protecting our planet starts with you...",
+    "explainer": {
+      "monthly": "Your monthly donation will help Greenpeace encourage more renewable energy. Thank you!",
+      "onetime": "Your donation will immediately help Greenpeace encourage more renewable energy. Thank you!"
+    },
+    "lead": "We only have one planet, please help Greenpeace take care of it.",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg"
+    }
+  },
+  "climate2": {
+    "title": "Protecting our planet starts with you...",
+    "explainer": {
+      "monthly": "Your monthly donation will help Greenpeace encourage more renewable energy. Thank you!",
+      "onetime": "Your donation will immediately help Greenpeace encourage more renewable energy. Thank you!"
+    },
+    "lead": "We only have one planet, please help Greenpeace take care of it.",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d1ae62bc-2020-sf-donation-climate3.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d1ae62bc-2020-sf-donation-climate3.jpg"
+    }
+  },
+  "oceans": {
+    "title": "Protecting our planet starts with you...",
+    "explainer": {
+      "monthly": "Your monthly donation will help Greenpeace protect our planets oceans. Thank you!",
+      "onetime": "Your donation will immediately help Greenpeace protect our oceans. Thank you!"
+    },
+    "lead": "We only have one planet, please help Greenpeace take care of it.",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d90c1fd2-2020-sf-donation-oceans2.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d90c1fd2-2020-sf-donation-oceans2.jpg"
+    }
+  },
+  "forests": {
+    "title": "Protecting our planet starts with you...",
+    "explainer": {
+      "monthly": "Your monthly donation will help Greenpeace protect our planets forests. Thank you!",
+      "onetime": "Your donation will immediately help Greenpeace protect our forests. Thank you!"
+    },
+    "lead": "We only have one planet, please help Greenpeace take care of it.",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/06fd2273-2020-sf-donation-forests4.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/06fd2273-2020-sf-donation-forests4.jpg"
+    }
+  },
+  "health": {
+    "title": "Protecting our planet everyday.",
+    "explainer": {
+      "monthly": "Your monthly donation will help Greenpeace research solutions and to improve air quality. Thank you!",
+      "onetime": "Your donation will immediately help Greenpeace find solutions to pollution. Thank you!"
+    },
+    "lead": "Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d0382708-2020-sf-donation-health3.jpg",
+      "position": "left",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d0382708-2020-sf-donation-health3.jpg"
+    }
+  },
+  "plastics": {
+    "title": "Protecting our planet everyday.",
+    "explainer": {
+      "monthly": "Your monthly donation will help Greenpeace research solutions and to improve air quality. Thank you!",
+      "onetime": "Your donation will immediately help Greenpeace find solutions to pollution. Thank you!"
+    },
+    "lead": "Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/73991107-2020-sf-donation-plastics.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/73991107-2020-sf-donation-plastics.jpg"
+    }
+  }
+}
