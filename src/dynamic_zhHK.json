@@ -7,9 +7,9 @@
     },
     "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
     "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg",
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg",
       "position": "right",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg"
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
     }
   },
   "greenpeace": {
@@ -28,7 +28,7 @@
   "antarctic": {
     "title": "守護地球，分秒必爭",
     "explainer": {
-      "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，並在全球各地落實環保工作。謝謝！",
+      "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，保護南極免受破壞。謝謝！",
       "onetime": "您的捐款，將立即幫助綠色和平守護我們的家園。謝謝！"
     },
     "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
@@ -59,9 +59,9 @@
     },
     "lead": "地球只有一個，請幫助綠色和平守護它。",
     "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d90c1fd2-2020-sf-donation-oceans2.jpg",
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/5e671d50-2020-sf-donation-oceans3.jpg",
       "position": "right",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d90c1fd2-2020-sf-donation-oceans2.jpg"
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/5e671d50-2020-sf-donation-oceans3.jpg"
     }
   },
   "climate": {

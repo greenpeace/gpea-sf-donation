@@ -114,6 +114,14 @@ $shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
   }
 }
 
+//
+
+.THIS {
+  .payment-details {
+    display: none;
+  }
+}
+
 .THIS {
   .label-hidden.slds-form-element > label {
     display: none;
@@ -148,6 +156,6 @@ $shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
   .slds-spinner_brand .slds-spinner__dot-a:before,
   .slds-spinner_brand .slds-spinner__dot-b:after,
   .slds-spinner_brand .slds-spinner__dot-b:before {
-    background-color: #65cd05 !important;
+    background-color: $gp-green !important;
   }
 }

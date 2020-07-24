@@ -7,13 +7,13 @@
     },
     "lead": "綠色和平進行實地研究調查，第一線見證記錄環境問題，請幫助我們繼續守護美好的自然環境。",
     "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg",
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg",
       "position": "right",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/ed8d0d34-2020-sf-donation-arctic1.jpg"
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
     }
   },
   "greenpeace": {
-    "title": "守護地球，從您而起",
+    "title": "守護地球，由您開始",
     "explainer": {
       "monthly": "您的每月捐款，支持著綠色和平守護大自然的任務。謝謝您！",
       "onetime": "您的捐款，能即時幫助綠色和平守護我們的家園。謝謝您！"
@@ -28,10 +28,10 @@
   "antarctic": {
     "title": "守護地球，分秒必爭",
     "explainer": {
-      "monthly": "您的每月捐款，支持著綠色和平守護大自然的任務。謝謝您！",
+      "monthly": "您的每月捐款，能幫助綠色和平推動環境永續方案，守護南極最後一片淨土。謝謝您！",
       "onetime": "您的捐款，能即時幫助綠色和平守護我們的家園。謝謝您！"
     },
-    "lead": "我們只有一個地球，請幫助綠色和平守護它。",
+    "lead": "綠色和平進行實地研究調查，第一線見證記錄環境問題，請幫助我們繼續守護美好的自然環境。",
     "image": {
       "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/9cd63433-2020-sf-donation-antarctic4.jpg",
       "position": "left",
@@ -41,10 +41,10 @@
   "arctic": {
     "title": "守護地球，分秒必爭",
     "explainer": {
-      "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，保護北極免受破壞。謝謝！",
-      "onetime": "您的捐款，將立即幫助綠色和平守護我們的家園。謝謝！"
+      "monthly": "您的每月捐款，能幫助綠色和平推動環境永續方案，守護北極最後一片淨土。謝謝您！",
+      "onetime": "您的捐款，能即時幫助綠色和平守護我們的家園。謝謝您！"
     },
-    "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
+    "lead": "綠色和平進行實地研究調查，第一線見證記錄環境問題，請幫助我們繼續守護美好的自然環境。",
     "image": {
       "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/c6d4eabb-2020-sf-donation-arctic1.jpg",
       "position": "right",
@@ -59,9 +59,9 @@
     },
     "lead": "我們只有一個地球，請幫助綠色和平守護它。",
     "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d90c1fd2-2020-sf-donation-oceans2.jpg",
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/5e671d50-2020-sf-donation-oceans3.jpg",
       "position": "right",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d90c1fd2-2020-sf-donation-oceans2.jpg"
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/5e671d50-2020-sf-donation-oceans3.jpg"
     }
   },
   "climate": {
@@ -106,10 +106,10 @@
   "health": {
     "title": "守護地球，分秒必爭",
     "explainer": {
-      "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，改善空氣質素。謝謝！",
-      "onetime": "您的捐款，將立即幫助綠色和平尋找解決環境污染的辦法。謝謝！"
+      "monthly": "您的每月捐款，能幫助綠色和平推動環境永續方案，進而改善空氣品質。謝謝您！",
+      "onetime": "您的捐款，能即時幫助綠色和平推動環境永續方案。謝謝您！"
     },
-    "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
+    "lead": "綠色和平進行實地研究調查，第一線見證記錄環境問題，請幫助我們繼續守護美好的自然環境。",
     "image": {
       "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d0382708-2020-sf-donation-health3.jpg",
       "position": "left",

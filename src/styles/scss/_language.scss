@@ -16,5 +16,11 @@
         font-size: 10px;
       }
     }
+    .other-amount .slds-form-element__control:before {
+      content: "新臺幣" !important;
+    }
+    .footer__language {
+      display: none !important;
+    }
   }
 }

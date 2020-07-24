@@ -7,9 +7,9 @@
     },
     "lead": "Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
     "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/06/d10747c4-gp0strmfo_pressmedia_white.jpg",
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg",
       "position": "right",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/06/d10747c4-gp0strmfo_pressmedia_white.jpg"
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
     }
   },
   "greenpeace": {
@@ -46,9 +46,9 @@
     },
     "lead": "Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
     "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/9cd63433-2020-sf-donation-antarctic4.jpg",
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg",
       "position": "left",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/9cd63433-2020-sf-donation-antarctic4.jpg"
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
     }
   },
   "climate": {
@@ -119,10 +119,10 @@
   "plastics": {
     "title": "Protecting our planet everyday.",
     "explainer": {
-      "monthly": "Your monthly donation will help Greenpeace research solutions and to improve air quality. Thank you!",
-      "onetime": "Your donation will immediately help Greenpeace find solutions to pollution. Thank you!"
+      "monthly": "Your monthly donation will help Greenpeace research solutions and to reduce plastic waste. Thank you!",
+      "onetime": "Your donation will immediately help Greenpeace find solutions to plastic waste. Thank you!"
     },
-    "lead": "Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+    "lead": "We only have one planet, please help Greenpeace take care of it.",
     "image": {
       "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/73991107-2020-sf-donation-plastics.jpg",
       "position": "right",
