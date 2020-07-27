@@ -1,23 +1,62 @@
 .THIS {
   &.zh_HK {
+    font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+      "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+        "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+    }
   }
   &.en_HK {
   }
   &.zh_TW {
+    font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+      "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
+        "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+    }
+  }
+}
+
+.THIS {
+  &.zh_HK,
+  &.en_HK {
+    .share-button_line {
+      display: none;
+    }
+  }
+}
+
+.THIS {
+  &.zh_TW {
     .form__amounts {
       .currency {
         font-size: 10px;
+        @media (min-width: 992px) {
+          font-size: 14px;
+        }
       }
       .amount {
         margin-left: 4px;
         margin-right: 4px;
       }
-      .unit {
-        font-size: 10px;
-      }
     }
     .other-amount .slds-form-element__control:before {
       content: "新臺幣" !important;
+    }
+    .share-button_whatsapp {
+      display: none;
     }
     .footer__language {
       display: none !important;

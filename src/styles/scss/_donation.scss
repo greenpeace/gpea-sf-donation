@@ -21,7 +21,7 @@
       margin: 10px auto;
       flex: 1;
       span {
-        font-size: 16px;
+        font-size: 14px;
         text-decoration: underline;
         color: $gray2;
         vertical-align: middle;
@@ -92,7 +92,7 @@
     overflow: hidden;
     box-shadow: $shadow-card1;
     border: 1px solid $gray4;
-    transition: all 0.2s ease-in;
+    transition: all 0.2s ease;
     &:hover {
       box-shadow: $shadow-card2;
     }
@@ -118,7 +118,7 @@
         overflow: hidden;
         border: 1px solid $gp-green;
         background: $white;
-        transition: all 0.2s ease-in;
+        transition: all 0.2s ease;
         &:only-child {
           border-radius: 4px !important;
         }
@@ -132,11 +132,15 @@
           height: 40px;
           width: 100%;
           color: $gp-green;
-          font-size: 16px;
+          font-size: 14px;
           text-decoration: none;
           display: flex;
           justify-content: center;
           align-items: center;
+          line-height: 2;
+          @media (min-width: 992px) {
+            font-size: 16px;
+          }
         }
         .selected {
           background-color: $gp-green;
@@ -158,7 +162,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
-    transition: all 0.2s ease-in;
+    transition: all 0.2s ease;
     .amount {
       margin-left: 2px;
     }
@@ -177,6 +181,7 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
+      line-height: 2;
       &:hover {
         text-decoration: none;
         background-color: lighten($gray4, 2%);
@@ -254,7 +259,7 @@
       border-radius: 4px;
       text-align: center;
       letter-spacing: 1px;
-      transition: all 0.2s ease-in;
+      transition: all 0.2s ease;
       &:hover {
         background-color: lighten($gp-green, 2%);
       }

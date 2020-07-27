@@ -81,7 +81,7 @@
     border: 1px solid $gray4;
     border-radius: 4px;
     position: relative;
-    transition: border-color ease-in-out 0.15s;
+    transition: all 0.2s ease;
     display: flex;
   }
   .slds-has-error .slds-select:focus,

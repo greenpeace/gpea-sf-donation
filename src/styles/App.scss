@@ -158,4 +158,16 @@ $shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
   .slds-spinner_brand .slds-spinner__dot-b:before {
     background-color: $gp-green !important;
   }
+  .slds-spinner_container .slds-icon_large {
+    width: 4.5rem !important;
+    height: 4.5rem !important;
+  }
+
+  .slds-spinner_container .slds-icon-text-success {
+    fill: $gp-green !important;
+  }
+
+  .slds-spinner_container .slds-icon-text-error {
+    fill: $gp-red !important;
+  }
 }

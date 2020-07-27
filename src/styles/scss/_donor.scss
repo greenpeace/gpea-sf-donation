@@ -9,8 +9,11 @@
       justify-content: space-around;
       margin: 8px auto;
       > div {
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        color: $gray4;
         margin: 4px;
-        color: #ccc;
         border: 1px solid $gray4;
         border-radius: 30px;
         height: 40px;
@@ -18,15 +21,7 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        transition: all 0.2s ease-in;
-        .title {
-          font-size: 14px;
-          text-align: center;
-        }
-        &:hover {
-          border: 1px solid $gp-green;
-          color: $gp-green;
-        }
+        transition: all 0.2s ease;
         &.selected {
           border: 1px solid $gp-green;
           color: $gp-green;

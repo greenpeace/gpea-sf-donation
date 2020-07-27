@@ -5,7 +5,7 @@
   .card {
     border-radius: 8px;
     box-shadow: $shadow-card1;
-    transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease;
     overflow: hidden;
     &:hover {
       box-shadow: $shadow-card2;

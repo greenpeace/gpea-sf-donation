@@ -5,77 +5,95 @@
       margin-bottom: 20px;
       color: $gray1;
     }
-    .form__share {
-      .share-button {
-        display: block;
+  }
+  .form__reference {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .form__share {
+    margin-top: 20px;
+    .subtext {
+      text-align: center;
+      color: $gray1;
+      margin-bottom: 20px;
+    }
+    .share-button {
+      display: block;
+      color: $white;
+      font-weight: bold;
+      font-size: 16px;
+      height: 48px;
+      line-height: 48px;
+      width: 100%;
+      border: none;
+      border-radius: 4px;
+      text-align: center;
+      margin-bottom: 4px;
+      box-shadow: $shadow-button1;
+      transition: all 0.2s ease;
+      &:hover {
+        text-decoration: none;
         color: $white;
-        font-weight: bold;
-        font-size: 16px;
-        height: 48px;
-        line-height: 48px;
-        width: 100%;
-        border: none;
-        border-radius: 4px;
-        text-align: center;
-        letter-spacing: 1px;
-        margin-bottom: 8px;
-        box-shadow: $shadow-button1;
-        transition: all 0.2s ease-in;
-        &:hover {
-          text-decoration: none;
-          color: $white;
-          box-shadow: $shadow-button2;
-        }
-      }
-      .share-button_whatsapp {
-        background: #25d366;
-        &:hover {
-          background: lighten(#25d366, 2%);
-        }
-      }
-      .share-button_fb {
-        background: #3b5998;
-        &:hover {
-          background: lighten(#3b5998, 2%);
-        }
-      }
-      .share-button_line {
-        background: #00b900;
-        &:hover {
-          background: lighten(#00b900, 2%);
-        }
+        box-shadow: $shadow-button2;
       }
     }
-    .form__social {
-      margin-top: 20px;
-      .social__wrapper {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        max-width: 280px;
-        margin: 20px auto;
+    .share-button_whatsapp {
+      background: #25d366;
+      &:hover {
+        background: lighten(#25d366, 2%);
       }
-      .social-block {
-        text-align: center;
-        padding: 4px 8px;
-        border-radius: 2px;
-        a {
-          cursor: pointer;
-        }
-        i.fab {
-          font-size: 28px;
-          color: #fff;
-        }
+    }
+    .share-button_fb {
+      background: #3b5998;
+      &:hover {
+        background: lighten(#3b5998, 2%);
       }
-      .social_fb {
-        background: linear-gradient(237.38deg, #4d70ba 0%, #3b5999 100%);
+    }
+    .share-button_line {
+      background: #00b900;
+      &:hover {
+        background: lighten(#00b900, 2%);
       }
-      .social_twitter {
-        background: linear-gradient(237.38deg, #4db5f5 0%, #1da1f2 100%);
+    }
+  }
+  .form__social {
+    margin-top: 20px;
+    .subtext {
+      text-align: center;
+      color: $gray1;
+      margin-bottom: 20px;
+    }
+    .social__wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 240px;
+      margin: 20px auto;
+    }
+    .social-block {
+      text-align: center;
+      padding: 8px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      &:hover {
+        box-shadow: $shadow-button2;
       }
-      .social_ig {
-        background: linear-gradient(237.38deg, #ea6d84 0%, #e4405f 100%);
+      a {
+        cursor: pointer;
       }
+      img {
+        max-width: 24px;
+      }
+    }
+    .social_fb {
+      background: linear-gradient(237.38deg, #4d70ba 0%, #3b5999 100%);
+    }
+    .social_twitter {
+      background: linear-gradient(237.38deg, #4db5f5 0%, #1da1f2 100%);
+    }
+    .social_ig {
+      background: linear-gradient(237.38deg, #ea6d84 0%, #e4405f 100%);
     }
   }
 }
