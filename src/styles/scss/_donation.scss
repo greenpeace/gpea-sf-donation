@@ -118,7 +118,7 @@
         overflow: hidden;
         border: 1px solid $gp-green;
         background: $white;
-        transition: all 0.2s ease;
+        transition: none;
         &:only-child {
           border-radius: 4px !important;
         }

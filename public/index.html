@@ -1,6 +1,52 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-HK" style="background: none;">
   <head>
+    <!-- meta -->
+    <style>
+      .async-hide {
+        opacity: 0 !important;
+      }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      var isSandbox = location.href.toLowerCase().indexOf(".force.com/") !== -1;
+      var isHK = location.href.toLowerCase().indexOf("/hk/s/") !== -1;
+
+      window.GTM_AUTH = isSandbox
+        ? isHK
+          ? "DMe5bNtR-fP_6oA-bDVfrA"
+          : "BlffFqiWVz9RVHuvTAajOA"
+        : null;
+
+      window.GTM_KEY = isHK ? "GTM-M6LZL75" : "GTM-WRM6WK6";
+      window.GTM_PREVIEW = isHK
+        ? "&gtm_preview=env-207&gtm_cookies_win=x"
+        : "&gtm_preview=env-210&gtm_cookies_win=x";
+      window.GTM_URL_PARAMS = window.GTM_AUTH
+        ? "&gtm_auth=" + window.GTM_AUTH + window.GTM_PREVIEW
+        : "";
+    </script>
+
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src =
+          "https://www.googletagmanager.com/gtm.js?id=" +
+          i +
+          dl +
+          window.GTM_URL_PARAMS;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", window.GTM_KEY);
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>gpea-sf-donation</title>
@@ -2491,6 +2537,15 @@
                                         <img
                                           class="social-logo"
                                           src="https://change.greenpeace.org.hk/static/icon/instagram-logo@2x.png"
+                                          alt=""
+                                        />
+                                      </a>
+                                    </div>
+                                    <div class="social-block social_line">
+                                      <a href="">
+                                        <img
+                                          class="social-logo"
+                                          src="https://change.greenpeace.org.hk/static/icon/line-logo@2x.png"
                                           alt=""
                                         />
                                       </a>
