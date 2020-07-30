@@ -51,6 +51,9 @@ $shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
       max-width: 200px;
     }
   }
+  .main {
+    min-height: 100vh;
+  }
   .main-wrapper {
     margin-bottom: -15vw;
     margin-left: auto;
