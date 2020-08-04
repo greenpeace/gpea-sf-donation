@@ -1,0 +1,258 @@
+{
+  "name": "Hong Kong",
+  "otherName": "香港",
+  "options": [
+    {
+      "name": "Hong Kong Island",
+      "otherName": "香港島",
+      "options": [
+        {
+          "name": "Central and Western",
+          "otherName": "中西區",
+          "options": [
+            { "name": "Kennedy Town", "otherName": "堅尼地城" },
+            { "name": "Shek Tong Tsui", "otherName": "石塘咀" },
+            { "name": "Sai Ying Pun", "otherName": "西營盤" },
+            { "name": "Sheung Wan", "otherName": "上環" },
+            { "name": "Central", "otherName": "中環" },
+            { "name": "Admiralty", "otherName": "金鐘" },
+            { "name": "Mid-levels", "otherName": "半山區" },
+            { "name": "Peak", "otherName": "山頂" }
+          ]
+        },
+        {
+          "name": "Eastern",
+          "otherName": "東區",
+          "options": [
+            { "name": "Tin Hau", "otherName": "天后" },
+            { "name": "Braemar Hill", "otherName": "寶馬山" },
+            { "name": "North Point", "otherName": "北角" },
+            { "name": "Quarry Bay", "otherName": "鰂魚涌" },
+            { "name": "Sai Wan Ho", "otherName": "西灣河" },
+            { "name": "Shau Kei Wan", "otherName": "筲箕灣" },
+            { "name": "Chai Wan", "otherName": "柴灣" },
+            { "name": "Siu Sai Wan", "otherName": "小西灣" }
+          ]
+        },
+        {
+          "name": "Southern",
+          "otherName": "南區",
+          "options": [
+            { "name": "Pok Fu Lam", "otherName": "薄扶林" },
+            { "name": "Aberdeen", "otherName": "香港仔" },
+            { "name": "Ap Lei Chao", "otherName": "鴨脷洲" },
+            { "name": "Wong Chuk Hang", "otherName": "黃竹坑" },
+            { "name": "Shouson Hill", "otherName": "壽臣山" },
+            { "name": "Repulse Bay", "otherName": "淺水灣" },
+            { "name": "Chung Hom Kok", "otherName": "舂磡角" },
+            { "name": "Stanley", "otherName": "赤柱" },
+            { "name": "Tai Tam", "otherName": "大潭" },
+            { "name": "Shek O", "otherName": "石澳" }
+          ]
+        },
+        {
+          "name": "Wan Chai",
+          "otherName": "灣仔區",
+          "options": [
+            { "name": "Wanchai", "otherName": "灣仔" },
+            { "name": "Causeway Bay", "otherName": "銅鑼灣" },
+            { "name": "Happy Valley", "otherName": "跑馬地" },
+            { "name": "Tai Hang", "otherName": "大坑" },
+            { "name": "So Kong Po", "otherName": "掃桿埔" },
+            { "name": "Jardine's Lookout", "otherName": "渣甸山" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kowloon",
+      "otherName": "九龍",
+      "options": [
+        {
+          "name": "Sham Shui Po",
+          "otherName": "深水埗區",
+          "options": [
+            { "name": "Mei Foo", "otherName": "美孚" },
+            { "name": "Lai Chi Kok", "otherName": "荔枝角" },
+            { "name": "Cheung Sha Wan", "otherName": "長沙灣" },
+            { "name": "Sham Shui Po", "otherName": "深水埗" },
+            { "name": "Shek Kip Mei", "otherName": "石硤尾" },
+            { "name": "Yau Yat Tsuen", "otherName": "又一村" },
+            { "name": "Tai Wo Ping", "otherName": "大窩坪" },
+            { "name": "Stonecutters Island", "otherName": "昂船洲" }
+          ]
+        },
+        {
+          "name": "Kowloon City",
+          "otherName": "九龍城區",
+          "options": [
+            { "name": "Hung Hom", "otherName": "紅磡" },
+            { "name": "To Kwa Wan", "otherName": "土瓜灣" },
+            { "name": "Ma Tau Kok", "otherName": "馬頭角" },
+            { "name": "Ma Tau Wai", "otherName": "馬頭圍" },
+            { "name": "Kai Tak", "otherName": "啟德" },
+            { "name": "Kowloon City", "otherName": "九龍城" },
+            { "name": "Ho Man Tin", "otherName": "何文田" },
+            { "name": "Kowloon Tong", "otherName": "九龍塘" },
+            { "name": "Beacon Hill", "otherName": "筆架山" }
+          ]
+        },
+        {
+          "name": "Wong Tai Sin",
+          "otherName": "黃大仙區",
+          "options": [
+            { "name": "San Po Kong", "otherName": "新蒲崗" },
+            { "name": "Wong Tai Sin", "otherName": "黃大仙" },
+            { "name": "Tung Tau", "otherName": "東頭" },
+            { "name": "Wang Tau Hom", "otherName": "橫頭磡" },
+            { "name": "Lok Fu", "otherName": "樂富" },
+            { "name": "Diamond Hill", "otherName": "鑽石山" },
+            { "name": "Tsz Wan Shan", "otherName": "慈雲山" },
+            { "name": "Ngau Chi Wan", "otherName": "牛池灣" }
+          ]
+        },
+        {
+          "name": "Kwun Tong",
+          "otherName": "觀塘區",
+          "options": [
+            { "name": "Ping Shek", "otherName": "平石" },
+            { "name": "Kowloon Bay", "otherName": "九龍灣" },
+            { "name": "Ngau Tau Kok", "otherName": "牛頭角" },
+            { "name": "Jordan Valley", "otherName": "佐敦谷" },
+            { "name": "Kwun Tong", "otherName": "觀塘" },
+            { "name": "Sau Mau Ping", "otherName": "秀茂坪" },
+            { "name": "Lam Tin", "otherName": "藍田" },
+            { "name": "Yau Tong", "otherName": "油塘" },
+            { "name": "Lei Yue Mun", "otherName": "鯉魚門" }
+          ]
+        },
+        {
+          "name": "Yau Tsim Mong",
+          "otherName": "油尖旺區",
+          "options": [
+            { "name": "Tsim Sha Tsui", "otherName": "尖沙咀" },
+            { "name": "Yau Ma Tei", "otherName": "油麻地" },
+            { "name": "West Kowloon Reclamation", "otherName": "西九龍填海區" },
+            { "name": "King's Park", "otherName": "京士柏" },
+            { "name": "Mong Kok", "otherName": "旺角" },
+            { "name": "Tai Kok Tsui", "otherName": "大角咀" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "New Territories",
+      "otherName": "新界",
+      "options": [
+        {
+          "name": "Islands",
+          "otherName": "離島區",
+          "options": [
+            { "name": "Cheung Chau", "otherName": "長洲" },
+            { "name": "Peng Chau", "otherName": "坪洲" },
+            { "name": "Lantau Island", "otherName": "大嶼山" },
+            { "name": "Lamma Island", "otherName": "南丫島" }
+          ]
+        },
+        {
+          "name": "Kwai Tsing",
+          "otherName": "葵青區",
+          "options": [
+            { "name": "Kwai Chung", "otherName": "葵涌" },
+            { "name": "Tsing Yi", "otherName": "青衣" }
+          ]
+        },
+        {
+          "name": "North",
+          "otherName": "北區",
+          "options": [
+            { "name": "Fanling", "otherName": "粉嶺" },
+            { "name": "Luen Wo Hui", "otherName": "聯和墟" },
+            { "name": "Sheung Shui", "otherName": "上水" },
+            { "name": "Shek Wu Hui", "otherName": "石湖墟" },
+            { "name": "Sha Tau Kok", "otherName": "沙頭角" },
+            { "name": "Luk Keng", "otherName": "鹿頸" },
+            { "name": "Wu Kau Tang", "otherName": "烏蛟騰" }
+          ]
+        },
+        {
+          "name": "Sai Kung",
+          "otherName": "西貢區",
+          "options": [
+            { "name": "Clear Water Bay", "otherName": "清水灣" },
+            { "name": "Sai Kung", "otherName": "西貢" },
+            { "name": "Tai Mong Tsai", "otherName": "大網仔" },
+            { "name": "Tseung Kwan O", "otherName": "將軍澳" },
+            { "name": "Hang Hau", "otherName": "坑口" },
+            { "name": "Tiu Keng Leng", "otherName": "調景嶺" },
+            { "name": "Ma Yau Tong", "otherName": "馬游塘" }
+          ]
+        },
+        {
+          "name": "Sha Tin",
+          "otherName": "沙田區",
+          "options": [
+            { "name": "Tai Wai", "otherName": "大圍" },
+            { "name": "Sha Tin", "otherName": "沙田" },
+            { "name": "Fo Tan", "otherName": "火炭" },
+            { "name": "Ma Liu Shui", "otherName": "馬料水" },
+            { "name": "Wu Kai Sha", "otherName": "烏溪沙" },
+            { "name": "Ma On Shan", "otherName": "馬鞍山" }
+          ]
+        },
+        {
+          "name": "Tai Po",
+          "otherName": "大埔區",
+          "options": [
+            { "name": "Tai Po Market", "otherName": "大埔墟" },
+            { "name": "Tai Po", "otherName": "大埔" },
+            { "name": "Tai Po Kau", "otherName": "大埔滘" },
+            { "name": "Tai Mei Tuk", "otherName": "大尾篤" },
+            { "name": "Shuen Wan", "otherName": "船灣" },
+            { "name": "Cheung Muk Tau", "otherName": "樟木頭" },
+            { "name": "Kei Ling Ha", "otherName": "企嶺下" }
+          ]
+        },
+        {
+          "name": "Tsuen Wan",
+          "otherName": "荃灣區",
+          "options": [
+            { "name": "Tsuen Wan", "otherName": "荃灣" },
+            { "name": "Lei Muk Shue", "otherName": "梨木樹" },
+            { "name": "Ting Kau", "otherName": "汀九" },
+            { "name": "Sham Tseng", "otherName": "深井" },
+            { "name": "Tsing Lung Tau", "otherName": "青龍頭" },
+            { "name": "Ma Wan", "otherName": "馬灣" },
+            { "name": "Sunny Bay", "otherName": "欣澳" }
+          ]
+        },
+        {
+          "name": "Tuen Mun",
+          "otherName": "屯門區",
+          "options": [
+            { "name": "Tai Lam Chung", "otherName": "大欖湧" },
+            { "name": "So Kwun Wat", "otherName": "掃管笏" },
+            { "name": "Tuen Mun", "otherName": "屯門" },
+            { "name": "Lam Tei", "otherName": "藍地" }
+          ]
+        },
+        {
+          "name": "Yuen Long",
+          "otherName": "元朗區",
+          "options": [
+            { "name": "Hung Shui Kiu", "otherName": "洪水橋" },
+            { "name": "Ha Tsuen", "otherName": "廈村" },
+            { "name": "Lau Fau Shan", "otherName": "流浮山" },
+            { "name": "Tin Shui Wai", "otherName": "天水圍" },
+            { "name": "Yuen Long", "otherName": "元朗" },
+            { "name": "San Tin", "otherName": "新田" },
+            { "name": "Lok Ma Chau", "otherName": "落馬洲" },
+            { "name": "Kam Tin", "otherName": "錦田" },
+            { "name": "Shek Kong", "otherName": "石崗" },
+            { "name": "Pat Heung", "otherName": "八鄉" }
+          ]
+        }
+      ]
+    }
+  ]
+}

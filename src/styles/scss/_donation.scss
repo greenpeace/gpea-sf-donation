@@ -132,14 +132,14 @@
           height: 40px;
           width: 100%;
           color: $gp-green;
-          font-size: 14px;
+          font-size: 16px;
           text-decoration: none;
           display: flex;
           justify-content: center;
           align-items: center;
           line-height: 2;
-          @media (min-width: 992px) {
-            font-size: 16px;
+          @media (max-width: 320px) {
+            font-size: 14px;
           }
         }
         .selected {
@@ -182,6 +182,7 @@
       justify-content: center;
       text-decoration: none;
       line-height: 2;
+      transition: none;
       &:hover {
         text-decoration: none;
         background-color: lighten($gray4, 2%);
@@ -235,7 +236,6 @@
       width: 100%;
     }
     .slds-checkbox_faux {
-      width: 40px;
       margin-right: 4px;
       margin-top: 4px;
     }
