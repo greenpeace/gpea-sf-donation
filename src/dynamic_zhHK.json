@@ -46,9 +46,9 @@
     },
     "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
     "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/c6d4eabb-2020-sf-donation-arctic1.jpg",
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/820517ff-2020-sf-donation-arctic3.jpg",
       "position": "right",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/c6d4eabb-2020-sf-donation-arctic1.jpg"
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/820517ff-2020-sf-donation-arctic3.jpg"
     }
   },
   "oceans": {
@@ -137,9 +137,9 @@
     },
     "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
     "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/c6d4eabb-2020-sf-donation-arctic1.jpg",
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/820517ff-2020-sf-donation-arctic3.jpg",
       "position": "right",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/c6d4eabb-2020-sf-donation-arctic1.jpg"
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/820517ff-2020-sf-donation-arctic3.jpg"
     }
   },
   "countrypark": {
@@ -150,9 +150,22 @@
     },
     "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
     "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg",
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/f5c367e6-2020-sf-donation-countrypark.jpg",
       "position": "right",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg"
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/f5c367e6-2020-sf-donation-countrypark.jpg"
+    }
+  },
+  "onepercent": {
+    "title": "成為1%捐款人",
+    "explainer": {
+      "monthly": "每個人都可以加入小額捐助的行列，只需以相當於每天$10港幣捐助支持綠色和平。",
+      "onetime": "有您作為後盾，綠色和平會努力實踐您的心意！"
+    },
+    "lead": "只要以您1%收入，就可以支持我們100%財政獨立。",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/c96ff4f7-2020-sf-donation-onepercent2.jpg",
+      "position": "center",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/c96ff4f7-2020-sf-donation-onepercent2.jpg"
     }
   }
 }
