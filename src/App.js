@@ -7,22 +7,30 @@ import "swiper/swiper-bundle.css";
 import "aos/dist/aos.css";
 import Swiper from "swiper";
 import AOS from "aos/";
-import Layzr from "layzr.js";
 //
 import "./styles/App.scss";
 //
 const swiperParams = {
   loop: true,
+  loopedSlides: 1,
   slidesPerView: "auto",
   centeredSlides: true,
   grabCursor: true,
+  spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
+    type: "bullets",
     clickable: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    991: {
+      spaceBetween: 20,
+      pagination: false,
+    },
   },
 };
 const aosParams = {
@@ -32,7 +40,6 @@ const aosParams = {
 };
 const swiper = new Swiper(".swiper-container", swiperParams);
 AOS.init(aosParams);
-const instance = Layzr();
 
 function App() {
   return <div className="app" style={{ display: "none" }}></div>;

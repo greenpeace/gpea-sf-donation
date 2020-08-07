@@ -7,15 +7,18 @@
     color: $black;
     .form__headline {
       font-weight: bold;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       @media (min-width: 992px) {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
     }
     .form__leading {
-      font-size: 1rem;
+      font-size: 14px;
       color: $gray1;
       margin: 20px auto;
+      @media (min-width: 992px) {
+        font-size: 16px;
+      }
     }
     .edit-amount {
       margin: 10px auto;

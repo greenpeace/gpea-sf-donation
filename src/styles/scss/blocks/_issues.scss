@@ -3,28 +3,26 @@
     display: flex;
     flex-direction: column;
     @media (min-width: 992px) {
-      width: auto;
       margin: 20px;
       flex-direction: row;
-      min-height: 400px;
-      max-width: 960px;
     }
     .issue__header {
+      min-height: 250px;
       flex: 2;
-      padding: 40px;
+      padding: 40px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
       h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: bold;
         text-transform: uppercase;
-        margin-bottom: 10px;
       }
       p {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        margin: 10px auto;
       }
     }
     .issue__image {

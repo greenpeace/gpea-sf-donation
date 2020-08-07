@@ -1,6 +1,49 @@
 @import "./swiper", "./center-text", "./impacts", "./issues", "./mixed-content",
   "./testimonials";
 //
+
+.THIS {
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .section-wrapper {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 40px 20px;
+    }
+    &.section_bg-white {
+      background-color: $white;
+    }
+    &.section_bg-gray {
+      background-color: $gray4;
+    }
+    &.section_bg-darkblue {
+      background-color: $gp-darkblue;
+    }
+    &.section_bg-lightblue {
+      background-color: $gp-lightblue;
+    }
+  }
+  .section__header {
+    width: 90%;
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    h2 {
+      color: $gp-green;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1rem;
+      margin: 10px auto;
+    }
+  }
+}
+
 .THIS {
   .card {
     border-radius: 8px;
@@ -15,55 +58,5 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-}
-
-.THIS {
-  .section__header {
-    width: 90%;
-    max-width: 780px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 40px;
-    h2 {
-      color: $gp-green;
-      font-size: 2rem;
-      font-weight: bold;
-      line-height: 1.2;
-    }
-    p {
-      font-size: 1rem;
-      margin: 20px auto;
-    }
-  }
-}
-
-.THIS {
-  .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    .section-wrapper {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 40px 0;
-      &.padding-responsive {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-    }
-    &.section_bg-white {
-      background-color: $white;
-    }
-    &.section_bg-gray {
-      background-color: $gray4;
-    }
-    &.section_bg-darkblue {
-      background-color: $gp-darkblue;
-    }
-    &.section_bg-lightblue {
-      background-color: $gp-lightblue;
-    }
   }
 }
