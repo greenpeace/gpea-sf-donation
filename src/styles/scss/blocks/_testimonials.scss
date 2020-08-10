@@ -1,35 +1,39 @@
 .THIS {
   .testimonial {
+    min-height: 350px;
     max-width: 780px;
     text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $gray1;
     .testimonial__quote {
       position: relative;
-      max-width: 580px;
       margin: 20px auto;
-      .quote-text {
-        font-size: 1rem;
-      }
+      font-size: 16px;
     }
-    .testimonial__avatar {
-      padding-top: 20px;
-      img {
-        height: 100px;
-        width: 100px;
-        margin: 0 auto 8px;
-        object-fit: cover;
-        border-radius: 99px;
+    .testimonial__profile {
+      margin-bottom: 20px;
+      .testimonial__avatar {
+        img {
+          height: 96px;
+          width: 96px;
+          margin: 0 auto;
+          object-fit: cover;
+          border-radius: 99px;
+        }
       }
-    }
-    .testimonial__person {
-      .person-name {
-        color: $gray1;
-        font-size: 1rem;
-      }
-      .person-description {
-        color: $gray2;
-        font-size: 14px;
-        margin: 8px auto;
+      .testimonial__person {
+        margin-top: 8px;
+        .person-name {
+          font-size: 14px;
+          margin: 0 auto;
+          letter-spacing: 1px;
+        }
+        .person-description {
+          font-size: 12px;
+        }
       }
     }
   }

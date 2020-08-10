@@ -57,7 +57,11 @@ $shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
   .main-bg {
     z-index: -1;
     position: relative;
-    background: $gray4;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(238, 238, 238, 0) 0%,
+      #eee 100%
+    );
     img {
       width: 100%;
     }

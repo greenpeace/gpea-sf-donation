@@ -17,6 +17,7 @@
       -webkit-box-shadow 140ms linear, -webkit-filter 140ms linear,
       -webkit-transform 140ms linear;
   }
+  // Hide the pagination and button
   .swiper-pagination-bullet:only-child {
     display: none;
   }
@@ -24,51 +25,15 @@
     .swiper-pagination,
     .swiper-button-next,
     .swiper-button-prev {
-      display: none;
+      display: none !important;
     }
   }
 }
 
 .THIS {
   .swiper-slide {
-    width: 80%;
+    width: 90%;
     max-width: 780px;
-  }
-  .swiper-button-prev,
-  .swiper-button-next {
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: $white;
-    border-radius: 99px;
-    box-shadow: $shadow-button1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 140ms linear;
-    &:hover,
-    &:focus {
-      box-shadow: $shadow-button2;
-    }
-    &:active {
-      box-shadow: $shadow-button2;
-    }
-    &:after {
-      display: none;
-    }
-  }
-  .swiper-button-prev {
-    left: 2vw;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBkPSJNMTQuMTkgMTYuMDA1bDcuODY5IDcuODY4LTIuMTI5IDIuMTI5LTkuOTk2LTkuOTk3TDE5LjkzNyA2LjAwMmwyLjEyNyAyLjEyOXoiLz48L3N2Zz4=");
-  }
-  .swiper-button-next {
-    right: 2vw;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBkPSJNMTguNjI5IDE1Ljk5N2wtNy4wODMtNy4wODFMMTMuNDYyIDdsOC45OTcgOC45OTdMMTMuNDU3IDI1bC0xLjkxNi0xLjkxNnoiLz48L3N2Zz4=");
   }
 }
 
@@ -85,18 +50,14 @@
     justify-content: center;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
     transition: all 140ms linear;
-
     &:hover,
     &:focus {
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
-      // outline: none;
     }
 
     &:active {
       box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
-      // outline: none;
     }
-
     span {
       color: $gp-green;
       font-size: 45px;
@@ -105,23 +66,6 @@
     &.swiper-button-disabled {
       opacity: 0;
       pointer-events: none;
-    }
-  }
-
-  .swiper-button-next {
-    right: 16px;
-
-    span {
-      margin-left: 3px;
-    }
-  }
-
-  .swiper-button-prev {
-    left: 16px;
-
-    span {
-      margin-right: 3px;
-      transform: rotate(180deg);
     }
   }
 }

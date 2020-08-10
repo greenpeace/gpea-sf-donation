@@ -6,15 +6,20 @@
   }
   .impact {
     position: relative;
-    .impact__tag {
-      margin-top: 4px;
-      font-size: 1rem;
-      color: $gray3;
-      line-height: 2;
-    }
     .impact__title {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       color: $gray1;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      h3 {
+        flex: 1;
+      }
+      span {
+        align-self: flex-end;
+        padding: 10px 0 0px 20px;
+        font-size: 14px;
+      }
     }
   }
 }

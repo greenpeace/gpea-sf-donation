@@ -4,14 +4,26 @@
 
 .THIS {
   .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    color: $gray1;
     .section-wrapper {
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
       padding: 40px 20px;
+    }
+    .section__header {
+      width: 90%;
+      max-width: 960px;
+      margin: 0 auto;
+      text-align: center;
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 16px;
+        margin: 10px auto;
+      }
     }
     &.section_bg-white {
       background-color: $white;
@@ -21,31 +33,17 @@
     }
     &.section_bg-darkblue {
       background-color: $gp-darkblue;
+      color: #fff;
     }
     &.section_bg-lightblue {
       background-color: $gp-lightblue;
-    }
-  }
-  .section__header {
-    width: 90%;
-    max-width: 780px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 40px;
-    h2 {
-      color: $gp-green;
-      font-size: 1.8rem;
-      font-weight: bold;
-    }
-    p {
-      font-size: 1rem;
-      margin: 10px auto;
     }
   }
 }
 
 .THIS {
   .card {
+    background-color: $white;
     border-radius: 8px;
     box-shadow: $shadow-card1;
     transition: box-shadow 0.2s ease;

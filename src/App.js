@@ -16,20 +16,21 @@ const swiperParams = {
   slidesPerView: "auto",
   centeredSlides: true,
   grabCursor: true,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  spaceBetween: 20,
+  navigation: false,
+  pagination: false,
   breakpoints: {
     991: {
-      spaceBetween: 20,
-      pagination: false,
+      spaceBetween: 40,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
     },
   },
 };
