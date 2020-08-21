@@ -2,41 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5699a4c-fab0-4101-b0d0-f5a62dc4a928" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/aura_bk.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/714eae57-gp049id_high_res-1024x683.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Amex.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/GP0STQFT3_PressMedia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/GP0STRMFOVH1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/GP0STRMFO_PressMedia_white.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/GP0STTQI3_PressMedia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/GP0STUL5N_PressMedia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Mastercard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Other.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Visa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/vegan_banner_bg 1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/wave.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/App.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/scss/_base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/scss/_bulma.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/scss/_donation.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/scss/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/scss/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/scss/_mediaQuery.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/scss/_override.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/scss/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/scss/blocks/_center-text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/scss/blocks/_center-text.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +39,11 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="249" y="65" key="#Illuminated_Cloud" timestamp="1592882737055">
-      <screen x="0" y="23" width="1392" height="877" />
+    <state x="691" y="-776" key="#Illuminated_Cloud" timestamp="1597127651825">
+      <screen x="0" y="-1417" width="2560" height="1417" />
     </state>
     <state x="249" y="65" key="#Illuminated_Cloud/0.23.1392.877/0.-1057.1920.1057@0.23.1392.877" timestamp="1592882737055" />
+    <state x="691" y="-776" key="#Illuminated_Cloud/0.23.1392.877/0.-1417.2560.1417@0.-1417.2560.1417" timestamp="1597127651825" />
     <state x="1084" y="-586" key="MultipleFileMergeDialog" timestamp="1592884517096">
       <screen x="0" y="-1057" width="1920" height="1057" />
     </state>

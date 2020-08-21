@@ -1,15 +1,20 @@
 .THIS {
   .section-impacts {
+    .swiper-wrapper {
+      display: flex;
+      align-items: flex-end;
+    }
     .swiper-slide {
-      max-width: 580px;
+      max-width: 600px;
+      opacity: 1;
     }
   }
   .impact {
     position: relative;
     .impact__title {
-      font-size: 1.4rem;
-      color: $gray1;
-      margin: 10px 0;
+      font-size: 1rem;
+      color: $gray2;
+      margin: 20px 0;
       display: flex;
       align-items: center;
       h3 {
@@ -19,6 +24,9 @@
         align-self: flex-end;
         padding: 10px 0 0px 20px;
         font-size: 14px;
+      }
+      @media (min-width: 992px) {
+        font-size: 1.4rem;
       }
     }
   }

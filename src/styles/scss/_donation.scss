@@ -4,34 +4,101 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color: $black;
     .form__headline {
+      color: $black;
+      font-size: 24px;
       font-weight: bold;
-      font-size: 1.2rem;
       @media (min-width: 992px) {
-        font-size: 1.8rem;
+        font-size: 28px;
       }
     }
     .form__leading {
-      font-size: 14px;
+      font-size: 16px;
       color: $gray1;
       margin: 20px auto;
-      @media (min-width: 992px) {
-        font-size: 16px;
-      }
     }
     .edit-amount {
       margin: 10px auto;
       flex: 1;
+      color: $gray2;
       span {
-        font-size: 14px;
+        font-size: 0.8rem;
         text-decoration: underline;
-        color: $gray2;
+
         vertical-align: middle;
         cursor: pointer;
       }
     }
   }
+  .form__title.form__title--light {
+    .form__headline {
+      color: $black;
+    }
+    .form__leading {
+      color: $gray1;
+    }
+    .edit-amount {
+      color: $gray1;
+    }
+  }
+  .form__title.form__title--dark {
+    .form__headline {
+      color: $white;
+    }
+    .form__leading {
+      color: $white;
+    }
+    .edit-amount {
+      color: $white;
+    }
+  }
+}
+// Titles and leading text
+.THIS {
+  .main-wrapper {
+    .form-wrapper {
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (min-width: 992px) {
+        padding: 4vw 20px;
+        min-height: 50vw;
+        max-width: 50vw;
+      }
+      @media (min-width: 1200px) {
+        min-height: 75vh;
+      }
+      .row {
+        display: flex;
+        margin-left: -8px;
+        margin-right: -8px;
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
+        .col {
+          flex-basis: 0;
+          flex-grow: 1;
+          flex-shrink: 1;
+          padding: 0 8px;
+        }
+      }
+    }
+  }
+}
+.THIS {
+  .main__form-wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    @media (min-width: 992px) {
+      max-width: 440px;
+    }
+  }
+}
+// Wrappers
+.THIS {
   .subtext {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -40,55 +107,7 @@
     font-weight: bold;
   }
 }
-
-.THIS {
-  .main-wrapper {
-    padding: 20px;
-  }
-  .form-wrapper {
-    width: 100%;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    > div {
-      width: 100%;
-    }
-    @media (min-width: 992px) {
-      padding: 4vw 0;
-      min-height: 50vw;
-      max-width: 50vw;
-    }
-    @media (min-width: 1200px) {
-      min-height: 75vh;
-    }
-    .main__form-wrapper {
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto;
-      @media (min-width: 992px) {
-        max-width: 440px;
-      }
-    }
-    .row {
-      display: flex;
-      margin-left: -8px;
-      margin-right: -8px;
-      &:not(:last-child) {
-        margin-bottom: 8px;
-      }
-      .col {
-        flex-basis: 0;
-        flex-grow: 1;
-        flex-shrink: 1;
-        padding: 0 8px;
-      }
-    }
-  }
-}
-
-/* form-wrapper */
-
+// Form Sub text
 .THIS {
   .form__contents {
     padding: 20px 16px;
@@ -108,12 +127,9 @@
       padding: 20px;
     }
   }
-  .form__details-payment {
-    margin-top: 10px;
-  }
-  .form__details-consent {
-    margin: 20px auto;
-  }
+}
+// Form inner content
+.THIS {
   .form__handle {
     margin: 20px auto;
     .tab-menu {
@@ -159,9 +175,6 @@
       }
     }
   }
-
-  // Donation type
-
   .form__amounts {
     display: flex;
     flex-wrap: wrap;
@@ -232,7 +245,18 @@
       font-size: 0.8rem;
     }
   }
-
+}
+// Form tab menu and amounts
+.THIS {
+  .form__details-payment {
+    margin-top: 10px;
+  }
+}
+// Form payment section
+.THIS {
+  .form__details-consent {
+    margin: 20px auto;
+  }
   .consent {
     .checkbox-input {
       margin-right: 0px;
@@ -248,9 +272,9 @@
       font-size: 10px !important;
     }
   }
-
-  // Consent
-
+}
+// Form consent
+.THIS {
   .form__donate {
     button {
       color: $white;
@@ -270,6 +294,9 @@
       }
     }
   }
+}
+// Form submit button
+.THIS {
   .statement {
     font-size: 10px;
     margin-top: 4px;
@@ -282,3 +309,4 @@
     border-left: 1px $gray3;
   }
 }
+// Form statements

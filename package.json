@@ -12,6 +12,7 @@
     "animate.css": "^4.1.0",
     "aos": "^2.3.4",
     "bulma": "^0.9.0",
+    "gpea-npm-en-uploader": "greenpeace/gpea-npm-en-uploader",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -20,10 +21,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "react-scripts build",
     "build:en": "PUBLIC_URL=https://api.greenpeace.org.hk/2020/sf-donation react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "yarn run build && gpea-npm-en-uploader"
   },
   "eslintConfig": {
     "extends": "react-app"

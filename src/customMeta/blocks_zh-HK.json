@@ -1,0 +1,107 @@
+{
+  "general": {
+    "centerText": {
+      "headline": "改變，因您而起。",
+      "text": "全球有數百萬名支持者，與綠色和平並肩保護環境，讓人類與大自然世世代代共生共榮。了解您的捐助如何應用在解決各重大環境問題："
+    },
+    "mixedContent": {
+      "headline": "綠色和平足跡遍佈全球秘地",
+      "text": "我們獨立的研究團隊，為找尋真相踏足極地秘境，從巴西亞馬遜森林，至北極雪地，為解決環境問題追本溯源，與各地社區與政府持續溝通，為全球環境問題提出實際可行的解決方案。",
+      "visuals": ["", "", ""]
+    },
+    "issues": {
+      "headline": "是您，造就環保成果。",
+      "text": "綠色和平的工作涵蓋6大範疇：",
+      "issueList": [
+        {
+          "headline": "氣候 CLIMATE",
+          "text": "宣揚應對氣候危機的方案，推動加速發展可再生能源，實現能源轉型，讓我們在不損害地球的前提下仍能繁榮發展。",
+          "visuals": ""
+        },
+        {
+          "headline": "海洋 OCEANS",
+          "text": "發起全球行動，連繫關心海洋保育的群眾，爭取成立海洋保護區，停止過度捕撈，讓漁業資源得以永續，海洋生生不息。",
+          "visuals": ""
+        },
+        {
+          "headline": "ARCTIC",
+          "text": "集合群眾力量，向石油與捕魚企業施壓，並呼籲政治領袖制定全球條約，齊心守護北極熊的極地樂園。",
+          "visuals": ""
+        },
+        {
+          "headline": "森林 FORESTS",
+          "text": "揭露毀林真相，要求企業品牌公開供應鏈資訊、截斷毀林資金流，致力遊說政府及企業採用可持續的方式管理森林。",
+          "visuals": ""
+        },
+        {
+          "headline": "PLASTICS",
+          "text": "To rid the world of plastics and toxics for a healthier world.",
+          "visuals": ""
+        },
+        {
+          "headline": "HEALTH",
+          "text": "To ensure healthy food for all, and protect the soil, water and the climate.",
+          "visuals": ""
+        }
+      ]
+    },
+    "impacts": {
+      "headline": "Your donation will have an impact.",
+      "text": "Greenpeace works across 6 global issues:",
+      "impactList": [
+        {
+          "tagline": "Response to COVID-19 and other disruptive moments",
+          "visuals": "",
+          "issueTag": "Arctic"
+        },
+        {
+          "tagline": "Response to COVID-19 and other disruptive moments",
+          "visuals": "",
+          "issueTag": "Arctic"
+        }
+      ]
+    },
+    "testimonials": {
+      "headline": "By working together your donation will make a difference.",
+      "text": "Read what people say about Greenpeace.",
+      "testimonialList": [
+        {
+          "name": "Pang Cheung Sze",
+          "title": "Executive Director of Greenpeace East Asia",
+          "image": "",
+          "quote": "We are living in a time of great environmental challenges and what happens here in East Asia will have an immense impact on the future of our planet."
+        },
+        {
+          "name": "Santosh Pai",
+          "title": "Lawyer and Board Chair of Greenpeace East Asia",
+          "image": "",
+          "quote": "The world-changing work of Greenpeace East Asia would not be possible without you. Together we can make the world a better place for us and for the generations to come."
+        },
+        {
+          "name": "Kate",
+          "title": "Campaigner",
+          "image": "",
+          "quote": "I feel glad that I can work with communities, individuals, volunteers, teachers, activists, and many more to help preserve our one and only planet."
+        },
+        {
+          "name": "Dolphin",
+          "title": "Deckhand on Greenpeace's ships",
+          "image": "",
+          "quote": "One of our main duties is to collect samples and data for research, to uncover the truth for our environment. Your generous gift is the strongest back for our mission!"
+        },
+        {
+          "name": "Sharon",
+          "title": "Donor for over 2 years",
+          "image": "",
+          "quote": "Being a mum, I know how importance it is to make change for today and our next generation. Everyone has a share in environmental protection."
+        },
+        {
+          "name": "Brian",
+          "title": "Organiser of a fund-raising campaign",
+          "image": "",
+          "quote": "I believe that regardless of age and identity, everyone can promote a greener planet."
+        }
+      ]
+    }
+  }
+}

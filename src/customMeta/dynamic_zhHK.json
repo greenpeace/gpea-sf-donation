@@ -167,5 +167,18 @@
       "position": "center",
       "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/c96ff4f7-2020-sf-donation-onepercent2.jpg"
     }
+  },
+  "plastics2": {
+    "title": "守護地球，分秒必爭",
+    "explainer": {
+      "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，減少塑膠污染。謝謝！",
+      "onetime": "您的捐款，將立即幫助綠色和平尋找解決塑膠污染的辦法。謝謝！"
+    },
+    "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/90021dd9-plastic_donate_bg.jpg",
+      "position": "left",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/90021dd9-plastic_donate_bg.jpg"
+    }
   }
 }

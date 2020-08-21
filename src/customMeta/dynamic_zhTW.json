@@ -12,34 +12,34 @@
       "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
     }
   },
-  "greenpeace": {
-    "title": "守護地球，由您開始",
+  "climate": {
+    "title": "拯救氣候您我行動",
     "explainer": {
-      "monthly": "您的每月捐款，支持著綠色和平守護大自然的任務。謝謝您！",
-      "onetime": "您的捐款，能即時幫助綠色和平守護我們的家園。謝謝您！"
+      "monthly": "您的每月捐款，能幫助綠色和平推動更多再生能源。謝謝您！",
+      "onetime": "您的捐款，能即時幫助綠色和平推動更多再生能源。謝謝您！"
     },
-    "lead": "我們只有一個地球，請幫助綠色和平守護它。",
+    "lead": "地球只有一個，請幫助綠色和平守護它。",
     "image": {
       "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg",
       "position": "right",
       "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg"
     }
   },
-  "antarctic": {
+  "plastics": {
     "title": "守護地球，分秒必爭",
     "explainer": {
-      "monthly": "您的每月捐款，能幫助綠色和平推動環境永續方案，守護南極最後一片淨土。謝謝您！",
-      "onetime": "您的捐款，能即時幫助綠色和平守護我們的家園。謝謝您！"
+      "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，減少塑膠污染。謝謝！",
+      "onetime": "您的捐款，將立即幫助綠色和平尋找解決塑膠污染的辦法。謝謝！"
     },
-    "lead": "綠色和平進行實地研究調查，第一線見證記錄環境問題，請幫助我們繼續守護美好的自然環境。",
+    "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
     "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/9cd63433-2020-sf-donation-antarctic4.jpg",
-      "position": "left",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/9cd63433-2020-sf-donation-antarctic4.jpg"
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/73991107-2020-sf-donation-plastics.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/73991107-2020-sf-donation-plastics.jpg"
     }
   },
-  "arctic": {
-    "title": "守護地球，分秒必爭",
+  "polar": {
+    "title": "救氣候，阻止北極破壞！",
     "explainer": {
       "monthly": "您的每月捐款，能幫助綠色和平推動環境永續方案，守護北極最後一片淨土。謝謝您！",
       "onetime": "您的捐款，能即時幫助綠色和平守護我們的家園。謝謝您！"
@@ -52,81 +52,94 @@
     }
   },
   "oceans": {
-    "title": "守護地球，由您開始",
+    "title": "守護海洋免受傷害",
     "explainer": {
       "monthly": "您的每月捐款，能幫助綠色和平保護海洋生態。謝謝您！",
-      "onetime": "您的每月捐款，能即時幫助綠色和平保護海洋生態。謝謝您！"
+      "onetime": "您的捐款，能即時幫助綠色和平保護海洋生態。謝謝您！"
     },
-    "lead": "我們只有一個地球，請幫助綠色和平守護它。",
+    "lead": "建立海洋保護區，讓海洋恢復生機！",
     "image": {
       "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/8edcc1a1-2020-sf-donation-oceans4.jpg",
       "position": "right",
       "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/8edcc1a1-2020-sf-donation-oceans4.jpg"
     }
   },
-  "climate": {
-    "title": "守護地球，由您開始",
-    "explainer": {
-      "monthly": "您的每月捐款，能幫助綠色和平推動更多再生能源。謝謝您！",
-      "onetime": "您的捐款，能即時幫助綠色和平推動更多再生能源。謝謝您！"
-    },
-    "lead": "地球只有一個，請幫助綠色和平守護它。",
-    "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg",
-      "position": "right",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg"
-    }
-  },
-  "climate2": {
-    "title": "守護地球，由您開始",
-    "explainer": {
-      "monthly": "您的每月捐款，將幫助綠色和平推動更多可再生能源。謝謝！",
-      "onetime": "您的捐款，將立即幫助綠色和平推動更多可再生能源。謝謝！"
-    },
-    "lead": "地球只有一個，請幫助綠色和平守護它。",
-    "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d1ae62bc-2020-sf-donation-climate3.jpg",
-      "position": "right",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d1ae62bc-2020-sf-donation-climate3.jpg"
-    }
-  },
   "forests": {
-    "title": "守護地球，由您開始",
+    "title": "一起守護珍貴雨林",
     "explainer": {
       "monthly": "您的每月捐款，能幫助綠色和平保護原始雨林生態。謝謝您！",
-      "onetime": "您的每月捐款，能即時幫助綠色和平保護原始雨林生態。謝謝您！"
+      "onetime": "您的捐款，能即時幫助綠色和平保護原始雨林生態。謝謝您！"
     },
-    "lead": "我們只有一個地球，請幫助綠色和平守護它。",
+    "lead": "今天起，您也是改變的關鍵力量！",
     "image": {
       "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/06fd2273-2020-sf-donation-forests4.jpg",
       "position": "right",
       "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/06fd2273-2020-sf-donation-forests4.jpg"
     }
   },
-  "health": {
-    "title": "守護地球，分秒必爭",
+  "detox": {
+    "title": "一起邁向無毒未來",
     "explainer": {
-      "monthly": "您的每月捐款，能幫助綠色和平推動環境永續方案，進而改善空氣品質。謝謝您！",
-      "onetime": "您的捐款，能即時幫助綠色和平推動環境永續方案。謝謝您！"
+      "monthly": "持續追蹤及監督已承諾「乾淨生產」的企業，推動他們逐步擴展「去毒」範圍。",
+      "onetime": "為一名調查員提供保護衣、眼罩、手套等基本防護裝備，以親赴污染現場調查。"
     },
-    "lead": "綠色和平進行實地研究調查，第一線見證記錄環境問題，請幫助我們繼續守護美好的自然環境。",
+    "lead": "您能忍受身邊充斥危險的有害化學物質嗎？",
     "image": {
       "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d0382708-2020-sf-donation-health3.jpg",
       "position": "left",
       "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d0382708-2020-sf-donation-health3.jpg"
     }
   },
-  "plastics": {
-    "title": "守護地球，分秒必爭",
+  "antarctic": {
+    "title": "守護南極全球行動",
     "explainer": {
-      "monthly": "您的每月捐款，能幫助綠色和平推動環境永續方案，減少塑膠垃圾造成的污染。謝謝您！",
-      "onetime": "您的捐款，能即時幫助綠色和平推動減少塑膠垃圾污染的方案。謝謝您！"
+      "monthly": "您的每月捐款，能幫助綠色和平推動環境永續方案，守護南極最後一片淨土。謝謝您！",
+      "onetime": "您的捐款，能即時幫助綠色和平守護我們的家園。謝謝您！"
     },
-    "lead": "綠色和平進行實地研究調查，第一線見證記錄環境問題，請幫助我們繼續守護美好的自然環境。",
+    "lead": "成立全球最大保護區，缺您不可！",
     "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/73991107-2020-sf-donation-plastics.jpg",
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/9cd63433-2020-sf-donation-antarctic4.jpg",
+      "position": "left",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/9cd63433-2020-sf-donation-antarctic4.jpg"
+    }
+  },
+  "coal": {
+    "title": "撤回深澳 堅守您我乾淨呼吸權利",
+    "explainer": {
+      "monthly": "投入評估燃煤電廠對健康風險等研究，證明燃煤發電為環境及公眾健康帶來負面影響",
+      "onetime": "協助我們進行深澳海域的環境記錄，進一步了解海域周遭的海岸與珊瑚礁生態"
+    },
+    "lead": "今天起，您也是改變的關鍵力量！",
+    "image": {
+      "desktop": "https://change.greenpeace.org.tw/2020/donation/sf/GP0STP7VH-1440.background.a971ba0.jpg",
+      "position": "center center",
+      "mobile": "https://change.greenpeace.org.tw/2020/donation/sf/GP04VBP-1440.background.1eadd09.jpg"
+    }
+  },
+  "wod": {
+    "title": "支持水手守護海洋",
+    "explainer": {
+      "monthly": "支持船隊、科研小組進行調查和研究，揭露人類活動對海洋的威脅，以實證推動各國支持成立全球海洋公約",
+      "onetime": "協助我們準備潛水艇及直升機、通訊及衛星技術等合適裝備前赴南極，實地見證極地危機。"
+    },
+    "lead": "健康的海洋，是北極熊、企鵝、鯨豚等海洋生物安穩生存的關鍵！",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/9cd63433-2020-sf-donation-antarctic4.jpg",
+      "position": "left",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/9cd63433-2020-sf-donation-antarctic4.jpg"
+    }
+  },
+  "siberiaforest": {
+    "title": "拯救西伯利亞森林",
+    "explainer": {
+      "monthly": "您的每月捐款，能幫助綠色和平消防隊前往前線救火，並要求俄國政府給予預算停止大火悲劇",
+      "onetime": "您的捐款，能幫助綠色和平消防隊前往前線救火，並要求俄國政府給予預算停止大火悲劇"
+    },
+    "lead": "無情野火釋放大量二氧化碳、造成嚴重空污",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/4c3d6d05-2020-sf-donation-siberaforest.jpg",
       "position": "right",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/73991107-2020-sf-donation-plastics.jpg"
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/4c3d6d05-2020-sf-donation-siberaforest.jpg"
     }
   }
 }

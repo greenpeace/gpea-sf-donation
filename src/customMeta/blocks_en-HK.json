@@ -1,0 +1,107 @@
+{
+  "general": {
+    "centerText": {
+      "headline": "Your donation will help protect the planet!",
+      "text": "Greenpeace is trusted by millions of people around the world to care for the environment and help protect our planet for future generations."
+    },
+    "mixedContent": {
+      "headline": "Greenpeace goes where others can't",
+      "text": "Our independent research teams travel to some of the most remote parts of the globe. From the Amazon rainforests to the Arctic wilderness you can trust that Greenpeace will report back on environmental problems and work with local communities and governments to find a solution.",
+      "visuals": ["", "", ""]
+    },
+    "issues": {
+      "headline": "Your donation will have an impact.",
+      "text": "Greenpeace works across 6 global issues:",
+      "issueList": [
+        {
+          "headline": "CLIMATE",
+          "text": "To save the climate and build a safer, greener fairer world together.",
+          "visuals": ""
+        },
+        {
+          "headline": "OCEANS",
+          "text": "To protect the source of all life and our best defences against climate change.",
+          "visuals": ""
+        },
+        {
+          "headline": "ARCTIC",
+          "text": "To protect the Arctic from destructive oil drilling and commercial fishing.",
+          "visuals": ""
+        },
+        {
+          "headline": "FORESTS",
+          "text": "To take action to stop deforestation, expose illegal logging activities, and protect indigenous rights.",
+          "visuals": ""
+        },
+        {
+          "headline": "PLASTICS",
+          "text": "To rid the world of plastics and toxics for a healthier world.",
+          "visuals": ""
+        },
+        {
+          "headline": "HEALTH",
+          "text": "To ensure healthy food for all, and protect the soil, water and the climate.",
+          "visuals": ""
+        }
+      ]
+    },
+    "impacts": {
+      "headline": "Your donation will have an impact.",
+      "text": "Greenpeace works across 6 global issues:",
+      "impactList": [
+        {
+          "tagline": "Response to COVID-19 and other disruptive moments",
+          "visuals": "",
+          "issueTag": "Arctic"
+        },
+        {
+          "tagline": "Response to COVID-19 and other disruptive moments",
+          "visuals": "",
+          "issueTag": "Arctic"
+        }
+      ]
+    },
+    "testimonials": {
+      "headline": "By working together your donation will make a difference.",
+      "text": "Read what people say about Greenpeace.",
+      "testimonialList": [
+        {
+          "name": "Pang Cheung Sze",
+          "title": "Executive Director of Greenpeace East Asia",
+          "image": "",
+          "quote": "We are living in a time of great environmental challenges and what happens here in East Asia will have an immense impact on the future of our planet."
+        },
+        {
+          "name": "Santosh Pai",
+          "title": "Lawyer and Board Chair of Greenpeace East Asia",
+          "image": "",
+          "quote": "The world-changing work of Greenpeace East Asia would not be possible without you. Together we can make the world a better place for us and for the generations to come."
+        },
+        {
+          "name": "Kate",
+          "title": "Campaigner",
+          "image": "",
+          "quote": "I feel glad that I can work with communities, individuals, volunteers, teachers, activists, and many more to help preserve our one and only planet."
+        },
+        {
+          "name": "Dolphin",
+          "title": "Deckhand on Greenpeace's ships",
+          "image": "",
+          "quote": "One of our main duties is to collect samples and data for research, to uncover the truth for our environment. Your generous gift is the strongest back for our mission!"
+        },
+        {
+          "name": "Sharon",
+          "title": "Donor for over 2 years",
+          "image": "",
+          "quote": "Being a mum, I know how importance it is to make change for today and our next generation. Everyone has a share in environmental protection."
+        },
+        {
+          "name": "Brian",
+          "title": "Organiser of a fund-raising campaign",
+          "image": "",
+          "quote": "I believe that regardless of age and identity, everyone can promote a greener planet."
+        }
+      ]
+    }
+  }
+}

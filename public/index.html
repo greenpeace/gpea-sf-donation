@@ -1,52 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-HK" style="background: none;">
   <head>
-    <!-- meta -->
     <style>
       .async-hide {
         opacity: 0 !important;
       }
     </style>
-
-    <!-- Google Tag Manager -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
-      var isSandbox = location.href.toLowerCase().indexOf(".force.com/") !== -1;
-      var isHK = location.href.toLowerCase().indexOf("/hk/s/") !== -1;
-
-      window.GTM_AUTH = isSandbox
-        ? isHK
-          ? "DMe5bNtR-fP_6oA-bDVfrA"
-          : "BlffFqiWVz9RVHuvTAajOA"
-        : null;
-
-      window.GTM_KEY = isHK ? "GTM-M6LZL75" : "GTM-WRM6WK6";
-      window.GTM_PREVIEW = isHK
-        ? "&gtm_preview=env-207&gtm_cookies_win=x"
-        : "&gtm_preview=env-210&gtm_cookies_win=x";
-      window.GTM_URL_PARAMS = window.GTM_AUTH
-        ? "&gtm_auth=" + window.GTM_AUTH + window.GTM_PREVIEW
-        : "";
-    </script>
-
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src =
-          "https://www.googletagmanager.com/gtm.js?id=" +
-          i +
-          dl +
-          window.GTM_URL_PARAMS;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", window.GTM_KEY);
-    </script>
-    <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>gpea-sf-donation</title>
@@ -161,7 +120,6 @@
       </div>
     </div>
     <!-- end of Header -->
-
     <div class="s1">
       <div class="main" data-aura-rendered-by="165:2;a">
         <section
@@ -220,24 +178,20 @@
                           class="page__headline slds-assistive-text"
                           data-aura-rendered-by="27:73;a"
                         >
-                          Protecting our planet everyday. - Greenpeace
-                          researches and documents environmental problems.
-                          Please help us to continue caring for our natural
-                          world.
+                          守護地球，分秒必爭 -
+                          綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。
                         </h1>
                         <h2
                           class="form__headline"
                           data-aura-rendered-by="31:73;a"
                         >
-                          Protecting our planet everyday.
+                          守護地球，分秒必爭
                         </h2>
                         <p
                           class="form__leading"
                           data-aura-rendered-by="33:73;a"
                         >
-                          Greenpeace researches and documents environmental
-                          problems. Please help us to continue caring for our
-                          natural world.
+                          綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。
                         </p>
                       </div>
                       <div
@@ -258,7 +212,7 @@
                                 name="Monthly"
                                 data-aura-rendered-by="40:73;a"
                                 href="javascript:void(0);"
-                                >Monthly</a
+                                >每月捐款</a
                               >
                             </li>
                             <li
@@ -270,7 +224,7 @@
                                 name="One-Off"
                                 data-aura-rendered-by="44:73;a"
                                 href="javascript:void(0);"
-                                >One-off</a
+                                >單次捐款</a
                               >
                             </li>
                           </ul>
@@ -341,16 +295,14 @@
                               ><span
                                 class="amount"
                                 data-aura-rendered-by="51:73;a"
-                                >Other amount</span
+                                >其他金額</span
                               ></a
                             >
                             <div
                               class="amount-text"
                               data-aura-rendered-by="54:73;a"
                             >
-                              Your monthly donation will help Greenpeace
-                              research solutions and to work globally to protect
-                              our planet. Thank you!
+                              您的每月捐款，將幫助綠色和平為環境問題找到出路，並在全球各地落實環保工作。謝謝！
                             </div>
                           </div>
                           <div
@@ -362,7 +314,7 @@
                               type="button"
                               data-aura-rendered-by="58:73;a"
                             >
-                              DONATE NOW
+                              立即捐助
                             </button>
                           </div>
                         </div>
@@ -376,10 +328,16 @@
           </div>
           <div
             class="main-visual main-bg main-bg_center"
-            style=""
+            style="
+              background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg);
+            "
             data-aura-rendered-by="168:2;a"
           >
-            <img alt="" src="" data-aura-rendered-by="169:2;a" />
+            <img
+              alt=""
+              src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
+              data-aura-rendered-by="169:2;a"
+            />
           </div>
         </section>
       </div>
@@ -416,8 +374,7 @@
                 Our independent research teams travel to some of the most remote
                 parts of the globe. From the Amazon rainforests to the Arctic
                 wilderness you can trust that Greenpeace will report back on
-                environmental problems and work with local communities and
-                governments to find a solution.
+                environmental problems.
               </p>
             </div>
           </div>
@@ -440,7 +397,7 @@
               <div class="swiper-slide">
                 <div class="card issue issue--arctic">
                   <div class="issue__header">
-                    <h2>海洋 Oceans</h2>
+                    <h2>Oceans</h2>
                     <p>
                       每年有逾萬噸塑膠垃圾流入海洋，塑膠不能自然降解，在水中分解成體積比沙粒、塵埃更細的「微塑膠」，被海洋生物吸收後進入食物鏈，均直接影響人體健康。
                     </p>
@@ -455,9 +412,13 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-button-prev">
+              <div class="arrow arrow--left"></div>
+            </div>
+            <div class="swiper-button-next">
+              <div class="arrow arrow--right"></div>
+            </div>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
           </div>
         </div>
       </section>
@@ -476,8 +437,47 @@
               <div class="swiper-slide">
                 <div class="impact">
                   <div class="impact__title">
-                    <h3>Response to COVID-19 and other disruptive moments</h3>
+                    <h3>
+                      From solar kitchens to ozone-saving fridges, 7 moments
+                      from Greenpeace in 1997
+                    </h3>
+                    <!--
                     <span class="impact__tag">Arctic</span>
+                    -->
+                  </div>
+                  <img
+                    class="img_fit"
+                    src="https://d33wubrfki0l68.cloudfront.net/a9c7e461090fc25097e6391a5bb823b0f28ba008/1672b/images/css/object-fit/example-object-fit.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="impact">
+                  <div class="impact__title">
+                    <h3>
+                      綠色和平多次抗議累積民間聲音，令法國終在1974年結束於南太平洋的核試。
+                    </h3>
+                    <!--
+                    <span class="impact__tag">Arctic</span>
+                    -->
+                  </div>
+                  <img
+                    class="img_fit"
+                    src="https://d33wubrfki0l68.cloudfront.net/a9c7e461090fc25097e6391a5bb823b0f28ba008/1672b/images/css/object-fit/example-object-fit.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="impact">
+                  <div class="impact__title">
+                    <h3>
+                      在南極設立基地，為1991年成功簽署《南極條約》播下種子，協議書禁止人類開採礦產最少50年（至2048年）。
+                    </h3>
+                    <!--
+                    <span class="impact__tag">Arctic</span>
+                    -->
                   </div>
                   <img
                     class="img_fit"
@@ -487,9 +487,13 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-button-prev">
+              <div class="arrow arrow--left"></div>
+            </div>
+            <div class="swiper-button-next">
+              <div class="arrow arrow--right"></div>
+            </div>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
           </div>
         </div>
       </section>
@@ -529,8 +533,12 @@
               </div>
             </div>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev">
+              <div class="arrow arrow--left"></div>
+            </div>
+            <div class="swiper-button-next">
+              <div class="arrow arrow--right"></div>
+            </div>
           </div>
         </div>
       </section>

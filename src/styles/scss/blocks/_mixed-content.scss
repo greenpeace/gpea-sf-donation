@@ -2,8 +2,7 @@
   .section-mixed-content {
     display: flex;
     background-color: $gp-darkblue;
-
-    margin-bottom: 40px;
+    margin-bottom: 4vw;
     .boxes {
       color: $white;
       width: 100%;
@@ -14,22 +13,27 @@
       }
     }
     .box {
-      min-height: 350px;
+      min-height: 300px;
       flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;
+      @media (min-width: 992px) {
+        min-height: 400px;
+      }
     }
     .box-content {
       padding: 40px 20px;
-      width: 90%;
+      @media (min-width: 992px) {
+        padding: 80px 40px;
+      }
       .box-header {
-        font-size: 28px;
+        font-size: 24px;
         font-weight: bold;
+        margin-bottom: 20px;
       }
       .box-text {
-        font-size: 14px;
-        margin: 20px auto;
+        font-size: 16px;
       }
     }
     .box-visual {
