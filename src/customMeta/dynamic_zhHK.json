@@ -176,9 +176,22 @@
     },
     "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
     "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/90021dd9-plastic_donate_bg.jpg",
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/8c310de8-2020-sf-donation-plastics2.jpg",
       "position": "left",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/90021dd9-plastic_donate_bg.jpg"
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/8c310de8-2020-sf-donation-plastics2.jpg"
+    }
+  },
+  "siberiaforest": {
+    "title": "拯救西伯利亞森林",
+    "explainer": {
+      "monthly": "您的每月捐款，支持綠色和平消防隊前線救火工作，要求俄羅斯政府提高滅火資源，長遠推動護林政策！",
+      "onetime": "您的捐款，支持綠色和平消防隊前線救火工作，要求俄羅斯政府提高滅火資源，停止大火悲劇！"
+    },
+    "lead": "無情野火焚毀森林，釋出大量二氧化碳，加劇北極圈氣候危機！",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/4c3d6d05-2020-sf-donation-siberaforest.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/4c3d6d05-2020-sf-donation-siberaforest.jpg"
     }
   }
 }
