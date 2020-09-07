@@ -193,5 +193,18 @@
       "position": "right",
       "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/4c3d6d05-2020-sf-donation-siberaforest.jpg"
     }
+  },
+  "amazonforest": {
+    "title": "守護亞馬遜森林",
+    "explainer": {
+      "monthly": "您的每月捐款，支持實地調查工作，揭露亞馬遜毀林罪證，推動國際企業與毀林肉商劃清界線，要求巴西政府制定護林政策！",
+      "onetime": "您的捐款，支持實地調查工作，揭露亞馬遜毀林罪證，推動企業與毀林肉商劃清界線！"
+    },
+    "lead": "亞馬遜毀林警報創下13年新高！清空原始森林，釋放大量碳排放，換來立於灰土上的畜牧場和大豆種植園，加劇全球氣候危機！",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/09/b56e626f-2020-sf-donation-amazonforest-scaled.jpg",
+      "position": "left",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/09/b56e626f-2020-sf-donation-amazonforest-scaled.jpg"
+    }
   }
 }

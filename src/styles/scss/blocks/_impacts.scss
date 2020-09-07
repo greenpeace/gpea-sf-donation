@@ -5,16 +5,23 @@
       align-items: flex-end;
     }
     .swiper-slide {
-      max-width: 600px;
+      max-width: 700px;
       opacity: 1;
+    }
+    .section__header p {
+      display: none;
     }
   }
   .impact {
     position: relative;
+    .impact__tag {
+      font-size: 1rem;
+      font-weight: bold;
+    }
     .impact__title {
       font-size: 1rem;
-      color: $gray2;
-      margin: 20px 0;
+      color: $gray1;
+      padding: 20px 0;
       display: flex;
       align-items: center;
       h3 {
@@ -24,9 +31,6 @@
         align-self: flex-end;
         padding: 10px 0 0px 20px;
         font-size: 14px;
-      }
-      @media (min-width: 992px) {
-        font-size: 1.4rem;
       }
     }
   }

@@ -1,6 +1,5 @@
 @import "./swiper", "./center-text", "./impacts", "./issues", "./mixed-content",
   "./testimonials";
-//
 
 .THIS {
   .section {
@@ -14,18 +13,24 @@
     .section__header {
       width: 90%;
       max-width: 960px;
-      margin: 0 auto;
       text-align: center;
+      margin: 30px auto 40px;
       h2 {
-        font-size: 20px;
+        font-size: 28px;
         font-weight: bold;
+        color: $gray1;
         @media (min-width: 992px) {
-          font-size: 24px;
+          font-size: 36px;
         }
       }
       p {
         font-size: 16px;
         margin: 10px auto;
+        color: $gray3;
+        @media (min-width: 992px) {
+          font-size: 20px;
+          margin: 20px auto;
+        }
       }
     }
     &.section_bg-white {
