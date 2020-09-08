@@ -1,7 +1,11 @@
 .THIS {
+  .section-testimonials {
+    .swiper-slide {
+      max-width: 780px;
+    }
+  }
   .testimonial {
     min-height: 350px;
-    max-width: 780px;
     text-align: center;
     padding: 20px;
     display: flex;

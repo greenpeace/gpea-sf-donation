@@ -1,0 +1,15 @@
+.THIS {
+  .swiper-pagination-bullets {
+    top: -10px;
+  }
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    background-color: $gray3;
+    cursor: pointer;
+    &.swiper-pagination-bullet-active {
+      background-color: $gp-green;
+    }
+  }
+}

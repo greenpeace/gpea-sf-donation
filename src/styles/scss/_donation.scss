@@ -5,6 +5,7 @@
     margin-right: auto;
     text-align: center;
     .form__headline {
+      text-shadow: 0 0 12px rgba(255, 255, 255, 0.65);
       color: $black;
       font-size: 24px;
       font-weight: bold;
@@ -13,6 +14,7 @@
       }
     }
     .form__leading {
+      text-shadow: 0 0 12px rgba(255, 255, 255, 0.65);
       font-size: 16px;
       color: $gray1;
       margin: 20px auto;
@@ -24,7 +26,6 @@
       span {
         font-size: 0.8rem;
         text-decoration: underline;
-
         vertical-align: middle;
         cursor: pointer;
       }
@@ -68,7 +69,7 @@
         max-width: 50vw;
       }
       @media (min-width: 1200px) {
-        min-height: 75vh;
+        min-height: 90vh;
       }
       .row {
         display: flex;

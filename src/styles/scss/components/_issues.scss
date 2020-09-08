@@ -5,14 +5,14 @@
     }
   }
   .issue {
-    min-height: 350px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     @media (min-width: 992px) {
       flex-direction: row;
     }
     .issue__header {
-      flex: 2;
+      flex: 3;
       padding: 40px 20px;
       display: flex;
       flex-direction: column;
@@ -20,17 +20,20 @@
       justify-content: center;
       text-align: center;
       h2 {
-        font-size: 32px;
         font-weight: bold;
         text-transform: uppercase;
       }
       p {
-        font-size: 14px;
         margin: 20px auto;
       }
     }
     .issue__image {
-      flex: 3;
+      flex: 4;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
     }
     &.issue--arctic .issue__header h2 {
       color: $gp-arctic;

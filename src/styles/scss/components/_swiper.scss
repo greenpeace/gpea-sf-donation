@@ -1,0 +1,49 @@
+@import "~swiper/swiper-bundle.css";
+@import "./swiper-pagination", "./swiper-navigation";
+//
+.THIS {
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    overflow: visible;
+    position: relative;
+  }
+  .swiper-wrapper {
+    position: relative;
+  }
+  .swiper-container .swiper-slide,
+  .swiper-container .swiper-pagination,
+  .swiper-container [class^="swiper-button-"] {
+    transition: box-shadow 140ms linear, opacity 140ms linear,
+      filter 140ms linear, transform 140ms linear,
+      -webkit-box-shadow 140ms linear, -webkit-filter 140ms linear,
+      -webkit-transform 140ms linear;
+  }
+}
+.THIS {
+  .swiper-slide {
+    width: 90%;
+    margin-right: 6%;
+    max-width: 960px;
+    opacity: 0.65;
+    transition: all 200ms linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    @media (min-width: 768px) {
+      max-width: 625px;
+    }
+    @media (min-width: 1200px) {
+      margin-right: 30px;
+      max-width: 860px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .swiper-slide-active {
+    opacity: 1;
+  }
+}

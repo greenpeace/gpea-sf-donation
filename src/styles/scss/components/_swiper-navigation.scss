@@ -1,53 +1,10 @@
 .THIS {
-  .swiper-container {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    overflow: visible;
-    position: relative;
+  .swiper-button-next {
+    right: 20px;
   }
-  .swiper-wrapper {
-    height: auto;
-    position: relative;
+  .swiper-button-prev {
+    left: 20px;
   }
-  .swiper-container .swiper-slide,
-  .swiper-container .swiper-pagination,
-  .swiper-container [class^="swiper-button-"] {
-    transition: box-shadow 140ms linear, opacity 140ms linear,
-      filter 140ms linear, transform 140ms linear,
-      -webkit-box-shadow 140ms linear, -webkit-filter 140ms linear,
-      -webkit-transform 140ms linear;
-  }
-  /*
-  .swiper-pagination-bullet:only-child {
-    display: none;
-  }
-  @media (max-width: 575.98px) {
-    .swiper-pagination,
-    .swiper-button-next,
-    .swiper-button-prev {
-      display: none !important;
-    }
-  }
-  */
-}
-
-.THIS {
-  .swiper-slide {
-    width: 90%;
-    max-width: 780px;
-    opacity: 0.65;
-    transition: all 200ms linear;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-  .swiper-slide-active {
-    opacity: 1;
-  }
-}
-
-.THIS {
   .swiper-button-next,
   .swiper-button-prev {
     background-image: none;
@@ -60,6 +17,9 @@
     justify-content: center;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
     transition: all 140ms linear;
+    @media (max-width: 575.98px) {
+      display: none;
+    }
     &:after {
       display: none;
     }
@@ -75,7 +35,6 @@
       color: $gp-green;
       font-size: 45px;
     }
-
     .arrow {
       position: absolute;
       left: 50%;
