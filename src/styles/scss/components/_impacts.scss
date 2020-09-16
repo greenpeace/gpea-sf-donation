@@ -5,16 +5,20 @@
       align-items: flex-end;
     }
     .swiper-slide {
-      opacity: 1;
+      opacity: 1 !important;
+      box-shadow: none !important;
     }
-    .section__header p {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+    .swiper-pagination {
       display: none;
     }
   }
   .impact {
     position: relative;
     .impact__tag {
-      font-weight: bold;
     }
     .impact__title {
       color: $gray1;

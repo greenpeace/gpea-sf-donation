@@ -1,7 +1,11 @@
 .THIS {
-  .section-center-text {
-    max-width: 780px;
+  .section.section-center-text .section-wrapper {
     margin: 0 auto;
+    padding: 60px 20px;
     text-align: center;
+    @media (min-width: 992px) {
+      min-height: 400px;
+      max-width: 780px;
+    }
   }
 }

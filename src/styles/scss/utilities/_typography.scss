@@ -1,0 +1,17 @@
+// Import a Google Font
+// @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&subset=chinese-traditional");
+// @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+//
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1rem; // 16px
+  line-height: 1.5;
+  color: $black;
+  &.zh-hk {
+    font-family: "Noto Sans HK", Microsoft JhengHei, "PingFang HK",
+      "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
+  }
+}

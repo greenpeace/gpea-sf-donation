@@ -1,7 +1,7 @@
 .THIS {
   .section-issues {
     .swiper-slide {
-      opacity: 1;
+      opacity: 1 !important;
     }
   }
   .issue {
@@ -34,6 +34,9 @@
         width: 100%;
         object-fit: cover;
       }
+    }
+    &.issue--plastics .issue__header h2 {
+      color: $gp-plastics;
     }
     &.issue--arctic .issue__header h2 {
       color: $gp-arctic;

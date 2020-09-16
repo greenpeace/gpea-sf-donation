@@ -30,6 +30,10 @@
     );
     img {
       width: 100%;
+      display: block;
+      @media (min-width: 992px) {
+        display: none;
+      }
     }
     @media (min-width: 992px) {
       position: absolute;
@@ -52,16 +56,6 @@
       }
       &.main-bg_right {
         background-position: center right;
-      }
-    }
-  }
-  .main-visual {
-    img {
-      display: block;
-    }
-    @media (min-width: 992px) {
-      img {
-        display: none;
       }
     }
   }

@@ -25,12 +25,10 @@ $shadow-card1: 0px 8px 16px rgba(50, 50, 71, 0.06),
 $shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
   0px 12px 12px rgba(50, 50, 71, 0.08);
 //
-@import "./scss/global/index.scss";
-@import "./scss/spinner", "./scss/overrideSLDS", "./scss/donation",
-  "./scss/donor", "./scss/thankyou", "./scss/language", "./scss/main";
-@import "./scss/components/index.scss";
-@import "./scss/plugins/tailwindcss-typography_plugin.css";
-
+// @import "~swiper/swiper-bundle.css";
+// @import "./scss/plugins/tailwindcss-typography_plugin.scss";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css");
+@import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
 .THIS {
   .prose {
     max-width: none !important;
@@ -38,5 +36,28 @@ $shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
       margin: 0;
       padding: 0;
     }
+  }
+}
+//
+@import "./scss/global/index.scss";
+@import "./scss/spinner", "./scss/overrideSLDS", "./scss/donation",
+  "./scss/donor", "./scss/thankyou", "./scss/language", "./scss/main";
+@import "./scss/components/index.scss";
+//
+.THIS {
+  .text--arctic {
+    color: $gp-arctic !important;
+  }
+  .text--health {
+    color: $gp-health !important;
+  }
+  .text--climate {
+    color: $gp-climate !important;
+  }
+  .text--forests {
+    color: $gp-forests !important;
+  }
+  .text--oceans {
+    color: $gp-oceans !important;
   }
 }

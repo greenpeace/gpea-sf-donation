@@ -15,7 +15,9 @@
       align-items: center;
     }
     .section__header {
+      position: relative;
       text-align: center;
+      max-width: 780px;
       h2 {
         font-weight: bold;
         color: $gray1;
@@ -26,9 +28,6 @@
     }
     &.section_bg-white {
       background-color: $white;
-    }
-    &.section_bg-gray {
-      background-color: $gray4;
     }
     &.section_bg-darkblue {
       background-color: $gp-darkblue;

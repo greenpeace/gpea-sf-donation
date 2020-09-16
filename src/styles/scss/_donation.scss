@@ -5,7 +5,7 @@
     margin-right: auto;
     text-align: center;
     .form__headline {
-      text-shadow: 0 0 12px rgba(255, 255, 255, 0.65);
+      text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
       color: $black;
       font-size: 24px;
       font-weight: bold;
@@ -14,7 +14,7 @@
       }
     }
     .form__leading {
-      text-shadow: 0 0 12px rgba(255, 255, 255, 0.65);
+      text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
       font-size: 16px;
       color: $gray1;
       margin: 20px auto;
@@ -57,38 +57,39 @@
 // Titles and leading text
 .THIS {
   .main-wrapper {
-    .form-wrapper {
-      width: 100%;
-      padding: 20px;
+    padding: 20px;
+  }
+  .form-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 992px) {
+      padding: 4vw 0;
+      min-height: 50vw;
+      max-width: 50vw;
+    }
+    @media (min-width: 1200px) {
+      min-height: 90vh;
+    }
+    @media (min-width: 1600px) {
+      min-height: 75vh;
+    }
+    .row {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      @media (min-width: 992px) {
-        padding: 4vw 20px;
-        min-height: 50vw;
-        max-width: 50vw;
+      margin-left: -8px;
+      margin-right: -8px;
+      &:not(:last-child) {
+        margin-bottom: 8px;
       }
-      @media (min-width: 1200px) {
-        min-height: 90vh;
-      }
-      .row {
-        display: flex;
-        margin-left: -8px;
-        margin-right: -8px;
-        &:not(:last-child) {
-          margin-bottom: 8px;
-        }
-        .col {
-          flex-basis: 0;
-          flex-grow: 1;
-          flex-shrink: 1;
-          padding: 0 8px;
-        }
+      .col {
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 0 8px;
       }
     }
   }
-}
-.THIS {
   .main__form-wrapper {
     width: 100%;
     max-width: 400px;
@@ -192,10 +193,10 @@
       font-size: 16px;
       width: calc((100% - 24px) / 3);
       height: 48px;
+      margin-bottom: 10px;
       border-radius: 4px;
       background: $gray4;
-      margin-bottom: 10px;
-      color: $gray2;
+      color: $gray1;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -217,14 +218,10 @@
     }
     .form__amount-other-button {
       width: 100%;
-      margin-bottom: 0px;
+      margin-bottom: 0;
+      color: $gray3;
     }
     .other-amount {
-      width: 100%;
-      input {
-        border: none;
-        appearance: none;
-      }
       .slds-form-element__control {
         padding-left: 64px;
         position: relative;
