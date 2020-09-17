@@ -319,35 +319,27 @@
       <section class="section section-center-text">
         <div class="section-wrapper">
           <h2 class="section__header content-header">
-            改變，因您而起。
+            {{general.centerText.headline}}
           </h2>
-          <p>全球有數百萬名支持者，與綠色和平並肩保護環境，讓人類與大自然世世代代共生共榮。了解您的捐助如何應用在解決各重大環境問題：</p>
+          <p>{{general.centerText.text}}</p>
         </div>
       </section>
       <section class="section section-mixed-content">
         <div class="section-grid boxes">
           <div class="box">
             <div class="box-content">
-              <h2 class="box-header">綠色和平足跡遍佈全球秘地</h2>
-              <p class="box-text">我們獨立的研究團隊，為找尋真相踏足極地秘境，從巴西亞馬遜森林，至北極雪地，為解決環境問題追本溯源，與各地社區與政府持續溝通，為全球環境問題提出實際可行的解決方案。</p>
+              <h2 class="box-header">{{general.mixedContent.headline}}</h2>
+              <p class="box-text">{{general.mixedContent.text}}</p>
             </div>
           </div>
           <div class="box fit">
             <div class="swiper-container--mixed">
               <div class="swiper-wrapper">
-                
+                {% for visual in general.mixedContent.picList %}
                 <div class="swiper-slide">
-                  <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/11c847f3-block-2-greenpeace-goes-where-others-can_t.jpg" alt="alt" />
+                  <img src="{{visual.link}}" alt="{{visual.alt}}" />
                 </div>
-                
-                <div class="swiper-slide">
-                  <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/11c847f3-block-2-greenpeace-goes-where-others-can_t.jpg" alt="alt" />
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/11c847f3-block-2-greenpeace-goes-where-others-can_t.jpg" alt="alt" />
-                </div>
-                
+                {% endfor %}
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -357,84 +349,24 @@
       <section class="section section-issues section_bg-lightblue">
         <div class="section-wrapper">
           <div class="section__header">
-            <h2>是您，造就環保成果。</h2>
-            <p>綠色和平的工作涵蓋6大範疇：</p>
+            <h2>{{general.issues.headline}}</h2>
+            <p>{{general.issues.text}}</p>
           </div>
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              
+              {% for issue in general.issues.issueList %}
               <div class="swiper-slide">
                 <div class="card issue issue--arctic">
                   <div class="issue__header">
-                    <h2>氣候 CLIMATE</h2>
-                    <p>宣揚應對氣候危機的方案，推動加速發展可再生能源，實現能源轉型，讓我們在不損害地球的前提下仍能繁榮發展。</p>
+                    <h2>{{issue.headline}}</h2>
+                    <p>{{issue.text}}</p>
                   </div>
                   <div class="issue__image">
-                    <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/a611fb7d-block-3-your-donation-will-have-an-impact-climate-gp0str5kn.jpg" alt="" />
+                    <img src="{{issue.pic}}" alt="" />
                   </div>
                 </div>
               </div>
-              
-              <div class="swiper-slide">
-                <div class="card issue issue--arctic">
-                  <div class="issue__header">
-                    <h2>海洋 OCEANS</h2>
-                    <p>發起全球行動，連繫關心海洋保育的群眾，爭取成立海洋保護區，停止過度捕撈，讓漁業資源得以永續，海洋生生不息。</p>
-                  </div>
-                  <div class="issue__image">
-                    <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/2e02c9e3-block-3-your-donation-will-have-an-impact-oceans-gp0stoe2u.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="card issue issue--arctic">
-                  <div class="issue__header">
-                    <h2>北極 ARCTIC</h2>
-                    <p>集合群眾力量，向石油與捕魚企業施壓，並呼籲政治領袖制定全球條約，齊心守護北極熊的極地樂園。</p>
-                  </div>
-                  <div class="issue__image">
-                    <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/033c5484-block-3-your-donation-will-have-an-impact-arctic.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="card issue issue--arctic">
-                  <div class="issue__header">
-                    <h2>森林 FORESTS</h2>
-                    <p>揭露毀林真相，要求企業品牌公開供應鏈資訊、截斷毀林資金流，致力遊說政府及企業採用可持續的方式管理森林。</p>
-                  </div>
-                  <div class="issue__image">
-                    <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/329a08ca-block-3-your-donation-will-have-an-impact-forests.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="card issue issue--arctic">
-                  <div class="issue__header">
-                    <h2>塑膠 PLASTICS</h2>
-                    <p>促請政府和企業定下具體減塑措施，逐步淘汰即棄塑膠，同時鼓勵公眾改變生活習慣，從源頭減廢做起，營造永續生活。</p>
-                  </div>
-                  <div class="issue__image">
-                    <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/7c80fc6a-block-3-your-donation-will-have-an-impact-plastics.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="card issue issue--arctic">
-                  <div class="issue__header">
-                    <h2>生活 HEALTH</h2>
-                    <p>推展各項污染防治、可持續城市規劃等環保倡導工作，捍衛你我免受污染侵害、呼吸新鮮空氣、享受大自然低聲細語的權利。</p>
-                  </div>
-                  <div class="issue__image">
-                    <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/05d964e5-block-3-your-donation-will-have-an-impact-health.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-              
+              {% endfor %}
             </div>
             <div class="swiper-button-prev">
               <div class="arrow arrow--left"></div>
@@ -450,108 +382,24 @@
       <section class="section section-impacts">
         <div class="section-wrapper">
           <div class="section__header">
-            <h2>自1971年開始的環保里程…</h2>
-            <p>您的慷慨捐款，創造無數環境成果。</p>
+            <h2>{{general.impacts.headline}}</h2>
+            <p>{{general.impacts.text}}</p>
           </div>
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              
+              {% for impact in general.impacts.impactList %}
               <div class="swiper-slide">
                 <div class="impact">
                   <div class="impact__tag">
-                    <span class="text--climate">生活</span>
+                    <span class="text--climate">{{impact.issueTag}}</span>
                   </div>
                   <div class="impact__title">
-                    <p>1971年：先鋒成員掛起「綠色和平」橫額，駕船反對美國進行核試，牽起全球關注核安全議題，及後更令法國結束於南太平洋的核試。</p>
+                    <p>{{impact.tagline}}</p>
                   </div>
-                  <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/f319f4f6-block-4-your-donation-will-ensure-a-better-future-success-1.jpg" alt="1971年：先鋒成員掛起「綠色和平」橫額，駕船反對美國進行核試，牽起全球關注核安全議題，及後更令法國結束於南太平洋的核試。" />
+                  <img src="{{impact.pic}}" alt="{{impact.tagline}}" />
                 </div>
               </div>
-              
-              <div class="swiper-slide">
-                <div class="impact">
-                  <div class="impact__tag">
-                    <span class="text--climate">海洋</span>
-                  </div>
-                  <div class="impact__title">
-                    <p>1991年：早年在南極設立基地宣揚守護南極，促使1991年成功簽署《南極條約》，禁止人類開採礦產最少50年（至2048年）。</p>
-                  </div>
-                  <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/5a5b3369-block-4-your-donation-will-ensure-a-better-future-success-2.jpg" alt="1991年：早年在南極設立基地宣揚守護南極，促使1991年成功簽署《南極條約》，禁止人類開採礦產最少50年（至2048年）。" />
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="impact">
-                  <div class="impact__tag">
-                    <span class="text--climate">海洋</span>
-                  </div>
-                  <div class="impact__title">
-                    <p>1995年：佔領位於北海的Brent Spar儲油平台，迫使蜆殼公司改變將其棄置海底的計劃，最終大部份平台結構得以於陸上進行拆解回收。</p>
-                  </div>
-                  <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/a4fb0df9-block-4-your-donation-will-ensure-a-better-future-success-3.jpg" alt="1995年：佔領位於北海的Brent Spar儲油平台，迫使蜆殼公司改變將其棄置海底的計劃，最終大部份平台結構得以於陸上進行拆解回收。" />
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="impact">
-                  <div class="impact__tag">
-                    <span class="text--climate">氣侯</span>
-                  </div>
-                  <div class="impact__title">
-                    <p>1997年：國際綠色和平自家研發Greenfreeze環保製冷技術得獎，讓技術有助減少溫室氣體排放，革新製冷行業技術並獲廣泛利用。</p>
-                  </div>
-                  <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/d7091e18-block-4-your-donation-will-ensure-a-better-future-success-4.jpg" alt="1997年：國際綠色和平自家研發Greenfreeze環保製冷技術得獎，讓技術有助減少溫室氣體排放，革新製冷行業技術並獲廣泛利用。" />
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="impact">
-                  <div class="impact__tag">
-                    <span class="text--climate">北極</span>
-                  </div>
-                  <div class="impact__title">
-                    <p>2015年：號召全球800萬人守護北極，蜆殼公司終宣布停止北極鑽油計劃。我們持續倡議長遠成立北極保護區。</p>
-                  </div>
-                  <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/62dbdbc0-block-4-your-donation-will-ensure-a-better-future-success-5.jpg" alt="2015年：號召全球800萬人守護北極，蜆殼公司終宣布停止北極鑽油計劃。我們持續倡議長遠成立北極保護區。" />
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="impact">
-                  <div class="impact__tag">
-                    <span class="text--climate">海洋</span>
-                  </div>
-                  <div class="impact__title">
-                    <p>2017年：共80家國際品牌及供應商承諾無毒生產，包括ZARA、H&amp;M、Uniqlo等。「為時尚去毒」全球項目自2011年展開，影響力至今不散。</p>
-                  </div>
-                  <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/958ea341-block-4-your-donation-will-ensure-a-better-future-success-6.jpg" alt="2017年：共80家國際品牌及供應商承諾無毒生產，包括ZARA、H&amp;M、Uniqlo等。「為時尚去毒」全球項目自2011年展開，影響力至今不散。" />
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="impact">
-                  <div class="impact__tag">
-                    <span class="text--climate">氣侯</span>
-                  </div>
-                  <div class="impact__title">
-                    <p>2018年：集結全球群眾力量，推動 Samsung 承諾能源轉型，於2020年之前在美國、歐洲與中國等消費市場，邁向100%可再生能源。</p>
-                  </div>
-                  <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/cc3668a7-block-4-your-donation-will-ensure-a-better-future-success-7.jpg" alt="2018年：集結全球群眾力量，推動 Samsung 承諾能源轉型，於2020年之前在美國、歐洲與中國等消費市場，邁向100%可再生能源。" />
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="impact">
-                  <div class="impact__tag">
-                    <span class="text--climate">生活</span>
-                  </div>
-                  <div class="impact__title">
-                    <p>2018年：集結超過5萬人聯署，與眾多本地團體合作，成功推動政府認同發展棕地，無再提及開發郊野公園，守住香港青山綠水。</p>
-                  </div>
-                  <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/1288eef1-block-4-your-donation-will-ensure-a-better-future-success-8.jpg" alt="2018年：集結超過5萬人聯署，與眾多本地團體合作，成功推動政府認同發展棕地，無再提及開發郊野公園，守住香港青山綠水。" />
-                </div>
-              </div>
-              
+              {% endfor %}
             </div>
             <div class="swiper-button-prev">
               <div class="arrow arrow--left"></div>
@@ -566,156 +414,36 @@
       <section class="section section-testimonials section_bg-lightblue">
         <div class="section-wrapper">
           <div class="section__header">
-            <h2>一齊行動，為世界帶來改變！</h2>
-            <p>綠色和平同行者的分享</p>
+            <h2>{{general.testimonials.headline}}</h2>
+            <p>{{general.testimonials.text}}</p>
           </div>
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              
+              {% for testimonial in general.testimonials.testimonialList %}
               <div class="swiper-slide">
                 <div class="card testimonial">
                   <div class="testimonial__quote">
-                    <p class="quote-text">We are living in a time of great environmental challenges and what happens here in East Asia will have an immense impact on the future of our planet.</p>
+                    <p class="quote-text">{{testimonial.quote}}</p>
                   </div>
                   <div class="testimonial__profile">
                     <div class="testimonial__avatar">
                       <img
-                        src="https://source.unsplash.com/random"
-                        alt="Pang Cheung Sze"
+                        src="{{testimonial.pic}}"
+                        alt="{{testimonial.name}}"
                       />
                     </div>
                     <div class="testimonial__person">
                       <p class="person-name">
-                        Pang Cheung Sze<br /><span
+                        {{testimonial.name}}<br /><span
                           class="person-description"
-                          ><small>Executive Director of Greenpeace East Asia </small>
+                          ><small>{{testimonial.title}} </small>
                         </span>
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              
-              <div class="swiper-slide">
-                <div class="card testimonial">
-                  <div class="testimonial__quote">
-                    <p class="quote-text">The world-changing work of Greenpeace East Asia would not be possible without you. Together we can make the world a better place for us and for the generations to come.</p>
-                  </div>
-                  <div class="testimonial__profile">
-                    <div class="testimonial__avatar">
-                      <img
-                        src="https://source.unsplash.com/random"
-                        alt="Santosh Pai"
-                      />
-                    </div>
-                    <div class="testimonial__person">
-                      <p class="person-name">
-                        Santosh Pai<br /><span
-                          class="person-description"
-                          ><small>Lawyer and Board Chair of Greenpeace East Asia </small>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="card testimonial">
-                  <div class="testimonial__quote">
-                    <p class="quote-text">I feel glad that I can work with communities, individuals, volunteers, teachers, activists, and many more to help preserve our one and only planet.</p>
-                  </div>
-                  <div class="testimonial__profile">
-                    <div class="testimonial__avatar">
-                      <img
-                        src="https://source.unsplash.com/random"
-                        alt="Kate"
-                      />
-                    </div>
-                    <div class="testimonial__person">
-                      <p class="person-name">
-                        Kate<br /><span
-                          class="person-description"
-                          ><small>Campaigner </small>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="card testimonial">
-                  <div class="testimonial__quote">
-                    <p class="quote-text">One of our main duties is to collect samples and data for research, to uncover the truth for our environment. Your generous gift is the strongest back for our mission!</p>
-                  </div>
-                  <div class="testimonial__profile">
-                    <div class="testimonial__avatar">
-                      <img
-                        src="https://source.unsplash.com/random"
-                        alt="Dolphin"
-                      />
-                    </div>
-                    <div class="testimonial__person">
-                      <p class="person-name">
-                        Dolphin<br /><span
-                          class="person-description"
-                          ><small>Deckhand on Greenpeace&#39;s ships </small>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="card testimonial">
-                  <div class="testimonial__quote">
-                    <p class="quote-text">Being a mum, I know how importance it is to make change for today and our next generation. Everyone has a share in environmental protection.</p>
-                  </div>
-                  <div class="testimonial__profile">
-                    <div class="testimonial__avatar">
-                      <img
-                        src="https://source.unsplash.com/random"
-                        alt="Sharon"
-                      />
-                    </div>
-                    <div class="testimonial__person">
-                      <p class="person-name">
-                        Sharon<br /><span
-                          class="person-description"
-                          ><small>Donor for over 2 years </small>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="swiper-slide">
-                <div class="card testimonial">
-                  <div class="testimonial__quote">
-                    <p class="quote-text">I believe that regardless of age and identity, everyone can promote a greener planet.</p>
-                  </div>
-                  <div class="testimonial__profile">
-                    <div class="testimonial__avatar">
-                      <img
-                        src="https://source.unsplash.com/random"
-                        alt="Brian"
-                      />
-                    </div>
-                    <div class="testimonial__person">
-                      <p class="person-name">
-                        Brian<br /><span
-                          class="person-description"
-                          ><small>Organiser of a fund-raising campaign </small>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
+              {% endfor %}
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev">

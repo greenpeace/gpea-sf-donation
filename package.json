@@ -28,7 +28,7 @@
     "swiper": "^6.0.4"
   },
   "scripts": {
-    "dev": "yarn build && gulp",
+    "dev": "gulp && yarn start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build:en": "PUBLIC_URL=https://api.greenpeace.org.hk/2020/sf-donation react-scripts build",

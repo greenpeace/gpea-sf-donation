@@ -30,10 +30,10 @@ const getData = () => {
 
 gulp.task("view", () =>
   gulp
-    .src("build/*.html")
+    .src("./src/templates/*.html")
     .pipe(data(() => getData()))
     .pipe(nunjucks.compile())
-    .pipe(gulp.dest("build"))
+    .pipe(gulp.dest("public"))
 );
 
 gulp.task("style", () =>
