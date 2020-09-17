@@ -2,11 +2,11 @@
   .section-testimonials {
     padding-bottom: 20px;
     .swiper-slide {
-      max-width: 780px;
+      width: auto;
+      max-width: none;
     }
   }
   .testimonial {
-    min-height: 350px;
     text-align: center;
     padding: 20px;
     display: flex;
@@ -14,8 +14,13 @@
     justify-content: space-between;
     .testimonial__quote {
       position: relative;
-      margin: 20px auto;
+      margin: 0 auto;
       font-size: 16px;
+      min-height: 150px;
+      max-width: 400px;
+      display: flex;
+      align-items: center;
+      text-align: center;
     }
     .testimonial__profile {
       margin-bottom: 20px;

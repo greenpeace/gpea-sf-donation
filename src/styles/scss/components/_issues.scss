@@ -12,6 +12,7 @@
       flex-direction: row;
     }
     .issue__header {
+      min-height: 300px;
       flex: 3;
       padding: 40px 20px;
       display: flex;
@@ -29,6 +30,7 @@
     }
     .issue__image {
       flex: 4;
+      min-height: 220px;
       img {
         height: 100%;
         width: 100%;

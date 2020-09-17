@@ -7,6 +7,12 @@
     .swiper-slide {
       opacity: 1 !important;
       box-shadow: none !important;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        max-height: 350px;
+      }
     }
     .swiper-button-prev,
     .swiper-button-next {

@@ -23,6 +23,9 @@
     }
     .box-content {
       padding: 60px 20px;
+      @media (min-width: 992px) {
+        padding: 60px 40px;
+      }
       .box-header {
         color: $white;
         font-weight: bold;
@@ -35,12 +38,13 @@
       position: relative;
       width: 100%;
       .swiper-slide {
-        padding: 0;
-        margin: 0;
+        padding: 0 !important;
+        margin: 0 !important;
         img {
           height: 100%;
-          max-height: 320px;
+          width: 100%;
           object-fit: cover;
+          max-height: 400px;
           @media (min-width: 992px) {
             max-height: 500px;
           }

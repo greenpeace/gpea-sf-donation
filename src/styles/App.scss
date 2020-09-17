@@ -24,6 +24,11 @@ $shadow-card1: 0px 8px 16px rgba(50, 50, 71, 0.06),
   0px 8px 8px rgba(50, 50, 71, 0.08);
 $shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
   0px 12px 12px rgba(50, 50, 71, 0.08);
+$shadow-topbottom-white: linear-gradient(
+  to bottom,
+  rgba(255, 255, 255, 1),
+  rgba(255, 255, 255, 0)
+);
 //
 // @import "~swiper/swiper-bundle.css";
 // @import "./scss/plugins/tailwindcss-typography_plugin.scss";
@@ -59,5 +64,30 @@ $shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
   }
   .text--oceans {
     color: $gp-oceans !important;
+  }
+}
+
+.THIS {
+  [data-aos="fade-left"] {
+    transform: translate3d(40px, 0, 0);
+  }
+
+  [data-aos="fade-right"] {
+    transform: translate3d(-40px, 0, 0);
+  }
+  [data-aos="fade-up"] {
+    transform: translate3d(0, 10%, 0);
+  }
+
+  [data-aos="fade-down"] {
+    transform: translate3d(0, -10%, 0);
+  }
+
+  // IE <= 11
+  @media (min-width: 0\0) {
+    [data-aos] {
+      opacity: 1 !important;
+      transform: none !important;
+    }
   }
 }

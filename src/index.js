@@ -2,13 +2,13 @@ import "@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-s
 import "./styles/App.scss";
 import "./scripts/index";
 //
+import * as serviceWorker from "./serviceWorker";
+//
 /*
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 */
-import * as serviceWorker from "./serviceWorker";
-
 /*
 ReactDOM.render(
   <React.StrictMode>

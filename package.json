@@ -9,20 +9,32 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
+    "fs": "^0.0.1-security",
     "gpea-npm-en-uploader": "greenpeace/gpea-npm-en-uploader",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-data": "^1.3.1",
+    "gulp-load-plugins": "^2.0.4",
+    "gulp-nunjucks": "^5.0.2",
+    "gulp-nunjucks-render": "^2.2.3",
+    "json5": "^2.1.3",
     "node-sass": "^4.14.1",
+    "path": "^0.12.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "swiper": "^6.0.4"
   },
   "scripts": {
+    "dev": "yarn build && gulp",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build:en": "PUBLIC_URL=https://api.greenpeace.org.hk/2020/sf-donation react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "yarn run build && gpea-npm-en-uploader"
+    "deploy": "gpea-npm-en-uploader"
   },
   "eslintConfig": {
     "extends": "react-app"
