@@ -1,21 +1,26 @@
 @charset "utf-8";
-$black: #111111;
+// core
+$black: #000000;
+$gray0: #1a1a1a;
 $gray1: #333333;
 $gray2: #666666;
 $gray3: #999999;
-$gray4: #e0e0e0;
+$gray4: #e5e5e5;
 $white: #ffffff;
+// primary
 $gp-green: #66cc00;
 $gp-orange: #ff9500;
 $gp-darkblue: #292f47;
 $gp-lightblue: #e6f5f5;
 $gp-red: #ff3333;
+// issues
 $gp-arctic: #62cbd7;
 $gp-health: #f96d8c;
 $gp-climate: #ffbe00;
 $gp-plastics: #afaa91;
 $gp-forests: #00b474;
 $gp-oceans: #008fe2;
+// shadow
 $shadow-button1: 0px 2px 4px rgba(50, 50, 71, 0.06),
   0px 2px 2px rgba(50, 50, 71, 0.06);
 $shadow-button2: 0px 4px 8px rgba(50, 50, 71, 0.06),
@@ -34,6 +39,11 @@ $shadow-topbottom-white: linear-gradient(
 // @import "./scss/plugins/tailwindcss-typography_plugin.scss";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css");
 @import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
+//
+@import "./scss/global/index.scss";
+@import "./scss/spinner", "./scss/overrideSLDS", "./scss/donation",
+  "./scss/donor", "./scss/thankyou", "./scss/language", "./scss/main";
+@import "./scss/components/index.scss";
 .THIS {
   .prose {
     max-width: none !important;
@@ -43,12 +53,6 @@ $shadow-topbottom-white: linear-gradient(
     }
   }
 }
-//
-@import "./scss/global/index.scss";
-@import "./scss/spinner", "./scss/overrideSLDS", "./scss/donation",
-  "./scss/donor", "./scss/thankyou", "./scss/language", "./scss/main";
-@import "./scss/components/index.scss";
-//
 .THIS {
   .text--arctic {
     color: $gp-arctic !important;
@@ -66,7 +70,6 @@ $shadow-topbottom-white: linear-gradient(
     color: $gp-oceans !important;
   }
 }
-
 .THIS {
   [data-aos="fade-left"] {
     transform: translate3d(40px, 0, 0);
@@ -82,7 +85,6 @@ $shadow-topbottom-white: linear-gradient(
   [data-aos="fade-down"] {
     transform: translate3d(0, -10%, 0);
   }
-
   // IE <= 11
   @media (min-width: 0\0) {
     [data-aos] {
