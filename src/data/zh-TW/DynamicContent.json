@@ -26,16 +26,16 @@
     }
   },
   "plastics": {
-    "title": "守護地球，分秒必爭",
+    "title": "推動減塑，行動帶來改變！",
     "explainer": {
-      "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，減少塑膠污染。謝謝！",
-      "onetime": "您的捐款，將立即幫助綠色和平尋找解決塑膠污染的辦法。謝謝！"
+      "monthly": "您的每月捐款，可幫助綠色和平有資源向企業和政府推動減塑政策，並設定全面淘汰一次性塑膠年限，有效減少塑膠污染。",
+      "onetime": "您的捐款，將讓綠色和平進行更多減塑倡議行動，並宣導塑膠的危害、重新思考消費習慣等觀念。"
     },
-    "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
+    "lead": "全球每年估計有1,270萬噸的塑膠垃圾流入海中！減塑需要從源頭做起，請幫助綠色和平推動臺灣九大零售業龍頭實踐減塑！",
     "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/73991107-2020-sf-donation-plastics.jpg",
-      "position": "right",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/73991107-2020-sf-donation-plastics.jpg"
+      "desktop": "https://change.greenpeace.org.tw/2020/donation/plastics_bg.jpg?v=202008241008",
+      "position": "left",
+      "mobile": "https://change.greenpeace.org.tw/2020/donation/plastics_bg.jpg?v=202008241008"
     }
   },
   "polar": {
@@ -52,25 +52,25 @@
     }
   },
   "oceans": {
-    "title": "守護海洋免受傷害",
+    "title": "請立即伸出援手，一起守護這片珍貴美麗的大海！",
     "explainer": {
-      "monthly": "您的每月捐款，能幫助綠色和平保護海洋生態。謝謝您！",
-      "onetime": "您的捐款，能即時幫助綠色和平保護海洋生態。謝謝您！"
+      "monthly": "您的每月捐款，可幫助綠色和平進行海洋研究及國際倡議行動，推動全球海洋保護區成立《全球海洋公約》，保護珍稀海洋。",
+      "onetime": "您的捐款，將讓綠色和平船艦見證海洋破壞及展開行動，並將第一線消息傳遞給陸地上的您。"
     },
-    "lead": "建立海洋保護區，讓海洋恢復生機！",
+    "lead": "全球海洋僅 2% 受到保護，我們迫切需要在 2030 年之前保護至少三分之一的海洋，推動「全球海洋保護區」保護 30% 海洋，讓海洋恢復生機。",
     "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/8edcc1a1-2020-sf-donation-oceans4.jpg",
+      "desktop": "https://storage.googleapis.com/planet4-taiwan-stateless/2020/08/91a3e9ba-ocean-donation-page.jpg",
       "position": "right",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/8edcc1a1-2020-sf-donation-oceans4.jpg"
+      "mobile": "https://storage.googleapis.com/planet4-taiwan-stateless/2020/08/91a3e9ba-ocean-donation-page.jpg"
     }
   },
   "forests": {
-    "title": "一起守護珍貴雨林",
+    "title": "您可以保護森林不受破壞！",
+    "lead": "唯利是圖的企業大肆砍伐、焚燒珍貴森林，予取予求，造成每年大火日益嚴峻，為阻止生態浩劫，請和我們一起國際倡議、展開行動！",
     "explainer": {
-      "monthly": "您的每月捐款，能幫助綠色和平保護原始雨林生態。謝謝您！",
-      "onetime": "您的捐款，能即時幫助綠色和平保護原始雨林生態。謝謝您！"
+      "monthly": "您的每月捐款，可以幫助綠色和平結合群眾力量推動國際倡議行動，要求各國政府提出具體護林政策！",
+      "onetime": "您的捐款，可讓綠色和平揭露更多環境破壞內幕並深入災害現場，將第一手訊息傳遞給您！"
     },
-    "lead": "今天起，您也是改變的關鍵力量！",
     "image": {
       "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/06fd2273-2020-sf-donation-forests4.jpg",
       "position": "right",
@@ -140,6 +140,45 @@
       "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/4c3d6d05-2020-sf-donation-siberaforest.jpg",
       "position": "right",
       "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/4c3d6d05-2020-sf-donation-siberaforest.jpg"
+    }
+  },
+  "dwf": {
+    "title": "永續遠洋漁業，從臺灣做起！",
+    "explainer": {
+      "monthly": "您的每月捐款，可以幫助綠色和平持續深入遠洋漁業調查、揭發不法業者，改善漁工人權問題，並推動永續漁業發展計畫！",
+      "onetime": "您的捐款可以支持綠色和平揭發非法捕撈，並推動和平倡議行動。"
+    },
+    "lead": "臺灣遠洋漁船遍布全球，但非法捕撈及漁工人權的問題也層出不窮，請幫助我們繼續調查並揭露非法漁業、守護海洋！",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-taiwan-stateless/2020/08/6d75010f-dwf-donation-page.jpg?v=202008241604",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-taiwan-stateless/2020/08/6d75010f-dwf-donation-page.jpg?v=202008241604"
+    }
+  },
+  "oil": {
+    "title": "不讓漏油悲劇重演！支持淘汰高污染化石能源",
+    "lead": "鑽油風險正威脅北海、北極及亞馬遜珊瑚礁等地，迫害無數動植物棲息地，我們不間斷向政府企業倡議行動，極需您的支持！",
+    "explainer": {
+      "monthly": "淘汰石化產業並非一蹴可幾，您的每月捐款可幫助我們倡議淘汰化石燃料，並向各國政府、企業訴求加速發展再生能源。",
+      "onetime": "您的捐款，將讓綠色和平船艦能及時前往高鑽油風險、富高生態價值的海域展開行動，不讓漏油悲劇重演及惡化"
+    },
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-taiwan-stateless/2020/09/0463185d-dji_0049%E6%8B%B7%E8%B2%9D-scaled.jpg?v=20200902",
+      "position": "left",
+      "mobile": "https://storage.googleapis.com/planet4-taiwan-stateless/2020/09/0463185d-dji_0049%E6%8B%B7%E8%B2%9D-scaled.jpg?v=20200902"
+    }
+  },
+  "kamchatka": {
+    "title": "追查污染真相，別讓美麗環境蒙受陰霾！",
+    "lead": "漏油、毒氣外洩災難頻傳，脆弱生態與物種的棲地一再受到破壞，我們需要立即展開調查行動，避免悲劇重演！",
+    "explainer": {
+      "monthly": "您的每月捐款，可幫助綠色和平有足夠的資源揭露不法內幕、向各國政府倡議為環境修法，發展永續的環境政策。",
+      "onetime": "您的捐款，可以協助我們展開艱難的調查任務，採集樣本、分析結果、找出污染源頭，藉此預防環境災難重演。"
+    },
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-taiwan-stateless/2020/10/2396c1f2-russia-kamchatka.jpg?v=20201013",
+      "position": "left",
+      "mobile": "https://storage.googleapis.com/planet4-taiwan-stateless/2020/10/2396c1f2-russia-kamchatka.jpg?v=20201013"
     }
   }
 }

@@ -5,13 +5,15 @@
       align-items: flex-end;
     }
     .swiper-slide {
+      max-width: 680px;
       opacity: 1 !important;
       box-shadow: none !important;
       img {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        max-height: 350px;
+        min-height: 220px;
+        max-height: 360px;
       }
     }
     .swiper-button-prev,

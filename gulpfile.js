@@ -3,11 +3,9 @@ const fs = require("fs");
 const del = require("del");
 const gulp = require("gulp");
 const nunjucks = require("gulp-nunjucks");
-const browserSync = require("browser-sync");
 const data = require("gulp-data");
 const JSON5 = require("json5");
 const gulpLoadPlugins = require("gulp-load-plugins");
-
 const $ = gulpLoadPlugins();
 
 const getData = () => {
@@ -30,32 +28,10 @@ const getData = () => {
 
 gulp.task("view", () =>
   gulp
-    .src("./src/templates/*.html")
+    .src("./src/templates/index.html")
     .pipe(data(() => getData()))
     .pipe(nunjucks.compile())
     .pipe(gulp.dest("public"))
-);
-
-gulp.task("style", () =>
-  gulp
-    .src("src/styles/**/*.scss")
-    .pipe($.plumber())
-    .pipe($.sourcemaps.init())
-    .pipe(
-      $.sass
-        .sync({
-          precision: 10,
-        })
-        .on("error", $.sass.logError)
-    )
-    .pipe($.autoprefixer({ browsers: ["last 2 versions"], remove: false }))
-    .pipe($.sourcemaps.write("."))
-    .pipe(gulp.dest("dist/styles"))
-    .pipe(browserSync.stream({ match: "**/*.css" }))
-);
-
-gulp.task("script", () =>
-  gulp.src(["src/scripts/**/*.js"], { base: "src" }).pipe(gulp.dest("dist/"))
 );
 
 gulp.task("clean", () => del(["dist"], { dot: true }));

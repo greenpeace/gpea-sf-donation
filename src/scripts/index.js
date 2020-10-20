@@ -18,30 +18,6 @@ const swiperParams = {
   },
 };
 
-const isHidden = function (elem) {
-  return !elem.offsetWidth && !elem.offsetHeight;
-};
-
-const innerHeight = () => {
-  const getWindowHeight = () => {
-    return (
-      window.innerHeight ||
-      document.documentElement.clientHeight ||
-      document.getElementsByTagName("body")[0].clientHeight
-    );
-  };
-  const getDocumentHeight = () => {
-    return Math.max(
-      document.body.scrollHeight,
-      document.body.offsetHeight,
-      document.documentElement.clientHeight,
-      document.documentElement.scrollHeight,
-      document.documentElement.offsetHeight
-    );
-  };
-  return getDocumentHeight() - getWindowHeight();
-};
-
 const getScrollTop = () => {
   return window.pageYOffset !== undefined
     ? window.pageYOffset
@@ -67,8 +43,29 @@ const handleScroll = () => {
   }
 };
 
+const getUrlParams = () => {
+  const { searchParams } = new URL(window.location.href);
+  let p = {};
+  for (let [k, v] of searchParams.entries()) {
+    p[k] = v;
+  }
+  return p;
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   // window.addEventListener("scroll", handleScroll);
+  let params = getUrlParams();
+  for (var i = 1; i <= 4; i++) {
+    console.log(`.s${i}`);
+    if (document.querySelector(`.s${i}`)) {
+      document.querySelector(`.s${i}`).style.display = "none";
+    }
+  }
+  if (params.step >= 1) {
+    document.querySelector(`.s${params.step}`).style.display = "block";
+  } else {
+    document.querySelector(".s1").style.display = "block";
+  }
 });
 
 document.addEventListener("DOMContentLoaded", () => {

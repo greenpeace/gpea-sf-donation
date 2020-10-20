@@ -22,9 +22,14 @@
       }
     }
     .box-content {
+      min-height: 220px;
       padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       @media (min-width: 992px) {
         padding: 60px 40px;
+        min-height: 480px;
       }
       .box-header {
         color: $white;
@@ -34,9 +39,22 @@
         color: $white;
       }
     }
+    .box-visual {
+      min-height: 220px;
+      width: 100%;
+      height: 100%;
+      background-color: $gray3;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      img {
+        display: none;
+      }
+    }
     .swiper-container--mixed {
       position: relative;
       width: 100%;
+      height: 100%;
       .swiper-slide {
         padding: 0 !important;
         margin: 0 !important;

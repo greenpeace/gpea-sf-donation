@@ -71,7 +71,7 @@
       outline: none;
       border: none;
       box-shadow: none;
-      color: #1a1a1a;
+      color: $black;
     }
   }
   .pageLevelErrors {
@@ -110,7 +110,6 @@
     text-align: left;
     padding-left: 4px;
   }
-  // message
   .slds-checkbox .slds-checkbox__label {
     display: flex;
     align-items: flex-start;
@@ -121,6 +120,9 @@
     position: relative;
     transition: all 0.2s ease;
     display: flex;
+    &:hover {
+      border: 1px solid $gray3;
+    }
   }
   .slds-has-error .slds-select:focus,
   .slds-has-error .slds-select:active {

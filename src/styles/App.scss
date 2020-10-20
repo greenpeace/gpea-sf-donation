@@ -35,15 +35,12 @@ $shadow-topbottom-white: linear-gradient(
   rgba(255, 255, 255, 0)
 );
 //
-// @import "~swiper/swiper-bundle.css";
-// @import "./scss/plugins/tailwindcss-typography_plugin.scss";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css");
 @import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
+@import "./scss/global/index.scss", "./scss/spinner", "./scss/overrideSLDS",
+  "./scss/donation", "./scss/donationDonor", "./scss/donationThankyou",
+  "./scss/overrideLanguage", "./scss/main", "./scss/components/index.scss";
 //
-@import "./scss/global/index.scss";
-@import "./scss/spinner", "./scss/overrideSLDS", "./scss/donation",
-  "./scss/donor", "./scss/thankyou", "./scss/language", "./scss/main";
-@import "./scss/components/index.scss";
 .THIS {
   .prose {
     max-width: none !important;
