@@ -1601,23 +1601,23 @@
       <section class="section section-center-text">
         <div class="section-wrapper">
           <h2 class="section__header content-header">
-            {{general.centerText.headline}}
+            {{centerText.headline}}
           </h2>
-          <p>{{general.centerText.text}}</p>
+          <p>{{centerText.text}}</p>
         </div>
       </section>
       <section class="section section-mixed-content">
         <div class="section-grid boxes">
           <div class="box">
             <div class="box-content">
-              <h2 class="box-header">{{general.mixedContent.headline}}</h2>
-              <p class="box-text">{{general.mixedContent.text}}</p>
+              <h2 class="box-header">{{mixedContent.headline}}</h2>
+              <p class="box-text">{{mixedContent.text}}</p>
             </div>
           </div>
           <div class="box fit">
             <div class="swiper-container--mixed">
               <div class="swiper-wrapper">
-                {% for visual in general.mixedContent.picList %}
+                {% for visual in mixedContent.picList %}
                 <div class="swiper-slide">
                   <div
                     class="box-visual"
@@ -1636,16 +1636,18 @@
       <section class="section section-issues section_bg-lightblue">
         <div class="section-wrapper">
           <div class="section__header">
-            <h2>{{general.issues.headline}}</h2>
-            <p>{{general.issues.text}}</p>
+            <h2>{{issues.headline}}</h2>
+            <p>{{issues.text}}</p>
           </div>
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              {% for issue in general.issues.issueList %}
+              {% for issue in issues.issueList %}
               <div class="swiper-slide">
                 <div class="card issue issue--arctic">
                   <div class="issue__header">
-                    <h2>{{issue.headline}}</h2>
+                    <h2 class="text--{{issue.issueName}}">
+                      {{issue.headline}}
+                    </h2>
                     <p>{{issue.text}}</p>
                   </div>
                   <div
@@ -1671,16 +1673,17 @@
       <section class="section section-impacts">
         <div class="section-wrapper">
           <div class="section__header">
-            <h2>{{general.impacts.headline}}</h2>
-            <p>{{general.impacts.text}}</p>
+            <h2>{{impacts.headline}}</h2>
           </div>
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              {% for impact in general.impacts.impactList %}
+              {% for impact in impacts.impactList %}
               <div class="swiper-slide">
                 <div class="impact">
                   <div class="impact__tag">
-                    <span class="text--climate">{{impact.issueTag}}</span>
+                    <span class="text--{{impact.issueName}}"
+                      >{{impact.issueTag}}</span
+                    >
                   </div>
                   <div class="impact__title">
                     <p>{{impact.tagline}}</p>
@@ -1690,6 +1693,7 @@
               </div>
               {% endfor %}
             </div>
+            <div class="swiper-pagination"></div>
             <div class="swiper-button-prev">
               <div class="arrow arrow--left"></div>
             </div>
@@ -1703,12 +1707,12 @@
       <section class="section section-testimonials section_bg-lightblue">
         <div class="section-wrapper">
           <div class="section__header">
-            <h2>{{general.testimonials.headline}}</h2>
-            <p>{{general.testimonials.text}}</p>
+            <h2>{{testimonials.headline}}</h2>
+            <p>{{testimonials.text}}</p>
           </div>
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              {% for testimonial in general.testimonials.testimonialList %}
+              {% for testimonial in testimonials.testimonialList %}
               <div class="swiper-slide">
                 <div class="card testimonial">
                   <div class="testimonial__quote">
@@ -1722,12 +1726,8 @@
                       />
                     </div>
                     <div class="testimonial__person">
-                      <p class="person-name">
-                        {{testimonial.name}}<br /><span
-                          class="person-description"
-                          ><small>{{testimonial.title}} </small>
-                        </span>
-                      </p>
+                      <small class="person-title">{{testimonial.title}} </small>
+                      <p class="person-name">{{testimonial.name}}</p>
                     </div>
                   </div>
                 </div>

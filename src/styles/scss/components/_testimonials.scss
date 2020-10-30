@@ -7,24 +7,24 @@
   }
   .testimonial {
     text-align: center;
-    padding: 20px;
+    padding: 20px 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     .testimonial__quote {
       position: relative;
       margin: 0 auto;
-      font-size: 16px;
-      min-height: 144px;
       display: flex;
       align-items: center;
       text-align: center;
+      color: $gray1;
       .quote-text {
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
     }
     .testimonial__profile {
       .testimonial__avatar {
+        margin: 20px auto;
         img {
           width: 96px;
           height: 96px;
@@ -38,9 +38,12 @@
         }
       }
       .testimonial__person {
-        .person-name {
+        .person-title {
+          font-size: 0.8rem;
         }
-        .person-description {
+        .person-name {
+          margin-top: 4px;
+          font-size: 1rem;
         }
       }
     }
