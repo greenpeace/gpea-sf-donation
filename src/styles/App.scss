@@ -1,21 +1,26 @@
 @charset "utf-8";
-$black: #111111;
+// core
+$black: #000000;
+$gray0: #1a1a1a;
 $gray1: #333333;
 $gray2: #666666;
 $gray3: #999999;
-$gray4: #e0e0e0;
+$gray4: #e5e5e5;
 $white: #ffffff;
+// primary
 $gp-green: #66cc00;
 $gp-orange: #ff9500;
 $gp-darkblue: #292f47;
 $gp-lightblue: #e6f5f5;
 $gp-red: #ff3333;
+// issues
 $gp-arctic: #62cbd7;
 $gp-health: #f96d8c;
 $gp-climate: #ffbe00;
 $gp-plastics: #afaa91;
 $gp-forests: #00b474;
 $gp-oceans: #008fe2;
+// shadow
 $shadow-button1: 0px 2px 4px rgba(50, 50, 71, 0.06),
   0px 2px 2px rgba(50, 50, 71, 0.06);
 $shadow-button2: 0px 4px 8px rgba(50, 50, 71, 0.06),
@@ -24,130 +29,67 @@ $shadow-card1: 0px 8px 16px rgba(50, 50, 71, 0.06),
   0px 8px 8px rgba(50, 50, 71, 0.08);
 $shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
   0px 12px 12px rgba(50, 50, 71, 0.08);
-@import "./scss/spinner", "./scss/header", "./scss/footer",
-  "./scss/overrideSLDS", "./scss/donation", "./scss/donor", "./scss/thankyou",
-  "./scss/language";
-@import "./scss/blocks/index.scss";
+$shadow-topbottom-white: linear-gradient(
+  to bottom,
+  rgba(255, 255, 255, 1),
+  rgba(255, 255, 255, 0)
+);
+//
+@import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css");
+@import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
+@import "./scss/global/index.scss", "./scss/spinner", "./scss/overrideSLDS",
+  "./scss/donation", "./scss/donationDonor", "./scss/donationThankyou",
+  "./scss/overrideLanguage", "./scss/main", "./scss/components/index.scss";
 //
 .THIS {
-  section {
-    position: relative;
-  }
-  .main-wrapper {
-    margin-bottom: -15vw;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    &.main-wrapper_left {
-      align-items: flex-start;
-    }
-    &.main-wrapper_center {
-      align-items: center;
-    }
-    &.main-wrapper_right {
-      align-items: flex-end;
-    }
-    @media (min-width: 992px) {
-      margin-bottom: 0;
-    }
-  }
-  .main-bg {
-    z-index: -1;
-    position: relative;
-    background: $gray4;
+  .prose {
+    max-width: none !important;
     img {
-      width: 100%;
-    }
-    @media (min-width: 992px) {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      &.main-bg_center {
-        background-position: center center;
-      }
-      &.main-bg_left {
-        background-position: center left;
-      }
-      &.main-bg_right {
-        background-position: center right;
-      }
-    }
-  }
-  .main-visual {
-    img {
-      display: block;
-    }
-    @media (min-width: 992px) {
-      img {
-        display: none;
-      }
+      margin: 0;
+      padding: 0;
     }
   }
 }
-
-//
-
 .THIS {
-  .payment-details {
-    display: none;
+  .text--arctic {
+    color: $gp-arctic !important;
+  }
+  .text--health {
+    color: $gp-health !important;
+  }
+  .text--climate {
+    color: $gp-climate !important;
+  }
+  .text--forests {
+    color: $gp-forests !important;
+  }
+  .text--oceans {
+    color: $gp-oceans !important;
+  }
+  .text--plastics {
+    color: $gp-plastics !important;
   }
 }
-
 .THIS {
-  .label-hidden.slds-form-element > label {
-    display: none;
+  [data-aos="fade-left"] {
+    transform: translate3d(40px, 0, 0);
   }
 
-  .checkbox-input {
-    min-width: 25px;
+  [data-aos="fade-right"] {
+    transform: translate3d(-40px, 0, 0);
+  }
+  [data-aos="fade-up"] {
+    transform: translate3d(0, 10%, 0);
   }
 
-  .checkbox-label {
-    cursor: pointer;
+  [data-aos="fade-down"] {
+    transform: translate3d(0, -10%, 0);
   }
-
-  .border-none,
-  .border-none .slds-form-element__control {
-    border: none;
-  }
-
-  .donate-in-honor .slds-checkbox_faux {
-    margin-top: 5px;
-  }
-
-  .slds-spinner--brand.slds-spinner:after,
-  .slds-spinner--brand.slds-spinner:before,
-  .slds-spinner--brand .slds-spinner__dot-a:after,
-  .slds-spinner--brand .slds-spinner__dot-a:before,
-  .slds-spinner--brand .slds-spinner__dot-b:after,
-  .slds-spinner--brand .slds-spinner__dot-b:before,
-  .slds-spinner_brand.slds-spinner:after,
-  .slds-spinner_brand.slds-spinner:before,
-  .slds-spinner_brand .slds-spinner__dot-a:after,
-  .slds-spinner_brand .slds-spinner__dot-a:before,
-  .slds-spinner_brand .slds-spinner__dot-b:after,
-  .slds-spinner_brand .slds-spinner__dot-b:before {
-    background-color: $gp-green !important;
-  }
-  .slds-spinner_container .slds-icon_large {
-    width: 4.5rem !important;
-    height: 4.5rem !important;
-  }
-
-  .slds-spinner_container .slds-icon-text-success {
-    fill: $gp-green !important;
-  }
-
-  .slds-spinner_container .slds-icon-text-error {
-    fill: $gp-red !important;
+  // IE <= 11
+  @media (min-width: 0\0) {
+    [data-aos] {
+      opacity: 1 !important;
+      transform: none !important;
+    }
   }
 }

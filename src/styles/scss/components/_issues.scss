@@ -1,0 +1,65 @@
+.THIS {
+  .section-issues {
+    .swiper-slide {
+      opacity: 1 !important;
+    }
+  }
+  .issue {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 992px) {
+      flex-direction: row;
+    }
+    .issue__header {
+      flex: 1;
+      padding: 40px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      max-width: 400px;
+      h2 {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      p {
+        margin: 20px auto;
+      }
+    }
+    .issue__image {
+      flex: 1;
+      min-height: 200px;
+      background-color: $gray4;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      img {
+        display: none;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &.issue--plastics .issue__header h2 {
+      color: $gp-plastics;
+    }
+    &.issue--arctic .issue__header h2 {
+      color: $gp-arctic;
+    }
+    &.issue--health .issue__header h2 {
+      color: $gp-health;
+    }
+    &.issue--climate .issue__header h2 {
+      color: $gp-climate;
+    }
+    &.issue--forests .issue__header h2 {
+      color: $gp-forests;
+    }
+    &.issue--oceans .issue__header h2 {
+      color: $gp-oceans;
+    }
+  }
+}

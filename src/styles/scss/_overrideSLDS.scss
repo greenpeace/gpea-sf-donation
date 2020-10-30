@@ -1,15 +1,56 @@
-@mixin placeholder {
-  ::-webkit-input-placeholder {
-    @content;
+.THIS {
+  .payment-details {
+    display: none;
   }
-  :-moz-placeholder {
-    @content;
+}
+
+.THIS {
+  .label-hidden.slds-form-element > label {
+    display: none;
   }
-  ::-moz-placeholder {
-    @content;
+
+  .checkbox-input {
+    min-width: 25px;
   }
-  :-ms-input-placeholder {
-    @content;
+
+  .checkbox-label {
+    cursor: pointer;
+  }
+
+  .border-none,
+  .border-none .slds-form-element__control {
+    border: none;
+  }
+
+  .donate-in-honor .slds-checkbox_faux {
+    margin-top: 5px;
+  }
+
+  .slds-spinner--brand.slds-spinner:after,
+  .slds-spinner--brand.slds-spinner:before,
+  .slds-spinner--brand .slds-spinner__dot-a:after,
+  .slds-spinner--brand .slds-spinner__dot-a:before,
+  .slds-spinner--brand .slds-spinner__dot-b:after,
+  .slds-spinner--brand .slds-spinner__dot-b:before,
+  .slds-spinner_brand.slds-spinner:after,
+  .slds-spinner_brand.slds-spinner:before,
+  .slds-spinner_brand .slds-spinner__dot-a:after,
+  .slds-spinner_brand .slds-spinner__dot-a:before,
+  .slds-spinner_brand .slds-spinner__dot-b:after,
+  .slds-spinner_brand .slds-spinner__dot-b:before {
+    background-color: $gp-green !important;
+  }
+  .slds-spinner_container .slds-icon_large {
+    width: 4.5rem !important;
+    height: 4.5rem !important;
+  }
+
+  .slds-spinner_container .slds-icon-text-success {
+    fill: $gp-green !important;
+  }
+
+  .slds-spinner_container .slds-icon-text-error {
+    fill: $gp-red !important;
   }
 }
 
@@ -30,10 +71,7 @@
       outline: none;
       border: none;
       box-shadow: none;
-      color: #1a1a1a;
-    }
-    @include placeholder {
-      color: $gray3;
+      color: $black;
     }
   }
   .pageLevelErrors {
@@ -72,7 +110,6 @@
     text-align: left;
     padding-left: 4px;
   }
-  // message
   .slds-checkbox .slds-checkbox__label {
     display: flex;
     align-items: flex-start;
@@ -83,6 +120,9 @@
     position: relative;
     transition: all 0.2s ease;
     display: flex;
+    &:hover {
+      border: 1px solid $gray3;
+    }
   }
   .slds-has-error .slds-select:focus,
   .slds-has-error .slds-select:active {

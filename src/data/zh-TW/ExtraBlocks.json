@@ -1,0 +1,139 @@
+{
+  "general": {
+    "centerText": {
+      "headline": "改變，因您而起。",
+      "text": "全球有數百萬名支持者，與綠色和平並肩保護環境，讓人類與大自然世世代代共生共榮。了解您的捐助如何應用在解決各重大環境問題："
+    },
+    "mixedContent": {
+      "headline": "綠色和平足跡遍佈全球秘地",
+      "text": "我們獨立的研究團隊，為找尋真相踏足極地秘境，從巴西亞馬遜森林，至北極雪地，為解決環境問題追本溯源，與各地社區與政府持續溝通，為全球環境問題提出實際可行的解決方案。",
+      "pic": [
+        "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/11c847f3-block-2-greenpeace-goes-where-others-can_t.jpg"
+      ]
+    },
+    "issues": {
+      "headline": "是您，造就環保成果。",
+      "text": "綠色和平的工作涵蓋6大範疇：",
+      "issueList": [
+        {
+          "headline": "氣候 CLIMATE",
+          "text": "宣揚應對氣候危機的方案，推動加速發展可再生能源，實現能源轉型，讓我們在不損害地球的前提下仍能繁榮發展。",
+          "pic": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/a611fb7d-block-3-your-donation-will-have-an-impact-climate-gp0str5kn.jpg"
+        },
+        {
+          "headline": "海洋 OCEANS",
+          "text": "發起全球行動，連繫關心海洋保育的群眾，爭取成立海洋保護區，停止過度捕撈，讓漁業資源得以永續，海洋生生不息。",
+          "pic": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/2e02c9e3-block-3-your-donation-will-have-an-impact-oceans-gp0stoe2u.jpg"
+        },
+        {
+          "headline": "北極 ARCTIC",
+          "text": "集合群眾力量，向石油與捕魚企業施壓，並呼籲政治領袖制定全球條約，齊心守護北極熊的極地樂園。",
+          "pic": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/033c5484-block-3-your-donation-will-have-an-impact-arctic.jpg"
+        },
+        {
+          "headline": "森林 FORESTS",
+          "text": "揭露毀林真相，要求企業品牌公開供應鏈資訊、截斷毀林資金流，致力遊說政府及企業採用可持續的方式管理森林。",
+          "pic": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/329a08ca-block-3-your-donation-will-have-an-impact-forests.jpg"
+        },
+        {
+          "headline": "塑膠 PLASTICS",
+          "text": "促請政府和企業定下具體減塑措施，逐步淘汰即棄塑膠，同時鼓勵公眾改變生活習慣，從源頭減廢做起，營造永續生活。",
+          "pic": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/7c80fc6a-block-3-your-donation-will-have-an-impact-plastics.jpg"
+        },
+        {
+          "headline": "生活 HEALTH",
+          "text": "推展各項污染防治、可持續城市規劃等環保倡導工作，捍衛你我免受污染侵害、呼吸新鮮空氣、享受大自然低聲細語的權利。",
+          "pic": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/05d964e5-block-3-your-donation-will-have-an-impact-health.jpg"
+        }
+      ]
+    },
+    "impacts": {
+      "headline": "自1971年開始的環保里程…",
+      "text": "您的慷慨捐款，創造無數環境成果。",
+      "impactList": [
+        {
+          "tagline": "1971年：先鋒成員掛起「綠色和平」橫額，駕船反對美國進行核試，牽起全球關注核安全議題，及後更令法國結束於南太平洋的核試。",
+          "pic": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/f319f4f6-block-4-your-donation-will-ensure-a-better-future-success-1.jpg",
+          "issueTag": "生活"
+        },
+        {
+          "tagline": "1991年：早年在南極設立基地宣揚守護南極，促使1991年成功簽署《南極條約》，禁止人類開採礦產最少50年（至2048年）。",
+          "pic": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/5a5b3369-block-4-your-donation-will-ensure-a-better-future-success-2.jpg",
+          "issueTag": "海洋"
+        },
+        {
+          "tagline": "1995年：佔領位於北海的Brent Spar儲油平台，迫使蜆殼公司改變將其棄置海底的計劃，最終大部份平台結構得以於陸上進行拆解回收。",
+          "pic": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/a4fb0df9-block-4-your-donation-will-ensure-a-better-future-success-3.jpg",
+          "issueTag": "海洋"
+        },
+        {
+          "tagline": "1997年：國際綠色和平自家研發Greenfreeze環保製冷技術得獎，讓技術有助減少溫室氣體排放，革新製冷行業技術並獲廣泛利用。",
+          "pic": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/d7091e18-block-4-your-donation-will-ensure-a-better-future-success-4.jpg",
+          "issueTag": "氣侯"
+        },
+        {
+          "tagline": "2015年：號召全球800萬人守護北極，蜆殼公司終宣布停止北極鑽油計劃。我們持續倡議長遠成立北極保護區。",
+          "pic": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/62dbdbc0-block-4-your-donation-will-ensure-a-better-future-success-5.jpg",
+          "issueTag": "北極"
+        },
+        {
+          "tagline": "2017年：共80家國際品牌及供應商承諾無毒生產，包括ZARA、H&M、Uniqlo等。「為時尚去毒」全球項目自2011年展開，影響力至今不散。",
+          "pic": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/958ea341-block-4-your-donation-will-ensure-a-better-future-success-6.jpg",
+          "issueTag": "海洋"
+        },
+        {
+          "tagline": "2018年：集結全球群眾力量，推動 Samsung 承諾能源轉型，於2020年之前在美國、歐洲與中國等消費市場，邁向100%可再生能源。",
+          "pic": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/cc3668a7-block-4-your-donation-will-ensure-a-better-future-success-7.jpg",
+          "issueTag": "氣侯"
+        },
+        {
+          "tagline": "2018年：集結超過5萬人聯署，與眾多本地團體合作，成功推動政府認同發展棕地，無再提及開發郊野公園，守住香港青山綠水。",
+          "pic": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/1288eef1-block-4-your-donation-will-ensure-a-better-future-success-8.jpg",
+          "issueTag": "生活"
+        }
+      ]
+    },
+    "testimonials": {
+      "headline": "一齊行動，為世界帶來改變！",
+      "text": "綠色和平同行者的分享",
+      "testimonialList": [
+        {
+          "name": "Pang Cheung Sze",
+          "title": "Executive Director of Greenpeace East Asia",
+          "image": "",
+          "quote": "We are living in a time of great environmental challenges and what happens here in East Asia will have an immense impact on the future of our planet."
+        },
+        {
+          "name": "Santosh Pai",
+          "title": "Lawyer and Board Chair of Greenpeace East Asia",
+          "image": "",
+          "quote": "The world-changing work of Greenpeace East Asia would not be possible without you. Together we can make the world a better place for us and for the generations to come."
+        },
+        {
+          "name": "Kate",
+          "title": "Campaigner",
+          "image": "",
+          "quote": "I feel glad that I can work with communities, individuals, volunteers, teachers, activists, and many more to help preserve our one and only planet."
+        },
+        {
+          "name": "Dolphin",
+          "title": "Deckhand on Greenpeace's ships",
+          "image": "",
+          "quote": "One of our main duties is to collect samples and data for research, to uncover the truth for our environment. Your generous gift is the strongest back for our mission!"
+        },
+        {
+          "name": "Sharon",
+          "title": "Donor for over 2 years",
+          "image": "",
+          "quote": "Being a mum, I know how importance it is to make change for today and our next generation. Everyone has a share in environmental protection."
+        },
+        {
+          "name": "Brian",
+          "title": "Organiser of a fund-raising campaign",
+          "image": "",
+          "quote": "I believe that regardless of age and identity, everyone can promote a greener planet."
+        }
+      ]
+    }
+  }
+}

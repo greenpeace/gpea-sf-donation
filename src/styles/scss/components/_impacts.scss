@@ -1,0 +1,34 @@
+.THIS {
+  .section-impacts {
+    .swiper-wrapper {
+      display: flex;
+      align-items: flex-end;
+    }
+    .swiper-slide {
+      max-width: 680px;
+      opacity: 1 !important;
+      box-shadow: none !important;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        min-height: 220px;
+        max-height: 360px;
+      }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+  .impact {
+    position: relative;
+    .impact__tag {
+    }
+    .impact__title {
+      color: $gray1;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

@@ -1,51 +1,49 @@
 @import "./swiper", "./center-text", "./impacts", "./issues", "./mixed-content",
   "./testimonials";
-//
 
 .THIS {
   .section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    position: relative;
     .section-wrapper {
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
-      padding: 40px 20px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .section__header {
+      position: relative;
+      text-align: center;
+      max-width: 780px;
+      margin-bottom: 20px;
+      h2 {
+        font-weight: bold;
+        color: $gray1;
+        margin-bottom: 8px;
+      }
+      p {
+        color: $gray3;
+      }
     }
     &.section_bg-white {
       background-color: $white;
     }
-    &.section_bg-gray {
-      background-color: $gray4;
-    }
     &.section_bg-darkblue {
       background-color: $gp-darkblue;
+      color: $white;
     }
     &.section_bg-lightblue {
       background-color: $gp-lightblue;
-    }
-  }
-  .section__header {
-    width: 90%;
-    max-width: 780px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 40px;
-    h2 {
-      color: $gp-green;
-      font-size: 1.8rem;
-      font-weight: bold;
-    }
-    p {
-      font-size: 1rem;
-      margin: 10px auto;
     }
   }
 }
 
 .THIS {
   .card {
+    background-color: $white;
     border-radius: 8px;
     box-shadow: $shadow-card1;
     transition: box-shadow 0.2s ease;
@@ -53,10 +51,5 @@
     &:hover {
       box-shadow: $shadow-card2;
     }
-  }
-  .img_fit {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 }
