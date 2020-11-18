@@ -35,8 +35,6 @@ $shadow-topbottom-white: linear-gradient(
   rgba(255, 255, 255, 0)
 );
 //
-@import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css");
-@import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
 @import "./scss/global/index.scss", "./scss/spinner", "./scss/overrideSLDS",
   "./scss/donation", "./scss/donationDonor", "./scss/donationThankyou",
   "./scss/overrideLanguage", "./scss/main", "./scss/components/index.scss";
@@ -68,28 +66,5 @@ $shadow-topbottom-white: linear-gradient(
   }
   .text--plastics {
     color: $gp-plastics !important;
-  }
-}
-.THIS {
-  [data-aos="fade-left"] {
-    transform: translate3d(40px, 0, 0);
-  }
-
-  [data-aos="fade-right"] {
-    transform: translate3d(-40px, 0, 0);
-  }
-  [data-aos="fade-up"] {
-    transform: translate3d(0, 10%, 0);
-  }
-
-  [data-aos="fade-down"] {
-    transform: translate3d(0, -10%, 0);
-  }
-  // IE <= 11
-  @media (min-width: 0\0) {
-    [data-aos] {
-      opacity: 1 !important;
-      transform: none !important;
-    }
   }
 }

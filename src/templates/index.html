@@ -1,11 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-HK" style="background: none">
+<html style="background: none">
   <head>
-    <style>
-      .async-hide {
-        opacity: 0 !important;
-      }
-    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>gpea-sf-donation</title>
@@ -28,59 +23,38 @@
     <meta property="fb:app_id" content="192994240714848" />
     <meta property="og:type" content="website" />
     <!-- end of markup -->
-    <!-- meta -->
-    <meta name="author" content="Greenpeace 綠色和平" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="捐助支持綠色和平 - Greenpeace 綠色和平 | 香港"
+    <!-- static css -->
+    <link type="text/css" href="./overrideCSS.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
     />
-    <meta
-      property="og:description"
-      content="環保成就，全因有您。加入全球300萬名支持者，一起捍衛您我珍惜的地球！為維持公正獨立，我們不接受政府、企業資助，全有賴如您一般有心的市民得以創造改變。"
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css"
     />
-    <meta
-      property="og:site_name"
-      content="捐助支持綠色和平 - Greenpeace 綠色和平 | 香港"
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <!-- end of custom meta -->
-    <link rel="stylesheet" type="text/css" href="./overrideCSS.css" />
+    <!-- static js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- static js -->
+    <script></script>
   </head>
-
   <body class="THIS">
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <!-- Header -->
-    <div
-      data-region-name="header"
-      data-item-id="75444a20-d562-4c3a-9c41-9d70a9dd07c0"
-      data-aura-rendered-by="130:0"
-      class="cGPEADonateTheme"
-      data-aura-class="cGPEADonateTheme"
-    >
-      <div
-        class="ui-widget"
-        data-item-id="462921c1-7a5d-4a2c-a33f-8fc44f61a08b"
-        data-priority=""
-        data-aura-rendered-by="127:0"
-      >
-        <header
-          class="header cGPEADonateHeader"
-          data-aura-rendered-by="120:0"
-          data-aura-class="cGPEADonateHeader"
-        >
-          <div class="header-wrapper" data-aura-rendered-by="121:0">
-            <div class="header__item header-logo" data-aura-rendered-by="122:0">
-              <img
-                alt="Greenpeace 綠色和平 ｜ 香港"
-                src="https://change.greenpeace.org.hk/static/logo/GP-logo-2019-TC-green-%5Bweb%5D-01.png"
-                data-aura-rendered-by="123:0"
-              />
-            </div>
-            <div class="header-buttons" data-aura-rendered-by="124:0"></div>
-          </div>
-        </header>
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="header__item header-logo">
+          <img
+            src="https://change.greenpeace.org.hk/static/logo/GP-logo-2019-TC-green-%5Bweb%5D-01.png"
+            alt="Greenpeace 綠色和平 ｜ 香港"
+          />
+        </div>
+        <div class="header-buttons"></div>
       </div>
-    </div>
+    </header>
     <!-- end of Header -->
     <div class="s1">
       <div class="main" data-aura-rendered-by="165:2;a">
@@ -1597,7 +1571,7 @@
     </div>
     <!-- end of donation -->
     <!-- extra blocks -->
-    <div class="extra prose prose prose-sm sm:prose lg:prose-lg">
+    <div class="extra prose prose-sm sm:prose lg:prose-lg">
       <section class="section section-center-text">
         <div class="section-wrapper">
           <h2 class="section__header content-header">
@@ -1619,10 +1593,7 @@
               <div class="swiper-wrapper">
                 {% for visual in mixedContent.picList %}
                 <div class="swiper-slide">
-                  <div
-                    class="box-visual"
-                    style="background-image: url('{{visual.link}}')"
-                  >
+                  <div class="box-visual">
                     <img src="{{visual.link}}" alt="{{visual.alt}}" />
                   </div>
                 </div>
@@ -1642,8 +1613,8 @@
           <div class="swiper-container">
             <div class="swiper-wrapper">
               {% for issue in issues.issueList %}
-              <div class="swiper-slide">
-                <div class="card issue issue--arctic">
+              <div class="swiper-slide card">
+                <div class="issue issue--arctic">
                   <div class="issue__header">
                     <h2 class="text--{{issue.issueName}}">
                       {{issue.headline}}
@@ -1653,9 +1624,7 @@
                   <div
                     class="issue__image"
                     style="background-image: url('{{issue.pic}}')"
-                  >
-                    <img src="{{issue.pic}}" alt="{{issue.text}}" />
-                  </div>
+                  ></div>
                 </div>
               </div>
               {% endfor %}
@@ -1674,6 +1643,7 @@
         <div class="section-wrapper">
           <div class="section__header">
             <h2>{{impacts.headline}}</h2>
+            <p>{{impacts.text}}</p>
           </div>
           <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -1713,8 +1683,8 @@
           <div class="swiper-container">
             <div class="swiper-wrapper">
               {% for testimonial in testimonials.testimonialList %}
-              <div class="swiper-slide">
-                <div class="card testimonial">
+              <div class="swiper-slide card">
+                <div class="testimonial">
                   <div class="testimonial__quote">
                     <p class="quote-text">{{testimonial.quote}}</p>
                   </div>
@@ -1740,6 +1710,70 @@
             </div>
             <div class="swiper-button-next">
               <div class="arrow arrow--right"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-finance">
+        <div class="section-wrapper">
+          <div class="section__header">
+            <h2>Why our campaign projects are important</h2>
+          </div>
+        </div>
+        <div class="finance-blocks">
+          <div class="finance-block">
+            <img
+              src="https://change.greenpeace.org.hk/static/icon/Asset%2018%403x.png"
+              alt=""
+            />
+            <span class="finance-block__number"> 49% </span>
+            <p class="finance-block__description">
+              of our campaigning work focuses on climate - to heal the climate
+              and build a safer, greener fairer world
+            </p>
+          </div>
+          <div class="finance-block">
+            <img
+              src="https://change.greenpeace.org.hk/static/icon/Asset%2018%403x.png"
+              alt=""
+            />
+            <span class="finance-block__number"> 49% </span>
+            <p class="finance-block__description">
+              of our campaigning work focuses on climate - to heal the climate
+              and build a safer, greener fairer world
+            </p>
+          </div>
+          <div class="finance-block">
+            <img
+              src="https://change.greenpeace.org.hk/static/icon/Asset%2018%403x.png"
+              alt=""
+            />
+            <span class="finance-block__number"> 49% </span>
+            <p class="finance-block__description">
+              of our campaigning work focuses on climate - to heal the climate
+              and build a safer, greener fairer world
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section section-mixed-content section-mixed-content-static"
+      >
+        <div class="section-grid boxes">
+          <div class="box">
+            <div class="box-content">
+              <h2 class="box-header">綠色和平足跡遍佈全球秘地</h2>
+              <p class="box-text">
+                我們獨立的研究團隊，為找尋真相踏足極地秘境，從巴西亞馬遜森林，至北極雪地，為解決環境問題追本溯源，與各地社區與政府持續溝通，為全球環境問題提出實際可行的解決方案。
+              </p>
+            </div>
+          </div>
+          <div class="box fit">
+            <div class="box-visual">
+              <img
+                src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/11c847f3-block-2-greenpeace-goes-where-others-can_t.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>

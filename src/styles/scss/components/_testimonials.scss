@@ -7,7 +7,7 @@
   }
   .testimonial {
     text-align: center;
-    padding: 20px 8px;
+    padding: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -18,9 +18,7 @@
       align-items: center;
       text-align: center;
       color: $gray1;
-      .quote-text {
-        font-size: 1rem;
-      }
+      padding: 20px;
     }
     .testimonial__profile {
       .testimonial__avatar {

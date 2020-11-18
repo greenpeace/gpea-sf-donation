@@ -19,21 +19,25 @@
 }
 .THIS {
   .swiper-slide {
+    height: auto;
     width: 90%;
     margin-left: 2%;
     margin-right: 2%;
     opacity: 0.75;
-    transition: all 200ms linear;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     box-shadow: $shadow-card1;
+    transition: all 200ms linear;
     @media (min-width: 768px) {
       max-width: 560px;
     }
     @media (min-width: 1200px) {
       max-width: 720px;
+    }
+    @media (min-width: 1400px) {
+      max-width: 800px;
     }
     &:last-child {
       margin-right: 0;

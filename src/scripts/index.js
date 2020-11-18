@@ -18,31 +18,6 @@ const swiperParams = {
   },
 };
 
-const getScrollTop = () => {
-  return window.pageYOffset !== undefined
-    ? window.pageYOffset
-    : (document.documentElement || document.body.parentNode || document.body)
-        .scrollTop;
-};
-
-const showCTABottom = () => {
-  console.log("show");
-};
-
-const handleScroll = () => {
-  let scrollDepth = getScrollTop();
-  let scrollPassed = false;
-  const landing = document.querySelector(".section_landing");
-  if (scrollDepth > landing.offsetHeight + landing.offsetTop) {
-    scrollPassed = true;
-  } else {
-    scrollPassed = false;
-  }
-  if (scrollPassed) {
-    showCTABottom();
-  }
-};
-
 const getUrlParams = () => {
   const { searchParams } = new URL(window.location.href);
   let p = {};
@@ -69,6 +44,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+  var b = document.documentElement;
+  b.setAttribute("data-useragent", navigator.userAgent);
+  b.setAttribute("data-platform", navigator.platform);
+  b.className +=
+    !!("ontouchstart" in window) || !!("onmsgesturechange" in window)
+      ? " touch"
+      : "";
   // eslint-disable-next-line no-unused-vars
   const swiper = new Swiper(".swiper-container", swiperParams);
   // eslint-disable-next-line no-unused-vars

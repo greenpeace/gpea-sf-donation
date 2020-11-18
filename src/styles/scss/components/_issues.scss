@@ -5,6 +5,8 @@
     }
   }
   .issue {
+    margin: 0;
+    height: 100%;
     width: 100%;
     min-height: 400px;
     display: flex;
@@ -14,13 +16,15 @@
     }
     .issue__header {
       flex: 1;
-      padding: 40px 16px;
+      padding: 30px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      max-width: 400px;
+      @media (min-width: 992px) {
+        padding: 40px 20px;
+      }
       h2 {
         font-weight: bold;
         text-transform: uppercase;
@@ -31,7 +35,7 @@
     }
     .issue__image {
       flex: 1;
-      min-height: 200px;
+      min-height: 220px;
       background-color: $gray4;
       background-size: cover;
       background-position: center;

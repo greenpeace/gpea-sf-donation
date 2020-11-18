@@ -1,43 +1,69 @@
+@charset "utf-8";
+$black: #000000;
+$gray0: #1a1a1a;
+$gray1: #333333;
+$gray2: #666666;
+$gray3: #999999;
+$gray4: #e5e5e5;
+$white: #ffffff;
+// primary
+$gp-green: #66cc00;
+$gp-orange: #ff9500;
+$gp-darkblue: #292f47;
+$gp-lightblue: #e6f5f5;
+$gp-red: #ff3333;
+// issues
+$gp-arctic: #62cbd7;
+$gp-health: #f96d8c;
+$gp-climate: #ffbe00;
+$gp-plastics: #afaa91;
+$gp-forests: #00b474;
+$gp-oceans: #008fe2;
+// shadow
+$shadow-button1: 0px 2px 4px rgba(50, 50, 71, 0.06),
+  0px 2px 2px rgba(50, 50, 71, 0.06);
+$shadow-button2: 0px 4px 8px rgba(50, 50, 71, 0.06),
+  0px 4px 4px rgba(50, 50, 71, 0.08);
+$shadow-card1: 0px 8px 16px rgba(50, 50, 71, 0.06),
+  0px 8px 8px rgba(50, 50, 71, 0.08);
+$shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
+  0px 12px 12px rgba(50, 50, 71, 0.08);
+$shadow-topbottom-white: linear-gradient(
+  to bottom,
+  rgba(255, 255, 255, 1),
+  rgba(255, 255, 255, 0)
+);
+//
 @import "./swiper", "./center-text", "./impacts", "./issues", "./mixed-content",
-  "./testimonials";
+  "./testimonials", "./finance";
 
 .THIS {
-  .section {
-    position: relative;
-    .section-wrapper {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+  .prose {
+    max-width: none !important;
+    img {
+      margin: 0;
+      padding: 0;
     }
-    .section__header {
-      position: relative;
-      text-align: center;
-      max-width: 780px;
-      margin-bottom: 20px;
-      h2 {
-        font-weight: bold;
-        color: $gray1;
-        margin-bottom: 8px;
-      }
-      p {
-        color: $gray3;
-      }
-    }
-    &.section_bg-white {
-      background-color: $white;
-    }
-    &.section_bg-darkblue {
-      background-color: $gp-darkblue;
-      color: $white;
-    }
-    &.section_bg-lightblue {
-      background-color: $gp-lightblue;
-    }
+  }
+}
+.THIS {
+  .text--arctic {
+    color: $gp-arctic !important;
+  }
+  .text--health {
+    color: $gp-health !important;
+  }
+  .text--climate {
+    color: $gp-climate !important;
+  }
+  .text--forests {
+    color: $gp-forests !important;
+  }
+  .text--oceans {
+    color: $gp-oceans !important;
+  }
+  .text--plastics {
+    color: $gp-plastics !important;
   }
 }
 
@@ -50,6 +76,52 @@
     overflow: hidden;
     &:hover {
       box-shadow: $shadow-card2;
+    }
+  }
+}
+
+.THIS {
+  .section {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    .section-wrapper {
+      width: 100%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .section-wrapper .section__header {
+      position: relative;
+      text-align: center;
+      max-width: 780px;
+      margin-bottom: 20px;
+      h2 {
+        letter-spacing: 2px;
+        color: $gray1;
+        margin-bottom: 20px;
+      }
+      p {
+        letter-spacing: 1px;
+        font-size: 1rem;
+        margin-bottom: 20px;
+        color: $gray3;
+      }
+    }
+    &.section_bg-white {
+      background-color: $white;
+    }
+    &.section_bg-darkblue {
+      background-color: $gp-darkblue;
+      color: $white;
+    }
+    &.section_bg-lightblue {
+      background-color: $gp-lightblue;
     }
   }
 }

@@ -21,21 +21,48 @@
   padding: 0;
   box-sizing: inherit;
 }
+
+:root {
+  height: 100%;
+}
+
 html,
 body {
+  padding: 0;
+  margin: 0;
   overflow-x: hidden;
 }
+
 html {
   font-size: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 body {
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  line-height: 1.5;
   transition: opacity 250ms ease, transform 250ms ease;
+}
+
+blockquote,
+body,
+button,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+pre,
+ul {
+  margin: 0;
+  padding: 0;
 }
