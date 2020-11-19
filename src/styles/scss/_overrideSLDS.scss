@@ -11,6 +11,7 @@
 
   .checkbox-input {
     min-width: 25px;
+    width: 25px !important;
   }
 
   .checkbox-label {
@@ -123,7 +124,7 @@
     transition: all 0.2s ease;
     display: flex;
     &:hover {
-      border: 1px solid $gray3;
+      border: 1px solid $gp-green;
     }
   }
   .slds-has-error .slds-select:focus,

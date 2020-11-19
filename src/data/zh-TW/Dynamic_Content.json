@@ -1,15 +1,15 @@
 {
   "title": "守護地球，分秒必爭",
-  "explainer": {
-    "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，並在全球各地落實環保工作。謝謝！",
-    "onetime": "您的捐款，將立即幫助綠色和平守護我們的家園。謝謝！"
-  },
-  "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
-  "image": {
-    "position": "right",
-    "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg",
-    "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
-  },
+    "explainer": {
+      "monthly": "您的每月捐款，能幫助綠色和平推動環境永續方案，並在全球各地落實環保工作。謝謝您！",
+      "onetime": "您的捐款，能即時幫助綠色和平守護我們的家園。謝謝您！"
+    },
+    "lead": "綠色和平進行實地研究調查，第一線見證記錄環境問題，請幫助我們繼續守護美好的自然環境。",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
+    },
   "sections": [
     {
       "type": "SectionCenterText",

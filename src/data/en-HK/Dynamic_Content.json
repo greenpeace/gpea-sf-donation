@@ -1,29 +1,29 @@
 {
-  "title": "守護地球，分秒必爭",
-  "explainer": {
-    "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，並在全球各地落實環保工作。謝謝！",
-    "onetime": "您的捐款，將立即幫助綠色和平守護我們的家園。謝謝！"
-  },
-  "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
-  "image": {
-    "position": "right",
-    "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg",
-    "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
-  },
+  "title": "Protecting our planet everyday.",
+    "explainer": {
+      "monthly": "Your monthly donation will help Greenpeace research solutions and to work globally to protect our planet. Thank you!",
+      "onetime": "Your donation will immediately help Greenpeace's work to protect our planet. Thank you!"
+    },
+    "lead": "Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
+    },
   "sections": [
     {
       "type": "SectionCenterText",
       "payload": {
-        "title": "改變，因您而起。",
-        "subTitle": "全球有數百萬名支持者，與綠色和平並肩保護環境，讓人類與大自然世世代代共生共榮。了解您的捐助如何應用在解決各重大環境問題：",
+        "title": "Your donation will help protect the planet!",
+        "subTitle": "Greenpeace is trusted by millions of people around the world to care for the environment and help protect our planet for future generations. Here's what your donation will do:",
         "sectionType": "center-text"
       }
     },
     {
       "type": "SectionMixedContentStatic",
       "payload": {
-        "title": "綠色和平足跡遍佈全球秘地",
-        "subTitle": "我們獨立的研究團隊，為找尋真相踏足極地秘境，從巴西亞馬遜森林，至北極雪地，為解決環境問題追本溯源，與各地社區與政府持續溝通，為全球環境問題提出實際可行的解決方案。",
+        "title": "Greenpeace goes where others can't.",
+        "subTitle": "Our independent research teams travel to some of the most remote parts of the globe. From the Amazon rainforests to the Arctic wilderness you can trust that Greenpeace will report back on environmental problems and work with local communities and governments to find a solution.",
         "sectionType": "mixed-content",
         "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/11c847f3-block-2-greenpeace-goes-where-others-can_t.jpg"
       }
@@ -31,45 +31,45 @@
     {
       "type": "SectionSwiper",
       "payload": {
-        "title": "是您，造就環保成果。",
-        "subTitle": "綠色和平的工作涵蓋6大範疇",
+        "title": "Your donation will have an impact.",
+        "subTitle": "Greenpeace works across 6 global issues:",
         "sectionType": "issues",
         "slideType": "SectionSwiperSlideIssue",
         "items": [
           {
             "issueName": "climate",
             "headline": "氣候 CLIMATE",
-            "description": "宣揚應對氣候危機的方案，推動加速發展可再生能源，實現能源轉型，讓我們在不損害地球的前提下仍能繁榮發展。",
+            "description": "To save the climate and build a safer, greener fairer world together.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/a611fb7d-block-3-your-donation-will-have-an-impact-climate-gp0str5kn.jpg"
           },
           {
             "issueName": "oceans",
             "headline": "海洋 OCEANS",
-            "description": "發起全球行動，連繫關心海洋保育的群眾，爭取成立海洋保護區，停止過度捕撈，讓漁業資源得以永續，海洋生生不息。",
+            "description": "To protect the source of all life and our best defences against climate change.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/2e02c9e3-block-3-your-donation-will-have-an-impact-oceans-gp0stoe2u.jpg"
           },
           {
             "issueName": "arctic",
             "headline": "北極 ARCTIC",
-            "description": "集合群眾力量，向石油與捕魚企業施壓，並呼籲政治領袖制定全球條約，齊心守護北極熊的極地樂園。",
+            "description": "To protect the Arctic from destructive oil drilling and commercial fishing.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/033c5484-block-3-your-donation-will-have-an-impact-arctic.jpg"
           },
           {
             "issueName": "forests",
             "headline": "森林 FORESTS",
-            "description": "揭露毀林真相，要求企業品牌公開供應鏈資訊、截斷毀林資金流，致力遊說政府及企業採用可持續的方式管理森林。",
+            "description": "To take action to stop deforestation, expose illegal logging activities, and protect indigenous rights.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/329a08ca-block-3-your-donation-will-have-an-impact-forests.jpg"
           },
           {
             "issueName": "plastics",
             "headline": "塑膠 PLASTICS",
-            "description": "促請政府和企業定下具體減塑措施，逐步淘汰即棄塑膠，同時鼓勵公眾改變生活習慣，從源頭減廢做起，營造永續生活。",
+            "description": "To rid the world of plastics and toxics for a healthier world.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/7c80fc6a-block-3-your-donation-will-have-an-impact-plastics.jpg"
           },
           {
             "issueName": "health",
             "headline": "生活 HEALTH",
-            "description": "推展各項污染防治、可持續城市規劃等環保倡導工作，捍衛你我免受污染侵害、呼吸新鮮空氣、享受大自然低聲細語的權利。",
+            "description": "To ensure healthy food for all, and protect the soil, water and the climate.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/05d964e5-block-3-your-donation-will-have-an-impact-health.jpg"
           }
         ]
@@ -78,51 +78,51 @@
     {
       "type": "SectionSwiper",
       "payload": {
-        "title": "自1971年開始的環保里程…",
-        "subTitle": "您的慷慨捐款，創造無數環境成果。",
+        "title": "Your donation will ensure a better future",
+        "subTitle": "Since 1971, Greenpeace has worked to bring about change. Here are just some of our achievements.",
         "sectionType": "impacts",
         "slideType": "SectionSwiperSlideImpact",
         "items": [
           {
             "issueName": "health",
             "headline": "生活",
-            "description": "1971年：先鋒成員掛起「綠色和平」橫額，駕船反對美國進行核試，牽起全球關注核安全議題，及後更令法國結束於南太平洋的核試。",
+            "description": "1971: Greenpeace's first action took place to stop a US nuclear weapons test, raising awareness of nuclear safety.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/f319f4f6-block-4-your-donation-will-ensure-a-better-future-success-1.jpg"
           },
           {
             "issueName": "oceans",
             "headline": "海洋",
-            "description": "1991年：早年在南極設立基地宣揚守護南極，促使1991年成功簽署《南極條約》，禁止人類開採礦產最少50年（至2048年）。",
+            "description": "1991: The 39 Antarctic Treaty signatories agreed to a 50-year minimum prohibition of all mineral exploitation.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/5a5b3369-block-4-your-donation-will-ensure-a-better-future-success-2.jpg"
           },
           {
             "issueName": "climate",
             "headline": "氣侯",
-            "description": "1997年：國際綠色和平自家研發Greenfreeze環保製冷技術得獎，讓技術有助減少溫室氣體排放，革新製冷行業技術並獲廣泛利用。",
+            "description": "1997: Greenpeace developed Greenfreeze, a completely fluorocarbon-free household refrigerator.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/a4fb0df9-block-4-your-donation-will-ensure-a-better-future-success-3.jpg"
           },
           {
             "issueName": "arctic",
             "headline": "北極",
-            "description": "2015年：號召全球800萬人守護北極，蜆殼公司終宣布停止北極鑽油計劃。我們持續倡議長遠成立北極保護區。",
+            "description": "2015: We gathered over 8 million people worldwide to say NO to oil drilling in the Arctic, Shell later abandoned its operations there.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/329a08ca-block-3-your-donation-will-have-an-impact-forests.jpg"
           },
           {
             "issueName": "oceans",
             "headline": "海洋",
-            "description": "2017年：共80家國際品牌及供應商承諾無毒生產，包括ZARA、H&M、Uniqlo等。「為時尚去毒」全球項目自2011年展開，影響力至今不散。",
+            "description": "2017: 80 global clothing brands and suppliers included Zara, H&M and Uniqlo committed to detoxing their clothing production.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/958ea341-block-4-your-donation-will-ensure-a-better-future-success-6.jpg"
           },
           {
             "issueName": "climate",
             "headline": "氣侯",
-            "description": "2018年：集結全球群眾力量，推動 Samsung 承諾能源轉型，於2020年之前在美國、歐洲與中國等消費市場，邁向100%可再生能源。",
+            "description": "2018: Samsung electronics commits to 100% renewable energy in the US, Eurpoe and China by 2020.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/cc3668a7-block-4-your-donation-will-ensure-a-better-future-success-7.jpg"
           },
           {
             "issueName": "health",
             "headline": "生活",
-            "description": "2018年：集結超過5萬人聯署，與眾多本地團體合作，成功推動政府認同發展棕地，無再提及開發郊野公園，守住香港青山綠水。",
+            "description": "2018: Following actions by Greenpeace in Hong Kong, the government halted plans to develop country parks.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/1288eef1-block-4-your-donation-will-ensure-a-better-future-success-8.jpg"
           }
         ]
