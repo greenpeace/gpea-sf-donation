@@ -133,6 +133,79 @@
           }
         ]
       }
+    },
+    {
+      "type": "SectionFinanceStatic",
+      "payload": {
+        "title": "Why our campaign projects are important",
+        "subTitle": "",
+        "sectionType": "finance",
+        "link": "See more in <a href='https://www.greenpeace.org/hongkong/about/reports/annual-report-2019/' target='_blank'>our latest Annual Report</a>",
+        "blocks": [
+          {
+            "imageURL": "https://change.greenpeace.org.hk/static/icon/Asset%2018@3x.png",
+            "headline": "49%",
+            "description": "of our campaigning work in East Asia is focused on climate - to heal the climate and build a safer, greener fairer world"
+          },
+          {
+            "imageURL": "https://change.greenpeace.org.hk/static/icon/Asset%2022@3x.png",
+            "headline": "28%",
+            "description": "of it focuses on oceans and forests and others - to protect the source of all life and provide solutions to drive change"
+          },
+          {
+            "imageURL": "https://change.greenpeace.org.hk/static/icon/Asset%207@3x.png",
+            "headline": "23%",
+            "description": "of it goes on food security and toxics - to ensure healthy food for all, and protect the soil, water and the climate"
+          }
+        ]
+      }
+    },
+    {
+      "type": "SectionSwiper",
+      "payload": {
+        "title": "By working together your donation will make a difference",
+        "subTitle": "Read what people say about Greenpeace.",
+        "sectionType": "testimonials",
+        "slideType": "SectionSwiperSlideTestimonial",
+        "items": [
+          {
+            "description": "We are living in a time of great environmental challenges and what happens here in East Asia will have an immense impact on the future of our planet.",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/e1db86a2-block-5-by-working-together-kt.jpg",
+            "title": "Executive Director of Greenpeace East Asia",
+            "name": "KT"
+          },
+          {
+            "description": "The world-changing work of Greenpeace East Asia would not be possible without you. Together we can make the world a better place for us and for the generations to come.",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/4830aaf6-block-5-by-working-together-santosh.jpg",
+            "title": "Lawyer and Board Chair of Greenpeace East Asia",
+            "name": "Santosh Pai"
+          },
+          {
+            "description": "I feel glad that I can work with communities, individuals, volunteers, teachers, activists, and many more to help preserve our one and only planet.",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/16265910-block-5-by-working-together-kate.jpg",
+            "title": "Campaigner",
+            "name": "Kate"
+          },
+          {
+            "description": "One of our main duties is to collect samples and data for research, to uncover the truth for our environment. Your generous gift is the strongest back for our mission!",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/be3f523c-block-5-by-working-together-dolphin.jpg",
+            "title": "Deckhand on Greenpeace's ships",
+            "name": "Dolphin"
+          },
+          {
+            "description": "Being a mum, I know how importance it is to make change for today and our next generation. Everyone has a share in environmental protection.",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/5dec4146-block-5-by-working-together-sharon.jpg",
+            "title": "Donor for over 2 years",
+            "name": "Sharon"
+          },
+          {
+            "description": "I believe that regardless of age and identity, everyone can promote a greener planet.",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/14a16954-block-5-by-working-together-brian.jpg",
+            "title": "Organiser of a fund-raising campaign",
+            "name": "Brian"
+          }
+        ]
+      }
     }
   ]
 }
