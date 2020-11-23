@@ -38,37 +38,37 @@
         "items": [
           {
             "issueName": "climate",
-            "headline": "氣候 CLIMATE",
+            "headline": "CLIMATE",
             "description": "To save the climate and build a safer, greener fairer world together.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/a611fb7d-block-3-your-donation-will-have-an-impact-climate-gp0str5kn.jpg"
           },
           {
             "issueName": "oceans",
-            "headline": "海洋 OCEANS",
+            "headline": "OCEANS",
             "description": "To protect the source of all life and our best defences against climate change.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/2e02c9e3-block-3-your-donation-will-have-an-impact-oceans-gp0stoe2u.jpg"
           },
           {
             "issueName": "arctic",
-            "headline": "北極 ARCTIC",
+            "headline": "ARCTIC",
             "description": "To protect the Arctic from destructive oil drilling and commercial fishing.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/033c5484-block-3-your-donation-will-have-an-impact-arctic.jpg"
           },
           {
             "issueName": "forests",
-            "headline": "森林 FORESTS",
+            "headline": "FORESTS",
             "description": "To take action to stop deforestation, expose illegal logging activities, and protect indigenous rights.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/329a08ca-block-3-your-donation-will-have-an-impact-forests.jpg"
           },
           {
             "issueName": "plastics",
-            "headline": "塑膠 PLASTICS",
+            "headline": "PLASTICS",
             "description": "To rid the world of plastics and toxics for a healthier world.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/7c80fc6a-block-3-your-donation-will-have-an-impact-plastics.jpg"
           },
           {
             "issueName": "health",
-            "headline": "生活 HEALTH",
+            "headline": "HEALTH",
             "description": "To ensure healthy food for all, and protect the soil, water and the climate.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/05d964e5-block-3-your-donation-will-have-an-impact-health.jpg"
           }
@@ -85,43 +85,49 @@
         "items": [
           {
             "issueName": "health",
-            "headline": "生活",
+            "headline": "Health",
             "description": "1971: Greenpeace's first action took place to stop a US nuclear weapons test, raising awareness of nuclear safety.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/f319f4f6-block-4-your-donation-will-ensure-a-better-future-success-1.jpg"
           },
           {
             "issueName": "oceans",
-            "headline": "海洋",
+            "headline": "Oceans",
             "description": "1991: The 39 Antarctic Treaty signatories agreed to a 50-year minimum prohibition of all mineral exploitation.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/5a5b3369-block-4-your-donation-will-ensure-a-better-future-success-2.jpg"
           },
           {
             "issueName": "climate",
-            "headline": "氣侯",
+            "headline": "Climate",
             "description": "1997: Greenpeace developed Greenfreeze, a completely fluorocarbon-free household refrigerator.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/a4fb0df9-block-4-your-donation-will-ensure-a-better-future-success-3.jpg"
           },
           {
+            "issueName": "climate",
+            "headline": "Climate",
+            "description": "1997: Greenpeace developed Greenfreeze, a completely fluorocarbon-free household refrigerator.",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/d7091e18-block-4-your-donation-will-ensure-a-better-future-success-4.jpg"
+          },
+          {
             "issueName": "arctic",
-            "headline": "北極",
+            "headline": "Arctic",
             "description": "2015: We gathered over 8 million people worldwide to say NO to oil drilling in the Arctic, Shell later abandoned its operations there.",
-            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/329a08ca-block-3-your-donation-will-have-an-impact-forests.jpg"
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/62dbdbc0-block-4-your-donation-will-ensure-a-better-future-success-5.jpg"
           },
           {
             "issueName": "oceans",
-            "headline": "海洋",
+            "headline": "Oceans",
             "description": "2017: 80 global clothing brands and suppliers included Zara, H&M and Uniqlo committed to detoxing their clothing production.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/958ea341-block-4-your-donation-will-ensure-a-better-future-success-6.jpg"
           },
           {
             "issueName": "climate",
-            "headline": "氣侯",
+            "headline": "Climate",
             "description": "2018: Samsung electronics commits to 100% renewable energy in the US, Eurpoe and China by 2020.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/cc3668a7-block-4-your-donation-will-ensure-a-better-future-success-7.jpg"
           },
           {
             "issueName": "health",
-            "headline": "生活",
+            "headline": "Health",
             "description": "2018: Following actions by Greenpeace in Hong Kong, the government halted plans to develop country parks.",
             "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/1288eef1-block-4-your-donation-will-ensure-a-better-future-success-8.jpg"
           }

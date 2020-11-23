@@ -39,8 +39,6 @@
     />
     <!-- static js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- static js -->
-    <script></script>
   </head>
   <body class="THIS">
     <!-- Header -->
@@ -1604,7 +1602,7 @@
           </div>
         </div>
       </section>
-      <section class="section section-issues section_bg-lightblue">
+      <section class="section section-issues">
         <div class="section-wrapper">
           <div class="section__header">
             <h2>{{issues.headline}}</h2>
@@ -1619,11 +1617,11 @@
                     <h2 class="text--{{issue.issueName}}">
                       {{issue.headline}}
                     </h2>
-                    <p>{{issue.text}}</p>
+                    <p>{{issue.description}}</p>
                   </div>
                   <div
                     class="issue__image"
-                    style="background-image: url('{{issue.pic}}')"
+                    style="background-image: url('{{issue.imageURL}}')"
                   ></div>
                 </div>
               </div>
@@ -1674,7 +1672,54 @@
           </div>
         </div>
       </section>
-      <section class="section section-testimonials section_bg-lightblue">
+
+      <section class="section section-finance">
+        <div class="section-wrapper">
+          <div class="section__header">
+            <h2>我們如何分配資源在東亞進行重要的環保項目？</h2>
+          </div>
+          <div class="finance-blocks row">
+            <div class="finance-block col-xs-12 col-md-4">
+              <img
+                src="https://change.greenpeace.org.hk/static/icon/Asset 18@3x.png"
+                alt=""
+              />
+              <span class="finance-block__number"> 49% </span>
+              <p class="finance-block__description">
+                分配至拯救氣候危機，營造更健康、公平和綠色的世界
+              </p>
+            </div>
+            <div class="finance-block col-xs-12 col-md-4">
+              <img
+                src="https://change.greenpeace.org.hk/static/icon/Asset 22@3x.png"
+                alt=""
+              />
+              <span class="finance-block__number"> 28% </span>
+              <p class="finance-block__description">
+                分配至守護全球海洋與原始森林，支援跨範疇項目，保護生命之源，提出解決方案推動改變
+              </p>
+            </div>
+            <div class="finance-block col-xs-12 col-md-4">
+              <img
+                src="https://change.greenpeace.org.hk/static/icon/Asset 7@3x.png"
+                alt=""
+              />
+              <span class="finance-block__number"> 23% </span>
+              <p class="finance-block__description">
+                分配至維護食物安全和防治環境污染，營造無毒無污世界，保護土地、水資源及地球環境
+              </p>
+            </div>
+          </div>
+          <p class="annual-report-link">
+            閱讀<a
+              href="https://www.greenpeace.org/hongkong/about/reports/annual-report-2019/"
+              target="_blank"
+              >最新的機構年報</a
+            >了解更多
+          </p>
+        </div>
+      </section>
+      <section class="section section-testimonials">
         <div class="section-wrapper">
           <div class="section__header">
             <h2>{{testimonials.headline}}</h2>
@@ -1714,50 +1759,9 @@
           </div>
         </div>
       </section>
-      <section class="section section-finance">
-        <div class="section-wrapper">
-          <div class="section__header">
-            <h2>Why our campaign projects are important</h2>
-          </div>
-        </div>
-        <div class="finance-blocks">
-          <div class="finance-block">
-            <img
-              src="https://change.greenpeace.org.hk/static/icon/Asset%2018%403x.png"
-              alt=""
-            />
-            <span class="finance-block__number"> 49% </span>
-            <p class="finance-block__description">
-              of our campaigning work focuses on climate - to heal the climate
-              and build a safer, greener fairer world
-            </p>
-          </div>
-          <div class="finance-block">
-            <img
-              src="https://change.greenpeace.org.hk/static/icon/Asset%2018%403x.png"
-              alt=""
-            />
-            <span class="finance-block__number"> 49% </span>
-            <p class="finance-block__description">
-              of our campaigning work focuses on climate - to heal the climate
-              and build a safer, greener fairer world
-            </p>
-          </div>
-          <div class="finance-block">
-            <img
-              src="https://change.greenpeace.org.hk/static/icon/Asset%2018%403x.png"
-              alt=""
-            />
-            <span class="finance-block__number"> 49% </span>
-            <p class="finance-block__description">
-              of our campaigning work focuses on climate - to heal the climate
-              and build a safer, greener fairer world
-            </p>
-          </div>
-        </div>
-      </section>
       <section
         class="section section-mixed-content section-mixed-content-static"
+        style="display: none"
       >
         <div class="section-grid boxes">
           <div class="box">

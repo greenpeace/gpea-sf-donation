@@ -1,38 +1,34 @@
 .THIS {
   .finance-blocks {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    @media (min-width: 992px) {
-      flex-wrap: nowrap;
-    }
+    margin-top: 30px;
   }
   .finance-block {
-    min-width: 300px;
-    flex: 1;
+    margin: 16px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 8px 16px;
-    padding-bottom: 40px;
     img {
       width: 100%;
       max-width: 80px;
       text-align: center;
     }
     .finance-block__number {
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: bold;
       text-align: center;
       color: $gp-green;
       line-height: 1;
-      margin: 20px auto 8px;
+      margin: 32px auto 8px;
     }
     .finance-block__description {
-      width: 80%;
+      width: 90%;
       text-align: center;
       font-size: 1rem;
     }
+  }
+  .annual-report-link {
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 30px;
   }
 }
