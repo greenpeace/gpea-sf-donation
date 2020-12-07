@@ -9,27 +9,26 @@
     align-items: center;
     img {
       width: 100%;
-      max-width: 80px;
+      max-width: 64px;
       text-align: center;
     }
     .finance-block__number {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       font-weight: bold;
       text-align: center;
       color: $gp-green;
       line-height: 1;
-      margin: 32px auto 8px;
+      margin: 28px auto 8px;
     }
     .finance-block__description {
       width: 90%;
       text-align: center;
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
   }
   .annual-report-link {
     text-align: center;
-    font-size: 0.8rem;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
     letter-spacing: 2px;
   }
 }
