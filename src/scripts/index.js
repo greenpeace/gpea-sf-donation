@@ -44,6 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(function () {
+    document.querySelector(".main").classList.add("loaded");
+  }, 500);
+  //
   var b = document.documentElement;
   b.setAttribute("data-useragent", navigator.userAgent);
   b.setAttribute("data-platform", navigator.platform);

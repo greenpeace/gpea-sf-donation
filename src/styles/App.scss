@@ -37,7 +37,8 @@ $shadow-topbottom-white: linear-gradient(
 //
 @import "./scss/global/index.scss", "./scss/spinner", "./scss/overrideSLDS",
   "./scss/donation", "./scss/donationDonor", "./scss/donationThankyou",
-  "./scss/overrideLanguage", "./scss/main", "./scss/components/index.scss";
+  "./scss/overrideLanguage", "./scss/main";
+@import "./scss/components/index.scss";
 //
 .THIS {
   .prose {

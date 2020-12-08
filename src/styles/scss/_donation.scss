@@ -1,21 +1,52 @@
 .THIS {
+  form {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition-property: opacity, transform;
+    transition-duration: 0.35s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    a,
+    button,
+    input,
+    select,
+    textarea {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+      box-shadow: none;
+      background: none;
+      outline: none;
+      font-family: inherit;
+    }
+  }
+}
+// Basic form
+.THIS {
   .form__title {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    @media (max-width: 575.98px) {
+      text-align: left;
+    }
     .form__headline {
       text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
       color: $black;
-      font-size: 24px;
+      font-size: 1.4rem;
       font-weight: bold;
       @media (min-width: 992px) {
-        font-size: 28px;
+        font-size: 1.6rem;
+      }
+      @media (min-width: 1200px) {
+        font-size: 1.8rem;
       }
     }
     .form__leading {
       text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
-      font-size: 16px;
       color: $gray1;
       margin: 20px auto;
     }
@@ -54,32 +85,31 @@
     }
   }
 }
-// Titles and leading text
+// Title and leading text
 .THIS {
-  .main-wrapper {
-    padding: 20px;
-  }
   .form-wrapper {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition-property: opacity, transform;
-    transition-duration: 0.35s;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-    > div {
-      width: 100%;
-    }
+    padding: 4vw 0;
     @media (min-width: 992px) {
-      padding: 4vw 0;
       min-height: 50vw;
       max-width: 50vw;
     }
-    @media (min-width: 1200px) {
-      min-height: 90vh;
+  }
+  .main__form-wrapper {
+    width: 100%;
+    max-width: 440px;
+    padding: 20px;
+    margin: 0 auto;
+    @media (min-width: 992px) {
+      max-width: 480px;
     }
-    @media (min-width: 1600px) {
-      min-height: 75vh;
+  }
+}
+// Wrappers
+.THIS {
+  .form-wrapper {
+    > div {
+      width: 100%;
     }
     .row {
       display: flex;
@@ -96,21 +126,12 @@
       }
     }
   }
-  .main__form-wrapper {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    @media (min-width: 992px) {
-      max-width: 440px;
-    }
-  }
 }
-// Wrappers
+// Rows and Cols
 .THIS {
   .subtext {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 16px;
     color: $gp-green;
     font-weight: bold;
   }
@@ -166,7 +187,6 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          line-height: 2;
           @media (max-width: 320px) {
             font-size: 14px;
           }
@@ -207,7 +227,6 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      line-height: 2;
       transition: none;
       &:hover {
         text-decoration: none;
@@ -235,7 +254,6 @@
           position: absolute;
           content: "HKD";
           height: 48px;
-          line-height: 48px;
           left: 16px;
           font-size: 16px;
           color: $gray3;
@@ -243,20 +261,17 @@
         }
       }
     }
-    .amount-text {
-      padding: 20px 0px;
-      color: $gray1;
-      font-size: 16px;
+  }
+  .amount-text {
+    padding: 20px 0px;
+    color: $gray1;
+    text-align: center;
+    @media (max-width: 575.98px) {
+      text-align: left;
     }
   }
 }
 // Form tab menu and amounts
-.THIS {
-  .form__details-payment {
-    margin-top: 10px;
-  }
-}
-// Form payment section
 .THIS {
   .form__details-consent {
     margin: 20px auto;
@@ -285,7 +300,6 @@
       font-weight: bold;
       font-size: 16px;
       height: 48px;
-      line-height: 48px;
       width: 100%;
       background-color: $gp-green;
       border: none;
