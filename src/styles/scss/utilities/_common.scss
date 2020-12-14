@@ -1,0 +1,120 @@
+@charset "utf-8";
+// ------ Black & white -----
+$black: #1b1f23 !default;
+$white: #fff !default;
+// ------ Grays ------
+$gray0: #1a1a1a;
+$gray1: #333333;
+$gray2: #666666;
+$gray3: #999999;
+$gray4: #e5e5e5;
+// -------- Primary ------
+$gp-green: #66cc00;
+$gp-orange: #ff9500;
+$gp-darkblue: #292f47;
+$gp-lightblue: #e6f5f5;
+$gp-red: #ff3333;
+// ------ Campaigns ------
+$gp-arctic: #62cbd7;
+$gp-health: #f96d8c;
+$gp-climate: #ffbe00;
+$gp-plastics: #afaa91;
+$gp-forests: #00b474;
+$gp-oceans: #008fe2;
+// ------ Shadows ------
+$shadow-button1: 0px 2px 4px rgba(50, 50, 71, 0.06),
+  0px 2px 2px rgba(50, 50, 71, 0.06);
+$shadow-button2: 0px 4px 8px rgba(50, 50, 71, 0.06),
+  0px 4px 4px rgba(50, 50, 71, 0.08);
+$shadow-card1: 0px 8px 16px rgba(50, 50, 71, 0.06),
+  0px 8px 8px rgba(50, 50, 71, 0.08);
+$shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
+  0px 12px 12px rgba(50, 50, 71, 0.08);
+$shadow-topbottom-white: linear-gradient(
+  to bottom,
+  rgba(255, 255, 255, 1),
+  rgba(255, 255, 255, 0)
+);
+// ------ breakpoints ------
+$width-xs: 0;
+$width-sm: 544px;
+$width-md: 768px;
+$width-lg: 1012px;
+$width-xl: 1280px;
+$breakpoints: (
+  // Small screen / phone
+  sm: $width-sm,
+  // Medium screen / tablet
+  md: $width-md,
+  // Large screen / desktop (980 + (12 * 2)) <= container + gutters
+  lg: $width-lg,
+  // Extra large screen / wide desktop
+  xl: $width-xl
+) !default;
+// Heading sizes - mobile
+// h4—h6 remain the same size on both mobile & desktop
+$h00-size-mobile: 40px;
+$h0-size-mobile: 32px;
+$h1-size-mobile: 26px;
+$h2-size-mobile: 22px;
+$h3-size-mobile: 18px;
+// Heading sizes - desktop
+$h00-size: 48px;
+$h0-size: 40px;
+$h1-size: 32px;
+$h2-size: 24px;
+$h3-size: 20px;
+$h4-size: 16px;
+$h5-size: 14px;
+$h6-size: 12px;
+/*
+*
+| 0px ->
+         | 544px ->
+         | sm
+                    | 768px ->
+                    | md
+                               | 1012px ->
+                               | lg
+                                           | 1280px ->
+                                           | xl
+| col-12 ---------> | col-md-8 ----------> | col-xl-4 ->
+*
+.styles {
+  font-size: 28px;
+  @include breakpoint(md) {
+    font-size: 32px;
+  }
+}
+*
+*/
+//
+.THIS {
+  .prose {
+    max-width: none !important;
+    img {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+.THIS {
+  .text--arctic {
+    color: $gp-arctic !important;
+  }
+  .text--health {
+    color: $gp-health !important;
+  }
+  .text--climate {
+    color: $gp-climate !important;
+  }
+  .text--forests {
+    color: $gp-forests !important;
+  }
+  .text--oceans {
+    color: $gp-oceans !important;
+  }
+  .text--plastics {
+    color: $gp-plastics !important;
+  }
+}
