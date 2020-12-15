@@ -7,31 +7,48 @@
 @import "./scss/components/index";
 //
 .THIS {
-  .prose {
-    max-width: none !important;
-    img {
-      margin: 0;
-      padding: 0;
+  #backtotop {
+    position: fixed;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    bottom: 25px;
+    margin: 0 25px 0 0;
+    z-index: 9999;
+    transition: 0.35s;
+    transform: scale(0.7);
+    transition: all 0.5s;
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: scale(1);
+      transform: scale(1);
     }
-  }
-}
-.THIS {
-  .text--arctic {
-    color: $gp-arctic !important;
-  }
-  .text--health {
-    color: $gp-health !important;
-  }
-  .text--climate {
-    color: $gp-climate !important;
-  }
-  .text--forests {
-    color: $gp-forests !important;
-  }
-  .text--oceans {
-    color: $gp-oceans !important;
-  }
-  .text--plastics {
-    color: $gp-plastics !important;
+    a {
+      position: relative;
+      text-decoration: none;
+      display: block;
+      width: 46px;
+      height: 46px;
+      background-color: $gp-green;
+      opacity: 0.9;
+      border: 1px solid $white;
+      border-radius: 2px;
+      opacity: 1;
+      transition: all 0.3s;
+      text-align: center;
+      font-size: 26px;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -25%) rotate(45deg);
+        width: 16px;
+        height: 16px;
+        border-top: 2px solid $white;
+        border-left: 2px solid $white;
+      }
+    }
   }
 }

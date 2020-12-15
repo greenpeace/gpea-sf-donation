@@ -27,12 +27,7 @@
 .THIS {
   .form__title {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
-    @media (max-width: 575.98px) {
-      text-align: left;
-    }
     .form__headline {
       text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
       color: $black;
@@ -49,6 +44,7 @@
       text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
       color: $gray1;
       margin: 20px auto;
+      font-size: 1rem;
     }
     .edit-amount {
       margin: 10px auto;
@@ -139,20 +135,13 @@
 // Form Sub text
 .THIS {
   .form__contents {
-    padding: 20px 16px;
+    padding: 20px 12px;
     background: $white;
     border-radius: 4px;
     overflow: hidden;
     box-shadow: $shadow-card1;
     border: 1px solid $gray4;
-    transition: all 0.2s ease;
-    &:hover {
-      box-shadow: $shadow-card2;
-    }
-    @media (max-width: 320px) {
-      padding: 20px 8px;
-    }
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
       padding: 20px;
     }
   }
@@ -265,10 +254,7 @@
   .amount-text {
     padding: 20px 0px;
     color: $gray1;
-    text-align: center;
-    @media (max-width: 575.98px) {
-      text-align: left;
-    }
+    font-size: 1rem;
   }
 }
 // Form tab menu and amounts

@@ -975,7 +975,7 @@
     <!-- end of donation -->
     <!-- extra blocks -->
     <div class="extra prose prose-sm sm:prose lg:prose-lg">
-      <section class="section hero is-medium section-center-text">
+      <section class="hero is-medium section-center-text">
         <div class="hero-body">
           <div class="container">
             <h2 class="has-text-centered">{{centerText.headline}}</h2>
@@ -986,10 +986,12 @@
       <section class="section section-mixed-content">
         <div class="section-grid columns">
           <div
-            class="column is-flex is-flex-direction-column is-justify-content-center p-6"
+            class="column is-flex is-flex-direction-column is-justify-content-center"
           >
-            <h2 class="has-text-white">{{mixedContent.headline}}</h2>
-            <p class="has-text-white">{{mixedContent.text}}</p>
+            <div class="hero-body">
+              <h2 class="has-text-white">{{mixedContent.headline}}</h2>
+              <p class="has-text-white">{{mixedContent.text}}</p>
+            </div>
           </div>
           <div class="column py-0">
             <div class="swiper-container--mixed">
@@ -1008,9 +1010,9 @@
         </div>
       </section>
       <section class="section section-issues">
-        <div class="section-wrapper">
-          <div class="section__header">
-            <h2 class="mt-0">{{issues.headline}}</h2>
+        <div class="container section-wrapper">
+          <div class="column section__header">
+            <h2>{{issues.headline}}</h2>
             <p>{{issues.text}}</p>
           </div>
           <div class="swiper-container">
@@ -1043,8 +1045,8 @@
         </div>
       </section>
       <section class="section section-impacts">
-        <div class="section-wrapper">
-          <div class="section__header">
+        <div class="container section-wrapper">
+          <div class="column section__header">
             <h2>{{impacts.headline}}</h2>
             <p>{{impacts.text}}</p>
           </div>
@@ -1077,56 +1079,63 @@
           </div>
         </div>
       </section>
-
       <section class="section section-finance">
-        <div class="section-wrapper">
-          <div class="section__header">
+        <div class="container section-wrapper">
+          <div class="column section__header">
             <h2>我們如何分配資源在東亞進行重要的環保項目？</h2>
           </div>
           <div class="finance-blocks columns">
             <div class="finance-block column">
-              <img
-                src="https://change.greenpeace.org.hk/static/icon/Asset 18@3x.png"
-                alt=""
-              />
-              <span class="finance-block__number"> 49% </span>
-              <p class="finance-block__description">
+              <figure class="image is-96x96 margin-middle">
+                <img
+                  src="https://change.greenpeace.org.hk/static/icon/Asset 18@3x.png"
+                  alt=""
+                />
+              </figure>
+              <p class="finance-block__number has-text-centered">49%</p>
+              <p class="has-text-centered">
                 分配至拯救氣候危機，營造更健康、公平和綠色的世界
               </p>
             </div>
             <div class="finance-block column">
-              <img
-                src="https://change.greenpeace.org.hk/static/icon/Asset 22@3x.png"
-                alt=""
-              />
-              <span class="finance-block__number"> 28% </span>
-              <p class="finance-block__description">
+              <figure class="image is-96x96 margin-middle">
+                <img
+                  src="https://change.greenpeace.org.hk/static/icon/Asset 22@3x.png"
+                  alt=""
+                />
+              </figure>
+              <p class="finance-block__number has-text-centered">28%</p>
+              <p class="has-text-centered">
                 分配至守護全球海洋與原始森林，支援跨範疇項目，保護生命之源，提出解決方案推動改變
               </p>
             </div>
             <div class="finance-block column">
-              <img
-                src="https://change.greenpeace.org.hk/static/icon/Asset 7@3x.png"
-                alt=""
-              />
-              <span class="finance-block__number"> 23% </span>
-              <p class="finance-block__description">
+              <figure class="image is-96x96 margin-middle">
+                <img
+                  src="https://change.greenpeace.org.hk/static/icon/Asset 7@3x.png"
+                  alt=""
+                />
+              </figure>
+              <p class="finance-block__number has-text-centered">23%</p>
+              <p class="has-text-centered">
                 分配至維護食物安全和防治環境污染，營造無毒無污世界，保護土地、水資源及地球環境
               </p>
             </div>
           </div>
-          <p class="annual-report-link">
-            閱讀<a
-              href="https://www.greenpeace.org/hongkong/about/reports/annual-report-2019/"
-              target="_blank"
-              >最新的機構年報</a
-            >了解更多
-          </p>
+          <div class="content">
+            <p class="has-text-center annual-report-link">
+              閱讀<a
+                href="https://www.greenpeace.org/hongkong/about/reports/annual-report-2019/"
+                target="_blank"
+                >最新的機構年報</a
+              >了解更多
+            </p>
+          </div>
         </div>
       </section>
       <section class="section section-testimonials">
-        <div class="section-wrapper">
-          <div class="section__header">
+        <div class="container section-wrapper">
+          <div class="column section__header">
             <h2>{{testimonials.headline}}</h2>
             <p>{{testimonials.text}}</p>
           </div>
@@ -1134,28 +1143,27 @@
             <div class="swiper-wrapper">
               {% for testimonial in testimonials.testimonialList %}
               <div class="swiper-slide box box-shadow-lift">
-                <div class="testimonial card-content">
-                  <div class="testimonial__profile">
-                    <figure class="image is-96x96 margin-middle">
-                      <img
-                        class="profile-circle is-rounded"
-                        src="{{testimonial.pic}}"
-                        alt="{{testimonial.name}}"
-                      />
-                    </figure>
-                    <hr />
-                    <div
-                      class="media-content has-text-centered"
-                      style="margin: 0.9rem 0"
-                    >
-                      <p class="title is-4">{{testimonial.title}}</p>
-                      <p class="subtitle has-text-grey is-6">
+                <div class="testimonial">
+                  <figure class="mt-4 image is-96x96 margin-middle">
+                    <img
+                      class="profile-circle is-rounded"
+                      src="{{testimonial.pic}}"
+                      alt="{{testimonial.name}}"
+                    />
+                  </figure>
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="mb-2 subtitle has-text-centered">
                         {{testimonial.name}}
                       </p>
+                      <p class="mb-0 has-text-grey has-text-centered">
+                        {{testimonial.title}}
+                      </p>
                     </div>
-                    <div class="content">
-                      <p>{{testimonial.quote}}</p>
-                    </div>
+                  </div>
+                  <hr class="line" />
+                  <div class="content">
+                    <p>{{testimonial.quote}}</p>
                   </div>
                 </div>
               </div>
@@ -1196,6 +1204,8 @@
       </section>
     </div>
     <!-- end of extra blocks -->
+    <!-- backtotop -->
+    <div id="backtotop" class="visible"><a href="#"></a></div>
     <!-- Footer -->
     <div
       data-region-name="footer"
