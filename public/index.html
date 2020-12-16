@@ -40,6 +40,35 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body class="THIS">
+    <!-- Preload -->
+
+    <!-- Loading -->
+    <section class="section_loader hero is-fullheight">
+      <div class="container center">
+        <figure
+          class="image is-128x128"
+          style="
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+          "
+        >
+          <img
+            src="https://change.greenpeace.org.hk/static/logo/GP-logo-2019-TC-green-%5Bweb%5D-01.png"
+            alt="Greenpeace 綠色和平"
+          />
+        </figure>
+        <div class="page-loader p-4 is-flex-direction-column center">
+          <div class="mb-4 spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+          </div>
+          <p class="subtitle is-bold">Progress message</p>
+        </div>
+      </div>
+    </section>
     <!-- Header -->
     <header class="header">
       <div class="header-wrapper">
@@ -1308,7 +1337,7 @@
       </section>
       <section class="section section-testimonials">
         <div class="container section-wrapper">
-          <div class="section__header">
+          <div class="column section__header">
             <h2>一齊行動，為世界帶來改變！</h2>
             <p>綠色和平同行者的分享</p>
           </div>
