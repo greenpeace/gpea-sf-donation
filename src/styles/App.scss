@@ -1,9 +1,9 @@
 @charset "utf-8";
 @import "./scss/utilities/common";
 //
-@import "./scss/global/index", "./scss/spinner", "./scss/overrideSLDS",
-  "./scss/donation", "./scss/donationDonor", "./scss/donationThankyou",
-  "./scss/overrideLanguage", "./scss/main";
+@import "./scss/global/index", "./scss/overrideSLDS", "./scss/donation",
+  "./scss/donationDonor", "./scss/donationThankyou", "./scss/overrideLanguage",
+  "./scss/main";
 @import "./scss/components/index";
 //
 .THIS {

@@ -95,7 +95,7 @@
   .main__form-wrapper {
     width: 100%;
     max-width: 440px;
-    padding: 20px;
+    padding: 20px 12px;
     margin: 0 auto;
     @media (min-width: 992px) {
       max-width: 480px;
@@ -237,14 +237,16 @@
       color: $gray3;
     }
     .other-amount {
+      width: 100%;
       .slds-form-element__control {
         padding-left: 64px;
         position: relative;
         &:before {
           position: absolute;
           content: "HKD";
-          height: 48px;
           left: 16px;
+          top: 50%;
+          transform: translateY(-50%);
           font-size: 16px;
           color: $gray3;
           vertical-align: center;
