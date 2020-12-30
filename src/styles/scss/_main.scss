@@ -28,7 +28,7 @@
     &.main-wrapper_right {
       align-items: flex-end;
     }
-    @media (min-width: 992px) {
+    @media (min-width: 62em) {
       margin-bottom: 0;
     }
   }
@@ -50,11 +50,11 @@
     img {
       width: 100%;
       display: block;
-      @media (min-width: 992px) {
+      @media (min-width: 62em) {
         display: none;
       }
     }
-    @media (min-width: 992px) {
+    @media (min-width: 62em) {
       position: absolute;
       top: 0;
       left: 0;

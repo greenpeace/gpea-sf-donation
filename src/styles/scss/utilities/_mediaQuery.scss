@@ -13,22 +13,21 @@
 | col-12 ---------> | col-md-8 ----------> | col-xl-4 ->
 *
 */
-
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
-
+// 36em
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 }
-
+// 48em
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 }
-
+// 62em
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
 }
-
+// 75em
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 }

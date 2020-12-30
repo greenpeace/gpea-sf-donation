@@ -63,14 +63,14 @@
   &.zh_TW {
     .form__amount-button {
       font-size: 14px;
-      @media (min-width: 992px) {
+      @media (min-width: 62em) {
         font-size: 16px;
       }
     }
     .form__amounts {
       .currency {
         font-size: 10px;
-        @media (min-width: 992px) {
+        @media (min-width: 62em) {
           font-size: 14px;
         }
       }

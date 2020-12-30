@@ -43,7 +43,7 @@
     <!-- Preload -->
 
     <!-- Loading -->
-    <section class="section_loader hero is-fullheight">
+    <section class="section_loader hero is-fullheight is-hidden">
       <div class="container center">
         <figure
           class="image is-128x128"
@@ -1173,7 +1173,7 @@
               {% for testimonial in testimonials.testimonialList %}
               <div class="swiper-slide box box-shadow-lift">
                 <div class="testimonial">
-                  <figure class="mt-4 image is-96x96 margin-middle">
+                  <figure class="mt-4 image is-128x128 margin-middle">
                     <img
                       class="profile-circle is-rounded"
                       src="{{testimonial.pic}}"
@@ -1185,7 +1185,7 @@
                       <p class="mb-2 subtitle has-text-centered">
                         {{testimonial.name}}
                       </p>
-                      <p class="mb-0 has-text-grey has-text-centered">
+                      <p class="m-0 has-text-grey has-text-centered">
                         {{testimonial.title}}
                       </p>
                     </div>

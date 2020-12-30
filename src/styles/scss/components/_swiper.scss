@@ -26,10 +26,10 @@
     align-items: center;
     overflow: hidden;
     box-shadow: $shadow-card1;
-    @media (min-width: 1200px) {
+    @media (min-width: 75em) {
       max-width: 580px;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 75em) {
       max-width: 760px;
     }
     &:last-child {
