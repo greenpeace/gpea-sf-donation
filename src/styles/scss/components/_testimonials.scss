@@ -1,51 +1,13 @@
 .THIS {
   .section-testimonials {
+    background-color: $gp-lightblue;
     padding-bottom: 20px;
     .swiper-slide {
       max-width: 480px;
     }
   }
-  .testimonial {
-    text-align: center;
-    padding: 20px 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .testimonial__quote {
-      position: relative;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: $gray1;
-      .quote-text {
-        font-size: 1rem;
-      }
-    }
-    .testimonial__profile {
-      .testimonial__avatar {
-        margin: 20px auto;
-        img {
-          width: 96px;
-          height: 96px;
-          @media (min-width: 992px) {
-            height: 120px;
-            width: 120px;
-          }
-          margin: 0 auto;
-          object-fit: cover;
-          border-radius: 99px;
-        }
-      }
-      .testimonial__person {
-        .person-title {
-          font-size: 0.8rem;
-        }
-        .person-name {
-          margin-top: 4px;
-          font-size: 1rem;
-        }
-      }
-    }
+  .profile-circle {
+    border: 1px solid $gp-green;
+    padding: 4px !important;
   }
 }

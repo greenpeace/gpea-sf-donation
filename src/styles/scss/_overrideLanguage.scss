@@ -29,15 +29,24 @@
     }
   }
 }
-
+// DD General
 .THIS {
   &.donate-dd {
+    .form__amount-button.form__amount-other-button .amount {
+      font-size: 10px;
+    }
+    .form__amount-button.form__amount-other-button {
+      background-color: white;
+      height: auto;
+      margin-top: 10px;
+      color: rgb(153, 153, 153);
+    }
     .form__share {
       display: none;
     }
   }
 }
-
+// HK General
 .THIS {
   &.zh_HK,
   &.en_HK {
@@ -49,19 +58,19 @@
     }
   }
 }
-
+// TW General
 .THIS {
   &.zh_TW {
     .form__amount-button {
       font-size: 14px;
-      @media (min-width: 992px) {
+      @media (min-width: 62em) {
         font-size: 16px;
       }
     }
     .form__amounts {
       .currency {
         font-size: 10px;
-        @media (min-width: 992px) {
+        @media (min-width: 62em) {
           font-size: 14px;
         }
       }

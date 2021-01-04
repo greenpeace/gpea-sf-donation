@@ -1,10 +1,42 @@
+@charset "utf-8";
+@import "../utilities/common";
+//
 @import "./swiper", "./center-text", "./impacts", "./issues", "./mixed-content",
-  "./testimonials";
-
+  "./testimonials", "./finance";
+//
+.THIS {
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .margin-middle {
+    margin: 0 auto 0 auto;
+  }
+  hr.line {
+    border-color: $gray4;
+    border: none;
+    display: block;
+    height: 1px;
+    margin: 1rem 0;
+  }
+}
+.THIS {
+  .card {
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: $shadow-card1;
+    overflow: hidden;
+  }
+}
 .THIS {
   .section {
     position: relative;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
     .section-wrapper {
+      width: 100%;
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
@@ -14,19 +46,11 @@
       justify-content: center;
       align-items: center;
     }
-    .section__header {
+    .section-wrapper .section__header {
       position: relative;
       text-align: center;
       max-width: 780px;
       margin-bottom: 20px;
-      h2 {
-        font-weight: bold;
-        color: $gray1;
-        margin-bottom: 8px;
-      }
-      p {
-        color: $gray3;
-      }
     }
     &.section_bg-white {
       background-color: $white;
@@ -37,19 +61,6 @@
     }
     &.section_bg-lightblue {
       background-color: $gp-lightblue;
-    }
-  }
-}
-
-.THIS {
-  .card {
-    background-color: $white;
-    border-radius: 8px;
-    box-shadow: $shadow-card1;
-    transition: box-shadow 0.2s ease;
-    overflow: hidden;
-    &:hover {
-      box-shadow: $shadow-card2;
     }
   }
 }

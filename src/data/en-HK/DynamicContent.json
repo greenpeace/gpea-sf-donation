@@ -47,7 +47,7 @@
     "lead": "Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
     "image": {
       "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg",
-      "position": "left",
+      "position": "right",
       "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
     }
   },
@@ -62,19 +62,6 @@
       "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg",
       "position": "right",
       "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d25d8238-2020-sf-donation-climate6.jpg"
-    }
-  },
-  "climate2": {
-    "title": "Protecting our planet starts with you...",
-    "explainer": {
-      "monthly": "Your monthly donation will help Greenpeace encourage more renewable energy. Thank you!",
-      "onetime": "Your donation will immediately help Greenpeace encourage more renewable energy. Thank you!"
-    },
-    "lead": "We only have one planet, please help Greenpeace take care of it.",
-    "image": {
-      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d1ae62bc-2020-sf-donation-climate3.jpg",
-      "position": "right",
-      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/d1ae62bc-2020-sf-donation-climate3.jpg"
     }
   },
   "oceans": {

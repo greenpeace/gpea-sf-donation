@@ -1,26 +1,31 @@
 .THIS {
   .section-issues {
+    background-color: $gp-lightblue;
     .swiper-slide {
       opacity: 1 !important;
     }
   }
   .issue {
+    margin: 0;
+    height: 100%;
     width: 100%;
     min-height: 400px;
     display: flex;
     flex-direction: column;
-    @media (min-width: 992px) {
+    @media (min-width: 62em) {
       flex-direction: row;
     }
     .issue__header {
+      padding: 20px;
       flex: 1;
-      padding: 40px 16px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      max-width: 400px;
+      @media (min-width: 62em) {
+        padding: 40px 20px;
+      }
       h2 {
         font-weight: bold;
         text-transform: uppercase;
@@ -31,7 +36,7 @@
     }
     .issue__image {
       flex: 1;
-      min-height: 200px;
+      min-height: 220px;
       background-color: $gray4;
       background-size: cover;
       background-position: center;

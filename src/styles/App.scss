@@ -1,95 +1,83 @@
 @charset "utf-8";
-// core
-$black: #000000;
-$gray0: #1a1a1a;
-$gray1: #333333;
-$gray2: #666666;
-$gray3: #999999;
-$gray4: #e5e5e5;
-$white: #ffffff;
-// primary
-$gp-green: #66cc00;
-$gp-orange: #ff9500;
-$gp-darkblue: #292f47;
-$gp-lightblue: #e6f5f5;
-$gp-red: #ff3333;
-// issues
-$gp-arctic: #62cbd7;
-$gp-health: #f96d8c;
-$gp-climate: #ffbe00;
-$gp-plastics: #afaa91;
-$gp-forests: #00b474;
-$gp-oceans: #008fe2;
-// shadow
-$shadow-button1: 0px 2px 4px rgba(50, 50, 71, 0.06),
-  0px 2px 2px rgba(50, 50, 71, 0.06);
-$shadow-button2: 0px 4px 8px rgba(50, 50, 71, 0.06),
-  0px 4px 4px rgba(50, 50, 71, 0.08);
-$shadow-card1: 0px 8px 16px rgba(50, 50, 71, 0.06),
-  0px 8px 8px rgba(50, 50, 71, 0.08);
-$shadow-card2: 0px 16px 24px rgba(50, 50, 71, 0.08),
-  0px 12px 12px rgba(50, 50, 71, 0.08);
-$shadow-topbottom-white: linear-gradient(
-  to bottom,
-  rgba(255, 255, 255, 1),
-  rgba(255, 255, 255, 0)
-);
 //
-@import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css");
-@import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
-@import "./scss/global/index.scss", "./scss/spinner", "./scss/overrideSLDS",
-  "./scss/donation", "./scss/donationDonor", "./scss/donationThankyou",
-  "./scss/overrideLanguage", "./scss/main", "./scss/components/index.scss";
+@import "./scss/utilities/common";
+//
+@import "./scss/global/index", "./scss/overrideSLDS", "./scss/donation",
+  "./scss/donationDonor", "./scss/donationThankyou", "./scss/overrideLanguage",
+  "./scss/main";
+@import "./scss/components/index";
 //
 .THIS {
-  .prose {
-    max-width: none !important;
-    img {
-      margin: 0;
-      padding: 0;
+  button {
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  button:hover {
+    filter: brightness(0.9);
+  }
+  button:active {
+    transform: translateY(0px) scale(0.98);
+    filter: brightness(0.9);
+  }
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  a {
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  a:hover {
+    filter: brightness(0.9);
+  }
+  a:active {
+    filter: brightness(0.5);
+  }
+}
+// back to top
+.THIS {
+  #backtotop {
+    z-index: 99;
+    position: fixed;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    bottom: 20px;
+    margin: 0 20px 0 0;
+    transition: 0.35s;
+    transform: scale(0.7);
+    transition: all 0.5s;
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: scale(1);
+      transform: scale(1);
     }
-  }
-}
-.THIS {
-  .text--arctic {
-    color: $gp-arctic !important;
-  }
-  .text--health {
-    color: $gp-health !important;
-  }
-  .text--climate {
-    color: $gp-climate !important;
-  }
-  .text--forests {
-    color: $gp-forests !important;
-  }
-  .text--oceans {
-    color: $gp-oceans !important;
-  }
-  .text--plastics {
-    color: $gp-plastics !important;
-  }
-}
-.THIS {
-  [data-aos="fade-left"] {
-    transform: translate3d(40px, 0, 0);
-  }
-
-  [data-aos="fade-right"] {
-    transform: translate3d(-40px, 0, 0);
-  }
-  [data-aos="fade-up"] {
-    transform: translate3d(0, 10%, 0);
-  }
-
-  [data-aos="fade-down"] {
-    transform: translate3d(0, -10%, 0);
-  }
-  // IE <= 11
-  @media (min-width: 0\0) {
-    [data-aos] {
-      opacity: 1 !important;
-      transform: none !important;
+    a {
+      position: relative;
+      text-decoration: none;
+      display: block;
+      width: 46px;
+      height: 46px;
+      background-color: $gp-green;
+      opacity: 0.9;
+      border: 1px solid $white;
+      border-radius: 2px;
+      opacity: 1;
+      transition: all 0.2s;
+      text-align: center;
+      font-size: 24px;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -25%) rotate(45deg);
+        width: 16px;
+        height: 16px;
+        border-top: 2px solid $white;
+        border-left: 2px solid $white;
+      }
     }
   }
 }

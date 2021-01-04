@@ -1,0 +1,211 @@
+{
+  "title": "Protecting our planet everyday.",
+    "explainer": {
+      "monthly": "Your monthly donation will help Greenpeace research solutions and to work globally to protect our planet. Thank you!",
+      "onetime": "Your donation will immediately help Greenpeace's work to protect our planet. Thank you!"
+    },
+    "lead": "Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
+    },
+  "sections": [
+    {
+      "type": "SectionCenterText",
+      "payload": {
+        "title": "Your donation will help protect the planet!",
+        "subTitle": "Greenpeace is trusted by millions of people around the world to care for the environment and help protect our planet for future generations. Here's what your donation will do:",
+        "sectionType": "center-text"
+      }
+    },
+    {
+      "type": "SectionMixedContentStatic",
+      "payload": {
+        "title": "Greenpeace goes where others can't.",
+        "subTitle": "Our independent research teams travel to some of the most remote parts of the globe. From the Amazon rainforests to the Arctic wilderness you can trust that Greenpeace will report back on environmental problems and work with local communities and governments to find a solution.",
+        "sectionType": "mixed-content",
+        "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/11c847f3-block-2-greenpeace-goes-where-others-can_t.jpg"
+      }
+    },
+    {
+      "type": "SectionSwiper",
+      "payload": {
+        "title": "Your donation will have an impact.",
+        "subTitle": "Greenpeace works across 6 global issues:",
+        "sectionType": "issues",
+        "slideType": "SectionSwiperSlideIssue",
+        "items": [
+          {
+            "issueName": "climate",
+            "headline": "CLIMATE",
+            "description": "To save the climate and build a safer, greener fairer world together.",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/a611fb7d-block-3-your-donation-will-have-an-impact-climate-gp0str5kn.jpg"
+          },
+          {
+            "issueName": "oceans",
+            "headline": "OCEANS",
+            "description": "To protect the source of all life and our best defences against climate change.",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/2e02c9e3-block-3-your-donation-will-have-an-impact-oceans-gp0stoe2u.jpg"
+          },
+          {
+            "issueName": "arctic",
+            "headline": "ARCTIC",
+            "description": "To protect the Arctic from destructive oil drilling and commercial fishing.",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/033c5484-block-3-your-donation-will-have-an-impact-arctic.jpg"
+          },
+          {
+            "issueName": "forests",
+            "headline": "FORESTS",
+            "description": "To take action to stop deforestation, expose illegal logging activities, and protect indigenous rights.",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/329a08ca-block-3-your-donation-will-have-an-impact-forests.jpg"
+          },
+          {
+            "issueName": "plastics",
+            "headline": "PLASTICS",
+            "description": "To rid the world of plastics and toxics for a healthier world.",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/7c80fc6a-block-3-your-donation-will-have-an-impact-plastics.jpg"
+          },
+          {
+            "issueName": "health",
+            "headline": "HEALTH",
+            "description": "To ensure healthy food for all, and protect the soil, water and the climate.",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/05d964e5-block-3-your-donation-will-have-an-impact-health.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "type": "SectionSwiper",
+      "payload": {
+        "title": "Your donation will ensure a better future",
+        "subTitle": "Since 1971, Greenpeace has worked to bring about change. Here are just some of our achievements.",
+        "sectionType": "impacts",
+        "slideType": "SectionSwiperSlideImpact",
+        "items": [
+          {
+            "issueName": "health",
+            "headline": "Health",
+            "description": "1971: Greenpeace's first action took place to stop a US nuclear weapons test, raising awareness of nuclear safety.",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/f319f4f6-block-4-your-donation-will-ensure-a-better-future-success-1.jpg"
+          },
+          {
+            "issueName": "oceans",
+            "headline": "Oceans",
+            "description": "1991: The 39 Antarctic Treaty signatories agreed to a 50-year minimum prohibition of all mineral exploitation.",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/5a5b3369-block-4-your-donation-will-ensure-a-better-future-success-2.jpg"
+          },
+          {
+            "issueName": "climate",
+            "headline": "Climate",
+            "description": "1997: Greenpeace developed Greenfreeze, a completely fluorocarbon-free household refrigerator.",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/a4fb0df9-block-4-your-donation-will-ensure-a-better-future-success-3.jpg"
+          },
+          {
+            "issueName": "climate",
+            "headline": "Climate",
+            "description": "1997: Greenpeace developed Greenfreeze, a completely fluorocarbon-free household refrigerator.",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/d7091e18-block-4-your-donation-will-ensure-a-better-future-success-4.jpg"
+          },
+          {
+            "issueName": "arctic",
+            "headline": "Arctic",
+            "description": "2015: We gathered over 8 million people worldwide to say NO to oil drilling in the Arctic, Shell later abandoned its operations there.",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/62dbdbc0-block-4-your-donation-will-ensure-a-better-future-success-5.jpg"
+          },
+          {
+            "issueName": "oceans",
+            "headline": "Oceans",
+            "description": "2017: 80 global clothing brands and suppliers included Zara, H&M and Uniqlo committed to detoxing their clothing production.",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/958ea341-block-4-your-donation-will-ensure-a-better-future-success-6.jpg"
+          },
+          {
+            "issueName": "climate",
+            "headline": "Climate",
+            "description": "2018: Samsung electronics commits to 100% renewable energy in the US, Europe and China by 2020.",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/cc3668a7-block-4-your-donation-will-ensure-a-better-future-success-7.jpg"
+          },
+          {
+            "issueName": "health",
+            "headline": "Health",
+            "description": "2018: Following actions by Greenpeace in Hong Kong, the government halted plans to develop country parks.",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/1288eef1-block-4-your-donation-will-ensure-a-better-future-success-8.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "type": "SectionFinanceStatic",
+      "payload": {
+        "title": "Why our campaign projects are important",
+        "subTitle": "",
+        "sectionType": "finance",
+        "link": "See more in <a href='https://www.greenpeace.org/eastasia/publication/6052/annual-report-2019/' target='_blank'>our latest Annual Report</a>",
+        "blocks": [
+          {
+            "imageURL": "https://change.greenpeace.org.hk/static/icon/Asset%2018@3x.png",
+            "headline": "49%",
+            "description": "of our campaigning work in East Asia is focused on climate - to heal the climate and build a safer, greener fairer world"
+          },
+          {
+            "imageURL": "https://change.greenpeace.org.hk/static/icon/Asset%2022@3x.png",
+            "headline": "28%",
+            "description": "of it focuses on oceans and forests and others - to protect the source of all life and provide solutions to drive change"
+          },
+          {
+            "imageURL": "https://change.greenpeace.org.hk/static/icon/Asset%207@3x.png",
+            "headline": "23%",
+            "description": "of it goes on food security and toxics - to ensure healthy food for all, and protect the soil, water and the climate"
+          }
+        ]
+      }
+    },
+    {
+      "type": "SectionSwiper",
+      "payload": {
+        "title": "By working together your donation will make a difference",
+        "subTitle": "Read what people say about Greenpeace.",
+        "sectionType": "testimonials",
+        "slideType": "SectionSwiperSlideTestimonial",
+        "items": [
+          {
+            "description": "We are living in a time of great environmental challenges and what happens here in East Asia will have an immense impact on the future of our planet.",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/e1db86a2-block-5-by-working-together-kt.jpg",
+            "title": "Executive Director of Greenpeace East Asia",
+            "name": "KT"
+          },
+          {
+            "description": "The world-changing work of Greenpeace East Asia would not be possible without you. Together we can make the world a better place for us and for the generations to come.",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/4830aaf6-block-5-by-working-together-santosh.jpg",
+            "title": "Lawyer and Board Chair of Greenpeace East Asia",
+            "name": "Santosh Pai"
+          },
+          {
+            "description": "I feel glad that I can work with communities, individuals, volunteers, teachers, activists, and many more to help preserve our one and only planet.",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/16265910-block-5-by-working-together-kate.jpg",
+            "title": "Campaigner",
+            "name": "Kate"
+          },
+          {
+            "description": "One of our main duties is to collect samples and data for research, to uncover the truth for our environment. Your generous gift is the strongest back for our mission!",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/be3f523c-block-5-by-working-together-dolphin.jpg",
+            "title": "Deckhand on Greenpeace's ships",
+            "name": "Dolphin"
+          },
+          {
+            "description": "Being a mum, I know how important it is to make change for today and our next generation. Everyone has a share in environmental protection.",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/5dec4146-block-5-by-working-together-sharon.jpg",
+            "title": "Donor for over 2 years",
+            "name": "Sharon"
+          },
+          {
+            "description": "I believe that regardless of age and identity, everyone can promote a greener planet.",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/14a16954-block-5-by-working-together-brian.jpg",
+            "title": "Organiser of a fund-raising campaign",
+            "name": "Brian"
+          }
+        ]
+      }
+    }
+  ]
+}

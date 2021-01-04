@@ -1,3 +1,4 @@
+@charset "utf-8";
 .THIS {
   .header {
     height: 50px;
@@ -29,7 +30,7 @@
         right: 4px;
       }
     }
-    @media (min-width: 576px) {
+    @media (min-width: 36em) {
       border: none;
       .header-wrapper {
         justify-content: flex-start;

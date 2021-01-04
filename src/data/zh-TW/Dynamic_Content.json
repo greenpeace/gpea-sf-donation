@@ -1,0 +1,211 @@
+{
+  "title": "守護地球，分秒必爭",
+  "explainer": {
+    "monthly": "您的每月捐款，能幫助綠色和平推動環境永續方案，並在全球各地落實環保工作。謝謝您！",
+    "onetime": "您的捐款，能即時幫助綠色和平守護我們的家園。謝謝您！"
+  },
+  "lead": "綠色和平進行實地研究調查，第一線見證記錄環境問題，請幫助我們繼續守護美好的自然環境。",
+  "image": {
+    "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg",
+    "position": "right",
+    "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
+  },
+  "sections": [
+    {
+      "type": "SectionCenterText",
+      "payload": {
+        "title": "改變，由您開始。",
+        "subTitle": "全球有數百萬名支持者，與綠色和平並肩保護環境，讓人類與大自然世世代代共生共榮。了解您的捐助如何應用在解決各大環境問題：",
+        "sectionType": "center-text"
+      }
+    },
+    {
+      "type": "SectionMixedContentStatic",
+      "payload": {
+        "title": "綠色和平足跡遍佈全球各地",
+        "subTitle": "我們獨立的研究團隊，為揭露真相踏遍極地及各大海洋，從巴西亞馬遜森林至南北極，為解決環境問題追本溯源，與各地社區與政府持續溝通，為全球環境問題提出實際可行的解決方案。",
+        "sectionType": "mixed-content",
+        "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/11c847f3-block-2-greenpeace-goes-where-others-can_t.jpg"
+      }
+    },
+    {
+      "type": "SectionSwiper",
+      "payload": {
+        "title": "是您，造就環境里程碑。",
+        "subTitle": "綠色和平的工作涵蓋6大專案：",
+        "sectionType": "issues",
+        "slideType": "SectionSwiperSlideIssue",
+        "items": [
+          {
+            "issueName": "climate",
+            "headline": "氣侯 CLIMATE",
+            "description": "提倡應對氣候危機的方案，推動加速發展再生能源、淘汰化石燃料，實現能源轉型，讓社會能透過綠能更公平地繁榮發展。",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/a611fb7d-block-3-your-donation-will-have-an-impact-climate-gp0str5kn.jpg"
+          },
+          {
+            "issueName": "oceans",
+            "headline": "海洋 OCEANS",
+            "description": "發起全球行動，連繫關心海洋保育的群眾，爭取成立海洋保護區，停止過度捕撈，讓漁業資源得以永續，海洋生生不息。",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/2e02c9e3-block-3-your-donation-will-have-an-impact-oceans-gp0stoe2u.jpg"
+          },
+          {
+            "issueName": "arctic",
+            "headline": "北極 ARCITC",
+            "description": "集合群眾力量，向石油與捕魚企業施壓，並呼籲政治領袖制定全球條約、力抗暖化，齊心守護北極熊的家園。",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/033c5484-block-3-your-donation-will-have-an-impact-arctic.jpg"
+          },
+          {
+            "issueName": "forests",
+            "headline": "森林 FORESTS",
+            "description": "揭露毀林真相，要求企業品牌公開供應鏈資訊、截斷毀林資金流，致力遊說政府及企業永續管理森林。",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/329a08ca-block-3-your-donation-will-have-an-impact-forests.jpg"
+          },
+          {
+            "issueName": "plastics",
+            "headline": "塑膠 PLASTICS",
+            "description": "促請政府和企業定下具體減塑政策，逐步淘汰一次性塑膠，同時鼓勵公眾改變生活習慣，從源頭減廢做起，營造永續生活。",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/7c80fc6a-block-3-your-donation-will-have-an-impact-plastics.jpg"
+          },
+          {
+            "issueName": "health",
+            "headline": "生活 HEALTH",
+            "description": "推展各項污染防治、永續城市規劃等環保倡導工作，捍衛您我免受污染侵害、呼吸新鮮空氣、享受美好大自然的權利。",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/05d964e5-block-3-your-donation-will-have-an-impact-health.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "type": "SectionSwiper",
+      "payload": {
+        "title": "自1971年開始的環境里程碑",
+        "subTitle": "您的慷慨捐款，創造無數環境里程碑。",
+        "sectionType": "impacts",
+        "slideType": "SectionSwiperSlideImpact",
+        "items": [
+          {
+            "issueName": "health",
+            "headline": "生活",
+            "description": "1971年：先鋒成員掛起「綠色和平」橫額，駕船反對美國進行核試，掀起全球關注核安全議題，及後更令法國結束於南太平洋的核試。",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/f319f4f6-block-4-your-donation-will-ensure-a-better-future-success-1.jpg"
+          },
+          {
+            "issueName": "oceans",
+            "headline": "海洋",
+            "description": "1991年：早年在南極設立基地宣揚守護南極，促使1991年成功簽署《南極條約》，禁止人類開採礦產最少50年。",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/5a5b3369-block-4-your-donation-will-ensure-a-better-future-success-2.jpg"
+          },
+          {
+            "issueName": "climate",
+            "headline": "氣侯",
+            "description": "1995年：佔領位於北海的Brent Spar儲油平台，迫使殼牌石油公司改變將其棄置海底的計劃，最終大部份平台結構得以於陸上進行拆解回收。",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/a4fb0df9-block-4-your-donation-will-ensure-a-better-future-success-3.jpg"
+          },
+          {
+            "issueName": "climate",
+            "headline": "氣侯",
+            "description": "1997年：國際綠色和平自家研發Greenfreeze環保製冷技術得獎，技術有助減少溫室氣體排放，革新製冷行業技術並獲廣泛利用。",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/d7091e18-block-4-your-donation-will-ensure-a-better-future-success-4.jpg"
+          },
+          {
+            "issueName": "arctic",
+            "headline": "北極",
+            "description": "2015年：號召全球800萬人守護北極，殼牌石油公司終宣布停止北極鑽油計劃。我們持續倡議長遠於北極成立保護區。",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/62dbdbc0-block-4-your-donation-will-ensure-a-better-future-success-5.jpg"
+          },
+          {
+            "issueName": "oceans",
+            "headline": "海洋",
+            "description": "2017年：共80家國際品牌及供應商承諾無毒生產，包括ZARA、H&M、Uniqlo等。「為時尚去毒」全球項目自2011年展開，影響力至今不散。",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/958ea341-block-4-your-donation-will-ensure-a-better-future-success-6.jpg"
+          },
+          {
+            "issueName": "climate",
+            "headline": "氣侯",
+            "description": "2018年：集結全球群眾力量，推動 Samsung 承諾能源轉型，於2020年之前在美國、歐洲與中國等消費市場，邁向100%可再生能源。",
+            "imageURL": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/cc3668a7-block-4-your-donation-will-ensure-a-better-future-success-7.jpg"
+          },
+          {
+            "issueName": "climate",
+            "headline": "氣侯",
+            "description": "2018年：集結超過12萬人連署，成功使行政院宣布停建深澳燃煤電廠，並督促政府全力發展再生能源，帶來臺灣真正的能源轉型。",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/ffd63458-gp0stsgzi_medium_res.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "type": "SectionFinanceStatic",
+      "payload": {
+        "title": "我們如何將資源分配於東亞進行重要的環境專案？",
+        "subTitle": "",
+        "sectionType": "finance",
+        "link": "閱讀<a href='https://www.greenpeace.org/taiwan/about/reports/annual-report-2019/' target='_blank'>最新的組織年報</a>了解更多",
+        "blocks": [
+          {
+            "imageURL": "https://change.greenpeace.org.hk/static/icon/Asset%2018@3x.png",
+            "headline": "49%",
+            "description": "運用於<strong>拯救氣候危機</strong>，打造更安全、公平且友善環境的世界"
+          },
+          {
+            "imageURL": "https://change.greenpeace.org.hk/static/icon/Asset%2022@3x.png",
+            "headline": "28%",
+            "description": "投注在<strong>守護全球海洋與森林，支援跨專案合作</strong>，保護生命之源，提供解決方案以推動改變"
+          },
+          {
+            "imageURL": "https://change.greenpeace.org.hk/static/icon/Asset%207@3x.png",
+            "headline": "23%",
+            "description": "分配至<strong>維護食物安全和防治環境污染</strong>，確保您我擁有健康的糧食，保護土地、水資源及地球環境"
+          }
+        ]
+      }
+    },
+    {
+      "type": "SectionSwiper",
+      "payload": {
+        "title": "一起行動，為世界帶來改變！",
+        "subTitle": "綠色和平夥伴的分享",
+        "sectionType": "testimonials",
+        "slideType": "SectionSwiperSlideTestimonial",
+        "items": [
+          {
+            "description": "身處充滿迫切環境問題的年代，亞洲對地球未來的影響可謂舉足輕重。在如此重要的時刻，慶幸自己在綠色和平工作，與您一起為守護人類世代生存權利而努力。",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/e1db86a2-block-5-by-working-together-kt.jpg",
+            "title": "綠色和平東亞分部總幹事",
+            "name": "施鵬翔"
+          },
+          {
+            "description": "感謝每位支持者，勇於追求更理想的世界。見證環保工作取得成果，我們同歡喜；有感於任重道遠，我們共憂愁，卻仍然不懈，為自己也為下一代締造更好的世界。",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/4830aaf6-block-5-by-working-together-santosh.jpg",
+            "title": "律師／綠色和平東亞分部董事會主席",
+            "name": "Santosh Pai"
+          },
+          {
+            "description": "豐盛又健康的森林、山巒和海洋，是我想讓地球永續保留的事物。每個人都可以影響他人，一起為環境發聲，絕對會得到意料之外的收穫。",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/16265910-block-5-by-working-together-kate.jpg",
+            "title": "專案主任",
+            "name": "連佩怡（Kate）"
+          },
+          {
+            "description": "船員能夠執行研究任務，採集環境危機的第一手證據，都是有賴公眾的捐助，全靠每位的支持，我們才可以航行到偏遠地區見證環境危機，站在第一線直接行動！",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/be3f523c-block-5-by-working-together-dolphin.jpg",
+            "title": "綠色和平水手",
+            "name": "黃懿萱（小豚）"
+          },
+          {
+            "description": "自從有了小朋友，開始關心環境議題，發覺全球的污染問題都十分嚴重，必須由現在起有所改變，才可以為下一代留個美好未來。",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/5dec4146-block-5-by-working-together-sharon.jpg",
+            "title": "捐款會員",
+            "name": "Sharon"
+          },
+          {
+            "description": "綠色和平的報導讓我得知塑膠垃圾如何污染海洋，因此我決意把訊息分享出去，希望更多人一起保護地球環境。",
+            "imageURL": "https://www.greenpeace.org/static/planet4-hongkong-stateless/14a16954-block-5-by-working-together-brian.jpg",
+            "title": "曾出版繪本為綠色和平募款",
+            "name": "簡鏡倫 （Brian）"
+          }
+        ]
+      }
+    }
+  ]
+}

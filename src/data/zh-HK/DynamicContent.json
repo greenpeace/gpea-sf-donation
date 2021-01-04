@@ -1,11 +1,11 @@
 {
   "general": {
-    "title": "守護地球，分秒必爭",
+    "title": "守護地球，分秒必爭！支持綠色和平環境工作",
     "explainer": {
-      "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，並在全球各地落實環保工作。謝謝！",
-      "onetime": "您的捐款，將立即幫助綠色和平守護我們的家園。謝謝！"
+      "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，並在全球落實更多環保工作。謝謝！",
+      "onetime": "您的單次捐款，將幫助綠色和平站在環境前線，第一時間揭露破壞內幕並深入災害現場。謝謝！"
     },
-    "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
+    "lead": "綠色和平是100%財政獨立的環保機構，您的捐助可以幫助我們揭露環境問題、以專業研究遊說企業和政府作出改變，請即加入守護珍貴的自然環境！",
     "image": {
       "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg",
       "position": "right",
@@ -39,12 +39,12 @@
     }
   },
   "arctic": {
-    "title": "守護地球，分秒必爭",
+    "title": "保護北極熊家園，對抗氣候變化！",
     "explainer": {
-      "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，保護北極免受破壞。謝謝！",
-      "onetime": "您的捐款，將立即幫助綠色和平守護我們的家園。謝謝！"
+      "monthly": "您的每月捐款，將幫助綠色和平制止鑽油台和捕撈船進佔北極，緩和北極危機。謝謝！",
+      "onetime": "您的捐款，將幫助到綠色和平進行實地考察與氣候研究工作。"
     },
-    "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
+    "lead": "北極海冰消融，石油公司、工業捕撈船不會放棄開採資源的機會，懇請您加入緩和北極危機，捐助支持保護北極熊家園！",
     "image": {
       "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/820517ff-2020-sf-donation-arctic3.jpg",
       "position": "right",
@@ -166,6 +166,71 @@
       "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/c96ff4f7-2020-sf-donation-onepercent2.jpg",
       "position": "center",
       "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/c96ff4f7-2020-sf-donation-onepercent2.jpg"
+    }
+  },
+  "plastics2": {
+    "title": "守護地球，分秒必爭",
+    "explainer": {
+      "monthly": "您的每月捐款，將幫助綠色和平為環境問題找到出路，減少塑膠污染。謝謝！",
+      "onetime": "您的捐款，將立即幫助綠色和平尋找解決塑膠污染的辦法。謝謝！"
+    },
+    "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的自然環境。",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/8c310de8-2020-sf-donation-plastics2.jpg",
+      "position": "left",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/8c310de8-2020-sf-donation-plastics2.jpg"
+    }
+  },
+  "siberiaforest": {
+    "title": "拯救西伯利亞森林",
+    "explainer": {
+      "monthly": "您的每月捐款，支持綠色和平消防隊前線救火工作，要求俄羅斯政府提高滅火資源，長遠推動護林政策！",
+      "onetime": "您的捐款，支持綠色和平消防隊前線救火工作，要求俄羅斯政府提高滅火資源，停止大火悲劇！"
+    },
+    "lead": "無情野火焚毀森林，釋出大量二氧化碳，加劇北極圈氣候危機！",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/4c3d6d05-2020-sf-donation-siberaforest.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/4c3d6d05-2020-sf-donation-siberaforest.jpg"
+    }
+  },
+  "amazonforest": {
+    "title": "守護亞馬遜森林",
+    "explainer": {
+      "monthly": "您的每月捐款，支持實地調查工作，揭露亞馬遜毀林罪證，推動國際企業與毀林肉商劃清界線，要求巴西政府制定護林政策！",
+      "onetime": "您的捐款，支持實地調查工作，揭露亞馬遜毀林罪證，推動企業與毀林肉商劃清界線！"
+    },
+    "lead": "亞馬遜毀林警報創下13年新高！清空原始森林，釋放大量碳排放，換來立於灰土上的畜牧場和大豆種植園，加劇全球氣候危機！",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/09/b56e626f-2020-sf-donation-amazonforest-scaled.jpg",
+      "position": "left",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/09/b56e626f-2020-sf-donation-amazonforest-scaled.jpg"
+    }
+  },
+  "elmflag": {
+    "title": "守護香港海洋生態",
+    "explainer": {
+      "monthly": "您的每月捐款，支撐著綠色和平守護海洋的工作。每月捐款250元或以上，便可獲得一面由綠色和平製作的「堅守大嶼」旗幟。謝謝！",
+      "onetime": "您的捐款，將立即幫助綠色和平守護我們的家園。單次捐款達800元或以上，便可獲得一面由綠色和平製作的「堅守大嶼」旗幟。謝謝！"
+    },
+    "lead": "綠色和平實地研究和見證環境問題，請幫助我們繼續保護珍貴的海洋生態。",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/10/f562ff3d-2020-sf-donation-elmflag.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/10/f562ff3d-2020-sf-donation-elmflag.jpg"
+    }
+  },
+  "oilspill": {
+    "title": "阻止漏油悲劇重演！",
+    "lead": "鑽油活動持續威脅北極圈、北海和亞馬遜珊瑚礁等地，難以預測的漏油風險，危害無數動植物棲息地，綠色和平在全球推動淘汰化石燃料的工作！",
+    "explainer": {
+      "monthly": "您的每月捐款，可幫助我們持續推動各國政府、企業淘汰化石燃料， 加速發展再生能源。",
+      "onetime": "您的捐款，讓綠色和平船艦能及時前往高鑽油風險、別具生態價值的海域展開行動，制止漏油悲劇重演。"
+    },
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/10/02a25aa4-2020-sf-donation-oil2.jpg",
+      "position": "left",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/10/02a25aa4-2020-sf-donation-oil2.jpg"
     }
   }
 }
