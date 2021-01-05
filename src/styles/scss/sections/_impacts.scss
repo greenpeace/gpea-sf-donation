@@ -11,16 +11,13 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
-        min-height: 220px;
-        max-height: 360px;
+        min-height: 240px;
+        max-height: 400px;
       }
     }
   }
   .impact {
     position: relative;
-    .impact__tag {
-      // display: none;
-    }
     .impact__title {
       color: $gray1;
       display: flex;

@@ -94,12 +94,9 @@
   }
   .main__form-wrapper {
     width: 100%;
-    max-width: 440px;
+    max-width: 480px;
     padding: 20px 12px;
     margin: 0 auto;
-    @media (min-width: 62em) {
-      max-width: 480px;
-    }
   }
 }
 // Wrappers
@@ -236,27 +233,26 @@
       margin-bottom: 0;
       color: $gray3;
     }
-    .other-amount {
+    .other-amount-input {
+      display: flex;
       width: 100%;
-      .slds-form-element__control {
-        padding-left: 64px;
-        position: relative;
-        &:before {
-          position: absolute;
-          content: "HKD";
-          left: 16px;
-          top: 50%;
-          transform: translateY(-50%);
-          font-size: 16px;
-          color: $gray3;
-          vertical-align: center;
-        }
+      .currency {
+        flex: 1;
+        min-width: 80px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        color: $gray3;
+        font-size: 16px;
       }
+    }
+    .other-amount {
+      flex: 4;
+      width: 100%;
     }
   }
   .amount-text {
     padding: 20px 0px;
-    color: $gray1;
     font-size: 1rem;
   }
 }

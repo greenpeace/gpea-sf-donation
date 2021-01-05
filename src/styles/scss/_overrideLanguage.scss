@@ -1,32 +1,12 @@
 .THIS {
   &.zh_HK {
-    font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
-      "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
-        "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
-    }
+    font-family: "Noto Sans TC", sans-serif;
   }
   &.en_HK {
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
   }
   &.zh_TW {
-    font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
-      "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Noto Sans TC", Microsoft JhengHei, "PingFang HK",
-        "Helvetica Neue", "Heiti TC", "Microsoft JhengHei", Arial, sans-serif;
-    }
+    font-family: "Noto Sans TC", sans-serif;
   }
 }
 // DD General
@@ -78,9 +58,6 @@
         margin-left: 4px;
         margin-right: 4px;
       }
-    }
-    .other-amount .slds-form-element__control:before {
-      content: "新臺幣" !important;
     }
     .share-button_whatsapp {
       display: none;

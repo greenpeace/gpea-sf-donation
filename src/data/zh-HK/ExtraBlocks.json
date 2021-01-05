@@ -1,4 +1,3 @@
-
 {
   "centerText": {
     "headline": "改變，因您而起。",
@@ -109,6 +108,46 @@
         "issueTag": "生活"
       }
     ]
+  },
+  "fund": {
+    "headline": "",
+    "text": "In 2019, 84% of all expenditures went to campaigning and public outreach.",
+    "items": [
+      {
+        "number": "84%",
+        "description": "of our funds are spent on campaigning and public outreach, \nto protect and defend our forests, oceans and climate, and on fundraising and engagement - to make sure we can keep our work going in the future."
+      },
+      {
+        "number": "84%",
+        "description": "of our funds are spent on campaigning and public outreach, \nto protect and defend our forests, oceans and climate, and on fundraising and engagement - to make sure we can keep our work going in the future."
+      },
+      {
+        "number": "84%",
+        "description": "of our funds are spent on campaigning and public outreach, \nto protect and defend our forests, oceans and climate, and on fundraising and engagement - to make sure we can keep our work going in the future."
+      }
+    ]
+  },
+  "finance": {
+    "headline": "我們如何分配資源在東亞進行重要的環保項目？",
+    "text": "您的慷慨捐款，創造無數環境成果。",
+    "items": [
+      {
+        "image": "https://change.greenpeace.org.hk/static/icon/Asset 18@3x.png",
+        "percent": "49%",
+        "description": "分配至拯救氣候危機，營造更健康、公平和綠色的世界"
+      },
+      {
+        "image": "https://change.greenpeace.org.hk/static/icon/Asset 22@3x.png",
+        "percent": "28%",
+        "description": "分配至守護全球海洋與原始森林，支援跨範疇項目，保護生命之源，提出解決方案推動改變"
+      },
+      {
+        "image": "https://change.greenpeace.org.hk/static/icon/Asset 7@3x.png",
+        "percent": "23%",
+        "description": "分配至維護食物安全和防治環境污染，營造無毒無污世界，保護土地、水資源及地球環境"
+      }
+    ],
+    "paragraph": ""
   },
   "testimonials": {
     "headline": "一齊行動，為世界帶來改變！",

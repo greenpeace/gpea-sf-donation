@@ -1,4 +1,3 @@
-import "@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css";
 import "./styles/App.scss";
 import "./scripts/index";
 //

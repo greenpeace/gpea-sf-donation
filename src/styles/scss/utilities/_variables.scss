@@ -1,6 +1,6 @@
 @charset "utf-8";
 // ------ Black & white -----
-$black: #1b1f23 !default;
+$black: #000 !default;
 $white: #fff !default;
 // ------ Grays ------
 $gray0: #1a1a1a;
@@ -10,9 +10,10 @@ $gray3: #999999;
 $gray4: #e5e5e5;
 // -------- Primary ------
 $gp-green: #66cc00;
-$gp-orange: #ff9500;
+$gp-orange: #ff8100;
 $gp-darkblue: #292f47;
-$gp-lightblue: #e6f5f5;
+// $gp-lightblue: #e6f5f5;
+$gp-lightblue: #f4f9fa;
 $gp-red: #ff3333;
 // ------ Campaigns ------
 $gp-arctic: #62cbd7;
@@ -35,61 +36,6 @@ $shadow-topbottom-white: linear-gradient(
   rgba(255, 255, 255, 1),
   rgba(255, 255, 255, 0)
 );
-// ------ breakpoints ------
-$width-xs: 0;
-$width-sm: 544px;
-$width-md: 768px;
-$width-lg: 1012px;
-$width-xl: 1280px;
-$breakpoint: (
-  // Small screen / phone
-  sm: $width-sm,
-  // Medium screen / tablet
-  md: $width-md,
-  // Large screen / desktop (980 + (12 * 2)) <= container + gutters
-  lg: $width-lg,
-  // Extra large screen / wide desktop
-  xl: $width-xl
-) !default;
-/*
-.styles {
-  font-size: 28px;
-  @include breakpoint(md) {
-    font-size: 32px;
-  }
-}
-*/
-// Heading sizes - mobile
-// h4—h6 remain the same size on both mobile & desktop
-$h00-size-mobile: 40px;
-$h0-size-mobile: 32px;
-$h1-size-mobile: 26px;
-$h2-size-mobile: 22px;
-$h3-size-mobile: 18px;
-// Heading sizes - desktop
-$h00-size: 48px;
-$h0-size: 40px;
-$h1-size: 32px;
-$h2-size: 24px;
-$h3-size: 20px;
-$h4-size: 16px;
-$h5-size: 14px;
-$h6-size: 12px;
-/*
-*
-| 0px ->
-         | 544px ->
-         | sm
-                    | 768px ->
-                    | md
-                               | 1012px ->
-                               | lg
-                                           | 1280px ->
-                                           | xl
-| col-12 ---------> | col-md-8 ----------> | col-xl-4 ->
-*
-*
-*/
 //
 .THIS {
   .prose {
