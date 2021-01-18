@@ -1,13 +1,37 @@
-.THIS {
+.app {
+  form {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition-property: opacity, transform;
+    transition-duration: 0.35s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    a,
+    button,
+    input,
+    select,
+    textarea {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+      box-shadow: none;
+      background: none;
+      outline: none;
+      font-family: inherit;
+    }
+  }
+}
+
+.app {
   .payment-details {
     display: none;
   }
   .slds-assistive-text {
     display: none;
   }
-}
 
-.THIS {
   .label-hidden.slds-form-element > label {
     display: none;
   }
@@ -57,9 +81,7 @@
   .slds-spinner_container .slds-icon-text-error {
     fill: $gp-red !important;
   }
-}
 
-.THIS {
   .pageLevelErrors {
     display: none;
   }
@@ -76,10 +98,11 @@
   }
   // slds select
   .slds-form-element__label {
+    padding-top: 4px;
     padding-left: 4px;
+    padding-bottom: 4px;
     font-size: 12px;
     color: $gray2;
-    position: relative;
     abbr.slds-required {
       display: none;
       color: $gp-red;
@@ -89,35 +112,17 @@
       text-decoration: none;
     }
   }
-  // slds label
   .slds-form-element__help {
-    font-size: 10px;
+    font-size: 0.75rem;
     color: $gp-red;
-    text-align: left;
-    padding-left: 4px;
-    margin-top: 4px;
   }
   .slds-checkbox .slds-checkbox__label {
     display: flex;
     align-items: flex-start;
   }
-  .slds-form-element__control {
-    border: 1px solid $gray4;
-    border-radius: 4px;
-    position: relative;
-    transition: all 0.2s ease;
-    display: flex;
-    overflow: hidden;
-    &:hover {
-      border: 1px solid $gp-green;
-    }
-  }
   .slds-has-error .slds-select:focus,
   .slds-has-error .slds-select:active {
     box-shadow: none !important;
-  }
-  .slds-has-error .slds-form-element__control {
-    border: 1px solid $gp-red;
   }
   .slds-select_container {
     width: 100%;
@@ -125,20 +130,38 @@
   }
   .slds-input,
   .slds-select {
-    height: auto;
-    display: block;
+    appearance: none;
+    outline: none;
     width: 100%;
-    height: 40px;
-    border: none;
     box-shadow: none !important;
-    padding-left: 16px;
     font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: calc(0.75em - 1px);
+    padding-right: calc(0.75em - 1px);
+    padding-top: calc(0.5em - 1px);
+    position: relative;
+    vertical-align: top;
+    height: 2.5em;
+    background-color: $white;
+    border: 1px solid $gray4;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.2s ease;
+    &:hover {
+      border: 1px solid $gp-green;
+    }
+  }
+  .slds-has-error {
+    .slds-input,
+    .slds-select {
+      border: 1px solid $gp-red;
+    }
   }
   .consent .slds-form-element__control {
     border: none;
   }
 }
-
 .THIS {
   .cGPEAPhoneInput {
     .slds-select_container:after {
@@ -155,31 +178,6 @@
       position: absolute;
       right: 24px;
       top: 8px;
-    }
-  }
-}
-
-.THIS {
-  .cDonationCreditCardInput:first-child {
-    position: relative;
-    margin-bottom: 0px !important;
-    .card-number {
-      margin-bottom: 8px;
-    }
-    .card-icon {
-      padding-top: 6px;
-      position: absolute;
-      right: 1.5rem;
-      top: 50%;
-      transform: translateY(-50%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .slds-form-element__help {
-      position: absolute;
-      left: 0;
-      bottom: -16px;
     }
   }
 }
