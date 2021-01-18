@@ -1,12 +1,9 @@
 @charset "utf-8";
 .app {
   .footer {
-    font-size: 12px;
+    font-size: 0.75rem;
     background-color: #292f47;
     color: $white;
-    @media (min-width: 75em) {
-      font-size: 14px;
-    }
     a {
       color: $white;
       text-decoration: underline;

@@ -29,7 +29,7 @@
   },
   "scripts": {
     "dev": "gulp && yarn start",
-    "start": "react-scripts start",
+    "start": "gulp && react-scripts start",
     "build": "gulp && PUBLIC_URL=https://api.greenpeace.org.hk/2020/sf-donation GENERATE_SOURCEMAP=false react-scripts build",
     "build:en": "gulp && PUBLIC_URL=https://api.greenpeace.org.hk/2020/sf-donation GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",

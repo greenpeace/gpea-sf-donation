@@ -17,8 +17,9 @@
 // header footer
 @import "./scss/global/index";
 // main
-@import "./scss/overrideSLDS", "./scss/donation", "./scss/donationDonor",
-  "./scss/donationThankyou", "./scss/overrideLanguage", "./scss/main";
+@import "./scss/overrideSLDS", "./scss/donation", "./scss/donationForm",
+  "./scss/donationDonor", "./scss/donationThankyou", "./scss/overrideLanguage",
+  "./scss/main";
 // sections
 @import "./scss/sections/index";
 //
