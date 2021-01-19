@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon-checkmark</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Recipes-Framework" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="save-for-future" transform="translate(-56.000000, -221.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="UI-Preview" transform="translate(54.000000, 48.000000)">
+                <g id="Group-3" transform="translate(1.000000, 172.000000)">
+                    <path d="M6.22558594,10.6396484 C6.48535156,10.6396484 6.70410156,10.5166016 6.86132812,10.2705078 L10.3339844,4.87011719 C10.4365234,4.71972656 10.5117188,4.54882812 10.5117188,4.38476562 C10.5117188,4.02246094 10.1904297,3.78320312 9.84863281,3.78320312 C9.62988281,3.78320312 9.43847656,3.89941406 9.28125,4.14550781 L6.19824219,9.06738281 L4.60546875,7.05078125 C4.43457031,6.84570312 4.25683594,6.75683594 4.04492188,6.75683594 C3.69628906,6.75683594 3.40234375,7.03710938 3.40234375,7.40625 C3.40234375,7.5703125 3.46386719,7.74121094 3.59375,7.89160156 L5.5625,10.2910156 C5.76074219,10.5234375 5.96582031,10.6396484 6.22558594,10.6396484 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
