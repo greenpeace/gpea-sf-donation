@@ -26,6 +26,7 @@
 
 .app {
   .slds-form-element__label {
+    text-align: left;
     font-size: 0.75rem;
     color: $gray2;
     vertical-align: top;
@@ -43,6 +44,7 @@
     font-size: 0.75rem;
     color: $gp-red;
     margin-top: 4px;
+    text-align: left;
   }
   .slds-input,
   .slds-select {
