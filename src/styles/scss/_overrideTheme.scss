@@ -1,0 +1,81 @@
+:root {
+  --cny: #f3585a;
+  --cny-second: #fff;
+  --cny-bg: #fffbf8;
+  --cny-font: #fbb813;
+}
+.app {
+  &.cny {
+    .tab-menu {
+      li {
+        border-color: var(--cny);
+        a {
+          color: var(--cny);
+        }
+        .selected {
+          background-color: var(--cny);
+          color: var(--cny-second);
+        }
+      }
+    }
+    .form__amount-button {
+      &.selected {
+        background-color: var(--cny);
+        color: var(--cny-second);
+      }
+    }
+    .form__donate-btn {
+      background-color: var(--cny);
+      color: var(--cny-second);
+    }
+    .section-center-text {
+      background-color: var(--cny-bg);
+      .container {
+        max-width: 780px;
+      }
+      h2,
+      p {
+        font-weight: bold;
+        color: var(--cny) !important;
+      }
+    }
+    .section-issues {
+      background-color: #fff;
+      .issue__header {
+        h2 {
+          font-size: 1.6rem;
+          text-transform: none;
+        }
+      }
+    }
+    .section-mixed-content {
+      background-color: var(--cny-bg);
+      .box-visual {
+        border-top: 1px solid var(--cny-bg);
+      }
+      h2,
+      p {
+        font-weight: bold;
+        color: var(--cny) !important;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.hero.has-background {
+  position: relative;
+  overflow: hidden;
+}
+.hero-background {
+  position: absolute;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.hero-background.is-transparent {
+  opacity: 0.3;
+}

@@ -71,48 +71,42 @@
   }
 }
 // Wrappers
-.THIS {
-  .form-wrapper {
-    > div {
-      width: 100%;
+.form-wrapper {
+  > div {
+    width: 100%;
+  }
+  .row {
+    display: flex;
+    margin-left: -8px;
+    margin-right: -8px;
+    &:not(:last-child) {
+      margin-bottom: 8px;
     }
-    .row {
-      display: flex;
-      margin-left: -8px;
-      margin-right: -8px;
-      &:not(:last-child) {
-        margin-bottom: 8px;
-      }
-      .col {
-        flex-basis: 0;
-        flex-grow: 1;
-        flex-shrink: 1;
-        padding: 0 8px;
-      }
+    .col {
+      flex-basis: 0;
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding: 0 8px;
     }
   }
 }
 // Rows and Cols
-.THIS {
-  .subtext {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: $gp-green;
-    font-weight: bold;
-  }
+.subtext {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: $gp-green;
+  font-weight: bold;
 }
 // Form Sub text
-.THIS {
-  .form__contents {
-    padding: 20px 12px;
-    background: $white;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: $shadow-card1;
-    border: 1px solid $gray4;
-    @media (min-width: 75em) {
-      padding: 20px;
-    }
+.form__contents {
+  padding: 20px 12px;
+  background: $white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: $shadow-card1;
+  border: 1px solid $gray4;
+  @media (min-width: 75em) {
+    padding: 20px;
   }
 }
 // Form inner content
@@ -153,10 +147,6 @@
           background-color: $gp-green;
           color: $white;
           font-weight: bold;
-          &:hover {
-            color: $white;
-            background-color: lighten($gp-green, 2%);
-          }
         }
       }
     }
@@ -194,9 +184,6 @@
         background-color: $gp-green;
         color: $white;
         font-weight: bold;
-        &:hover {
-          background-color: lighten($gp-green, 2%);
-        }
       }
     }
     .form__amount-other-button {
@@ -260,9 +247,6 @@
       text-align: center;
       letter-spacing: 1px;
       transition: all 0.2s ease;
-      &:hover {
-        background-color: lighten($gp-green, 2%);
-      }
     }
   }
 }
