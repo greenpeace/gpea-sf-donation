@@ -1,34 +1,30 @@
-.THIS {
-  .form__details-issues {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    .issues {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      justify-content: space-around;
-      margin: 8px auto;
-      > div {
-        text-align: center;
-        font-weight: bold;
-        font-size: 16px;
-        color: $gray4;
-        margin: 4px;
-        border: 1px solid $gray4;
-        border-radius: 30px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        transition: none;
-        &.selected {
-          border: 1px solid $gp-green;
-          color: $gp-green;
-        }
+.form__details-issues {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  .issues {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    margin: 8px auto;
+    > div {
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+      color: $gray4;
+      margin: 4px;
+      border: 1px solid $gray4;
+      border-radius: 30px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: none;
+      &.selected {
+        border: 1px solid $gp-green;
+        color: $gp-green;
       }
     }
   }
 }
-
-/* Donor Information */
