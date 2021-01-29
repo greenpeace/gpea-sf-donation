@@ -1,39 +1,35 @@
 @import "./swiper-pagination", "./swiper-navigation";
 //
-.THIS {
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-    padding: 20px 0;
-    overflow: visible;
-    position: relative;
-  }
-  .swiper-container .swiper-slide,
-  .swiper-container .swiper-pagination,
-  .swiper-container [class^="swiper-button-"] {
-    transition: box-shadow 140ms linear, opacity 140ms linear,
-      filter 140ms linear, transform 140ms linear;
-  }
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  overflow: visible;
+  position: relative;
 }
-.THIS {
-  .swiper-slide {
-    height: auto;
-    width: 90%;
-    margin-left: 2%;
-    margin-right: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    box-shadow: $shadow-card1;
-    @media (min-width: 75em) {
-      max-width: 580px;
-    }
-    @media (min-width: 75em) {
-      max-width: 780px;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
+.swiper-container .swiper-slide,
+.swiper-container .swiper-pagination,
+.swiper-container [class^="swiper-button-"] {
+  transition: box-shadow 140ms linear, opacity 140ms linear, filter 140ms linear,
+    transform 140ms linear;
+}
+.swiper-slide {
+  height: auto;
+  width: 90%;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: $shadow-card1;
+  @media (min-width: 75em) {
+    max-width: 580px;
+  }
+  @media (min-width: 75em) {
+    max-width: 780px;
+  }
+  &:last-child {
+    margin-right: 0;
   }
 }

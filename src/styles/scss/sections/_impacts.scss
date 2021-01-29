@@ -1,31 +1,29 @@
-.THIS {
-  .section-impacts {
-    .swiper-wrapper {
-      display: flex;
-      align-items: flex-end;
-    }
-    .swiper-slide {
-      opacity: 1 !important;
-      box-shadow: none !important;
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        min-height: 240px;
-        max-height: 400px;
-      }
+.section-impacts {
+  .swiper-wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+  .swiper-slide {
+    opacity: 1 !important;
+    box-shadow: none !important;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      min-height: 240px;
+      max-height: 400px;
     }
   }
-  .impact {
-    position: relative;
-    .impact__title {
-      color: $gray1;
-      display: flex;
-      align-items: center;
-      p {
-        margin-top: 0;
-        padding-top: 0;
-      }
+}
+.impact {
+  position: relative;
+  .impact__title {
+    color: $gray1;
+    display: flex;
+    align-items: center;
+    p {
+      margin-top: 0;
+      padding-top: 0;
     }
   }
 }

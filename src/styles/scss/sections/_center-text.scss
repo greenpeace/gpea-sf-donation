@@ -1,25 +1,7 @@
-/*
-.THIS {
-  .section.section-center-text .section-wrapper {
+.section.section-center-text {
+  .container {
+    max-width: 780px;
     margin: 0 auto;
-    padding: 80px 20px;
     text-align: center;
-    @media (min-width: 62em) {
-      min-height: 400px;
-      padding: 100px 40px;
-      max-width: 780px;
-    }
-    h2 {
-      margin-top: 0;
-    }
-  }
-}
-*/
-.THIS {
-  .section.section-center-text {
-    p {
-      max-width: 780px;
-      margin: 0 auto;
-    }
   }
 }

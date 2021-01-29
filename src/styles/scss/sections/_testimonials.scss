@@ -1,13 +1,11 @@
-.THIS {
-  .section-testimonials {
-    background-color: $gp-lightblue;
-    padding-bottom: 20px;
-    .swiper-slide {
-      max-width: 480px;
-    }
+.section-testimonials {
+  background-color: $gp-lightblue;
+  padding-bottom: 20px;
+  .swiper-slide {
+    max-width: 480px;
   }
-  .profile-circle {
-    border: 1px solid $gp-green;
-    padding: 4px !important;
-  }
+}
+.profile-circle {
+  border: 1px solid $gp-green;
+  padding: 4px !important;
 }
