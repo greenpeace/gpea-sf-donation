@@ -19,10 +19,8 @@
       align-items: center;
       justify-content: center;
       .header-logo {
-        img {
-          padding: 2px;
-          height: 28px;
-        }
+        max-width: 200px;
+        padding: 2px;
       }
       .header-buttons {
         display: none;

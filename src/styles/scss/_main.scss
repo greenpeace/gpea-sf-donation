@@ -2,7 +2,7 @@ $loading-background: $white;
 $loading-theme: $gp-green;
 $animation-set: dotFlashing 2s infinite linear alternate;
 
-.main {
+.app {
   transition-property: opacity, transform;
   transition-duration: 0.35s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -10,7 +10,10 @@ $animation-set: dotFlashing 2s infinite linear alternate;
     opacity: 0;
   }
   &.loaded {
-    opacity: 1;
+    opacity: 1 !important;
+    > .section_loader {
+      display: none;
+    }
   }
 }
 
@@ -48,8 +51,6 @@ $animation-set: dotFlashing 2s infinite linear alternate;
     #eee 100%
   );
   img {
-    width: 100%;
-    display: block;
     @media (min-width: 62em) {
       display: none;
     }
