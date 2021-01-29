@@ -28,8 +28,11 @@ const getUrlParams = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  // window.addEventListener("scroll", handleScroll);
   let params = getUrlParams();
+  console.log(params);
+  if (params.campaign) {
+    document.querySelector(".app").classList.add(`${params.campaign}`);
+  }
   for (var i = 1; i <= 4; i++) {
     console.log(`.s${i}`);
     if (document.querySelector(`.s${i}`)) {
@@ -46,8 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(function () {
     document.querySelector(".main").classList.add("loaded");
-  }, 500);
+  }, 1000);
   //
+  // Browser check
   var b = document.documentElement;
   b.setAttribute("data-useragent", navigator.userAgent);
   b.setAttribute("data-platform", navigator.platform);

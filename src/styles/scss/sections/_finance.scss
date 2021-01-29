@@ -1,0 +1,9 @@
+.finance-block {
+  margin-top: 30px;
+  .finance-block__number {
+    font-size: 4rem;
+    margin: 1rem auto;
+    color: $gp-green;
+    font-weight: bold;
+  }
+}

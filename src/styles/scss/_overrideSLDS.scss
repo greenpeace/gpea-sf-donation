@@ -1,17 +1,13 @@
-.THIS {
+.app {
   .payment-details {
     display: none;
   }
-}
-
-.THIS {
-  .label-hidden.slds-form-element > label {
+  .slds-assistive-text {
     display: none;
   }
 
-  .checkbox-input {
-    min-width: 25px;
-    width: 25px !important;
+  .label-hidden.slds-form-element > label {
+    display: none;
   }
 
   .checkbox-label {
@@ -54,9 +50,7 @@
   .slds-spinner_container .slds-icon-text-error {
     fill: $gp-red !important;
   }
-}
 
-.THIS {
   .pageLevelErrors {
     display: none;
   }
@@ -71,110 +65,61 @@
     bottom: 50%;
     transform: translateY(50%);
   }
-  // slds select
-  .slds-form-element__label {
-    padding-left: 4px;
-    font-size: 12px;
-    color: $gray2;
-    position: relative;
-    abbr.slds-required {
-      display: none;
-      color: $gp-red;
-      position: absolute;
-      right: -2px;
-      top: 2px;
-      text-decoration: none;
-    }
-  }
-  // slds label
-  .slds-form-element__help {
-    font-size: 10px;
-    color: $gp-red;
-    text-align: left;
-    padding-left: 4px;
-  }
   .slds-checkbox .slds-checkbox__label {
     display: flex;
     align-items: flex-start;
-  }
-  .slds-form-element__control {
-    border: 1px solid $gray4;
-    border-radius: 4px;
-    position: relative;
-    transition: all 0.2s ease;
-    display: flex;
-    &:hover {
-      border: 1px solid $gp-green;
-    }
   }
   .slds-has-error .slds-select:focus,
   .slds-has-error .slds-select:active {
     box-shadow: none !important;
   }
-  .slds-has-error .slds-form-element__control {
-    border: 1px solid $gp-red;
-  }
   .slds-select_container {
     width: 100%;
     display: flex;
-  }
-  .slds-input,
-  .slds-select {
-    height: auto;
-    display: block;
-    width: 100%;
-    height: 40px;
-    border: none;
-    box-shadow: none !important;
-    padding-left: 16px;
-    font-size: 16px;
   }
   .consent .slds-form-element__control {
     border: none;
   }
 }
 
-.THIS {
-  .cGPEAPhoneInput {
-    .slds-select_container:after {
-      right: 8px;
-    }
+.cGPEAPhoneInput {
+  .slds-select_container:after {
+    right: 8px;
   }
 }
 
-.THIS {
-  .cSignaturePad {
+.cDonationCreditCardInput {
+  > .col {
     position: relative;
-    margin-bottom: 10px;
-    .slds-button {
-      position: absolute;
-      right: 24px;
-      top: 8px;
-    }
   }
-}
-
-.THIS {
-  .cDonationCreditCardInput:first-child {
-    position: relative;
-    margin-bottom: 0px !important;
-    .card-number {
-      margin-bottom: 8px;
-    }
-    .card-icon {
-      padding-top: 6px;
-      position: absolute;
-      right: 1.5rem;
-      top: 50%;
-      transform: translateY(-50%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .slds-form-element__help {
+  .card-icon {
+    position: absolute;
+    width: 24px;
+    height: 16px;
+    background-color: none;
+    border-radius: 2px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(25%);
+    img {
       position: absolute;
       left: 0;
-      bottom: -16px;
+      top: 0;
+      height: 100%;
+      width: 100%;
     }
+  }
+  .slds-has-error ~ .card-icon {
+    transform: translateY(-44%);
+  }
+}
+
+.cSignaturePad {
+  position: relative;
+  margin-bottom: 10px;
+  .slds-button {
+    position: absolute;
+    right: 24px;
+    top: 8px;
   }
 }
