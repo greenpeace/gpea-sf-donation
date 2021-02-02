@@ -1,26 +1,21 @@
 .form__title {
   width: 100%;
   text-align: center;
+  margin: 1rem auto;
   .form__headline {
     text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
     color: $black;
-    font-size: 1.4rem;
-    font-weight: bold;
-    @media (min-width: 62em) {
-      font-size: 1.6rem;
-    }
-    @media (min-width: 75em) {
-      font-size: 1.8rem;
-    }
+    font-size: 2rem;
+    margin: 0;
   }
   .form__leading {
     text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
     color: $gray1;
-    margin: 20px auto;
+    margin: 1rem auto;
     font-size: 1rem;
   }
   .edit-amount {
-    margin: 10px auto;
+    margin: 0.75rem auto;
     flex: 1;
     color: $gray2;
     span {
@@ -28,7 +23,7 @@
     }
   }
 }
-.form__title.form__title--light {
+.form__title--light {
   .form__headline {
     color: $black;
   }
@@ -39,7 +34,7 @@
     color: $gray1;
   }
 }
-.form__title.form__title--dark {
+.form__title--dark {
   .form__headline {
     color: $white;
   }
@@ -88,10 +83,9 @@
 }
 // Rows and Cols
 .subtext {
+  color: $gray1;
   margin-top: 10px;
-  margin-bottom: 10px;
-  color: $gp-green;
-  font-weight: bold;
+  margin-bottom: 20px;
 }
 // Form Sub text
 .form__contents {
@@ -213,9 +207,6 @@
 }
 // Form tab menu and amounts
 .consent {
-  .checkbox-input {
-    margin-right: 0px;
-  }
   .slds-checkbox {
     width: 100%;
   }
@@ -224,7 +215,9 @@
     margin-top: 4px;
   }
   .checkbox-label {
-    font-size: 10px !important;
+    p {
+      font-size: 0.75rem;
+    }
   }
 }
 // Form consent
@@ -244,15 +237,18 @@
   }
 }
 // Form submit button
-.statement {
-  font-size: 10px;
-  margin-top: 4px;
-  margin-bottom: 10px;
-  color: $gray3;
+.app {
+  .statement {
+    font-size: 0.75rem;
+    color: #666;
+    line-height: 1.25rem;
+    margin-bottom: 0;
+  }
+  .signature-consent {
+    max-height: 150px;
+    padding: 8px;
+    border-left: 1px $gray3;
+  }
 }
-.signature-consent {
-  max-height: 150px;
-  padding: 8px;
-  border-left: 1px $gray3;
-}
+
 // Form statements

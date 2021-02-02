@@ -27,10 +27,12 @@
 .app {
   .slds-form-element__label {
     text-align: left;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     color: $gray2;
     vertical-align: top;
-    margin-bottom: 4px;
+    padding-top: 0.625rem;
+    letter-spacing: normal;
+    line-height: 1.25rem;
     abbr.slds-required {
       display: none;
       color: $gp-red;
@@ -67,9 +69,6 @@
     padding-right: calc(0.75em - 1px);
     padding-top: calc(0.5em - 1px);
     box-shadow: inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.05);
-    &:hover {
-      border-color: #b5b5b5;
-    }
     &:focus,
     &:active {
       border-color: $gp-green !important;
@@ -81,11 +80,5 @@
     .slds-select {
       border: 1px solid $gp-red;
     }
-  }
-}
-
-.app {
-  .checkbox-input {
-    margin-right: 8px;
   }
 }

@@ -37,33 +37,40 @@ $shadow-topbottom-white: linear-gradient(
   rgba(255, 255, 255, 0)
 );
 //
-.THIS {
-  .prose {
-    max-width: none !important;
-    color: initial;
-    img {
-      margin: 0;
-      padding: 0;
-    }
-  }
+.text--arctic {
+  color: $gp-arctic !important;
 }
-.THIS {
-  .text--arctic {
-    color: $gp-arctic !important;
-  }
-  .text--health {
-    color: $gp-health !important;
-  }
-  .text--climate {
-    color: $gp-climate !important;
-  }
-  .text--forests {
-    color: $gp-forests !important;
-  }
-  .text--oceans {
-    color: $gp-oceans !important;
-  }
-  .text--plastics {
-    color: $gp-plastics !important;
-  }
+.text--health {
+  color: $gp-health !important;
 }
+.text--climate {
+  color: $gp-climate !important;
+}
+.text--forests {
+  color: $gp-forests !important;
+}
+.text--oceans {
+  color: $gp-oceans !important;
+}
+.text--plastics {
+  color: $gp-plastics !important;
+}
+// Heading sizes - mobile
+// h4-h6 remain the same size on both mobile & desktop
+$h00-size-mobile: 40px !default;
+$h0-size-mobile: 32px !default;
+$h1-size-mobile: 26px !default;
+$h2-size-mobile: 22px !default;
+$h3-size-mobile: 18px !default;
+
+// Heading sizes - desktop
+$h00-size: 48px !default;
+$h0-size: 40px !default;
+$h1-size: 32px !default;
+$h2-size: 24px !default;
+$h3-size: 20px !default;
+$h4-size: 16px !default;
+$h5-size: 14px !default;
+$h6-size: 12px !default;
+
+$font-size-small: 12px !default;
