@@ -4,7 +4,7 @@
     padding: 0;
     position: relative;
     transition-property: opacity, transform;
-    transition-duration: 0.35s;
+    transition-duration: 0.25s;
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
     a,
     button,
@@ -12,8 +12,6 @@
     select,
     textarea {
       -webkit-tap-highlight-color: transparent;
-      -webkit-appearance: none;
-      -moz-appearance: none;
       appearance: none;
       border: none;
       box-shadow: none;
@@ -62,7 +60,6 @@
     border-color: $gray4;
     border-radius: 4px;
     position: relative;
-    transition: all 0.2s ease;
     height: 2.5em;
     padding-bottom: calc(0.5em - 1px);
     padding-left: calc(0.75em - 1px);
