@@ -10,9 +10,9 @@
     > div {
       text-align: center;
       font-size: 16px;
-      color: $gray2;
+      color: $gray3;
       margin: 4px;
-      border: 1px solid $gray2;
+      border: 1px solid $gray4;
       border-radius: 30px;
       height: 40px;
       display: flex;
@@ -20,6 +20,9 @@
       align-items: center;
       cursor: pointer;
       transition: none;
+      &:hover {
+        font-weight: bold;
+      }
       &.selected {
         border: 1px solid $gp-green;
         color: $gp-green;

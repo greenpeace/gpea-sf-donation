@@ -80,12 +80,14 @@
       padding: 0 8px;
     }
   }
-}
-// Rows and Cols
-.subtext {
-  color: $gray1;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  // Rows and Cols
+  .subtext {
+    color: $gray3;
+    margin-bottom: 16px;
+    p {
+      margin: 0;
+    }
+  }
 }
 // Form Sub text
 .form__contents {

@@ -79,3 +79,46 @@
     }
   }
 }
+
+.app {
+  .amount-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    .subtext {
+      margin: 0;
+      min-width: 140px;
+    }
+  }
+  .payment-details {
+    padding: 4px 16px;
+    background-color: $gray4;
+    color: $gray1;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid $gray3;
+    }
+    @media (max-width: 575.98px) {
+      margin-top: 8px;
+    }
+  }
+  .payment-details--frequency {
+    margin-right: 4px;
+  }
+  .payment-details--separator {
+    height: 20px;
+    width: 1px;
+    margin: 0 6px;
+    background-color: $gray3;
+  }
+  .payment-details--currency {
+    margin-right: 4px;
+  }
+}

@@ -1,7 +1,4 @@
 .app {
-  .payment-details {
-    display: none;
-  }
   .slds-assistive-text {
     display: none;
   }
@@ -100,7 +97,7 @@
     border-radius: 2px;
     right: 20px;
     top: 50%;
-    transform: translateY(25%);
+    transform: translateY(50%);
     img {
       position: absolute;
       left: 0;
@@ -110,7 +107,7 @@
     }
   }
   .slds-has-error ~ .card-icon {
-    transform: translateY(-44%);
+    transform: translateY(-25%);
   }
 }
 
