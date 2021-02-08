@@ -52,7 +52,7 @@ $animation-set: dotFlashing 2s infinite linear alternate;
   );
   img {
     @media (min-width: 62em) {
-      display: none;
+      display: none !important;
     }
   }
   @media (min-width: 62em) {

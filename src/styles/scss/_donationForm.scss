@@ -18,18 +18,28 @@
       background: none;
       outline: none;
       font-family: inherit;
+      font-weight: normal;
+    }
+    ::-webkit-input-placeholder,
+    ::-moz-placeholder,
+    ::-ms-placeholder,
+    ::placeholder {
+      color: $gray4;
+    }
+    input::placeholder,
+    select::placeholder,
+    textarea::placeholder {
+      color: $gray4;
     }
   }
 }
 
 .app {
   .slds-form-element__label {
-    text-align: left;
     font-size: 0.875rem;
-    color: $gray2;
-    vertical-align: top;
+    color: $gray1;
     padding-top: 0.625rem;
-    letter-spacing: normal;
+    padding-left: 4px;
     line-height: 1.25rem;
     abbr.slds-required {
       display: none;
@@ -65,7 +75,6 @@
     padding-left: calc(0.75em - 1px);
     padding-right: calc(0.75em - 1px);
     padding-top: calc(0.5em - 1px);
-    box-shadow: inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.05);
     &:focus,
     &:active {
       border-color: $gp-green !important;
@@ -76,6 +85,7 @@
     .slds-input,
     .slds-select {
       border: 1px solid $gp-red;
+      box-shadow: none;
     }
   }
 }
@@ -86,12 +96,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 8px;
     margin-bottom: 20px;
     flex-wrap: wrap;
     .subtext {
       margin: 0;
       min-width: 140px;
+      padding: 8px 0;
+      p {
+        margin: 0;
+      }
     }
   }
   .payment-details {
@@ -105,17 +118,11 @@
     &:hover {
       border: 1px solid $gray3;
     }
-    @media (max-width: 575.98px) {
-      margin-top: 8px;
-    }
-  }
-  .payment-details--frequency {
-    margin-right: 4px;
   }
   .payment-details--separator {
     height: 20px;
     width: 1px;
-    margin: 0 6px;
+    margin: 0 8px;
     background-color: $gray3;
   }
   .payment-details--currency {

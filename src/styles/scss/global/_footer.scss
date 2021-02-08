@@ -54,8 +54,6 @@
     padding-top: 4px;
     padding-bottom: 4px;
     margin-bottom: 20px;
-    font-size: 16px;
-    font-weight: bold;
     a {
       color: $gray2;
       &:first-child {
@@ -102,13 +100,7 @@
     }
     .notice {
       display: none;
-      font-size: 18px;
-      margin-bottom: 20px;
-      font-weight: bold;
     }
-  }
-  .footer__credit {
-    font-weight: bold;
   }
   .footer__secure {
     display: none;

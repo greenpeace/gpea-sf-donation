@@ -37,6 +37,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -49,8 +50,9 @@ html {
 body {
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 300;
-  line-height: 1.5;
+  font-variant: tabular-nums;
   color: $black;
+  line-height: 1.5;
 }
 
 .app {
@@ -95,19 +97,18 @@ body {
   .text_small {
     font-size: 0.75rem;
   }
-}
 
-img {
-  display: block;
-  width: 100%;
-}
+  img {
+    width: 100%;
+  }
 
-a,
-.link {
-  color: #06c;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
+  a,
+  .link {
+    color: $blue;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -136,7 +137,9 @@ a:hover {
 a:active {
   filter: brightness(0.5);
 }
+
 // back to top
+
 .backtotop {
   z-index: 99;
   position: fixed;
