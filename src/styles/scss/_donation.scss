@@ -5,19 +5,21 @@
   .form__headline {
     text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
     color: $black;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 0;
   }
   .form__leading {
-    text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
-    color: $black;
+    // text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
+    color: $gray0;
     margin: 1rem auto;
+    padding: 2px;
     font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.95);
   }
   .edit-amount {
     margin: 0.75rem auto;
     flex: 1;
-    color: $gray3;
+    color: $gray2;
     span {
       cursor: pointer;
     }
