@@ -276,6 +276,42 @@
             </div>
           </div>
         </section>
+        <section class="section section-humanstory">
+          <div class="container section-wrapper">
+            <div class="column section__header">
+              <h2>{{testimonials.headline}}</h2>
+              <p>{{testimonials.text}}</p>
+            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                {% for testimonial in testimonials.testimonialList %}
+                <div class="swiper-slide card">
+                  <div class="issue">
+                    <div class="issue__header">
+                      <p class="is-size-4 mb-2 has-text-left">{{testimonial.name}}</p>
+                      <p class="mb-4 has-text-grey has-text-left">
+                        {{testimonial.title}}
+                      </p>
+                      <p>{{testimonial.quote}}</p>
+                    </div>
+                    <div
+                      class="issue__image"
+                      style="background-image: url('{{testimonial.pic}}')"
+                    ></div>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+              <div class="swiper-button-prev">
+                <div class="arrow arrow--left"></div>
+              </div>
+              <div class="swiper-button-next">
+                <div class="arrow arrow--right"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
       </div>
       <!-- end of extra blocks -->
       <!-- backtotop -->
