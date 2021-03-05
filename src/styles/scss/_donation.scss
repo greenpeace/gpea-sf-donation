@@ -1,26 +1,23 @@
 .form__title {
   width: 100%;
   text-align: center;
+  margin: 1rem auto;
   .form__headline {
     text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
     color: $black;
-    font-size: 1.4rem;
-    font-weight: bold;
-    @media (min-width: 62em) {
-      font-size: 1.6rem;
-    }
-    @media (min-width: 75em) {
-      font-size: 1.8rem;
-    }
+    font-size: 2.2rem;
+    margin: 0;
   }
   .form__leading {
+    // background-color: rgba(255, 255, 255, 0.95);
     text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
-    color: $gray1;
-    margin: 20px auto;
+    color: $gray0;
+    margin: 1rem auto;
+    padding: 2px;
     font-size: 1rem;
   }
   .edit-amount {
-    margin: 10px auto;
+    margin: 0.75rem auto;
     flex: 1;
     color: $gray2;
     span {
@@ -28,7 +25,7 @@
     }
   }
 }
-.form__title.form__title--light {
+.form__title--light {
   .form__headline {
     color: $black;
   }
@@ -39,7 +36,7 @@
     color: $gray1;
   }
 }
-.form__title.form__title--dark {
+.form__title--dark {
   .form__headline {
     color: $white;
   }
@@ -85,13 +82,14 @@
       padding: 0 8px;
     }
   }
-}
-// Rows and Cols
-.subtext {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: $gp-green;
-  font-weight: bold;
+  // Rows and Cols
+  .subtext {
+    color: $gray1;
+    margin-bottom: 10px;
+    p {
+      margin: 0;
+    }
+  }
 }
 // Form Sub text
 .form__contents {
@@ -101,21 +99,17 @@
   overflow: hidden;
   box-shadow: $shadow-card1;
   border: 1px solid $gray4;
-  @media (min-width: 75em) {
-    padding: 20px;
-  }
 }
 // Form inner content
 .form__handle {
-  margin: 20px auto;
+  margin: 1rem auto;
   .tab-menu {
     display: flex;
     li {
       flex: 1;
       overflow: hidden;
-      border: 1px solid $gp-green;
+      border: 1px solid $gray4;
       background: $white;
-      transition: none;
       &:only-child {
         border-radius: 4px !important;
       }
@@ -128,7 +122,7 @@
       a {
         height: 40px;
         width: 100%;
-        color: $gp-green;
+        color: $gray3;
         font-size: 16px;
         text-decoration: none;
         display: flex;
@@ -139,6 +133,7 @@
         }
       }
       .selected {
+        border-color: $gp-green;
         background-color: $gp-green;
         color: $white;
         font-weight: bold;
@@ -165,7 +160,7 @@
     margin-bottom: 10px;
     border-radius: 4px;
     background: $gray4;
-    color: $gray1;
+    color: $gray3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,7 +168,6 @@
     transition: none;
     &:hover {
       text-decoration: none;
-      background-color: lighten($gray4, 2%);
     }
     &.selected {
       background-color: $gp-green;
@@ -213,9 +207,7 @@
 }
 // Form tab menu and amounts
 .consent {
-  .checkbox-input {
-    margin-right: 0px;
-  }
+  margin-bottom: 20px;
   .slds-checkbox {
     width: 100%;
   }
@@ -224,35 +216,41 @@
     margin-top: 4px;
   }
   .checkbox-label {
-    font-size: 10px !important;
+    p {
+      font-size: 0.75rem;
+      margin: 0;
+    }
   }
 }
 // Form consent
 .form__donate {
   button {
-    color: $white;
     font-weight: bold;
-    font-size: 16px;
+    color: $white;
+    font-size: 1.2rem;
     height: 48px;
     width: 100%;
     background-color: $gp-green;
     border: none;
     border-radius: 4px;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 0.05rem;
     transition: all 0.2s ease;
   }
 }
 // Form submit button
-.statement {
-  font-size: 10px;
-  margin-top: 4px;
-  margin-bottom: 10px;
-  color: $gray3;
+.app {
+  .statement {
+    font-size: 0.75rem;
+    color: #666;
+    line-height: 1.25rem;
+    margin-bottom: 0;
+  }
+  .signature-consent {
+    max-height: 150px;
+    padding: 8px;
+    border-left: 1px $gray3;
+  }
 }
-.signature-consent {
-  max-height: 150px;
-  padding: 8px;
-  border-left: 1px $gray3;
-}
+
 // Form statements

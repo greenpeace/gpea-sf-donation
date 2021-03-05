@@ -2,9 +2,10 @@
 // ------ Black & white -----
 $black: #000 !default;
 $white: #fff !default;
+$blue: #108ee9;
 // ------ Grays ------
-$gray0: #1a1a1a;
-$gray1: #333333;
+$gray0: rgba($black, 0.85);
+$gray1: rgba($black, 0.65);
 $gray2: #666666;
 $gray3: #999999;
 $gray4: #e5e5e5;
@@ -23,6 +24,8 @@ $gp-plastics: #afaa91;
 $gp-forests: #00b474;
 $gp-oceans: #008fe2;
 // ------ Shadows ------
+$shadow-button: 0px -1px 1px rgba(0, 0, 0, 0.12),
+  0px 2px 5px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.08);
 $shadow-button1: 0px 2px 4px rgba(50, 50, 71, 0.06),
   0px 2px 2px rgba(50, 50, 71, 0.06);
 $shadow-button2: 0px 4px 8px rgba(50, 50, 71, 0.06),
@@ -37,33 +40,21 @@ $shadow-topbottom-white: linear-gradient(
   rgba(255, 255, 255, 0)
 );
 //
-.THIS {
-  .prose {
-    max-width: none !important;
-    color: initial;
-    img {
-      margin: 0;
-      padding: 0;
-    }
-  }
+.text--arctic {
+  color: $gp-arctic !important;
 }
-.THIS {
-  .text--arctic {
-    color: $gp-arctic !important;
-  }
-  .text--health {
-    color: $gp-health !important;
-  }
-  .text--climate {
-    color: $gp-climate !important;
-  }
-  .text--forests {
-    color: $gp-forests !important;
-  }
-  .text--oceans {
-    color: $gp-oceans !important;
-  }
-  .text--plastics {
-    color: $gp-plastics !important;
-  }
+.text--health {
+  color: $gp-health !important;
+}
+.text--climate {
+  color: $gp-climate !important;
+}
+.text--forests {
+  color: $gp-forests !important;
+}
+.text--oceans {
+  color: $gp-oceans !important;
+}
+.text--plastics {
+  color: $gp-plastics !important;
 }

@@ -17,6 +17,10 @@
 }
 .impact {
   position: relative;
+  .impact__tag {
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+  }
   .impact__title {
     color: $gray1;
     display: flex;

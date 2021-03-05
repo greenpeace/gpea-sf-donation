@@ -9,9 +9,9 @@
     margin: 8px auto;
     > div {
       text-align: center;
-      font-weight: bold;
       font-size: 16px;
-      color: $gray4;
+      color: $gray3;
+      letter-spacing: 2px;
       margin: 4px;
       border: 1px solid $gray4;
       border-radius: 30px;
@@ -21,9 +21,15 @@
       align-items: center;
       cursor: pointer;
       transition: none;
-      &.selected {
+      &:hover {
         border: 1px solid $gp-green;
         color: $gp-green;
+      }
+      &.selected {
+        border: 1px solid $gp-green;
+        background-color: $gp-green;
+        color: $white;
+        font-weight: bold;
       }
     }
   }
