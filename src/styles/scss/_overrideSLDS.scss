@@ -113,10 +113,15 @@
 
 .cSignaturePad {
   position: relative;
+  margin-top: 20px;
   margin-bottom: 10px;
+  canvas {
+    width: 90%;
+    margin: 0 auto;
+  }
   .slds-button {
     position: absolute;
-    right: 24px;
+    right: 10%;
     top: 8px;
   }
 }
