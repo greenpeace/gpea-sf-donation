@@ -115,13 +115,15 @@
   position: relative;
   margin-top: 20px;
   margin-bottom: 10px;
-  canvas {
+  canvas.signature-pad {
     width: 90%;
     margin: 0 auto;
+    min-height: 200px;
+    border: 1px solid $gray4;
   }
   .slds-button {
     position: absolute;
-    right: 10%;
+    right: 8%;
     top: 8px;
   }
 }
