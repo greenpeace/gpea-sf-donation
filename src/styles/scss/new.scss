@@ -1,0 +1,101 @@
+.donate-list-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  margin: 16px auto;
+}
+
+.choose-amount {
+  font-size: 1rem;
+  color: $gray2;
+}
+
+.donate-list-item-active {
+  background: $gp-lightblue;
+  border-radius: 4px;
+}
+
+.donate-list-item-active .donate-currency,
+.donate-list-item-active .donate-price,
+.donate-list-item-active .donate-desc {
+  color: #66cc00;
+}
+
+.donate-list-item {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  padding: 16px 8px 12px;
+}
+.donate-list-item + .donate-list-item {
+  margin-top: 12px;
+}
+
+.donate-price {
+  font-size: 2rem;
+  position: relative;
+  color: $gray3;
+  border-right: 1px solid $gray4;
+  padding-right: 8px;
+  margin-right: 12px;
+  min-width: 96px;
+  text-align: center;
+  letter-spacing: -0.05px;
+  font-weight: 700;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+}
+.donate-currency {
+  position: relative;
+  font-weight: 400;
+  color: $gray3;
+  font-size: 10px;
+  line-height: 1;
+  text-align: left;
+  left: 4px;
+  @media (min-width: 62em) {
+    font-size: 12px;
+  }
+}
+.donate-desc {
+  font-size: 0.8em;
+  line-height: 1.7;
+  color: $gray3;
+}
+.donate-other {
+  font-size: 0.75em;
+  line-height: 18px;
+  margin: 16px auto;
+  text-align: center;
+  text-decoration: underline;
+  color: $gray3;
+}
+.donate-remind {
+  padding: 20px;
+  font-size: 0.75em;
+  text-align: center;
+  color: $gray2;
+}
+
+/* Overwrite  */
+.form__handle .tab-menu li .selected {
+  font-weight: 400 !important;
+}
+.form__handle .tab-menu li {
+  border: none !important;
+  box-shadow: inset 0 0 0 1px #66cc00;
+}
+.form__handle .tab-menu li a:not(.selected) {
+  color: #66cc00 !important;
+}
+.donate-btn-custom {
+  font-weight: 400 !important;
+  color: #999999;
+  margin: 15px 0;
+  font-size: 1em;
+}
