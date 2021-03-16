@@ -1,13 +1,13 @@
 {
   "title": "推動減塑，行動帶來改變！",
-    "explainer": {
-      "monthly": "您的每月捐款，可幫助綠色和平有資源向企業和政府推動減塑政策，並設定全面淘汰一次性塑膠年限，有效減少塑膠污染。",
-      "onetime": "您的捐款，將讓綠色和平進行更多減塑倡議行動，並宣導塑膠的危害、重新思考消費習慣等觀念。"
-    },
-    "lead": "全球每年估計有1,270萬噸的塑膠垃圾流入海中！減塑需要從源頭做起，請幫助綠色和平推動臺灣九大零售業龍頭實踐減塑！",
-    "image": {
-      "desktop": "https://change.greenpeace.org.tw/2020/donation/plastics_bg.jpg?v=202008241008",
-      "position": "left",
-      "mobile": "https://change.greenpeace.org.tw/2020/donation/plastics_bg.jpg?v=202008241008"
-    }
+  "explainer": {
+    "monthly": "您的每月捐款，可幫助綠色和平有資源向企業和政府推動減塑政策，並設定全面淘汰一次性塑膠年限，有效減少塑膠污染。",
+    "onetime": "您的捐款，將讓綠色和平進行更多減塑倡議行動，並宣導塑膠的危害、重新思考消費習慣等觀念。"
+  },
+  "lead": "全球每年估計有1,270萬噸的塑膠垃圾流入海中！減塑需要從源頭做起，請幫助綠色和平推動臺灣九大零售業龍頭實踐減塑！",
+  "image": {
+    "desktop": "https://change.greenpeace.org.tw/2020/donation/plastics_bg.jpg?v=202008241008",
+    "position": "left",
+    "mobile": "https://change.greenpeace.org.tw/2020/donation/plastics_bg.jpg?v=202008241008"
+  }
 }
