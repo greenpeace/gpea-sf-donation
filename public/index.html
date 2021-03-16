@@ -1,49 +1,146 @@
 <!DOCTYPE html>
 <html style="background: none">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GPEA SF Donation</title>
-    <!-- markup -->
-    <link
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>GPEA SF Donation</title>
+		<!-- markup -->
+		<link
       rel="shortcut icon"
       type="image/png"
       href="https://change.greenpeace.org.hk/static/favicon/favicon-32x32.png"
     />
-    <link
+		<link
       rel="icon"
       type="image/png"
       sizes="96x96"
       href="https://change.greenpeace.org.hk/static/favicon/favicon-96x96.png"
     />
-    <meta
+		<meta
       property="og:image"
       content="https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
     />
-    <meta property="fb:app_id" content="192994240714848" />
-    <meta property="og:type" content="website" />
-    <!-- end of markup -->
-    <!-- static css -->
-    <link
+		<meta property="fb:app_id" content="192994240714848" />
+		<meta property="og:type" content="website" />
+		<!-- end of markup -->
+		<!-- static css -->
+		<link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/design-system/2.14.1/styles/salesforce-lightning-design-system.min.css"
     />
-    <link
+		<link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
     />
-    <link
+		<link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <!-- static js -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  </head>
-  <body>
-    <!-- Loading -->
-    <section class="section_loader hero is-fullheight is-hidden">
-      <div class="container center">
-        <figure
+		<!-- static js -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <style>
+      .donate-list-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        padding: 15px 0;
+      }
+
+      .donate-list-item-active{
+        background: #f4f9fa;
+        border-radius: 5px;
+      }
+
+      .donate-list-item-active .donate-currency,
+      .donate-list-item-active .donate-price,
+      .donate-list-item-active .donate-desc{
+        color: #66cc00;
+      }
+
+
+      .donate-list-item{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        padding: 15px 10px;
+        margin-bottom: 15px;
+      }
+      .donate-list-item:last-child{
+        padding-bottom: 0px;
+      }
+
+      .donate-price{
+        font-size: 2em;
+        font-weight: bolder;
+        position: relative;
+        color: #999999;
+        border-right: 1px solid #e5e5e5;
+        padding-right: 10px;
+        margin-right: 15px;
+        min-width: 95px;
+        text-align: left;
+        letter-spacing: -1px;
+      }
+      .donate-currency{
+        font-weight: 500;
+        font-size: 10px;
+        color: #999999;
+        position: absolute;
+        left: 0;
+        top: -10px;
+      }
+      .donate-desc{
+        font-size: .8em;
+        line-height: 18px;
+        color: #999999;
+      }
+      .donate-other{
+        font-size: .75em;
+        line-height: 18px;
+        margin-bottom: 15px;
+        text-align: center;
+        text-decoration: underline;
+      }
+      .donate-remind{
+        font-size: .75em;
+        text-align: center;
+        color: #e5e5e5;
+      }
+
+
+      /* Overwrite  */
+      .form__handle .tab-menu li .selected{
+        font-weight: 400 !important;
+      }
+      .form__handle .tab-menu li{
+        border: none !important;
+        box-shadow: inset 0 0 0 1px #66cc00;
+      }
+      .form__handle .tab-menu li a:not(.selected){
+        color: #66cc00 !important;
+      }
+      .donate-btn-custom{
+        font-weight: 400 !important;
+        color: #999999;
+        margin: 15px 0;
+        font-size: 1em;
+      }
+    </style>
+
+
+
+	</head>
+	<body>
+		<!-- Loading -->
+		<section class="section_loader hero is-fullheight is-hidden">
+			<div class="container center">
+				<figure
           class="image is-128x128"
           style="
             position: absolute;
@@ -52,703 +149,1188 @@
             transform: translateX(-50%);
           "
         >
-          <img
+					<img
             src="https://change.greenpeace.org.hk/static/logo/GP-logo-2019-TC-green-%5Bweb%5D-01.png"
             alt="Greenpeace 綠色和平"
           />
-        </figure>
-        <div class="page-loader p-4 is-flex-direction-column center">
-          <div class="mb-4 spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-          </div>
-          <p class="subtitle is-bold">Progress message</p>
-        </div>
-      </div>
-    </section>
-    <div class="app donate">
-      <!-- Header -->
-      <header class="header">
-        <div class="header-wrapper">
-          <div class="header__item header-logo">
-            <img
+				</figure>
+				<div class="page-loader p-4 is-flex-direction-column center">
+					<div class="mb-4 spinner">
+						<div class="bounce1"></div>
+						<div class="bounce2"></div>
+						<div class="bounce3"></div>
+					</div>
+					<p class="subtitle is-bold">Progress message</p>
+				</div>
+			</div>
+		</section>
+		<div class="app donate">
+			<!-- Header -->
+			<header class="header">
+				<div class="header-wrapper">
+					<div class="header__item header-logo">
+						<img
               src="https://change.greenpeace.org.hk/static/logo/GP-logo-2019-TC-green-%5Bweb%5D-01.png"
               alt="Greenpeace 綠色和平 ｜ 香港"
             />
-          </div>
-          <div class="header-buttons"></div>
-        </div>
-      </header>
-      <!-- end of Header -->
-      <!-- main -->
-      <div class="main">
-        <div class="s1">
-          <section class="section section_landing" data-aura-rendered-by="239:2;a"><div data-region-name="donateSection" data-item-id="0a9349bd-28dd-4e67-b0cf-7f5dedcc74f9" data-aura-rendered-by="184:2;a"><div class="ui-widget" data-item-id="8d10eadb-35c7-47c7-bd2c-06271878e007" data-priority="0" data-aura-rendered-by="181:2;a"><!--render facet: 168:2;a--><div class="cDonate" data-aura-rendered-by="170:2;a" data-aura-class="cDonate"><div data-aura-rendered-by="173:2;a"><!--render facet: 174:2;a--></div><!--unrender facet: 175:2;a--><!--render facet: 155:2;a--><div class="" data-aura-rendered-by="157:2;a"><div data-aura-rendered-by="160:2;a"><!--render facet: 161:2;a--></div><!--unrender facet: 162:2;a--><!--render facet: 1:83;a--></div><!--render facet: 9:92;a--><div class="" data-aura-rendered-by="11:92;a"><div data-aura-rendered-by="14:92;a"><!--render facet: 15:92;a--></div><!--render facet: 16:92;a--><!--render facet: 18:92;a--></div><div class="main-wrapper main-wrapper_right" data-aura-rendered-by="19:92;a"><div class="form-wrapper" data-aura-rendered-by="20:92;a"><!--render facet: 21:92;a--><div class="main__form-wrapper" data-aura-rendered-by="23:92;a"><div class="form__title title_step-1" data-aura-rendered-by="25:92;a"><h1 class="form__headline" data-aura-rendered-by="26:92;a">支持綠色和平環境工作</h1><p class="form__leading" data-aura-rendered-by="28:92;a">綠色和平成立以來，堅持不接受政府、企業捐助，您捐助的一分一毫，能支持我們以公正獨立的身份，持續推動環境工作！</p></div><div class="form-container" data-aura-rendered-by="30:92;a"><div class="form__handle form__menu" data-aura-rendered-by="31:92;a"><ul class="tab-menu" data-aura-rendered-by="32:92;a"><li class="tab-menu-option tab-menu_monthly" data-aura-rendered-by="34:92;a"><a class="form__full selected" name="Monthly" data-aura-rendered-by="35:92;a" href="javascript:void(0);">每月捐款</a></li><li class="tab-menu-option tab-menu_oneoff" data-aura-rendered-by="38:92;a"><a class="form__full " name="One-Off" data-aura-rendered-by="39:92;a" href="javascript:void(0);">單次捐款</a></li></ul></div><div class="form__contents" data-aura-rendered-by="41:92;a"><div class="form__amounts" data-aura-rendered-by="42:92;a"><a class="form__amount-button selected" name="150" data-index="0" data-aura-rendered-by="59:92;a" href="javascript:void(0);"><span class="currency" data-aura-rendered-by="60:92;a">HKD</span><span class="amount" data-aura-rendered-by="62:92;a">150</span><span class="unit" data-aura-rendered-by="64:92;a"></span></a><a class="form__amount-button " name="200" data-index="1" data-aura-rendered-by="66:92;a" href="javascript:void(0);"><span class="currency" data-aura-rendered-by="67:92;a">HKD</span><span class="amount" data-aura-rendered-by="69:92;a">200</span><span class="unit" data-aura-rendered-by="71:92;a"></span></a><a class="form__amount-button " name="250" data-index="2" data-aura-rendered-by="73:92;a" href="javascript:void(0);"><span class="currency" data-aura-rendered-by="74:92;a">HKD</span><span class="amount" data-aura-rendered-by="76:92;a">250</span><span class="unit" data-aura-rendered-by="78:92;a"></span></a><span class="is-clickable form__amount-button form__amount-other-button" data-aura-rendered-by="45:92;a"><span class="amount" data-aura-rendered-by="46:92;a">其他金額</span></span><p class="my-2 is-size-6 has-text-left amount-text amount-text_monthly" data-aura-rendered-by="49:92;a"><div data-aura-rendered-by="50:92;a">您的每月捐款，將幫助綠色和平為環境問題找到出路，並在全球落實更多環保工作。謝謝！</div></p><p class="is-hidden dollar-handle-dynamic my-2 is-size-6 has-text-left amount-text" data-aura-rendered-by="52:92;a">持續實地調查非法破壞海洋、森林與環境的行為，以推動政府及企業加強監督及規管。</p></div><div class="form__donate" data-aura-rendered-by="54:92;a"><button class="form__donate-btn" type="button" data-aura-rendered-by="55:92;a">立即捐助</button></div></div></div><!--render facet: 58:92;a--></div></div></div></div></div></div><div class="main-bg main-bg_center" style="background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg)" data-aura-rendered-by="241:2;a"><img alt="支持綠色和平環境工作 - 綠色和平成立以來，堅持不接受政府、企業捐助，您捐助的一分一毫，能支持我們以公正獨立的身份，持續推動環境工作！" src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg" data-aura-rendered-by="242:2;a"></div></section>
-        </div>
-        <div class="s2">
-          <section class="section section_landing" data-aura-rendered-by="241:2;a"><div data-region-name="donateSection" data-item-id="0a9349bd-28dd-4e67-b0cf-7f5dedcc74f9" data-aura-rendered-by="186:2;a"><div class="ui-widget" data-item-id="8d10eadb-35c7-47c7-bd2c-06271878e007" data-priority="0" data-aura-rendered-by="183:2;a"><!--render facet: 170:2;a--><div class="cDonate" data-aura-rendered-by="172:2;a" data-aura-class="cDonate"><div data-aura-rendered-by="175:2;a"><!--render facet: 176:2;a--></div><!--unrender facet: 177:2;a--><!--render facet: 157:2;a--><div class="" data-aura-rendered-by="159:2;a"><div data-aura-rendered-by="162:2;a"><!--render facet: 163:2;a--></div><!--unrender facet: 164:2;a--><!--render facet: 1:86;a--></div><!--render facet: 9:95;a--><div class="" data-aura-rendered-by="11:95;a"><div data-aura-rendered-by="14:95;a"><!--render facet: 15:95;a--></div><!--render facet: 16:95;a--><!--render facet: 18:95;a--></div><div class="main-wrapper main-wrapper_right" data-aura-rendered-by="19:95;a"><div class="form-wrapper" data-aura-rendered-by="20:95;a"><!--render facet: 21:95;a--><div class="main__form-wrapper" data-aura-rendered-by="23:95;a"><!--unrender facet: 24:95;a--><div class="form__title title_step-2" data-aura-rendered-by="279:0"><h2 class="form__headline" data-aura-rendered-by="280:0">您的每月捐款為
+					</div>
+					<div class="header-buttons"></div>
+				</div>
+			</header>
+			<!-- end of Header -->
+			<!-- main -->
+			<div class="main">
+				<div class="s1">
+					<section class="section section_landing" data-aura-rendered-by="239:2;a">
+						<div data-region-name="donateSection" data-item-id="0a9349bd-28dd-4e67-b0cf-7f5dedcc74f9" data-aura-rendered-by="184:2;a">
+							<div class="ui-widget" data-item-id="8d10eadb-35c7-47c7-bd2c-06271878e007" data-priority="0" data-aura-rendered-by="181:2;a">
+								<!--render facet: 168:2;a-->
+								<div class="cDonate" data-aura-rendered-by="170:2;a" data-aura-class="cDonate">
+									<div data-aura-rendered-by="173:2;a">
+										<!--render facet: 174:2;a-->
+									</div>
+									<!--unrender facet: 175:2;a-->
+									<!--render facet: 155:2;a-->
+									<div class="" data-aura-rendered-by="157:2;a">
+										<div data-aura-rendered-by="160:2;a">
+											<!--render facet: 161:2;a-->
+										</div>
+										<!--unrender facet: 162:2;a-->
+										<!--render facet: 1:83;a-->
+									</div>
+									<!--render facet: 9:92;a-->
+									<div class="" data-aura-rendered-by="11:92;a">
+										<div data-aura-rendered-by="14:92;a">
+											<!--render facet: 15:92;a-->
+										</div>
+										<!--render facet: 16:92;a-->
+										<!--render facet: 18:92;a-->
+									</div>
+									<div class="main-wrapper main-wrapper_right" data-aura-rendered-by="19:92;a">
+										<div class="form-wrapper" data-aura-rendered-by="20:92;a">
+											<!--render facet: 21:92;a-->
+                      <!-- <div class="main__form-wrapper" data-aura-rendered-by="23:92;a">
+												<div class="form__title title_step-1" data-aura-rendered-by="25:92;a">
+													<h1 class="form__headline" data-aura-rendered-by="26:92;a">支持綠色和平環境工作</h1>
+													<p class="form__leading" data-aura-rendered-by="28:92;a">綠色和平成立以來，堅持不接受政府、企業捐助，您捐助的一分一毫，能支持我們以公正獨立的身份，持續推動環境工作！</p>
+												</div> -->
+
+                        <div class="main__form-wrapper" data-aura-rendered-by="23:92;a">
+                          <div class="form__title title_step-1" data-aura-rendered-by="25:92;a">
+                            <h1 class="form__headline" data-aura-rendered-by="26:92;a">Protecting our planet everyday.</h1>
+                            <p class="form__leading" data-aura-rendered-by="28:92;a">Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural.</p>
+                          </div>
+
+                          <div class="form-container" data-aura-rendered-by="30:92;a">
+                            <div class="form__contents" data-aura-rendered-by="41:92;a">
+
+                              <h3 style="font-size:medium; margin: 0em;">Please choose a donate amount</h3>
+
+                              <div class="form__handle form__menu" data-aura-rendered-by="31:92;a">
+                                <ul class="tab-menu" data-aura-rendered-by="32:92;a">
+                                  <li class="tab-menu-option tab-menu_monthly" data-aura-rendered-by="34:92;a">
+                                    <a class="form__full selected" name="Monthly" data-aura-rendered-by="35:92;a" href="javascript:void(0);">MONTHLY</a>
+                                  </li>
+                                  <li class="tab-menu-option tab-menu_oneoff" data-aura-rendered-by="38:92;a">
+                                    <a class="form__full " name="One-Off" data-aura-rendered-by="39:92;a" href="javascript:void(0);">GIVE ONCE</a>
+                                  </li>
+                                </ul>
+                              </div>
+
+                              <div class="donate-list-container">
+                                <div class="donate-list-item">
+                                  <div class="donate-price">
+                                    <span class="donate-currency">新台幣</span>
+                                    1200
+                                  </div>
+                                  <div class="donate-desc">Witness plastic pollution and call for corporates to reduce plastic from the sources.</div>
+                                </div>
+                                
+                                <div class="donate-list-item donate-list-item-active">
+                                  <div class="donate-price">
+                                    <span class="donate-currency">HKD</span>
+                                    1000
+                                  </div>
+                                  <div class="donate-desc">Witness plastic pollution and call for corporates to reduce plastic from the sources.</div>
+                                </div>
+
+                                <div class="donate-list-item">
+                                  <div class="donate-price">
+                                    <span class="donate-currency">HKD</span>
+                                    800
+                                  </div>
+                                  <div class="donate-desc">Witness plastic pollution and call for corporates to reduce plastic from the sources.</div>
+                                </div>
+                              </div>
+
+                              <div class="donate-other">其他金額 Other Amount</div>
+
+                              <div class="form__donate" data-aura-rendered-by="54:92;a">
+                                <button class="form__donate-btn donate-btn-custom" type="button" data-aura-rendered-by="55:92;a">DONATE NOW 立即捐助</button>
+                              </div>
+
+                              <div class="donate-remind">
+                                Secure Payment．Powered by Worldpay
+                              </div>
+
+                              <!-- <div class="form__amounts" data-aura-rendered-by="42:92;a">
+                                <a class="form__amount-button selected" name="150" data-index="0" data-aura-rendered-by="59:92;a" href="javascript:void(0);">
+                                  <span class="currency" data-aura-rendered-by="60:92;a">HKD</span>
+                                  <span class="amount" data-aura-rendered-by="62:92;a">150</span>
+                                  <span class="unit" data-aura-rendered-by="64:92;a"></span>
+                                </a>
+                                <a class="form__amount-button " name="200" data-index="1" data-aura-rendered-by="66:92;a" href="javascript:void(0);">
+                                  <span class="currency" data-aura-rendered-by="67:92;a">HKD</span>
+                                  <span class="amount" data-aura-rendered-by="69:92;a">200</span>
+                                  <span class="unit" data-aura-rendered-by="71:92;a"></span>
+                                </a>
+                                <a class="form__amount-button " name="250" data-index="2" data-aura-rendered-by="73:92;a" href="javascript:void(0);">
+                                  <span class="currency" data-aura-rendered-by="74:92;a">HKD</span>
+                                  <span class="amount" data-aura-rendered-by="76:92;a">250</span>
+                                  <span class="unit" data-aura-rendered-by="78:92;a"></span>
+                                </a>
+                                <span class="is-clickable form__amount-button form__amount-other-button" data-aura-rendered-by="45:92;a">
+                                  <span class="amount" data-aura-rendered-by="46:92;a">其他金額</span>
+                                </span>
+                                <p class="my-2 is-size-6 has-text-left amount-text amount-text_monthly" data-aura-rendered-by="49:92;a">
+                                  <div data-aura-rendered-by="50:92;a">您的每月捐款，將幫助綠色和平為環境問題找到出路，並在全球落實更多環保工作。謝謝！</div>
+                                </p>
+                                <p class="is-hidden dollar-handle-dynamic my-2 is-size-6 has-text-left amount-text" data-aura-rendered-by="52:92;a">持續實地調查非法破壞海洋、森林與環境的行為，以推動政府及企業加強監督及規管。</p>
+                              </div> -->
+                              <!-- <div class="form__donate" data-aura-rendered-by="54:92;a">
+                                <button class="form__donate-btn" type="button" data-aura-rendered-by="55:92;a">立即捐助</button>
+                              </div> -->
+                            </div>
+                          </div>
+
+
+
+
+
+                        
+
+
+
+
+												<!-- <div class="form-container" data-aura-rendered-by="30:92;a">
+													<div class="form__handle form__menu" data-aura-rendered-by="31:92;a">
+														<ul class="tab-menu" data-aura-rendered-by="32:92;a">
+															<li class="tab-menu-option tab-menu_monthly" data-aura-rendered-by="34:92;a">
+																<a class="form__full selected" name="Monthly" data-aura-rendered-by="35:92;a" href="javascript:void(0);">每月捐款</a>
+															</li>
+															<li class="tab-menu-option tab-menu_oneoff" data-aura-rendered-by="38:92;a">
+																<a class="form__full " name="One-Off" data-aura-rendered-by="39:92;a" href="javascript:void(0);">單次捐款</a>
+															</li>
+														</ul>
+													</div>
+													<div class="form__contents" data-aura-rendered-by="41:92;a">
+														<div class="form__amounts" data-aura-rendered-by="42:92;a">
+															<a class="form__amount-button selected" name="150" data-index="0" data-aura-rendered-by="59:92;a" href="javascript:void(0);">
+																<span class="currency" data-aura-rendered-by="60:92;a">HKD</span>
+																<span class="amount" data-aura-rendered-by="62:92;a">150</span>
+																<span class="unit" data-aura-rendered-by="64:92;a"></span>
+															</a>
+															<a class="form__amount-button " name="200" data-index="1" data-aura-rendered-by="66:92;a" href="javascript:void(0);">
+																<span class="currency" data-aura-rendered-by="67:92;a">HKD</span>
+																<span class="amount" data-aura-rendered-by="69:92;a">200</span>
+																<span class="unit" data-aura-rendered-by="71:92;a"></span>
+															</a>
+															<a class="form__amount-button " name="250" data-index="2" data-aura-rendered-by="73:92;a" href="javascript:void(0);">
+																<span class="currency" data-aura-rendered-by="74:92;a">HKD</span>
+																<span class="amount" data-aura-rendered-by="76:92;a">250</span>
+																<span class="unit" data-aura-rendered-by="78:92;a"></span>
+															</a>
+															<span class="is-clickable form__amount-button form__amount-other-button" data-aura-rendered-by="45:92;a">
+																<span class="amount" data-aura-rendered-by="46:92;a">其他金額</span>
+															</span>
+															<p class="my-2 is-size-6 has-text-left amount-text amount-text_monthly" data-aura-rendered-by="49:92;a">
+																<div data-aura-rendered-by="50:92;a">您的每月捐款，將幫助綠色和平為環境問題找到出路，並在全球落實更多環保工作。謝謝！</div>
+															</p>
+															<p class="is-hidden dollar-handle-dynamic my-2 is-size-6 has-text-left amount-text" data-aura-rendered-by="52:92;a">持續實地調查非法破壞海洋、森林與環境的行為，以推動政府及企業加強監督及規管。</p>
+														</div>
+														<div class="form__donate" data-aura-rendered-by="54:92;a">
+															<button class="form__donate-btn" type="button" data-aura-rendered-by="55:92;a">立即捐助</button>
+														</div>
+													</div>
+												</div> -->
+												<!--render facet: 58:92;a-->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-bg main-bg_center" style="background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg)" data-aura-rendered-by="241:2;a">
+							<img alt="支持綠色和平環境工作 - 綠色和平成立以來，堅持不接受政府、企業捐助，您捐助的一分一毫，能支持我們以公正獨立的身份，持續推動環境工作！" src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg" data-aura-rendered-by="242:2;a">
+							</div>
+						</section>
+					</div>
+					<div class="s2">
+						<section class="section section_landing" data-aura-rendered-by="241:2;a">
+							<div data-region-name="donateSection" data-item-id="0a9349bd-28dd-4e67-b0cf-7f5dedcc74f9" data-aura-rendered-by="186:2;a">
+								<div class="ui-widget" data-item-id="8d10eadb-35c7-47c7-bd2c-06271878e007" data-priority="0" data-aura-rendered-by="183:2;a">
+									<!--render facet: 170:2;a-->
+									<div class="cDonate" data-aura-rendered-by="172:2;a" data-aura-class="cDonate">
+										<div data-aura-rendered-by="175:2;a">
+											<!--render facet: 176:2;a-->
+										</div>
+										<!--unrender facet: 177:2;a-->
+										<!--render facet: 157:2;a-->
+										<div class="" data-aura-rendered-by="159:2;a">
+											<div data-aura-rendered-by="162:2;a">
+												<!--render facet: 163:2;a-->
+											</div>
+											<!--unrender facet: 164:2;a-->
+											<!--render facet: 1:86;a-->
+										</div>
+										<!--render facet: 9:95;a-->
+										<div class="" data-aura-rendered-by="11:95;a">
+											<div data-aura-rendered-by="14:95;a">
+												<!--render facet: 15:95;a-->
+											</div>
+											<!--render facet: 16:95;a-->
+											<!--render facet: 18:95;a-->
+										</div>
+										<div class="main-wrapper main-wrapper_right" data-aura-rendered-by="19:95;a">
+											<div class="form-wrapper" data-aura-rendered-by="20:95;a">
+												<!--render facet: 21:95;a-->
+												<div class="main__form-wrapper" data-aura-rendered-by="23:95;a">
+													<!--unrender facet: 24:95;a-->
+													<div class="form__title title_step-2" data-aura-rendered-by="279:0">
+														<h2 class="form__headline" data-aura-rendered-by="280:0">您的每月捐款為
                                         &nbsp;HKD
-                                        &nbsp;180</h2><div class="edit-amount form__leading center" data-aura-rendered-by="288:0"><span data-aura-rendered-by="289:0">其他金額</span></div></div><div class="form-container" data-aura-rendered-by="291:0"><div class="form__contents" data-aura-rendered-by="292:0"><div class="form__details" data-aura-rendered-by="293:0"><div class="form__details-personal" data-aura-rendered-by="294:0"><div class="subtext" data-aura-rendered-by="295:0"><p data-aura-rendered-by="296:0">請輸入捐款人資料</p></div><div class="row" data-aura-rendered-by="298:0"><div class="col" data-aura-rendered-by="299:0"><lightning-input class="slds-size_1-of-1 slds-form-element" data-aura-rendered-by="300:0" lightning-input_input-host=""><span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span><label lightning-input_input="" for="input-0" class="slds-form-element__label slds-no-flex"><abbr lightning-input_input="" title="必要" class="slds-required">*</abbr>姓氏</label><div lightning-input_input="" class="slds-form-element__control slds-grow"><input lightning-input_input="" type="text" id="input-0" autocomplete="family-name" maxlength="80" placeholder="姓氏" name="lname" required="" class="slds-input"></div></lightning-input></div><div class="col" data-aura-rendered-by="301:0"><lightning-input class="slds-size_1-of-1 slds-form-element" data-aura-rendered-by="302:0" lightning-input_input-host=""><span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span><label lightning-input_input="" for="input-1" class="slds-form-element__label slds-no-flex"><abbr lightning-input_input="" title="必要" class="slds-required">*</abbr>名字</label><div lightning-input_input="" class="slds-form-element__control slds-grow"><input lightning-input_input="" type="text" id="input-1" autocomplete="given-name" maxlength="40" placeholder="名字" name="fnamae" required="" class="slds-input"></div></lightning-input></div></div><div class="row" data-aura-rendered-by="303:0"><div class="col" data-aura-rendered-by="304:0"><lightning-input class="slds-size_1-of-1 slds-form-element" data-aura-rendered-by="305:0" lightning-input_input-host=""><span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span><label lightning-input_input="" for="input-2" class="slds-form-element__label slds-no-flex"><abbr lightning-input_input="" title="必要" class="slds-required">*</abbr>電郵地址</label><div lightning-input_input="" class="slds-form-element__control slds-grow"><input lightning-input_input="" type="text" id="input-2" autocomplete="email" maxlength="255" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" placeholder="電郵地址" name="email" required="" class="slds-input"></div></lightning-input></div></div><div class="row" data-aura-rendered-by="306:0"><div class="col" data-aura-rendered-by="307:0"><label class="slds-form-element__label slds-no-flex" for="input-3" data-aura-rendered-by="308:0"><abbr class="slds-required" title="required" data-aura-rendered-by="309:0">*</abbr>手提號碼</label><!--render facet: 337:0--><div class="cGPEAPhoneInput" data-aura-rendered-by="339:0" data-aura-class="cGPEAPhoneInput"><div data-aura-rendered-by="342:0"><!--render facet: 343:0--></div><!--render facet: 344:0--><div class="slds-grid slds-grid_vertical-align-start" data-aura-rendered-by="319:0"><div class="pr-2 slds-col slds-size_3-of-12" data-aura-rendered-by="320:0"><div class="slds-form-element label-hidden" data-aura-rendered-by="324:0"><label class="slds-form-element__label slds-m-right_xxx-small" for="321:0" data-aura-rendered-by="325:0"><!--render facet: 326:0--><span class="slds-assistive-text" data-aura-rendered-by="327:0">國家/地區代碼 Country/Region Code</span></label><div class="slds-form-element__control slds-grow" data-aura-rendered-by="329:0"><div class="slds-select_container" data-aura-rendered-by="330:0"><select class="slds-select" id="321:0" data-aura-rendered-by="331:0" name="country-code"><option value="+852" label="+852" data-aura-rendered-by="347:0">+852</option><option value="+853" label="+853" data-aura-rendered-by="349:0">+853</option><option value="+886" label="+886" data-aura-rendered-by="351:0">+886</option><option value="+86" label="+86" data-aura-rendered-by="353:0">+86</option></select></div></div><!--render facet: 333:0--></div></div><div class="slds-col slds-size_9-of-12" data-aura-rendered-by="334:0"><lightning-input class="slds-show_inline slds-form-element" data-aura-rendered-by="335:0" lightning-input_input-host=""><span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span><label lightning-input_input="" for="input-3" class="slds-form-element__label slds-no-flex slds-assistive-text"><abbr lightning-input_input="" title="必要" class="slds-required">*</abbr>手提號碼</label><div lightning-input_input="" class="slds-form-element__control slds-grow"><input lightning-input_input="" type="tel" id="input-3" autocomplete="tel" maxlength="8" pattern="[5,6,8,9]{1}[0-9]{7}" placeholder="手提號碼" name="phone" required="" class="slds-input"></div></lightning-input></div></div></div></div></div><div class="row" data-aura-rendered-by="355:0"><div class="col" data-aura-rendered-by="356:0"><div class="slds-form-element slds-size_1-of-1 is-required" data-aura-rendered-by="546:0"><label class="slds-form-element__label" for="359:0" data-aura-rendered-by="547:0"><abbr class="slds-required" title="必要" data-aura-rendered-by="549:0">*</abbr><span class="" data-aura-rendered-by="551:0">出生年份</span></label><div class="slds-form-element__control slds-grow" data-aura-rendered-by="553:0"><div class="slds-select_container" data-aura-rendered-by="554:0"><select class="slds-select" id="359:0" data-aura-rendered-by="555:0" required=""><option value="" label="出生年份" data-aura-rendered-by="360:0">出生年份</option><option value="2001" label="2001" data-aura-rendered-by="363:0">2001</option><option value="2000" label="2000" data-aura-rendered-by="365:0">2000</option><option value="1999" label="1999" data-aura-rendered-by="367:0">1999</option><option value="1998" label="1998" data-aura-rendered-by="369:0">1998</option><option value="1997" label="1997" data-aura-rendered-by="371:0">1997</option><option value="1996" label="1996" data-aura-rendered-by="373:0">1996</option><option value="1995" label="1995" data-aura-rendered-by="375:0">1995</option><option value="1994" label="1994" data-aura-rendered-by="377:0">1994</option><option value="1993" label="1993" data-aura-rendered-by="379:0">1993</option><option value="1992" label="1992" data-aura-rendered-by="381:0">1992</option><option value="1991" label="1991" data-aura-rendered-by="383:0">1991</option><option value="1990" label="1990" data-aura-rendered-by="385:0">1990</option><option value="1989" label="1989" data-aura-rendered-by="387:0">1989</option><option value="1988" label="1988" data-aura-rendered-by="389:0">1988</option><option value="1987" label="1987" data-aura-rendered-by="391:0">1987</option><option value="1986" label="1986" data-aura-rendered-by="393:0">1986</option><option value="1985" label="1985" data-aura-rendered-by="395:0">1985</option><option value="1984" label="1984" data-aura-rendered-by="397:0">1984</option><option value="1983" label="1983" data-aura-rendered-by="399:0">1983</option><option value="1982" label="1982" data-aura-rendered-by="401:0">1982</option><option value="1981" label="1981" data-aura-rendered-by="403:0">1981</option><option value="1980" label="1980" data-aura-rendered-by="405:0">1980</option><option value="1979" label="1979" data-aura-rendered-by="407:0">1979</option><option value="1978" label="1978" data-aura-rendered-by="409:0">1978</option><option value="1977" label="1977" data-aura-rendered-by="411:0">1977</option><option value="1976" label="1976" data-aura-rendered-by="413:0">1976</option><option value="1975" label="1975" data-aura-rendered-by="415:0">1975</option><option value="1974" label="1974" data-aura-rendered-by="417:0">1974</option><option value="1973" label="1973" data-aura-rendered-by="419:0">1973</option><option value="1972" label="1972" data-aura-rendered-by="421:0">1972</option><option value="1971" label="1971" data-aura-rendered-by="423:0">1971</option><option value="1970" label="1970" data-aura-rendered-by="425:0">1970</option><option value="1969" label="1969" data-aura-rendered-by="427:0">1969</option><option value="1968" label="1968" data-aura-rendered-by="429:0">1968</option><option value="1967" label="1967" data-aura-rendered-by="431:0">1967</option><option value="1966" label="1966" data-aura-rendered-by="433:0">1966</option><option value="1965" label="1965" data-aura-rendered-by="435:0">1965</option><option value="1964" label="1964" data-aura-rendered-by="437:0">1964</option><option value="1963" label="1963" data-aura-rendered-by="439:0">1963</option><option value="1962" label="1962" data-aura-rendered-by="441:0">1962</option><option value="1961" label="1961" data-aura-rendered-by="443:0">1961</option><option value="1960" label="1960" data-aura-rendered-by="445:0">1960</option><option value="1959" label="1959" data-aura-rendered-by="447:0">1959</option><option value="1958" label="1958" data-aura-rendered-by="449:0">1958</option><option value="1957" label="1957" data-aura-rendered-by="451:0">1957</option><option value="1956" label="1956" data-aura-rendered-by="453:0">1956</option><option value="1955" label="1955" data-aura-rendered-by="455:0">1955</option><option value="1954" label="1954" data-aura-rendered-by="457:0">1954</option><option value="1953" label="1953" data-aura-rendered-by="459:0">1953</option><option value="1952" label="1952" data-aura-rendered-by="461:0">1952</option><option value="1951" label="1951" data-aura-rendered-by="463:0">1951</option><option value="1950" label="1950" data-aura-rendered-by="465:0">1950</option><option value="1949" label="1949" data-aura-rendered-by="467:0">1949</option><option value="1948" label="1948" data-aura-rendered-by="469:0">1948</option><option value="1947" label="1947" data-aura-rendered-by="471:0">1947</option><option value="1946" label="1946" data-aura-rendered-by="473:0">1946</option><option value="1945" label="1945" data-aura-rendered-by="475:0">1945</option><option value="1944" label="1944" data-aura-rendered-by="477:0">1944</option><option value="1943" label="1943" data-aura-rendered-by="479:0">1943</option><option value="1942" label="1942" data-aura-rendered-by="481:0">1942</option><option value="1941" label="1941" data-aura-rendered-by="483:0">1941</option><option value="1940" label="1940" data-aura-rendered-by="485:0">1940</option><option value="1939" label="1939" data-aura-rendered-by="487:0">1939</option><option value="1938" label="1938" data-aura-rendered-by="489:0">1938</option><option value="1937" label="1937" data-aura-rendered-by="491:0">1937</option><option value="1936" label="1936" data-aura-rendered-by="493:0">1936</option><option value="1935" label="1935" data-aura-rendered-by="495:0">1935</option><option value="1934" label="1934" data-aura-rendered-by="497:0">1934</option><option value="1933" label="1933" data-aura-rendered-by="499:0">1933</option><option value="1932" label="1932" data-aura-rendered-by="501:0">1932</option><option value="1931" label="1931" data-aura-rendered-by="503:0">1931</option><option value="1930" label="1930" data-aura-rendered-by="505:0">1930</option><option value="1929" label="1929" data-aura-rendered-by="507:0">1929</option><option value="1928" label="1928" data-aura-rendered-by="509:0">1928</option><option value="1927" label="1927" data-aura-rendered-by="511:0">1927</option><option value="1926" label="1926" data-aura-rendered-by="513:0">1926</option><option value="1925" label="1925" data-aura-rendered-by="515:0">1925</option><option value="1924" label="1924" data-aura-rendered-by="517:0">1924</option><option value="1923" label="1923" data-aura-rendered-by="519:0">1923</option><option value="1922" label="1922" data-aura-rendered-by="521:0">1922</option><option value="1921" label="1921" data-aura-rendered-by="523:0">1921</option><option value="1920" label="1920" data-aura-rendered-by="525:0">1920</option><option value="1919" label="1919" data-aura-rendered-by="527:0">1919</option><option value="1918" label="1918" data-aura-rendered-by="529:0">1918</option><option value="1917" label="1917" data-aura-rendered-by="531:0">1917</option><option value="1916" label="1916" data-aura-rendered-by="533:0">1916</option><option value="1915" label="1915" data-aura-rendered-by="535:0">1915</option><option value="1914" label="1914" data-aura-rendered-by="537:0">1914</option><option value="1913" label="1913" data-aura-rendered-by="539:0">1913</option><option value="1912" label="1912" data-aura-rendered-by="541:0">1912</option><option value="1911" label="1911" data-aura-rendered-by="543:0">1911</option></select></div></div><!--render facet: 557:0--></div></div></div><!--render facet: 558:0--><!--render facet: 559:0--></div><div class="form__details-payment pt-2" data-aura-rendered-by="560:0"><!--render facet: 561:0--><!--render facet: 565:0--><div class="row cDonationCreditCardInput" data-aura-rendered-by="567:0" data-aura-class="cDonationCreditCardInput"><div class="col" data-aura-rendered-by="568:0"><lightning-input class="inputmode-numeric card-number slds-form-element" data-aura-rendered-by="569:0" lightning-input_input-host=""><span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span><label lightning-input_input="" for="input-4" class="slds-form-element__label slds-no-flex"><abbr lightning-input_input="" title="必要" class="slds-required">*</abbr>信用卡號碼</label><div lightning-input_input="" class="slds-form-element__control slds-grow"><input lightning-input_input="" type="text" id="input-4" autocomplete="cc-number" maxlength="20" pattern="[0-9]{4}-{1}[0-9]{4}-{1}[0-9]{4}-{1}[0-9]{1,4}\s*" placeholder="信用卡號碼" name="cardnumber" required="" class="slds-input" inputmode="numeric"></div></lightning-input><span class="card-icon" data-aura-rendered-by="570:0"><!--render facet: 571:0--><!--render facet: 572:0--><!--render facet: 573:0--></span></div></div><div class="row cDonationCreditCardInput" data-aura-rendered-by="574:0" data-aura-class="cDonationCreditCardInput"><div class="col" data-aura-rendered-by="575:0"><lightning-input class="inputmode-numeric inputgroup__app slds-show_inline expiry-date slds-form-element" data-aura-rendered-by="576:0" lightning-input_input-host=""><span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span><label lightning-input_input="" for="input-5" class="slds-form-element__label slds-no-flex"><abbr lightning-input_input="" title="必要" class="slds-required">*</abbr>有效日期</label><div lightning-input_input="" class="slds-form-element__control slds-grow"><input lightning-input_input="" type="text" id="input-5" autocomplete="cc-exp" maxlength="5" pattern="[0-9]{2}\/{1}[0-9]{2}\s*" placeholder="有效日期 MM/YY" name="exp-date" required="" class="slds-input" inputmode="numeric"></div></lightning-input></div><div class="col" data-aura-rendered-by="578:0"><lightning-input class="inputmode-numeric inputgroup__app slds-show_inline slds-form-element" data-aura-rendered-by="579:0" lightning-input_input-host=""><span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span><label lightning-input_input="" for="input-6" class="slds-form-element__label slds-no-flex"><abbr lightning-input_input="" title="必要" class="slds-required">*</abbr>安全碼</label><div lightning-input_input="" class="slds-form-element__control slds-grow"><input lightning-input_input="" type="text" id="input-6" autocomplete="cc-csc" maxlength="4" minlength="2" pattern="[0-9]+" placeholder="安全碼 CVV" name="cvc" required="" class="slds-input" inputmode="numeric"></div></lightning-input></div></div><!--render facet: 580:0--></div></div><div class="form__donate my-5" data-aura-rendered-by="581:0"><button class="form__donate-btn" type="button" data-aura-rendered-by="582:0">立即捐助</button></div><div class="form__details-consent" data-aura-rendered-by="584:0"><div class="row consent inputcheck" data-aura-rendered-by="585:0"><div class="col is-flex" data-aura-rendered-by="586:0"><lightning-input class="checkbox-input slds-form-element" data-aura-rendered-by="587:0" lightning-input_input-host=""><span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span><div lightning-input_input="" class="slds-form-element__control slds-grow"><span lightning-input_input="" class="slds-checkbox"><input lightning-input_input="" type="checkbox" id="checkbox-7" value=""><label lightning-input_input="" for="checkbox-7" class="slds-checkbox__label"><span lightning-input_input="" class="slds-checkbox_faux"></span><span lightning-input_input="" class="slds-form-element__label slds-assistive-text">&lt;p&gt;我願意收到綠色和平發送的通訊，讓我能掌握環保工作的最新脈動！綠色和平尊重並保障您的個人資料，您隨時可取消訂閱，請參考&lt;a href="https://www.greenpeace.org/hongkong/policies/privacy-and-cookies/" target="_blank"&gt;私隱政策&lt;/a&gt;。&lt;/p&gt;</span></label></span></div></lightning-input><div class="checkbox-label" data-aura-rendered-by="588:0"><p data-aura-rendered-by="589:0">我願意收到綠色和平發送的通訊，讓我能掌握環保工作的最新脈動！綠色和平尊重並保障您的個人資料，您隨時可取消訂閱，請參考<a href="https://www.greenpeace.org/hongkong/policies/privacy-and-cookies/" target="_blank">私隱政策</a>。</p></div></div></div></div><div class="is-hidden form__return" data-aura-rendered-by="590:0"><div class="row" data-aura-rendered-by="591:0"><div class="col" data-aura-rendered-by="592:0"><hr data-aura-rendered-by="593:0"><p class="is-size-7 has-text-grey" data-aura-rendered-by="594:0"><span data-aura-rendered-by="595:0">
+                                        &nbsp;180</h2>
+														<div class="edit-amount form__leading center" data-aura-rendered-by="288:0">
+															<span data-aura-rendered-by="289:0">其他金額</span>
+														</div>
+													</div>
+													<div class="form-container" data-aura-rendered-by="291:0">
+														<div class="form__contents" data-aura-rendered-by="292:0">
+															<div class="form__details" data-aura-rendered-by="293:0">
+																<div class="form__details-personal" data-aura-rendered-by="294:0">
+																	<div class="subtext" data-aura-rendered-by="295:0">
+																		<p data-aura-rendered-by="296:0">請輸入捐款人資料</p>
+																	</div>
+																	<div class="row" data-aura-rendered-by="298:0">
+																		<div class="col" data-aura-rendered-by="299:0">
+																			<lightning-input class="slds-size_1-of-1 slds-form-element" data-aura-rendered-by="300:0" lightning-input_input-host="">
+																				<span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span>
+																				<label lightning-input_input="" for="input-0" class="slds-form-element__label slds-no-flex">
+																					<abbr lightning-input_input="" title="必要" class="slds-required">*</abbr>姓氏
+																				</label>
+																				<div lightning-input_input="" class="slds-form-element__control slds-grow">
+																					<input lightning-input_input="" type="text" id="input-0" autocomplete="family-name" maxlength="80" placeholder="姓氏" name="lname" required="" class="slds-input">
+																					</div>
+																				</lightning-input>
+																			</div>
+																			<div class="col" data-aura-rendered-by="301:0">
+																				<lightning-input class="slds-size_1-of-1 slds-form-element" data-aura-rendered-by="302:0" lightning-input_input-host="">
+																					<span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span>
+																					<label lightning-input_input="" for="input-1" class="slds-form-element__label slds-no-flex">
+																						<abbr lightning-input_input="" title="必要" class="slds-required">*</abbr>名字
+																					</label>
+																					<div lightning-input_input="" class="slds-form-element__control slds-grow">
+																						<input lightning-input_input="" type="text" id="input-1" autocomplete="given-name" maxlength="40" placeholder="名字" name="fnamae" required="" class="slds-input">
+																						</div>
+																					</lightning-input>
+																				</div>
+																			</div>
+																			<div class="row" data-aura-rendered-by="303:0">
+																				<div class="col" data-aura-rendered-by="304:0">
+																					<lightning-input class="slds-size_1-of-1 slds-form-element" data-aura-rendered-by="305:0" lightning-input_input-host="">
+																						<span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span>
+																						<label lightning-input_input="" for="input-2" class="slds-form-element__label slds-no-flex">
+																							<abbr lightning-input_input="" title="必要" class="slds-required">*</abbr>電郵地址
+																						</label>
+																						<div lightning-input_input="" class="slds-form-element__control slds-grow">
+																							<input lightning-input_input="" type="text" id="input-2" autocomplete="email" maxlength="255" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" placeholder="電郵地址" name="email" required="" class="slds-input">
+																							</div>
+																						</lightning-input>
+																					</div>
+																				</div>
+																				<div class="row" data-aura-rendered-by="306:0">
+																					<div class="col" data-aura-rendered-by="307:0">
+																						<label class="slds-form-element__label slds-no-flex" for="input-3" data-aura-rendered-by="308:0">
+																							<abbr class="slds-required" title="required" data-aura-rendered-by="309:0">*</abbr>手提號碼
+																						</label>
+																						<!--render facet: 337:0-->
+																						<div class="cGPEAPhoneInput" data-aura-rendered-by="339:0" data-aura-class="cGPEAPhoneInput">
+																							<div data-aura-rendered-by="342:0">
+																								<!--render facet: 343:0-->
+																							</div>
+																							<!--render facet: 344:0-->
+																							<div class="slds-grid slds-grid_vertical-align-start" data-aura-rendered-by="319:0">
+																								<div class="pr-2 slds-col slds-size_3-of-12" data-aura-rendered-by="320:0">
+																									<div class="slds-form-element label-hidden" data-aura-rendered-by="324:0">
+																										<label class="slds-form-element__label slds-m-right_xxx-small" for="321:0" data-aura-rendered-by="325:0">
+																											<!--render facet: 326:0-->
+																											<span class="slds-assistive-text" data-aura-rendered-by="327:0">國家/地區代碼 Country/Region Code</span>
+																										</label>
+																										<div class="slds-form-element__control slds-grow" data-aura-rendered-by="329:0">
+																											<div class="slds-select_container" data-aura-rendered-by="330:0">
+																												<select class="slds-select" id="321:0" data-aura-rendered-by="331:0" name="country-code">
+																													<option value="+852" label="+852" data-aura-rendered-by="347:0">+852</option>
+																													<option value="+853" label="+853" data-aura-rendered-by="349:0">+853</option>
+																													<option value="+886" label="+886" data-aura-rendered-by="351:0">+886</option>
+																													<option value="+86" label="+86" data-aura-rendered-by="353:0">+86</option>
+																												</select>
+																											</div>
+																										</div>
+																										<!--render facet: 333:0-->
+																									</div>
+																								</div>
+																								<div class="slds-col slds-size_9-of-12" data-aura-rendered-by="334:0">
+																									<lightning-input class="slds-show_inline slds-form-element" data-aura-rendered-by="335:0" lightning-input_input-host="">
+																										<span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span>
+																										<label lightning-input_input="" for="input-3" class="slds-form-element__label slds-no-flex slds-assistive-text">
+																											<abbr lightning-input_input="" title="必要" class="slds-required">*</abbr>手提號碼
+																										</label>
+																										<div lightning-input_input="" class="slds-form-element__control slds-grow">
+																											<input lightning-input_input="" type="tel" id="input-3" autocomplete="tel" maxlength="8" pattern="[5,6,8,9]{1}[0-9]{7}" placeholder="手提號碼" name="phone" required="" class="slds-input">
+																											</div>
+																										</lightning-input>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="row" data-aura-rendered-by="355:0">
+																						<div class="col" data-aura-rendered-by="356:0">
+																							<div class="slds-form-element slds-size_1-of-1 is-required" data-aura-rendered-by="546:0">
+																								<label class="slds-form-element__label" for="359:0" data-aura-rendered-by="547:0">
+																									<abbr class="slds-required" title="必要" data-aura-rendered-by="549:0">*</abbr>
+																									<span class="" data-aura-rendered-by="551:0">出生年份</span>
+																								</label>
+																								<div class="slds-form-element__control slds-grow" data-aura-rendered-by="553:0">
+																									<div class="slds-select_container" data-aura-rendered-by="554:0">
+																										<select class="slds-select" id="359:0" data-aura-rendered-by="555:0" required="">
+																											<option value="" label="出生年份" data-aura-rendered-by="360:0">出生年份</option>
+																											<option value="2001" label="2001" data-aura-rendered-by="363:0">2001</option>
+																											<option value="2000" label="2000" data-aura-rendered-by="365:0">2000</option>
+																											<option value="1999" label="1999" data-aura-rendered-by="367:0">1999</option>
+																											<option value="1998" label="1998" data-aura-rendered-by="369:0">1998</option>
+																											<option value="1997" label="1997" data-aura-rendered-by="371:0">1997</option>
+																											<option value="1996" label="1996" data-aura-rendered-by="373:0">1996</option>
+																											<option value="1995" label="1995" data-aura-rendered-by="375:0">1995</option>
+																											<option value="1994" label="1994" data-aura-rendered-by="377:0">1994</option>
+																											<option value="1993" label="1993" data-aura-rendered-by="379:0">1993</option>
+																											<option value="1992" label="1992" data-aura-rendered-by="381:0">1992</option>
+																											<option value="1991" label="1991" data-aura-rendered-by="383:0">1991</option>
+																											<option value="1990" label="1990" data-aura-rendered-by="385:0">1990</option>
+																											<option value="1989" label="1989" data-aura-rendered-by="387:0">1989</option>
+																											<option value="1988" label="1988" data-aura-rendered-by="389:0">1988</option>
+																											<option value="1987" label="1987" data-aura-rendered-by="391:0">1987</option>
+																											<option value="1986" label="1986" data-aura-rendered-by="393:0">1986</option>
+																											<option value="1985" label="1985" data-aura-rendered-by="395:0">1985</option>
+																											<option value="1984" label="1984" data-aura-rendered-by="397:0">1984</option>
+																											<option value="1983" label="1983" data-aura-rendered-by="399:0">1983</option>
+																											<option value="1982" label="1982" data-aura-rendered-by="401:0">1982</option>
+																											<option value="1981" label="1981" data-aura-rendered-by="403:0">1981</option>
+																											<option value="1980" label="1980" data-aura-rendered-by="405:0">1980</option>
+																											<option value="1979" label="1979" data-aura-rendered-by="407:0">1979</option>
+																											<option value="1978" label="1978" data-aura-rendered-by="409:0">1978</option>
+																											<option value="1977" label="1977" data-aura-rendered-by="411:0">1977</option>
+																											<option value="1976" label="1976" data-aura-rendered-by="413:0">1976</option>
+																											<option value="1975" label="1975" data-aura-rendered-by="415:0">1975</option>
+																											<option value="1974" label="1974" data-aura-rendered-by="417:0">1974</option>
+																											<option value="1973" label="1973" data-aura-rendered-by="419:0">1973</option>
+																											<option value="1972" label="1972" data-aura-rendered-by="421:0">1972</option>
+																											<option value="1971" label="1971" data-aura-rendered-by="423:0">1971</option>
+																											<option value="1970" label="1970" data-aura-rendered-by="425:0">1970</option>
+																											<option value="1969" label="1969" data-aura-rendered-by="427:0">1969</option>
+																											<option value="1968" label="1968" data-aura-rendered-by="429:0">1968</option>
+																											<option value="1967" label="1967" data-aura-rendered-by="431:0">1967</option>
+																											<option value="1966" label="1966" data-aura-rendered-by="433:0">1966</option>
+																											<option value="1965" label="1965" data-aura-rendered-by="435:0">1965</option>
+																											<option value="1964" label="1964" data-aura-rendered-by="437:0">1964</option>
+																											<option value="1963" label="1963" data-aura-rendered-by="439:0">1963</option>
+																											<option value="1962" label="1962" data-aura-rendered-by="441:0">1962</option>
+																											<option value="1961" label="1961" data-aura-rendered-by="443:0">1961</option>
+																											<option value="1960" label="1960" data-aura-rendered-by="445:0">1960</option>
+																											<option value="1959" label="1959" data-aura-rendered-by="447:0">1959</option>
+																											<option value="1958" label="1958" data-aura-rendered-by="449:0">1958</option>
+																											<option value="1957" label="1957" data-aura-rendered-by="451:0">1957</option>
+																											<option value="1956" label="1956" data-aura-rendered-by="453:0">1956</option>
+																											<option value="1955" label="1955" data-aura-rendered-by="455:0">1955</option>
+																											<option value="1954" label="1954" data-aura-rendered-by="457:0">1954</option>
+																											<option value="1953" label="1953" data-aura-rendered-by="459:0">1953</option>
+																											<option value="1952" label="1952" data-aura-rendered-by="461:0">1952</option>
+																											<option value="1951" label="1951" data-aura-rendered-by="463:0">1951</option>
+																											<option value="1950" label="1950" data-aura-rendered-by="465:0">1950</option>
+																											<option value="1949" label="1949" data-aura-rendered-by="467:0">1949</option>
+																											<option value="1948" label="1948" data-aura-rendered-by="469:0">1948</option>
+																											<option value="1947" label="1947" data-aura-rendered-by="471:0">1947</option>
+																											<option value="1946" label="1946" data-aura-rendered-by="473:0">1946</option>
+																											<option value="1945" label="1945" data-aura-rendered-by="475:0">1945</option>
+																											<option value="1944" label="1944" data-aura-rendered-by="477:0">1944</option>
+																											<option value="1943" label="1943" data-aura-rendered-by="479:0">1943</option>
+																											<option value="1942" label="1942" data-aura-rendered-by="481:0">1942</option>
+																											<option value="1941" label="1941" data-aura-rendered-by="483:0">1941</option>
+																											<option value="1940" label="1940" data-aura-rendered-by="485:0">1940</option>
+																											<option value="1939" label="1939" data-aura-rendered-by="487:0">1939</option>
+																											<option value="1938" label="1938" data-aura-rendered-by="489:0">1938</option>
+																											<option value="1937" label="1937" data-aura-rendered-by="491:0">1937</option>
+																											<option value="1936" label="1936" data-aura-rendered-by="493:0">1936</option>
+																											<option value="1935" label="1935" data-aura-rendered-by="495:0">1935</option>
+																											<option value="1934" label="1934" data-aura-rendered-by="497:0">1934</option>
+																											<option value="1933" label="1933" data-aura-rendered-by="499:0">1933</option>
+																											<option value="1932" label="1932" data-aura-rendered-by="501:0">1932</option>
+																											<option value="1931" label="1931" data-aura-rendered-by="503:0">1931</option>
+																											<option value="1930" label="1930" data-aura-rendered-by="505:0">1930</option>
+																											<option value="1929" label="1929" data-aura-rendered-by="507:0">1929</option>
+																											<option value="1928" label="1928" data-aura-rendered-by="509:0">1928</option>
+																											<option value="1927" label="1927" data-aura-rendered-by="511:0">1927</option>
+																											<option value="1926" label="1926" data-aura-rendered-by="513:0">1926</option>
+																											<option value="1925" label="1925" data-aura-rendered-by="515:0">1925</option>
+																											<option value="1924" label="1924" data-aura-rendered-by="517:0">1924</option>
+																											<option value="1923" label="1923" data-aura-rendered-by="519:0">1923</option>
+																											<option value="1922" label="1922" data-aura-rendered-by="521:0">1922</option>
+																											<option value="1921" label="1921" data-aura-rendered-by="523:0">1921</option>
+																											<option value="1920" label="1920" data-aura-rendered-by="525:0">1920</option>
+																											<option value="1919" label="1919" data-aura-rendered-by="527:0">1919</option>
+																											<option value="1918" label="1918" data-aura-rendered-by="529:0">1918</option>
+																											<option value="1917" label="1917" data-aura-rendered-by="531:0">1917</option>
+																											<option value="1916" label="1916" data-aura-rendered-by="533:0">1916</option>
+																											<option value="1915" label="1915" data-aura-rendered-by="535:0">1915</option>
+																											<option value="1914" label="1914" data-aura-rendered-by="537:0">1914</option>
+																											<option value="1913" label="1913" data-aura-rendered-by="539:0">1913</option>
+																											<option value="1912" label="1912" data-aura-rendered-by="541:0">1912</option>
+																											<option value="1911" label="1911" data-aura-rendered-by="543:0">1911</option>
+																										</select>
+																									</div>
+																								</div>
+																								<!--render facet: 557:0-->
+																							</div>
+																						</div>
+																					</div>
+																					<!--render facet: 558:0-->
+																					<!--render facet: 559:0-->
+																				</div>
+																				<div class="form__details-payment pt-2" data-aura-rendered-by="560:0">
+																					<!--render facet: 561:0-->
+																					<!--render facet: 565:0-->
+																					<div class="row cDonationCreditCardInput" data-aura-rendered-by="567:0" data-aura-class="cDonationCreditCardInput">
+																						<div class="col" data-aura-rendered-by="568:0">
+																							<lightning-input class="inputmode-numeric card-number slds-form-element" data-aura-rendered-by="569:0" lightning-input_input-host="">
+																								<span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span>
+																								<label lightning-input_input="" for="input-4" class="slds-form-element__label slds-no-flex">
+																									<abbr lightning-input_input="" title="必要" class="slds-required">*</abbr>信用卡號碼
+																								</label>
+																								<div lightning-input_input="" class="slds-form-element__control slds-grow">
+																									<input lightning-input_input="" type="text" id="input-4" autocomplete="cc-number" maxlength="20" pattern="[0-9]{4}-{1}[0-9]{4}-{1}[0-9]{4}-{1}[0-9]{1,4}\s*" placeholder="信用卡號碼" name="cardnumber" required="" class="slds-input" inputmode="numeric">
+																									</div>
+																								</lightning-input>
+																								<span class="card-icon" data-aura-rendered-by="570:0">
+																									<!--render facet: 571:0-->
+																									<!--render facet: 572:0-->
+																									<!--render facet: 573:0-->
+																								</span>
+																							</div>
+																						</div>
+																						<div class="row cDonationCreditCardInput" data-aura-rendered-by="574:0" data-aura-class="cDonationCreditCardInput">
+																							<div class="col" data-aura-rendered-by="575:0">
+																								<lightning-input class="inputmode-numeric inputgroup__app slds-show_inline expiry-date slds-form-element" data-aura-rendered-by="576:0" lightning-input_input-host="">
+																									<span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span>
+																									<label lightning-input_input="" for="input-5" class="slds-form-element__label slds-no-flex">
+																										<abbr lightning-input_input="" title="必要" class="slds-required">*</abbr>有效日期
+																									</label>
+																									<div lightning-input_input="" class="slds-form-element__control slds-grow">
+																										<input lightning-input_input="" type="text" id="input-5" autocomplete="cc-exp" maxlength="5" pattern="[0-9]{2}\/{1}[0-9]{2}\s*" placeholder="有效日期 MM/YY" name="exp-date" required="" class="slds-input" inputmode="numeric">
+																										</div>
+																									</lightning-input>
+																								</div>
+																								<div class="col" data-aura-rendered-by="578:0">
+																									<lightning-input class="inputmode-numeric inputgroup__app slds-show_inline slds-form-element" data-aura-rendered-by="579:0" lightning-input_input-host="">
+																										<span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span>
+																										<label lightning-input_input="" for="input-6" class="slds-form-element__label slds-no-flex">
+																											<abbr lightning-input_input="" title="必要" class="slds-required">*</abbr>安全碼
+																										</label>
+																										<div lightning-input_input="" class="slds-form-element__control slds-grow">
+																											<input lightning-input_input="" type="text" id="input-6" autocomplete="cc-csc" maxlength="4" minlength="2" pattern="[0-9]+" placeholder="安全碼 CVV" name="cvc" required="" class="slds-input" inputmode="numeric">
+																											</div>
+																										</lightning-input>
+																									</div>
+																								</div>
+																								<!--render facet: 580:0-->
+																							</div>
+																						</div>
+																						<div class="form__donate my-5" data-aura-rendered-by="581:0">
+																							<button class="form__donate-btn" type="button" data-aura-rendered-by="582:0">立即捐助</button>
+																						</div>
+																						<div class="form__details-consent" data-aura-rendered-by="584:0">
+																							<div class="row consent inputcheck" data-aura-rendered-by="585:0">
+																								<div class="col is-flex" data-aura-rendered-by="586:0">
+																									<lightning-input class="checkbox-input slds-form-element" data-aura-rendered-by="587:0" lightning-input_input-host="">
+																										<span lightning-input_input="" data-aria="true" class="slds-assistive-text"></span>
+																										<div lightning-input_input="" class="slds-form-element__control slds-grow">
+																											<span lightning-input_input="" class="slds-checkbox">
+																												<input lightning-input_input="" type="checkbox" id="checkbox-7" value="">
+																													<label lightning-input_input="" for="checkbox-7" class="slds-checkbox__label">
+																														<span lightning-input_input="" class="slds-checkbox_faux"></span>
+																														<span lightning-input_input="" class="slds-form-element__label slds-assistive-text">&lt;p&gt;我願意收到綠色和平發送的通訊，讓我能掌握環保工作的最新脈動！綠色和平尊重並保障您的個人資料，您隨時可取消訂閱，請參考&lt;a href="https://www.greenpeace.org/hongkong/policies/privacy-and-cookies/" target="_blank"&gt;私隱政策&lt;/a&gt;。&lt;/p&gt;</span>
+																													</label>
+																												</span>
+																											</div>
+																										</lightning-input>
+																										<div class="checkbox-label" data-aura-rendered-by="588:0">
+																											<p data-aura-rendered-by="589:0">我願意收到綠色和平發送的通訊，讓我能掌握環保工作的最新脈動！綠色和平尊重並保障您的個人資料，您隨時可取消訂閱，請參考
+																												<a href="https://www.greenpeace.org/hongkong/policies/privacy-and-cookies/" target="_blank">私隱政策</a>。
+																											</p>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="is-hidden form__return" data-aura-rendered-by="590:0">
+																								<div class="row" data-aura-rendered-by="591:0">
+																									<div class="col" data-aura-rendered-by="592:0">
+																										<hr data-aura-rendered-by="593:0">
+																											<p class="is-size-7 has-text-grey" data-aura-rendered-by="594:0">
+																												<span data-aura-rendered-by="595:0">
                                                         您捐助的一分一毫，都能支持綠色和平繼續以公正獨立的身份持續推動環境工作。
-                                                        <span class="" data-aura-rendered-by="597:0">（每月捐款）</span></span></p></div></div></div><!--render facet: 601:0--></div></div></div></div></div></div></div></div><div class="main-bg main-bg_center" style="background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg)" data-aura-rendered-by="243:2;a"><img alt="守護地球，分秒必爭！支持綠色和平環境工作 - 綠色和平是100%財政獨立的環保機構，您的捐助可以幫助我們揭露環境問題、以專業研究遊說企業和政府作出改變，請即加入守護珍貴的自然環境！" src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg" data-aura-rendered-by="244:2;a"></div></section>
-        </div>
-        <div class="s3">
-        </div>
-      </div>
-      <!-- end of main -->
-      <!-- extra blocks -->
-      <div class="extra">
-        <section class="hero is-medium section-center-text">
-          <div class="hero-body">
-            <div class="container has-text-centered is-centered">
-              <h2 class="mt-0">改變，因您而起。</h2>
-              <p>全球有數百萬名支持者，與綠色和平並肩保護環境。了解您的捐助如何應用在解決各重大環境問題：</p>
-            </div>
-          </div>
-        </section>
-        <section class="section section-mixed-content">
-          <div class="section-grid columns">
-            <div class="column is-medium is-flex is-align-items-center">
-              <div class="container p-4">
-                <h2 class="has-text-white mt-0">綠色和平行動足跡遍佈全球</h2>
-                <p class="has-text-white">為捍衛環境公義，綠色和平在全球推動多個環境項目，由守護亞馬遜森林到南北極，我們及時揭露破壞環境罪證，以科學方式提出源頭解決問題的方案，連結各地社區和民眾聲音，對企業和政府進行遊說工作，積極為環境帶來更多正面改變！</p>
-              </div>
-            </div>
-            <div class="column py-0">
-              <div class="swiper-container--mixed">
-                <div class="swiper-wrapper">
-                  
-                  <div class="swiper-slide">
-                    <div class="box-visual">
-                      <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/11c847f3-block-2-greenpeace-goes-where-others-can_t.jpg" alt="alt" />
-                    </div>
-                  </div>
-                  
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section section-issues">
-          <div class="container section-wrapper">
-            <div class="column section__header">
-              <h2>您的支持，是推動環境工作的關鍵力量！</h2>
-              <p>綠色和平的工作涵蓋6大範疇：</p>
-            </div>
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                
-                <div class="swiper-slide card">
-                  <div class="issue issue--arctic">
-                    <div class="issue__header">
-                      <h2 class="text--climate">
+                                                        
+																													<span class="" data-aura-rendered-by="597:0">（每月捐款）</span>
+																												</span>
+																											</p>
+																										</div>
+																									</div>
+																								</div>
+																								<!--render facet: 601:0-->
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="main-bg main-bg_center" style="background-image: url(https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg)" data-aura-rendered-by="243:2;a">
+																	<img alt="守護地球，分秒必爭！支持綠色和平環境工作 - 綠色和平是100%財政獨立的環保機構，您的捐助可以幫助我們揭露環境問題、以專業研究遊說企業和政府作出改變，請即加入守護珍貴的自然環境！" src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg" data-aura-rendered-by="244:2;a">
+																	</div>
+																</section>
+															</div>
+															<div class="s3"></div>
+														</div>
+														<!-- end of main -->
+														<!-- extra blocks -->
+														<div class="extra">
+															<section class="hero is-medium section-center-text">
+																<div class="hero-body">
+																	<div class="container has-text-centered is-centered">
+																		<h2 class="mt-0">改變，因您而起。</h2>
+																		<p>全球有數百萬名支持者，與綠色和平並肩保護環境。了解您的捐助如何應用在解決各重大環境問題：</p>
+																	</div>
+																</div>
+															</section>
+															<section class="section section-mixed-content">
+																<div class="section-grid columns">
+																	<div class="column is-medium is-flex is-align-items-center">
+																		<div class="container p-4">
+																			<h2 class="has-text-white mt-0">綠色和平行動足跡遍佈全球</h2>
+																			<p class="has-text-white">為捍衛環境公義，綠色和平在全球推動多個環境項目，由守護亞馬遜森林到南北極，我們及時揭露破壞環境罪證，以科學方式提出源頭解決問題的方案，連結各地社區和民眾聲音，對企業和政府進行遊說工作，積極為環境帶來更多正面改變！</p>
+																		</div>
+																	</div>
+																	<div class="column py-0">
+																		<div class="swiper-container--mixed">
+																			<div class="swiper-wrapper">
+																				<div class="swiper-slide">
+																					<div class="box-visual">
+																						<img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/11c847f3-block-2-greenpeace-goes-where-others-can_t.jpg" alt="alt" />
+																					</div>
+																				</div>
+																			</div>
+																			<div class="swiper-pagination"></div>
+																		</div>
+																	</div>
+																</div>
+															</section>
+															<section class="section section-issues">
+																<div class="container section-wrapper">
+																	<div class="column section__header">
+																		<h2>您的支持，是推動環境工作的關鍵力量！</h2>
+																		<p>綠色和平的工作涵蓋6大範疇：</p>
+																	</div>
+																	<div class="swiper-container">
+																		<div class="swiper-wrapper">
+																			<div class="swiper-slide card">
+																				<div class="issue issue--arctic">
+																					<div class="issue__header">
+																						<h2 class="text--climate">
                         氣候 CLIMATE
                       </h2>
-                      <p>減緩氣候危機，綠色和平推動企業和政府，加速發展可再生能源，淘汰骯髒化石燃料，讓我們在不損害地球的前提下繁榮發展。</p>
-                    </div>
-                    <div
+																						<p>減緩氣候危機，綠色和平推動企業和政府，加速發展可再生能源，淘汰骯髒化石燃料，讓我們在不損害地球的前提下繁榮發展。</p>
+																					</div>
+																					<div
                       class="issue__image"
                       style="background-image: url('https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/a611fb7d-block-3-your-donation-will-have-an-impact-climate-gp0str5kn.jpg')"
                     ></div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide card">
-                  <div class="issue issue--arctic">
-                    <div class="issue__header">
-                      <h2 class="text--oceans">
+																				</div>
+																			</div>
+																			<div class="swiper-slide card">
+																				<div class="issue issue--arctic">
+																					<div class="issue__header">
+																						<h2 class="text--oceans">
                         海洋 OCEANS
                       </h2>
-                      <p>在海洋面發起全球行動，連繫關心海洋保育的群眾，爭取成立海洋保護區，停止過度捕撈，讓漁業資源得以永續，海洋生生不息。</p>
-                    </div>
-                    <div
+																						<p>在海洋面發起全球行動，連繫關心海洋保育的群眾，爭取成立海洋保護區，停止過度捕撈，讓漁業資源得以永續，海洋生生不息。</p>
+																					</div>
+																					<div
                       class="issue__image"
                       style="background-image: url('https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/2e02c9e3-block-3-your-donation-will-have-an-impact-oceans-gp0stoe2u.jpg')"
                     ></div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide card">
-                  <div class="issue issue--arctic">
-                    <div class="issue__header">
-                      <h2 class="text--arctic">
+																				</div>
+																			</div>
+																			<div class="swiper-slide card">
+																				<div class="issue issue--arctic">
+																					<div class="issue__header">
+																						<h2 class="text--arctic">
                         北極 ARCTIC
                       </h2>
-                      <p>集合群眾力量，向石油與捕魚企業施壓，並呼籲政治領袖制定全球條約，齊心守護北極熊的極地樂園。</p>
-                    </div>
-                    <div
+																						<p>集合群眾力量，向石油與捕魚企業施壓，並呼籲政治領袖制定全球條約，齊心守護北極熊的極地樂園。</p>
+																					</div>
+																					<div
                       class="issue__image"
                       style="background-image: url('https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/033c5484-block-3-your-donation-will-have-an-impact-arctic.jpg')"
                     ></div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide card">
-                  <div class="issue issue--arctic">
-                    <div class="issue__header">
-                      <h2 class="text--forests">
+																				</div>
+																			</div>
+																			<div class="swiper-slide card">
+																				<div class="issue issue--arctic">
+																					<div class="issue__header">
+																						<h2 class="text--forests">
                         森林 FORESTS
                       </h2>
-                      <p>揭露毀林真相，要求企業品牌公開供應鏈資訊、截斷毀林資金流，致力遊說政府及企業採用可持續的方式管理森林。</p>
-                    </div>
-                    <div
+																						<p>揭露毀林真相，要求企業品牌公開供應鏈資訊、截斷毀林資金流，致力遊說政府及企業採用可持續的方式管理森林。</p>
+																					</div>
+																					<div
                       class="issue__image"
                       style="background-image: url('https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/329a08ca-block-3-your-donation-will-have-an-impact-forests.jpg')"
                     ></div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide card">
-                  <div class="issue issue--arctic">
-                    <div class="issue__header">
-                      <h2 class="text--plastics">
+																				</div>
+																			</div>
+																			<div class="swiper-slide card">
+																				<div class="issue issue--arctic">
+																					<div class="issue__header">
+																						<h2 class="text--plastics">
                         塑膠 PLASTICS
                       </h2>
-                      <p>促請政府和企業定下具體減塑措施，逐步淘汰即棄塑膠，同時鼓勵公眾改變生活習慣，從源頭減廢做起，營造永續生活。</p>
-                    </div>
-                    <div
+																						<p>促請政府和企業定下具體減塑措施，逐步淘汰即棄塑膠，同時鼓勵公眾改變生活習慣，從源頭減廢做起，營造永續生活。</p>
+																					</div>
+																					<div
                       class="issue__image"
                       style="background-image: url('https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/7c80fc6a-block-3-your-donation-will-have-an-impact-plastics.jpg')"
                     ></div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide card">
-                  <div class="issue issue--arctic">
-                    <div class="issue__header">
-                      <h2 class="text--health">
+																				</div>
+																			</div>
+																			<div class="swiper-slide card">
+																				<div class="issue issue--arctic">
+																					<div class="issue__header">
+																						<h2 class="text--health">
                         生活 HEALTH
                       </h2>
-                      <p>推展各項污染防治、可持續城市規劃等環保倡導工作，捍衛您我免受污染侵害、呼吸新鮮空氣、享受大自然低聲細語的權利。</p>
-                    </div>
-                    <div
+																						<p>推展各項污染防治、可持續城市規劃等環保倡導工作，捍衛您我免受污染侵害、呼吸新鮮空氣、享受大自然低聲細語的權利。</p>
+																					</div>
+																					<div
                       class="issue__image"
                       style="background-image: url('https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/05d964e5-block-3-your-donation-will-have-an-impact-health.jpg')"
                     ></div>
-                  </div>
-                </div>
-                
-              </div>
-              <div class="swiper-button-prev">
-                <div class="arrow arrow--left"></div>
-              </div>
-              <div class="swiper-button-next">
-                <div class="arrow arrow--right"></div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </section>
-        <section class="section section-impacts">
-          <div class="container section-wrapper">
-            <div class="column section__header">
-              <h2>自1971年開始的環保里程</h2>
-              <p>您的慷慨捐款，創造無數環境成果。</p>
-            </div>
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                
-                <div class="swiper-slide">
-                  <div class="impact">
-                    <div class="impact__tag">
-                      <span class="text--health"
+																				</div>
+																			</div>
+																		</div>
+																		<div class="swiper-button-prev">
+																			<div class="arrow arrow--left"></div>
+																		</div>
+																		<div class="swiper-button-next">
+																			<div class="arrow arrow--right"></div>
+																		</div>
+																		<div class="swiper-pagination"></div>
+																	</div>
+																</div>
+															</section>
+															<section class="section section-impacts">
+																<div class="container section-wrapper">
+																	<div class="column section__header">
+																		<h2>自1971年開始的環保里程</h2>
+																		<p>您的慷慨捐款，創造無數環境成果。</p>
+																	</div>
+																	<div class="swiper-container">
+																		<div class="swiper-wrapper">
+																			<div class="swiper-slide">
+																				<div class="impact">
+																					<div class="impact__tag">
+																						<span class="text--health"
                         >生活</span
                       >
-                    </div>
-                    <div class="impact__title">
-                      <p>1971年：先鋒成員掛起「綠色和平」橫額，駕船反對美國進行核試，牽起全球關注核安全議題，及後更令法國結束於南太平洋的核試。</p>
-                    </div>
-                    <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/f319f4f6-block-4-your-donation-will-ensure-a-better-future-success-1.jpg" alt="1971年：先鋒成員掛起「綠色和平」橫額，駕船反對美國進行核試，牽起全球關注核安全議題，及後更令法國結束於南太平洋的核試。" />
-                  </div>
-                </div>
-                
-                <div class="swiper-slide">
-                  <div class="impact">
-                    <div class="impact__tag">
-                      <span class="text--oceans"
+																					</div>
+																					<div class="impact__title">
+																						<p>1971年：先鋒成員掛起「綠色和平」橫額，駕船反對美國進行核試，牽起全球關注核安全議題，及後更令法國結束於南太平洋的核試。</p>
+																					</div>
+																					<img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/f319f4f6-block-4-your-donation-will-ensure-a-better-future-success-1.jpg" alt="1971年：先鋒成員掛起「綠色和平」橫額，駕船反對美國進行核試，牽起全球關注核安全議題，及後更令法國結束於南太平洋的核試。" />
+																				</div>
+																			</div>
+																			<div class="swiper-slide">
+																				<div class="impact">
+																					<div class="impact__tag">
+																						<span class="text--oceans"
                         >海洋</span
                       >
-                    </div>
-                    <div class="impact__title">
-                      <p>1991年：早年在南極設立基地宣揚守護南極，促使1991年成功簽署《南極條約》，禁止人類開採礦產最少50年（至2048年）。</p>
-                    </div>
-                    <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/5a5b3369-block-4-your-donation-will-ensure-a-better-future-success-2.jpg" alt="1991年：早年在南極設立基地宣揚守護南極，促使1991年成功簽署《南極條約》，禁止人類開採礦產最少50年（至2048年）。" />
-                  </div>
-                </div>
-                
-                <div class="swiper-slide">
-                  <div class="impact">
-                    <div class="impact__tag">
-                      <span class="text--oceans"
+																					</div>
+																					<div class="impact__title">
+																						<p>1991年：早年在南極設立基地宣揚守護南極，促使1991年成功簽署《南極條約》，禁止人類開採礦產最少50年（至2048年）。</p>
+																					</div>
+																					<img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/5a5b3369-block-4-your-donation-will-ensure-a-better-future-success-2.jpg" alt="1991年：早年在南極設立基地宣揚守護南極，促使1991年成功簽署《南極條約》，禁止人類開採礦產最少50年（至2048年）。" />
+																				</div>
+																			</div>
+																			<div class="swiper-slide">
+																				<div class="impact">
+																					<div class="impact__tag">
+																						<span class="text--oceans"
                         >海洋</span
                       >
-                    </div>
-                    <div class="impact__title">
-                      <p>1995年：佔領位於北海的Brent Spar儲油平台，迫使蜆殼公司改變將其棄置海底的計劃，最終大部份平台結構得以於陸上進行拆解回收。</p>
-                    </div>
-                    <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/a4fb0df9-block-4-your-donation-will-ensure-a-better-future-success-3.jpg" alt="1995年：佔領位於北海的Brent Spar儲油平台，迫使蜆殼公司改變將其棄置海底的計劃，最終大部份平台結構得以於陸上進行拆解回收。" />
-                  </div>
-                </div>
-                
-                <div class="swiper-slide">
-                  <div class="impact">
-                    <div class="impact__tag">
-                      <span class="text--climate"
+																					</div>
+																					<div class="impact__title">
+																						<p>1995年：佔領位於北海的Brent Spar儲油平台，迫使蜆殼公司改變將其棄置海底的計劃，最終大部份平台結構得以於陸上進行拆解回收。</p>
+																					</div>
+																					<img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/a4fb0df9-block-4-your-donation-will-ensure-a-better-future-success-3.jpg" alt="1995年：佔領位於北海的Brent Spar儲油平台，迫使蜆殼公司改變將其棄置海底的計劃，最終大部份平台結構得以於陸上進行拆解回收。" />
+																				</div>
+																			</div>
+																			<div class="swiper-slide">
+																				<div class="impact">
+																					<div class="impact__tag">
+																						<span class="text--climate"
                         >氣侯</span
                       >
-                    </div>
-                    <div class="impact__title">
-                      <p>1997年：國際綠色和平自家研發Greenfreeze環保製冷技術得獎，讓技術有助減少溫室氣體排放，革新製冷行業技術並獲廣泛利用。</p>
-                    </div>
-                    <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/d7091e18-block-4-your-donation-will-ensure-a-better-future-success-4.jpg" alt="1997年：國際綠色和平自家研發Greenfreeze環保製冷技術得獎，讓技術有助減少溫室氣體排放，革新製冷行業技術並獲廣泛利用。" />
-                  </div>
-                </div>
-                
-                <div class="swiper-slide">
-                  <div class="impact">
-                    <div class="impact__tag">
-                      <span class="text--arctic"
+																					</div>
+																					<div class="impact__title">
+																						<p>1997年：國際綠色和平自家研發Greenfreeze環保製冷技術得獎，讓技術有助減少溫室氣體排放，革新製冷行業技術並獲廣泛利用。</p>
+																					</div>
+																					<img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/d7091e18-block-4-your-donation-will-ensure-a-better-future-success-4.jpg" alt="1997年：國際綠色和平自家研發Greenfreeze環保製冷技術得獎，讓技術有助減少溫室氣體排放，革新製冷行業技術並獲廣泛利用。" />
+																				</div>
+																			</div>
+																			<div class="swiper-slide">
+																				<div class="impact">
+																					<div class="impact__tag">
+																						<span class="text--arctic"
                         >北極</span
                       >
-                    </div>
-                    <div class="impact__title">
-                      <p>2015年：號召全球800萬人守護北極，蜆殼公司終宣布停止北極鑽油計劃。我們持續倡議長遠成立北極保護區。</p>
-                    </div>
-                    <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/62dbdbc0-block-4-your-donation-will-ensure-a-better-future-success-5.jpg" alt="2015年：號召全球800萬人守護北極，蜆殼公司終宣布停止北極鑽油計劃。我們持續倡議長遠成立北極保護區。" />
-                  </div>
-                </div>
-                
-                <div class="swiper-slide">
-                  <div class="impact">
-                    <div class="impact__tag">
-                      <span class="text--oceans"
+																					</div>
+																					<div class="impact__title">
+																						<p>2015年：號召全球800萬人守護北極，蜆殼公司終宣布停止北極鑽油計劃。我們持續倡議長遠成立北極保護區。</p>
+																					</div>
+																					<img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/62dbdbc0-block-4-your-donation-will-ensure-a-better-future-success-5.jpg" alt="2015年：號召全球800萬人守護北極，蜆殼公司終宣布停止北極鑽油計劃。我們持續倡議長遠成立北極保護區。" />
+																				</div>
+																			</div>
+																			<div class="swiper-slide">
+																				<div class="impact">
+																					<div class="impact__tag">
+																						<span class="text--oceans"
                         >海洋</span
                       >
-                    </div>
-                    <div class="impact__title">
-                      <p>2017年：共80家國際品牌及供應商承諾無毒生產，包括ZARA、H&amp;M、Uniqlo等。「為時尚去毒」全球項目自2011年展開，影響力至今不散。</p>
-                    </div>
-                    <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/958ea341-block-4-your-donation-will-ensure-a-better-future-success-6.jpg" alt="2017年：共80家國際品牌及供應商承諾無毒生產，包括ZARA、H&amp;M、Uniqlo等。「為時尚去毒」全球項目自2011年展開，影響力至今不散。" />
-                  </div>
-                </div>
-                
-                <div class="swiper-slide">
-                  <div class="impact">
-                    <div class="impact__tag">
-                      <span class="text--climate"
+																					</div>
+																					<div class="impact__title">
+																						<p>2017年：共80家國際品牌及供應商承諾無毒生產，包括ZARA、H&amp;M、Uniqlo等。「為時尚去毒」全球項目自2011年展開，影響力至今不散。</p>
+																					</div>
+																					<img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/958ea341-block-4-your-donation-will-ensure-a-better-future-success-6.jpg" alt="2017年：共80家國際品牌及供應商承諾無毒生產，包括ZARA、H&amp;M、Uniqlo等。「為時尚去毒」全球項目自2011年展開，影響力至今不散。" />
+																				</div>
+																			</div>
+																			<div class="swiper-slide">
+																				<div class="impact">
+																					<div class="impact__tag">
+																						<span class="text--climate"
                         >氣侯</span
                       >
-                    </div>
-                    <div class="impact__title">
-                      <p>2018年：集結全球群眾力量，推動 Samsung 承諾能源轉型，於2020年之前在美國、歐洲與中國等消費市場，邁向100%可再生能源。</p>
-                    </div>
-                    <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/cc3668a7-block-4-your-donation-will-ensure-a-better-future-success-7.jpg" alt="2018年：集結全球群眾力量，推動 Samsung 承諾能源轉型，於2020年之前在美國、歐洲與中國等消費市場，邁向100%可再生能源。" />
-                  </div>
-                </div>
-                
-                <div class="swiper-slide">
-                  <div class="impact">
-                    <div class="impact__tag">
-                      <span class="text--health"
+																					</div>
+																					<div class="impact__title">
+																						<p>2018年：集結全球群眾力量，推動 Samsung 承諾能源轉型，於2020年之前在美國、歐洲與中國等消費市場，邁向100%可再生能源。</p>
+																					</div>
+																					<img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/cc3668a7-block-4-your-donation-will-ensure-a-better-future-success-7.jpg" alt="2018年：集結全球群眾力量，推動 Samsung 承諾能源轉型，於2020年之前在美國、歐洲與中國等消費市場，邁向100%可再生能源。" />
+																				</div>
+																			</div>
+																			<div class="swiper-slide">
+																				<div class="impact">
+																					<div class="impact__tag">
+																						<span class="text--health"
                         >生活</span
                       >
-                    </div>
-                    <div class="impact__title">
-                      <p>2018年：集結超過5萬人聯署，與眾多本地團體合作，成功推動政府認同發展棕地，無再提及開發郊野公園，守住香港青山綠水。</p>
-                    </div>
-                    <img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/1288eef1-block-4-your-donation-will-ensure-a-better-future-success-8.jpg" alt="2018年：集結超過5萬人聯署，與眾多本地團體合作，成功推動政府認同發展棕地，無再提及開發郊野公園，守住香港青山綠水。" />
-                  </div>
-                </div>
-                
-              </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev">
-                <div class="arrow arrow--left"></div>
-              </div>
-              <div class="swiper-button-next">
-                <div class="arrow arrow--right"></div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </section>
-        <section class="section section-finance">
-          <div class="container section-wrapper">
-            <div class="column section__header">
-              <h2>我們如何分配資源在東亞進行重要的環保項目？</h2>
-            </div>
-            <div class="finance-blocks columns">
-              
-              <div class="finance-block column">
-                <figure class="image is-96x96 margin-middle">
-                  <img src="https://change.greenpeace.org.hk/static/icon/Asset 18@3x.png" alt="分配至拯救氣候危機，營造更健康、公平和綠色的世界" />
-                </figure>
-                <p class="finance-block__number has-text-centered">
+																					</div>
+																					<div class="impact__title">
+																						<p>2018年：集結超過5萬人聯署，與眾多本地團體合作，成功推動政府認同發展棕地，無再提及開發郊野公園，守住香港青山綠水。</p>
+																					</div>
+																					<img src="https://storage.googleapis.com/planet4-hongkong-stateless/2020/08/1288eef1-block-4-your-donation-will-ensure-a-better-future-success-8.jpg" alt="2018年：集結超過5萬人聯署，與眾多本地團體合作，成功推動政府認同發展棕地，無再提及開發郊野公園，守住香港青山綠水。" />
+																				</div>
+																			</div>
+																		</div>
+																		<div class="swiper-pagination"></div>
+																		<div class="swiper-button-prev">
+																			<div class="arrow arrow--left"></div>
+																		</div>
+																		<div class="swiper-button-next">
+																			<div class="arrow arrow--right"></div>
+																		</div>
+																		<div class="swiper-pagination"></div>
+																	</div>
+																</div>
+															</section>
+															<section class="section section-finance">
+																<div class="container section-wrapper">
+																	<div class="column section__header">
+																		<h2>我們如何分配資源在東亞進行重要的環保項目？</h2>
+																	</div>
+																	<div class="finance-blocks columns">
+																		<div class="finance-block column">
+																			<figure class="image is-96x96 margin-middle">
+																				<img src="https://change.greenpeace.org.hk/static/icon/Asset 18@3x.png" alt="分配至拯救氣候危機，營造更健康、公平和綠色的世界" />
+																			</figure>
+																			<p class="finance-block__number has-text-centered">
                   49%
                 </p>
-                <p class="has-text-centered">分配至拯救氣候危機，營造更健康、公平和綠色的世界</p>
-              </div>
-              
-              <div class="finance-block column">
-                <figure class="image is-96x96 margin-middle">
-                  <img src="https://change.greenpeace.org.hk/static/icon/Asset 22@3x.png" alt="分配至守護全球海洋與原始森林，支援跨範疇項目，保護生命之源，提出解決方案推動改變" />
-                </figure>
-                <p class="finance-block__number has-text-centered">
+																			<p class="has-text-centered">分配至拯救氣候危機，營造更健康、公平和綠色的世界</p>
+																		</div>
+																		<div class="finance-block column">
+																			<figure class="image is-96x96 margin-middle">
+																				<img src="https://change.greenpeace.org.hk/static/icon/Asset 22@3x.png" alt="分配至守護全球海洋與原始森林，支援跨範疇項目，保護生命之源，提出解決方案推動改變" />
+																			</figure>
+																			<p class="finance-block__number has-text-centered">
                   28%
                 </p>
-                <p class="has-text-centered">分配至守護全球海洋與原始森林，支援跨範疇項目，保護生命之源，提出解決方案推動改變</p>
-              </div>
-              
-              <div class="finance-block column">
-                <figure class="image is-96x96 margin-middle">
-                  <img src="https://change.greenpeace.org.hk/static/icon/Asset 7@3x.png" alt="分配至維護食物安全和防治環境污染，營造無毒無污世界，保護土地、水資源及地球環境" />
-                </figure>
-                <p class="finance-block__number has-text-centered">
+																			<p class="has-text-centered">分配至守護全球海洋與原始森林，支援跨範疇項目，保護生命之源，提出解決方案推動改變</p>
+																		</div>
+																		<div class="finance-block column">
+																			<figure class="image is-96x96 margin-middle">
+																				<img src="https://change.greenpeace.org.hk/static/icon/Asset 7@3x.png" alt="分配至維護食物安全和防治環境污染，營造無毒無污世界，保護土地、水資源及地球環境" />
+																			</figure>
+																			<p class="finance-block__number has-text-centered">
                   23%
                 </p>
-                <p class="has-text-centered">分配至維護食物安全和防治環境污染，營造無毒無污世界，保護土地、水資源及地球環境</p>
-              </div>
-              
-            </div>
-            <div class="content">
-              <p class="has-text-center annual-report-link">
-                閱讀<a
+																			<p class="has-text-centered">分配至維護食物安全和防治環境污染，營造無毒無污世界，保護土地、水資源及地球環境</p>
+																		</div>
+																	</div>
+																	<div class="content">
+																		<p class="has-text-center annual-report-link">
+                閱讀
+																			<a
                   href="https://www.greenpeace.org/hongkong/about/reports/annual-report-2019/"
                   target="_blank"
                   >最新的機構年報</a
                 >了解更多
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="section section-testimonials">
-          <div class="container section-wrapper">
-            <div class="column section__header">
-              <h2>一齊行動，為世界帶來改變！</h2>
-              <p>綠色和平同行者的分享</p>
-            </div>
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                
-                <div class="swiper-slide box box-shadow-lift">
-                  <div class="testimonial">
-                    <figure class="image is-128x128 margin-middle">
-                      <img
+              
+																		</p>
+																	</div>
+																</div>
+															</section>
+															<section class="section section-testimonials">
+																<div class="container section-wrapper">
+																	<div class="column section__header">
+																		<h2>一齊行動，為世界帶來改變！</h2>
+																		<p>綠色和平同行者的分享</p>
+																	</div>
+																	<div class="swiper-container">
+																		<div class="swiper-wrapper">
+																			<div class="swiper-slide box box-shadow-lift">
+																				<div class="testimonial">
+																					<figure class="image is-128x128 margin-middle">
+																						<img
                         class="profile-circle is-rounded"
                         src="https://www.greenpeace.org/static/planet4-hongkong-stateless/e1db86a2-block-5-by-working-together-kt.jpg"
                         alt="施鵬翔"
                       />
-                    </figure>
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="subtitle has-text-centered">
+																					</figure>
+																					<div class="media">
+																						<div class="media-content">
+																							<p class="subtitle has-text-centered">
                           施鵬翔
                         </p>
-                        <p class="m-0 has-text-grey has-text-centered">
+																							<p class="m-0 has-text-grey has-text-centered">
                           綠色和平東亞分部總幹事
                         </p>
-                      </div>
-                    </div>
-                    <hr class="line" />
-                    <div class="content">
-                      <p>身處充滿迫切環境問題的年代，亞洲對地球未來的影響可謂舉足輕重。在如此重要的時刻，慶幸自己在綠色和平工作，與您一起為守護人類世代生存權利而努力。</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide box box-shadow-lift">
-                  <div class="testimonial">
-                    <figure class="image is-128x128 margin-middle">
-                      <img
+																						</div>
+																					</div>
+																					<hr class="line" />
+																					<div class="content">
+																						<p>身處充滿迫切環境問題的年代，亞洲對地球未來的影響可謂舉足輕重。在如此重要的時刻，慶幸自己在綠色和平工作，與您一起為守護人類世代生存權利而努力。</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="swiper-slide box box-shadow-lift">
+																				<div class="testimonial">
+																					<figure class="image is-128x128 margin-middle">
+																						<img
                         class="profile-circle is-rounded"
                         src="https://www.greenpeace.org/static/planet4-hongkong-stateless/4830aaf6-block-5-by-working-together-santosh.jpg"
                         alt="Santosh Pai"
                       />
-                    </figure>
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="subtitle has-text-centered">
+																					</figure>
+																					<div class="media">
+																						<div class="media-content">
+																							<p class="subtitle has-text-centered">
                           Santosh Pai
                         </p>
-                        <p class="m-0 has-text-grey has-text-centered">
+																							<p class="m-0 has-text-grey has-text-centered">
                           律師／綠色和平東亞分部董事會主席
                         </p>
-                      </div>
-                    </div>
-                    <hr class="line" />
-                    <div class="content">
-                      <p>感謝每位支持者，勇於追求更理想的世界。見證環保工作取得成果，我們同喜；有感於任重道遠，我們同憂，卻仍然不懈，為自己也為下一代締造更好的世界。</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide box box-shadow-lift">
-                  <div class="testimonial">
-                    <figure class="image is-128x128 margin-middle">
-                      <img
+																						</div>
+																					</div>
+																					<hr class="line" />
+																					<div class="content">
+																						<p>感謝每位支持者，勇於追求更理想的世界。見證環保工作取得成果，我們同喜；有感於任重道遠，我們同憂，卻仍然不懈，為自己也為下一代締造更好的世界。</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="swiper-slide box box-shadow-lift">
+																				<div class="testimonial">
+																					<figure class="image is-128x128 margin-middle">
+																						<img
                         class="profile-circle is-rounded"
                         src="https://www.greenpeace.org/static/planet4-hongkong-stateless/16265910-block-5-by-working-together-kate.jpg"
                         alt="Kate"
                       />
-                    </figure>
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="subtitle has-text-centered">
+																					</figure>
+																					<div class="media">
+																						<div class="media-content">
+																							<p class="subtitle has-text-centered">
                           Kate
                         </p>
-                        <p class="m-0 has-text-grey has-text-centered">
+																							<p class="m-0 has-text-grey has-text-centered">
                           項目主任
                         </p>
-                      </div>
-                    </div>
-                    <hr class="line" />
-                    <div class="content">
-                      <p>豐盛又健康的森林、山巒和海洋，是我想讓地球永續保留的事物。每個人都可以連結他人，一齊為環境發聲，絕對會得到意料之外的收穫。</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide box box-shadow-lift">
-                  <div class="testimonial">
-                    <figure class="image is-128x128 margin-middle">
-                      <img
+																						</div>
+																					</div>
+																					<hr class="line" />
+																					<div class="content">
+																						<p>豐盛又健康的森林、山巒和海洋，是我想讓地球永續保留的事物。每個人都可以連結他人，一齊為環境發聲，絕對會得到意料之外的收穫。</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="swiper-slide box box-shadow-lift">
+																				<div class="testimonial">
+																					<figure class="image is-128x128 margin-middle">
+																						<img
                         class="profile-circle is-rounded"
                         src="https://www.greenpeace.org/static/planet4-hongkong-stateless/be3f523c-block-5-by-working-together-dolphin.jpg"
                         alt="Dolphin"
                       />
-                    </figure>
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="subtitle has-text-centered">
+																					</figure>
+																					<div class="media">
+																						<div class="media-content">
+																							<p class="subtitle has-text-centered">
                           Dolphin
                         </p>
-                        <p class="m-0 has-text-grey has-text-centered">
+																							<p class="m-0 has-text-grey has-text-centered">
                           綠色和平水手
                         </p>
-                      </div>
-                    </div>
-                    <hr class="line" />
-                    <div class="content">
-                      <p>船員能夠執行研究任務，採集環境危機的第一手證據，都是有賴公眾的捐助，全靠每位支持我們才可以航行到偏遠地區見證環境危機，站在第一線直接行動！</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide box box-shadow-lift">
-                  <div class="testimonial">
-                    <figure class="image is-128x128 margin-middle">
-                      <img
+																						</div>
+																					</div>
+																					<hr class="line" />
+																					<div class="content">
+																						<p>船員能夠執行研究任務，採集環境危機的第一手證據，都是有賴公眾的捐助，全靠每位支持我們才可以航行到偏遠地區見證環境危機，站在第一線直接行動！</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="swiper-slide box box-shadow-lift">
+																				<div class="testimonial">
+																					<figure class="image is-128x128 margin-middle">
+																						<img
                         class="profile-circle is-rounded"
                         src="https://www.greenpeace.org/static/planet4-hongkong-stateless/5dec4146-block-5-by-working-together-sharon.jpg"
                         alt="Sharon"
                       />
-                    </figure>
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="subtitle has-text-centered">
+																					</figure>
+																					<div class="media">
+																						<div class="media-content">
+																							<p class="subtitle has-text-centered">
                           Sharon
                         </p>
-                        <p class="m-0 has-text-grey has-text-centered">
+																							<p class="m-0 has-text-grey has-text-centered">
                           捐款會員
                         </p>
-                      </div>
-                    </div>
-                    <hr class="line" />
-                    <div class="content">
-                      <p>自從有了小朋友，開始留意環保議題，發覺全球的污染問題都十分嚴重，必須由現在起有所改變，才可以為下一代留個美好未來。</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide box box-shadow-lift">
-                  <div class="testimonial">
-                    <figure class="image is-128x128 margin-middle">
-                      <img
+																						</div>
+																					</div>
+																					<hr class="line" />
+																					<div class="content">
+																						<p>自從有了小朋友，開始留意環保議題，發覺全球的污染問題都十分嚴重，必須由現在起有所改變，才可以為下一代留個美好未來。</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="swiper-slide box box-shadow-lift">
+																				<div class="testimonial">
+																					<figure class="image is-128x128 margin-middle">
+																						<img
                         class="profile-circle is-rounded"
                         src="https://www.greenpeace.org/static/planet4-hongkong-stateless/14a16954-block-5-by-working-together-brian.jpg"
                         alt="Brian"
                       />
-                    </figure>
-                    <div class="media">
-                      <div class="media-content">
-                        <p class="subtitle has-text-centered">
+																					</figure>
+																					<div class="media">
+																						<div class="media-content">
+																							<p class="subtitle has-text-centered">
                           Brian
                         </p>
-                        <p class="m-0 has-text-grey has-text-centered">
+																							<p class="m-0 has-text-grey has-text-centered">
                           曾出版繪本為綠色和平籌款
                         </p>
-                      </div>
-                    </div>
-                    <hr class="line" />
-                    <div class="content">
-                      <p>綠色和平的報導讓我得知塑膠垃圾如何污染海洋，因此我決意把訊息分享出去，希望更多人一起保護地球環境。</p>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev">
-                <div class="arrow arrow--left"></div>
-              </div>
-              <div class="swiper-button-next">
-                <div class="arrow arrow--right"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section section-humanstory">
-          <div class="container section-wrapper">
-            <div class="column section__header">
-              <h2>一齊行動，為世界帶來改變！</h2>
-              <p>綠色和平同行者的分享</p>
-            </div>
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                
-                <div class="swiper-slide card">
-                  <div class="issue">
-                    <div class="issue__header">
-                      <p class="is-size-4 mb-2 has-text-left">施鵬翔</p>
-                      <p class="mb-4 has-text-grey has-text-left">
+																						</div>
+																					</div>
+																					<hr class="line" />
+																					<div class="content">
+																						<p>綠色和平的報導讓我得知塑膠垃圾如何污染海洋，因此我決意把訊息分享出去，希望更多人一起保護地球環境。</p>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="swiper-pagination"></div>
+																		<div class="swiper-button-prev">
+																			<div class="arrow arrow--left"></div>
+																		</div>
+																		<div class="swiper-button-next">
+																			<div class="arrow arrow--right"></div>
+																		</div>
+																	</div>
+																</div>
+															</section>
+															<section class="section section-humanstory">
+																<div class="container section-wrapper">
+																	<div class="column section__header">
+																		<h2>一齊行動，為世界帶來改變！</h2>
+																		<p>綠色和平同行者的分享</p>
+																	</div>
+																	<div class="swiper-container">
+																		<div class="swiper-wrapper">
+																			<div class="swiper-slide card">
+																				<div class="issue">
+																					<div class="issue__header">
+																						<p class="is-size-4 mb-2 has-text-left">施鵬翔</p>
+																						<p class="mb-4 has-text-grey has-text-left">
                         綠色和平東亞分部總幹事
                       </p>
-                      <p>身處充滿迫切環境問題的年代，亞洲對地球未來的影響可謂舉足輕重。在如此重要的時刻，慶幸自己在綠色和平工作，與您一起為守護人類世代生存權利而努力。</p>
-                    </div>
-                    <div
+																						<p>身處充滿迫切環境問題的年代，亞洲對地球未來的影響可謂舉足輕重。在如此重要的時刻，慶幸自己在綠色和平工作，與您一起為守護人類世代生存權利而努力。</p>
+																					</div>
+																					<div
                       class="issue__image"
                       style="background-image: url('https://www.greenpeace.org/static/planet4-hongkong-stateless/e1db86a2-block-5-by-working-together-kt.jpg')"
                     ></div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide card">
-                  <div class="issue">
-                    <div class="issue__header">
-                      <p class="is-size-4 mb-2 has-text-left">Santosh Pai</p>
-                      <p class="mb-4 has-text-grey has-text-left">
+																				</div>
+																			</div>
+																			<div class="swiper-slide card">
+																				<div class="issue">
+																					<div class="issue__header">
+																						<p class="is-size-4 mb-2 has-text-left">Santosh Pai</p>
+																						<p class="mb-4 has-text-grey has-text-left">
                         律師／綠色和平東亞分部董事會主席
                       </p>
-                      <p>感謝每位支持者，勇於追求更理想的世界。見證環保工作取得成果，我們同喜；有感於任重道遠，我們同憂，卻仍然不懈，為自己也為下一代締造更好的世界。</p>
-                    </div>
-                    <div
+																						<p>感謝每位支持者，勇於追求更理想的世界。見證環保工作取得成果，我們同喜；有感於任重道遠，我們同憂，卻仍然不懈，為自己也為下一代締造更好的世界。</p>
+																					</div>
+																					<div
                       class="issue__image"
                       style="background-image: url('https://www.greenpeace.org/static/planet4-hongkong-stateless/4830aaf6-block-5-by-working-together-santosh.jpg')"
                     ></div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide card">
-                  <div class="issue">
-                    <div class="issue__header">
-                      <p class="is-size-4 mb-2 has-text-left">Kate</p>
-                      <p class="mb-4 has-text-grey has-text-left">
+																				</div>
+																			</div>
+																			<div class="swiper-slide card">
+																				<div class="issue">
+																					<div class="issue__header">
+																						<p class="is-size-4 mb-2 has-text-left">Kate</p>
+																						<p class="mb-4 has-text-grey has-text-left">
                         項目主任
                       </p>
-                      <p>豐盛又健康的森林、山巒和海洋，是我想讓地球永續保留的事物。每個人都可以連結他人，一齊為環境發聲，絕對會得到意料之外的收穫。</p>
-                    </div>
-                    <div
+																						<p>豐盛又健康的森林、山巒和海洋，是我想讓地球永續保留的事物。每個人都可以連結他人，一齊為環境發聲，絕對會得到意料之外的收穫。</p>
+																					</div>
+																					<div
                       class="issue__image"
                       style="background-image: url('https://www.greenpeace.org/static/planet4-hongkong-stateless/16265910-block-5-by-working-together-kate.jpg')"
                     ></div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide card">
-                  <div class="issue">
-                    <div class="issue__header">
-                      <p class="is-size-4 mb-2 has-text-left">Dolphin</p>
-                      <p class="mb-4 has-text-grey has-text-left">
+																				</div>
+																			</div>
+																			<div class="swiper-slide card">
+																				<div class="issue">
+																					<div class="issue__header">
+																						<p class="is-size-4 mb-2 has-text-left">Dolphin</p>
+																						<p class="mb-4 has-text-grey has-text-left">
                         綠色和平水手
                       </p>
-                      <p>船員能夠執行研究任務，採集環境危機的第一手證據，都是有賴公眾的捐助，全靠每位支持我們才可以航行到偏遠地區見證環境危機，站在第一線直接行動！</p>
-                    </div>
-                    <div
+																						<p>船員能夠執行研究任務，採集環境危機的第一手證據，都是有賴公眾的捐助，全靠每位支持我們才可以航行到偏遠地區見證環境危機，站在第一線直接行動！</p>
+																					</div>
+																					<div
                       class="issue__image"
                       style="background-image: url('https://www.greenpeace.org/static/planet4-hongkong-stateless/be3f523c-block-5-by-working-together-dolphin.jpg')"
                     ></div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide card">
-                  <div class="issue">
-                    <div class="issue__header">
-                      <p class="is-size-4 mb-2 has-text-left">Sharon</p>
-                      <p class="mb-4 has-text-grey has-text-left">
+																				</div>
+																			</div>
+																			<div class="swiper-slide card">
+																				<div class="issue">
+																					<div class="issue__header">
+																						<p class="is-size-4 mb-2 has-text-left">Sharon</p>
+																						<p class="mb-4 has-text-grey has-text-left">
                         捐款會員
                       </p>
-                      <p>自從有了小朋友，開始留意環保議題，發覺全球的污染問題都十分嚴重，必須由現在起有所改變，才可以為下一代留個美好未來。</p>
-                    </div>
-                    <div
+																						<p>自從有了小朋友，開始留意環保議題，發覺全球的污染問題都十分嚴重，必須由現在起有所改變，才可以為下一代留個美好未來。</p>
+																					</div>
+																					<div
                       class="issue__image"
                       style="background-image: url('https://www.greenpeace.org/static/planet4-hongkong-stateless/5dec4146-block-5-by-working-together-sharon.jpg')"
                     ></div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide card">
-                  <div class="issue">
-                    <div class="issue__header">
-                      <p class="is-size-4 mb-2 has-text-left">Brian</p>
-                      <p class="mb-4 has-text-grey has-text-left">
+																				</div>
+																			</div>
+																			<div class="swiper-slide card">
+																				<div class="issue">
+																					<div class="issue__header">
+																						<p class="is-size-4 mb-2 has-text-left">Brian</p>
+																						<p class="mb-4 has-text-grey has-text-left">
                         曾出版繪本為綠色和平籌款
                       </p>
-                      <p>綠色和平的報導讓我得知塑膠垃圾如何污染海洋，因此我決意把訊息分享出去，希望更多人一起保護地球環境。</p>
-                    </div>
-                    <div
+																						<p>綠色和平的報導讓我得知塑膠垃圾如何污染海洋，因此我決意把訊息分享出去，希望更多人一起保護地球環境。</p>
+																					</div>
+																					<div
                       class="issue__image"
                       style="background-image: url('https://www.greenpeace.org/static/planet4-hongkong-stateless/14a16954-block-5-by-working-together-brian.jpg')"
                     ></div>
-                  </div>
-                </div>
-                
-              </div>
-              <div class="swiper-button-prev">
-                <div class="arrow arrow--left"></div>
-              </div>
-              <div class="swiper-button-next">
-                <div class="arrow arrow--right"></div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <!-- end of extra blocks -->
-      <!-- backtotop -->
-      <div class="backtotop visible"><a href="#"></a></div>
-      <!-- Footer -->
-      <div
+																				</div>
+																			</div>
+																		</div>
+																		<div class="swiper-button-prev">
+																			<div class="arrow arrow--left"></div>
+																		</div>
+																		<div class="swiper-button-next">
+																			<div class="arrow arrow--right"></div>
+																		</div>
+																		<div class="swiper-pagination"></div>
+																	</div>
+																</div>
+															</section>
+														</div>
+														<!-- end of extra blocks -->
+														<!-- backtotop -->
+														<div class="backtotop visible">
+															<a href="#"></a>
+														</div>
+														<!-- Footer -->
+														<div
         data-region-name="footer"
         data-item-id="c3d2d778-003e-4756-bcb1-c21aedd0ee29"
         data-aura-rendered-by="136:2;a"
       >
-        <div
+															<div
           class="ui-widget"
           data-item-id="75f2732a-0181-4287-80e0-901f8bb3c53e"
           data-priority="0"
           data-aura-rendered-by="133:2;a"
         >
-          <div
+																<div
             data-aura-rendered-by="77:2;a"
             class="cGPEADonateFooter"
             data-aura-class="cGPEADonateFooter"
           >
-            <footer class="footer" data-aura-rendered-by="78:2;a">
-              <div class="footer-wrapper" data-aura-rendered-by="79:2;a">
-                <div class="footer-row" data-aura-rendered-by="80:2;a">
-                  <div class="footer__logo" data-aura-rendered-by="81:2;a">
-                    <img
+																	<footer class="footer" data-aura-rendered-by="78:2;a">
+																		<div class="footer-wrapper" data-aura-rendered-by="79:2;a">
+																			<div class="footer-row" data-aura-rendered-by="80:2;a">
+																				<div class="footer__logo" data-aura-rendered-by="81:2;a">
+																					<img
                       alt="Greenpeace 綠色和平 ｜ 香港"
                       src="https://change.greenpeace.org.hk/static/logo/GP-logo-2019-TC-white-%5Bweb%5D-01.png"
                       data-aura-rendered-by="82:2;a"
                     />
-                  </div>
-                  <div class="footer__language" data-aura-rendered-by="83:2;a">
-                    <div data-aura-rendered-by="87:2;a">
-                      <a
+																				</div>
+																				<div class="footer__language" data-aura-rendered-by="83:2;a">
+																					<div data-aura-rendered-by="87:2;a">
+																						<a
                         class=""
                         data-lang="zh_HK"
                         data-aura-rendered-by="88:2;a"
@@ -756,169 +1338,177 @@
                         >中文</a
                       >
                       &nbsp;|&nbsp;
-                      <a
+                      
+																						<a
                         class="slds-border_bottom"
                         data-lang="en_HK"
                         data-aura-rendered-by="91:2;a"
                         href="javascript:void(0);"
                         >English</a
                       >
-                    </div>
-                  </div>
-                </div>
-                <div
+																					</div>
+																				</div>
+																			</div>
+																			<div
                   class="footer-row footer-upper"
                   data-aura-rendered-by="93:2;a"
                 >
-                  <div
+																				<div
                     class="footer-col footer__contents"
                     data-aura-rendered-by="94:2;a"
                   >
-                    <div data-aura-rendered-by="96:2;a">
-                      <p>
+																					<div data-aura-rendered-by="96:2;a">
+																						<p>
                         Greenpeace is an independent, nonprofit, global
                         organization that stands for positive change through
                         action. We investigate, campaign, document and lobby for
                         a sustainable balance between humans and the environment
-                        worldwide.<br />
+                        worldwide.
+																							<br />
                         Greenpeace relies on donations from generous individuals
                         to carry out our work. We do not accept funding from
                         governments, corporations, political parties or
                         intergovernmental organisations.
-                      </p>
-                    </div>
-                    <div class="footer__link" data-aura-rendered-by="97:2;a">
-                      <ul class="footer-links" data-aura-rendered-by="98:2;a">
-                        <li data-aura-rendered-by="99:2;a">
-                          <a
+                      
+																						</p>
+																					</div>
+																					<div class="footer__link" data-aura-rendered-by="97:2;a">
+																						<ul class="footer-links" data-aura-rendered-by="98:2;a">
+																							<li data-aura-rendered-by="99:2;a">
+																								<a
                             href="http://www.greenpeace.org/eastasia/"
                             data-aura-rendered-by="100:2;a"
                             >Home</a
                           >
-                        </li>
-                        <li data-aura-rendered-by="102:2;a">
-                          <a
+																							</li>
+																							<li data-aura-rendered-by="102:2;a">
+																								<a
                             href="http://www.greenpeace.org/eastasia/about/privacy/"
                             data-aura-rendered-by="103:2;a"
                           >
                             Privacy Policy and Collection of Personal Data</a
                           >
-                        </li>
-                        <li data-aura-rendered-by="105:2;a">
-                          <a
+																							</li>
+																							<li data-aura-rendered-by="105:2;a">
+																								<a
                             href="http://www.greenpeace.org/eastasia/about/copyright/"
                             data-aura-rendered-by="106:2;a"
                             >Copyright</a
                           >
-                        </li>
-                        <li data-aura-rendered-by="108:2;a">
-                          <a
+																							</li>
+																							<li data-aura-rendered-by="108:2;a">
+																								<a
                             href="http://www.greenpeace.org/eastasia/about/contact/"
                             data-aura-rendered-by="109:2;a"
                             >Contact Us</a
                           >
-                        </li>
-                        <li data-aura-rendered-by="111:2;a">
-                          <a
+																							</li>
+																							<li data-aura-rendered-by="111:2;a">
+																								<a
                             href="http://www.greenpeace.org/eastasia/press/"
                             data-aura-rendered-by="112:2;a"
                             >Press Centre</a
                           >
-                        </li>
-                        <li data-aura-rendered-by="114:2;a">
-                          <a
+																							</li>
+																							<li data-aura-rendered-by="114:2;a">
+																								<a
                             href="http://www.greenpeace.org/eastasia/about/"
                             data-aura-rendered-by="115:2;a"
                             >About Us</a
                           >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="footer__social" data-aura-rendered-by="117:2;a">
-                      <ul class="social-links" data-aura-rendered-by="118:2;a">
-                        <li data-aura-rendered-by="119:2;a">
-                          <a
+																							</li>
+																						</ul>
+																					</div>
+																					<div class="footer__social" data-aura-rendered-by="117:2;a">
+																						<ul class="social-links" data-aura-rendered-by="118:2;a">
+																							<li data-aura-rendered-by="119:2;a">
+																								<a
                             class="facebook"
                             href="https://www.facebook.com/greenpeacehk/"
                             data-aura-rendered-by="120:2;a"
                           ></a>
-                        </li>
-                        <li data-aura-rendered-by="121:2;a">
-                          <a
+																							</li>
+																							<li data-aura-rendered-by="121:2;a">
+																								<a
                             class="twitter"
                             href="#"
                             data-aura-rendered-by="122:2;a"
                           ></a>
-                        </li>
-                        <li data-aura-rendered-by="123:2;a">
-                          <a
+																							</li>
+																							<li data-aura-rendered-by="123:2;a">
+																								<a
                             class="instagram"
                             href="#"
                             data-aura-rendered-by="124:2;a"
                           ></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div
+																							</li>
+																						</ul>
+																					</div>
+																				</div>
+																				<div
                     class="footer-col footer__remarks"
                     data-aura-rendered-by="125:2;a"
                   >
-                    <div data-aura-rendered-by="127:2;a">
-                      <p class="notice">Notes</p>
-                      <p>
+																					<div data-aura-rendered-by="127:2;a">
+																						<p class="notice">Notes</p>
+																						<p>
                         This is a secure webpage. Your personal details are
                         protected at all times.
                       </p>
-                      <hr />
-                      <p>
+																						<hr />
+																						<p>
                         Your personal information will be treated as strictly
                         confidential and only used for communication purpose.
                         Read our
-                        <a
+                        
+																							<a
                           href="https://www.greenpeace.org/eastasia/privacy-and-cookies/"
                           target="_blank"
                           >privacy statement</a
                         >.
-                      </p>
-                      <hr />
-                      <p>
+                      
+																						</p>
+																						<hr />
+																						<p>
                         Donations made by credit card are processed instantly. A
                         recurring monthly payment is set up based on the first
                         registration date. In the event a transaction fails, we
                         will retry to process the payment and contact you if
                         needed.
                       </p>
-                      <hr />
-                      <p>
+																						<hr />
+																						<p>
                         Donations over HK$100 are tax-deductible. Monthly donors
                         will receive a digital annual receipt by email in April
                         or May each year following the end of the financial year
                         in March. Digital donation receipts are emailed
-                        instantly following all one-off donations. <br />
-                        <br /><br />
+                        instantly following all one-off donations. 
+																							<br />
+																							<br />
+																							<br />
                         Tax-Exempt Charity Ref No. : 91/5418
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
+                      
+																						</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div
                   class="footer-row footer-lower"
                   data-aura-rendered-by="128:2;a"
                 >
-                  <div
+																				<div
                     class="footer-col footer__credit"
                     data-aura-rendered-by="129:2;a"
                   >
                     © GREENPEACE 2020
                   </div>
-                </div>
-              </div>
-            </footer>
-          </div>
-        </div>
-      </div>
-      <!-- end of Footer -->
-    </div>
-  </body>
-</html>
+																			</div>
+																		</div>
+																	</footer>
+																</div>
+															</div>
+														</div>
+														<!-- end of Footer -->
+													</div>
+												</body>
+											</html>
