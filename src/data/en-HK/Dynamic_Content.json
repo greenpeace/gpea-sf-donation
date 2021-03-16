@@ -1,15 +1,15 @@
 {
   "title": "Protecting our planet everyday.",
-  "explainer": {
-    "monthly": "Your monthly donation will help Greenpeace research solutions and to work globally to protect our planet. Thank you!",
-    "onetime": "Your donation will immediately help Greenpeace's work to protect our planet. Thank you!"
-  },
-  "lead": "Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
-  "image": {
-    "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg",
-    "position": "right",
-    "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
-  },
+    "explainer": {
+      "monthly": "Your monthly donation will help Greenpeace research solutions and to work globally to protect our planet. Thank you!",
+      "onetime": "Your donation will immediately help Greenpeace's work to protect our planet. Thank you!"
+    },
+    "lead": "Greenpeace researches and documents environmental problems. Please help us to continue caring for our natural world.",
+    "image": {
+      "desktop": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg",
+      "position": "right",
+      "mobile": "https://storage.googleapis.com/planet4-hongkong-stateless/2020/07/29ae771b-2020-sf-donation-antarctic7.jpg"
+    },
   "sections": [
     {
       "type": "SectionCenterText",
