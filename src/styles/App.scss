@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&display=swap&subset=chinese-traditional");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap&subset=chinese-traditional");
 // library
 @import "./scss/library/bulma.min.css", "./scss/library/swiper-bundle.min.css";
 // utilities
@@ -47,11 +47,10 @@ body {
 
 html {
   font-size: 100%;
-} /*16px*/
+}
 
 body {
   font-family: "Noto Sans TC", sans-serif;
-  font-weight: 300;
   font-variant: tabular-nums;
   color: $black;
   line-height: 1.5;

@@ -4,17 +4,18 @@
   margin: 1rem auto;
   .form__headline {
     text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
-    color: $black;
-    font-size: 2.2rem;
+    color: $gray0;
+    font-size: 2.4rem;
     margin: 0;
   }
   .form__leading {
     // background-color: rgba(255, 255, 255, 0.95);
     text-shadow: 0 0 12px rgba(255, 255, 255, 0.85);
-    color: $gray0;
+    color: $gray1;
     margin: 1rem auto;
     padding: 2px;
     font-size: 1rem;
+    line-height: 1.7;
   }
   .edit-amount {
     margin: 0.75rem auto;
@@ -141,6 +142,7 @@
     }
   }
 }
+
 .form__amounts {
   display: flex;
   flex-wrap: wrap;
@@ -175,31 +177,32 @@
       font-weight: bold;
     }
   }
-  .form__amount-other-button {
-    width: 100%;
-    margin-bottom: 0;
-    color: $gray3;
-  }
-  .other-amount input {
+}
+// Other
+.form__amount-other-button {
+  width: 100%;
+  margin-bottom: 0;
+  color: $gray3;
+}
+.other-amount input {
+  height: 48px;
+}
+.other-amount-input {
+  display: flex;
+  width: 100%;
+  .currency {
+    flex: 1;
+    min-width: 80px;
     height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: $gray3;
+    font-size: 16px;
   }
-  .other-amount-input {
-    display: flex;
-    width: 100%;
-    .currency {
-      flex: 1;
-      min-width: 80px;
-      height: 48px;
-      line-height: 48px;
-      text-align: center;
-      color: $gray3;
-      font-size: 16px;
-    }
-  }
-  .other-amount {
-    flex: 4;
-    width: 100%;
-  }
+}
+.other-amount {
+  flex: 4;
+  width: 100%;
 }
 .amount-text {
   padding: 20px 0px;
